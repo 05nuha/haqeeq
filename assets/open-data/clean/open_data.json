@@ -1,0 +1,2667 @@
+{
+ "entities": [
+  {
+   "name": "Federal Youth Authority",
+   "name_ar": "",
+   "kind": "federal_entity",
+   "domain": "fya.gov.ae",
+   "source": "Bayanat — Entities",
+   "bayanat_datasets": "0"
+  },
+  {
+   "name": "Etihad Water & Electricity",
+   "name_ar": "",
+   "kind": "federal_entity",
+   "domain": "etihadwe.ae",
+   "source": "Bayanat — Entities",
+   "bayanat_datasets": "0"
+  },
+  {
+   "name": "Ras Al Khaimah Maritime City",
+   "name_ar": "",
+   "kind": "local_entity",
+   "domain": "moet.gov.ae",
+   "source": "Bayanat — Entities",
+   "bayanat_datasets": "19"
+  },
+  {
+   "name": "United Arab Emirates Space Agency",
+   "name_ar": "",
+   "kind": "federal_entity",
+   "domain": "space.gov.ae",
+   "source": "Bayanat — Entities",
+   "bayanat_datasets": "2"
+  },
+  {
+   "name": "Insurance Authority",
+   "name_ar": "",
+   "kind": "federal_entity",
+   "domain": "centralbank.ae",
+   "source": "Bayanat — Entities",
+   "bayanat_datasets": "114"
+  },
+  {
+   "name": "Federal Transport Authority - Land & Maritime",
+   "name_ar": "",
+   "kind": "federal_entity",
+   "domain": "icp.gov.ae",
+   "source": "Bayanat — Entities",
+   "bayanat_datasets": "3"
+  },
+  {
+   "name": "Emirates Schools Establishment",
+   "name_ar": "",
+   "kind": "federal_entity",
+   "domain": "moe.gov.ae",
+   "source": "Bayanat — Entities",
+   "bayanat_datasets": "2"
+  },
+  {
+   "name": "Emirates Authority For Standardization & Metrology",
+   "name_ar": "",
+   "kind": "federal_entity",
+   "domain": "moiat.gov.ae",
+   "source": "Bayanat — Entities",
+   "bayanat_datasets": "10"
+  },
+  {
+   "name": "Ministry Of Human Resources & Emiratizations",
+   "name_ar": "",
+   "kind": "federal_entity",
+   "domain": "mohre.gov.ae",
+   "source": "Bayanat — Entities",
+   "bayanat_datasets": "10"
+  },
+  {
+   "name": "Federal Authority For Identity and Citizenship",
+   "name_ar": "",
+   "kind": "federal_entity",
+   "domain": "icp.gov.ae",
+   "source": "Bayanat — Entities",
+   "bayanat_datasets": "10"
+  },
+  {
+   "name": "Federal Customs Authority",
+   "name_ar": "",
+   "kind": "federal_entity",
+   "domain": "uaecustoms.ae",
+   "source": "Bayanat — Entities",
+   "bayanat_datasets": "114"
+  },
+  {
+   "name": "Central Bank of United Arab Emirates",
+   "name_ar": "",
+   "kind": "federal_entity",
+   "domain": "centralbank.ae",
+   "source": "Bayanat — Entities",
+   "bayanat_datasets": "43"
+  },
+  {
+   "name": "Federal Competitiveness and Statistics Center",
+   "name_ar": "",
+   "kind": "federal_entity",
+   "domain": "fcsc.gov.ae",
+   "source": "Bayanat — Entities",
+   "bayanat_datasets": "608"
+  },
+  {
+   "name": "National Media Council",
+   "name_ar": "",
+   "kind": "federal_entity",
+   "domain": "uaemc.gov.ae",
+   "source": "Bayanat — Entities",
+   "bayanat_datasets": "7"
+  },
+  {
+   "name": "Ministry of Energy & Infrastructure",
+   "name_ar": "",
+   "kind": "federal_entity",
+   "domain": "moei.gov.ae",
+   "source": "Bayanat — Entities",
+   "bayanat_datasets": "70"
+  },
+  {
+   "name": "Ministry of Foreign Affairs and International Cooperation",
+   "name_ar": "",
+   "kind": "federal_entity",
+   "domain": "mofa.gov.ae",
+   "source": "Bayanat — Entities",
+   "bayanat_datasets": "14"
+  },
+  {
+   "name": "Ministry of Finance",
+   "name_ar": "",
+   "kind": "federal_entity",
+   "domain": "mof.gov.ae",
+   "source": "Bayanat — Entities",
+   "bayanat_datasets": "10"
+  },
+  {
+   "name": "Ministry Of Energy & Industry",
+   "name_ar": "",
+   "kind": "federal_entity",
+   "domain": "moei.gov.ae",
+   "source": "Bayanat — Entities",
+   "bayanat_datasets": "95"
+  },
+  {
+   "name": "Ministry Of Economy",
+   "name_ar": "",
+   "kind": "federal_entity",
+   "domain": "moet.gov.ae",
+   "source": "Bayanat — Entities",
+   "bayanat_datasets": "145"
+  },
+  {
+   "name": "Ministry of Justice",
+   "name_ar": "",
+   "kind": "federal_entity",
+   "domain": "moj.gov.ae",
+   "source": "Bayanat — Entities",
+   "bayanat_datasets": "66"
+  },
+  {
+   "name": "General Pension & Social Security Authority",
+   "name_ar": "",
+   "kind": "federal_entity",
+   "domain": "gpssa.gov.ae",
+   "source": "Bayanat — Entities",
+   "bayanat_datasets": "111"
+  },
+  {
+   "name": "Higher Colleges of Technology",
+   "name_ar": "",
+   "kind": "federal_entity",
+   "domain": "hct.ac.ae",
+   "source": "Bayanat — Entities",
+   "bayanat_datasets": "74"
+  },
+  {
+   "name": "Federal Authority For Government Human Resource",
+   "name_ar": "",
+   "kind": "federal_entity",
+   "domain": "fahr.gov.ae",
+   "source": "Bayanat — Entities",
+   "bayanat_datasets": "45"
+  },
+  {
+   "name": "Roads and Transport Authority",
+   "name_ar": "",
+   "kind": "local_entity",
+   "domain": "rta.ae",
+   "source": "Bayanat — Entities",
+   "bayanat_datasets": "7"
+  },
+  {
+   "name": "Department of Health - Abu Dhabi",
+   "name_ar": "",
+   "kind": "local_entity",
+   "domain": "doh.gov.ae",
+   "source": "Bayanat — Entities",
+   "bayanat_datasets": "4"
+  },
+  {
+   "name": "Al Jazeera Port",
+   "name_ar": "",
+   "kind": "local_entity",
+   "domain": "rakports.ae",
+   "source": "Bayanat — Entities",
+   "bayanat_datasets": "3"
+  },
+  {
+   "name": "Abu Dhabi Agriculture And Food Safety Authority",
+   "name_ar": "",
+   "kind": "local_entity",
+   "domain": "adafsa.gov.ae",
+   "source": "Bayanat — Entities",
+   "bayanat_datasets": "110"
+  },
+  {
+   "name": "Municipality & Planning Department - Ajman",
+   "name_ar": "",
+   "kind": "local_entity",
+   "domain": "ajman.ae",
+   "source": "Bayanat — Entities",
+   "bayanat_datasets": "29"
+  },
+  {
+   "name": "Dubai Pulse",
+   "name_ar": "",
+   "kind": "local_entity",
+   "domain": "data.dubai",
+   "source": "Bayanat — Entities",
+   "bayanat_datasets": "161"
+  },
+  {
+   "name": "Ministry of Education",
+   "name_ar": "",
+   "kind": "federal_entity",
+   "domain": "moe.gov.ae",
+   "source": "Bayanat — Entities",
+   "bayanat_datasets": "78"
+  },
+  {
+   "name": "Ministry Of Climate Change & Environment",
+   "name_ar": "",
+   "kind": "federal_entity",
+   "domain": "moccae.gov.ae",
+   "source": "Bayanat — Entities",
+   "bayanat_datasets": "156"
+  },
+  {
+   "name": "Ministry of State for Federal National Council Affairs",
+   "name_ar": "",
+   "kind": "federal_entity",
+   "domain": "mfnca.gov.ae",
+   "source": "Bayanat — Entities",
+   "bayanat_datasets": "15"
+  },
+  {
+   "name": "Government of Fujairah",
+   "name_ar": "",
+   "kind": "local_entity",
+   "domain": "fujairah.ae",
+   "source": "Bayanat — Entities",
+   "bayanat_datasets": "41"
+  },
+  {
+   "name": "Statistics Centre − Abu Dhabi",
+   "name_ar": "",
+   "kind": "local_entity",
+   "domain": "scad.gov.ae",
+   "source": "Bayanat — Entities",
+   "bayanat_datasets": "328"
+  },
+  {
+   "name": "General Civil Aviation Authority",
+   "name_ar": "",
+   "kind": "federal_entity",
+   "domain": "",
+   "source": "Bayanat — Entities",
+   "bayanat_datasets": "30"
+  },
+  {
+   "name": "Ministry of Industry and Advanced Technology",
+   "name_ar": "",
+   "kind": "federal_entity",
+   "domain": "moiat.gov.ae",
+   "source": "Bayanat — Entities",
+   "bayanat_datasets": "10"
+  },
+  {
+   "name": "Ministry of Culture",
+   "name_ar": "",
+   "kind": "federal_entity",
+   "domain": "moc.gov.ae",
+   "source": "Bayanat — Entities",
+   "bayanat_datasets": "20"
+  },
+  {
+   "name": "Federal Electricity & Water Authority",
+   "name_ar": "",
+   "kind": "federal_entity",
+   "domain": "epageuae.com",
+   "source": "Bayanat — Entities",
+   "bayanat_datasets": "1"
+  },
+  {
+   "name": "Ministry of Community Empowerment",
+   "name_ar": "",
+   "kind": "federal_entity",
+   "domain": "moce.gov.ae",
+   "source": "Bayanat — Entities",
+   "bayanat_datasets": "44"
+  },
+  {
+   "name": "Dubai Police",
+   "name_ar": "",
+   "kind": "local_entity",
+   "domain": "dubaipolice.gov.ae",
+   "source": "Bayanat — Entities",
+   "bayanat_datasets": "4"
+  },
+  {
+   "name": "General Authority of Islamic Affairs, Endowments and Zakat",
+   "name_ar": "",
+   "kind": "federal_entity",
+   "domain": "awqaf.gov.ae",
+   "source": "Bayanat — Entities",
+   "bayanat_datasets": "26"
+  },
+  {
+   "name": "Capital Market Authority",
+   "name_ar": "",
+   "kind": "federal_entity",
+   "domain": "sca.gov.ae",
+   "source": "Bayanat — Entities",
+   "bayanat_datasets": "16"
+  },
+  {
+   "name": "Ministry of Higher Education and Scientific Research",
+   "name_ar": "",
+   "kind": "federal_entity",
+   "domain": "mohesr.gov.ae",
+   "source": "Bayanat — Entities",
+   "bayanat_datasets": "9"
+  },
+  {
+   "name": "Federal Tax Authority",
+   "name_ar": "",
+   "kind": "federal_entity",
+   "domain": "eservices.tax.gov.ae",
+   "source": "Bayanat — Entities",
+   "bayanat_datasets": "15"
+  },
+  {
+   "name": "Emirates Post Group",
+   "name_ar": "",
+   "kind": "federal_entity",
+   "domain": "emiratespost.ae",
+   "source": "Bayanat — Entities",
+   "bayanat_datasets": "28"
+  },
+  {
+   "name": "Ministry of Sports",
+   "name_ar": "",
+   "kind": "federal_entity",
+   "domain": "sports.gov.ae",
+   "source": "Bayanat — Entities",
+   "bayanat_datasets": "9"
+  },
+  {
+   "name": "National Qualification Authority",
+   "name_ar": "",
+   "kind": "federal_entity",
+   "domain": "mohesr.gov.ae",
+   "source": "Bayanat — Entities",
+   "bayanat_datasets": "1"
+  },
+  {
+   "name": "EtihadWE",
+   "name_ar": "",
+   "kind": "federal_entity",
+   "domain": "etihadwe.ae",
+   "source": "Bayanat — Entities",
+   "bayanat_datasets": "27"
+  },
+  {
+   "name": "United Arab Emirates University",
+   "name_ar": "",
+   "kind": "federal_entity",
+   "domain": "uaeu.ac.ae",
+   "source": "Bayanat — Entities",
+   "bayanat_datasets": "14"
+  },
+  {
+   "name": "Emirates Health Services",
+   "name_ar": "",
+   "kind": "local_entity",
+   "domain": "",
+   "source": "Bayanat — Entities",
+   "bayanat_datasets": "288"
+  },
+  {
+   "name": "Ministry Of Interior",
+   "name_ar": "",
+   "kind": "federal_entity",
+   "domain": "",
+   "source": "Bayanat — Entities",
+   "bayanat_datasets": "33"
+  },
+  {
+   "name": "Ministry of Health and Prevention",
+   "name_ar": "",
+   "kind": "federal_entity",
+   "domain": "",
+   "source": "Bayanat — Entities",
+   "bayanat_datasets": "326"
+  },
+  {
+   "name": "Shaikh Zayed Housing Programme",
+   "name_ar": "",
+   "kind": "federal_entity",
+   "domain": "",
+   "source": "Bayanat — Entities",
+   "bayanat_datasets": "3"
+  },
+  {
+   "name": "Federal Authority For Nuclear Regulation",
+   "name_ar": "",
+   "kind": "federal_entity",
+   "domain": "",
+   "source": "Bayanat — Entities",
+   "bayanat_datasets": "9"
+  },
+  {
+   "name": "Zayed University",
+   "name_ar": "",
+   "kind": "federal_entity",
+   "domain": "",
+   "source": "Bayanat — Entities",
+   "bayanat_datasets": "65"
+  },
+  {
+   "name": "Zakat Fund",
+   "name_ar": "",
+   "kind": "federal_entity",
+   "domain": "",
+   "source": "Bayanat — Entities",
+   "bayanat_datasets": "29"
+  },
+  {
+   "name": "Telecommunications and Digital Government  Regulatory Authority",
+   "name_ar": "",
+   "kind": "federal_entity",
+   "domain": "",
+   "source": "Bayanat — Entities",
+   "bayanat_datasets": "61"
+  }
+ ],
+ "population": [
+  {
+   "emirate": "Abu Dhabi",
+   "population": 4135985,
+   "older_share": "",
+   "year": 2024,
+   "source": "UAE Government Portal (u.ae) — The Seven Emirates: Abu Dhabi, citing Abu Dhabi Census 2024 (Statistics Centre − Abu Dhabi)"
+  },
+  {
+   "emirate": "Dubai",
+   "population": 3759864,
+   "older_share": "",
+   "year": "",
+   "source": "UAE Government Portal (u.ae) — The Seven Emirates: Dubai, 'current estimated population' (year not stated on page)"
+  },
+  {
+   "emirate": "Sharjah",
+   "population": 1800000,
+   "older_share": "",
+   "year": 2022,
+   "source": "UAE Government Portal (u.ae) — The Seven Emirates: Sharjah, 'approximately 1.8 million as per the Sharjah Census 2022 report' (rounded by the source)"
+  },
+  {
+   "emirate": "Ajman",
+   "population": 504846,
+   "older_share": "",
+   "year": 2017,
+   "source": "UAE Government Portal (u.ae) — The Seven Emirates: Ajman, 2017 figure"
+  },
+  {
+   "emirate": "Umm Al Quwain",
+   "population": 49159,
+   "older_share": "",
+   "year": 2005,
+   "source": "UAE Government Portal (u.ae) — The Seven Emirates: Umm Al Quwain, December 2005 census (oldest figure; likely understates today)"
+  },
+  {
+   "emirate": "Ras Al Khaimah",
+   "population": 345000,
+   "older_share": "",
+   "year": 2015,
+   "source": "UAE Government Portal (u.ae) — The Seven Emirates: Ras Al Khaimah, 2015 estimate (Ras Al Khaimah Government Media Office)"
+  },
+  {
+   "emirate": "Fujairah",
+   "population": 314829,
+   "older_share": "",
+   "year": 2024,
+   "source": "UAE Government Portal (u.ae) — The Seven Emirates: Fujairah, mid-2024 (Fujairah Statistics Centre / GIS Center)"
+  }
+ ],
+ "dubai_areas": [
+  {
+   "code": "abu-hail",
+   "name_en": "Abu Hail",
+   "name_ar": "ابو هيل",
+   "population": "",
+   "source": "Dubai Pulse — Lands registered in Dubai Land Department (via Bayanat), 2017 snapshot",
+   "plots": "1177"
+  },
+  {
+   "code": "al-asbaq",
+   "name_en": "Al Asbaq",
+   "name_ar": "العسبق",
+   "population": "",
+   "source": "Dubai Pulse — Lands registered in Dubai Land Department (via Bayanat), 2017 snapshot",
+   "plots": "11"
+  },
+  {
+   "code": "al-aweer-first",
+   "name_en": "Al Aweer First",
+   "name_ar": "العوير الأولى",
+   "population": "",
+   "source": "Dubai Pulse — Lands registered in Dubai Land Department (via Bayanat), 2017 snapshot",
+   "plots": "194"
+  },
+  {
+   "code": "al-aweer-second",
+   "name_en": "Al Aweer Second",
+   "name_ar": "العوير الثانية",
+   "population": "",
+   "source": "Dubai Pulse — Lands registered in Dubai Land Department (via Bayanat), 2017 snapshot",
+   "plots": "276"
+  },
+  {
+   "code": "al-baagh",
+   "name_en": "Al Baagh",
+   "name_ar": "الباغ",
+   "population": "",
+   "source": "Dubai Pulse — Lands registered in Dubai Land Department (via Bayanat), 2017 snapshot",
+   "plots": "2"
+  },
+  {
+   "code": "al-bada",
+   "name_en": "Al Bada",
+   "name_ar": "البدع",
+   "population": "",
+   "source": "Dubai Pulse — Lands registered in Dubai Land Department (via Bayanat), 2017 snapshot",
+   "plots": "1050"
+  },
+  {
+   "code": "al-baharna",
+   "name_en": "Al Baharna",
+   "name_ar": "البحارنه",
+   "population": "",
+   "source": "Dubai Pulse — Lands registered in Dubai Land Department (via Bayanat), 2017 snapshot",
+   "plots": "1"
+  },
+  {
+   "code": "al-baraha",
+   "name_en": "Al Baraha",
+   "name_ar": "البراحه",
+   "population": "",
+   "source": "Dubai Pulse — Lands registered in Dubai Land Department (via Bayanat), 2017 snapshot",
+   "plots": "365"
+  },
+  {
+   "code": "al-barsha",
+   "name_en": "Al Barsha",
+   "name_ar": "البرشاء",
+   "population": "",
+   "source": "Dubai Pulse — Lands registered in Dubai Land Department (via Bayanat), 2017 snapshot",
+   "plots": "3"
+  },
+  {
+   "code": "al-barsha-first",
+   "name_en": "Al Barsha First",
+   "name_ar": "البرشاء الاولى",
+   "population": "",
+   "source": "Dubai Pulse — Lands registered in Dubai Land Department (via Bayanat), 2017 snapshot",
+   "plots": "463"
+  },
+  {
+   "code": "al-barsha-second",
+   "name_en": "Al Barsha Second",
+   "name_ar": "البرشاء الثانيه",
+   "population": "",
+   "source": "Dubai Pulse — Lands registered in Dubai Land Department (via Bayanat), 2017 snapshot",
+   "plots": "2196"
+  },
+  {
+   "code": "al-barsha-south-fifth",
+   "name_en": "Al Barsha South Fifth",
+   "name_ar": "البرشاء جنوب الخامسة",
+   "population": "",
+   "source": "Dubai Pulse — Lands registered in Dubai Land Department (via Bayanat), 2017 snapshot",
+   "plots": "1765"
+  },
+  {
+   "code": "al-barsha-south-fourth",
+   "name_en": "Al Barsha South Fourth",
+   "name_ar": "البرشاء جنوب الرابعة",
+   "population": "",
+   "source": "Dubai Pulse — Lands registered in Dubai Land Department (via Bayanat), 2017 snapshot",
+   "plots": "1721"
+  },
+  {
+   "code": "al-barsha-third",
+   "name_en": "Al Barsha Third",
+   "name_ar": "البرشاء الثالثه",
+   "population": "",
+   "source": "Dubai Pulse — Lands registered in Dubai Land Department (via Bayanat), 2017 snapshot",
+   "plots": "2029"
+  },
+  {
+   "code": "al-barshaa-south-first",
+   "name_en": "Al Barshaa South First",
+   "name_ar": "البرشاء جنوب الاولى",
+   "population": "",
+   "source": "Dubai Pulse — Lands registered in Dubai Land Department (via Bayanat), 2017 snapshot",
+   "plots": "1961"
+  },
+  {
+   "code": "al-barshaa-south-second",
+   "name_en": "Al Barshaa South Second",
+   "name_ar": "البرشاء جنوب الثانية",
+   "population": "",
+   "source": "Dubai Pulse — Lands registered in Dubai Land Department (via Bayanat), 2017 snapshot",
+   "plots": "1390"
+  },
+  {
+   "code": "al-barshaa-south-third",
+   "name_en": "Al Barshaa South Third",
+   "name_ar": "البرشاء جنوب الثالثة",
+   "population": "",
+   "source": "Dubai Pulse — Lands registered in Dubai Land Department (via Bayanat), 2017 snapshot",
+   "plots": "320"
+  },
+  {
+   "code": "al-buteen",
+   "name_en": "Al Buteen",
+   "name_ar": "البطين",
+   "population": "",
+   "source": "Dubai Pulse — Lands registered in Dubai Land Department (via Bayanat), 2017 snapshot",
+   "plots": "342"
+  },
+  {
+   "code": "al-dhagaya",
+   "name_en": "Al Dhagaya",
+   "name_ar": "الضغايه",
+   "population": "",
+   "source": "Dubai Pulse — Lands registered in Dubai Land Department (via Bayanat), 2017 snapshot",
+   "plots": "421"
+  },
+  {
+   "code": "al-eyas",
+   "name_en": "Al Eyas",
+   "name_ar": "العياص",
+   "population": "",
+   "source": "Dubai Pulse — Lands registered in Dubai Land Department (via Bayanat), 2017 snapshot",
+   "plots": "71"
+  },
+  {
+   "code": "al-faga-a",
+   "name_en": "Al Faga'A",
+   "name_ar": "الفقع",
+   "population": "",
+   "source": "Dubai Pulse — Lands registered in Dubai Land Department (via Bayanat), 2017 snapshot",
+   "plots": "11"
+  },
+  {
+   "code": "al-garhoud",
+   "name_en": "Al Garhoud",
+   "name_ar": "القرهود",
+   "population": "",
+   "source": "Dubai Pulse — Lands registered in Dubai Land Department (via Bayanat), 2017 snapshot",
+   "plots": "456"
+  },
+  {
+   "code": "al-goze-first",
+   "name_en": "Al Goze First",
+   "name_ar": "القوز الاولى",
+   "population": "",
+   "source": "Dubai Pulse — Lands registered in Dubai Land Department (via Bayanat), 2017 snapshot",
+   "plots": "1329"
+  },
+  {
+   "code": "al-goze-fourth",
+   "name_en": "Al Goze Fourth",
+   "name_ar": "القوز الرابعه",
+   "population": "",
+   "source": "Dubai Pulse — Lands registered in Dubai Land Department (via Bayanat), 2017 snapshot",
+   "plots": "359"
+  },
+  {
+   "code": "al-goze-industrial-first",
+   "name_en": "Al Goze Industrial First",
+   "name_ar": "القوز الصناعيه الاولى",
+   "population": "",
+   "source": "Dubai Pulse — Lands registered in Dubai Land Department (via Bayanat), 2017 snapshot",
+   "plots": "420"
+  },
+  {
+   "code": "al-goze-industrial-fourth",
+   "name_en": "Al Goze Industrial Fourth",
+   "name_ar": "القوز الصناعيه الرابعه",
+   "population": "",
+   "source": "Dubai Pulse — Lands registered in Dubai Land Department (via Bayanat), 2017 snapshot",
+   "plots": "721"
+  },
+  {
+   "code": "al-goze-industrial-second",
+   "name_en": "Al Goze Industrial Second",
+   "name_ar": "القوز الصناعيه الثانيه",
+   "population": "",
+   "source": "Dubai Pulse — Lands registered in Dubai Land Department (via Bayanat), 2017 snapshot",
+   "plots": "472"
+  },
+  {
+   "code": "al-goze-industrial-third",
+   "name_en": "Al Goze Industrial Third",
+   "name_ar": "القوز الصناعيه الثالثه",
+   "population": "",
+   "source": "Dubai Pulse — Lands registered in Dubai Land Department (via Bayanat), 2017 snapshot",
+   "plots": "480"
+  },
+  {
+   "code": "al-goze-second",
+   "name_en": "Al Goze Second",
+   "name_ar": "القوز الثانيه",
+   "population": "",
+   "source": "Dubai Pulse — Lands registered in Dubai Land Department (via Bayanat), 2017 snapshot",
+   "plots": "905"
+  },
+  {
+   "code": "al-goze-third",
+   "name_en": "Al Goze Third",
+   "name_ar": "القوز الثالثه",
+   "population": "",
+   "source": "Dubai Pulse — Lands registered in Dubai Land Department (via Bayanat), 2017 snapshot",
+   "plots": "148"
+  },
+  {
+   "code": "al-hamriya",
+   "name_en": "Al Hamriya",
+   "name_ar": "الحمريه",
+   "population": "",
+   "source": "Dubai Pulse — Lands registered in Dubai Land Department (via Bayanat), 2017 snapshot",
+   "plots": "396"
+  },
+  {
+   "code": "al-hamriya-port",
+   "name_en": "Al Hamriya Port",
+   "name_ar": "ميناء الحمريه",
+   "population": "",
+   "source": "Dubai Pulse — Lands registered in Dubai Land Department (via Bayanat), 2017 snapshot",
+   "plots": "9"
+  },
+  {
+   "code": "al-hebiah-fifth",
+   "name_en": "Al Hebiah Fifth",
+   "name_ar": "الحبيه الخامسة",
+   "population": "",
+   "source": "Dubai Pulse — Lands registered in Dubai Land Department (via Bayanat), 2017 snapshot",
+   "plots": "501"
+  },
+  {
+   "code": "al-hebiah-first",
+   "name_en": "Al Hebiah First",
+   "name_ar": "الحبيه الاولى",
+   "population": "",
+   "source": "Dubai Pulse — Lands registered in Dubai Land Department (via Bayanat), 2017 snapshot",
+   "plots": "92"
+  },
+  {
+   "code": "al-hebiah-fourth",
+   "name_en": "Al Hebiah Fourth",
+   "name_ar": "الحبيه الرابعة",
+   "population": "",
+   "source": "Dubai Pulse — Lands registered in Dubai Land Department (via Bayanat), 2017 snapshot",
+   "plots": "1420"
+  },
+  {
+   "code": "al-hebiah-second",
+   "name_en": "Al Hebiah Second",
+   "name_ar": "الحبيه الثانية",
+   "population": "",
+   "source": "Dubai Pulse — Lands registered in Dubai Land Department (via Bayanat), 2017 snapshot",
+   "plots": "141"
+  },
+  {
+   "code": "al-hebiah-third",
+   "name_en": "Al Hebiah Third",
+   "name_ar": "الحبية الثالثة",
+   "population": "",
+   "source": "Dubai Pulse — Lands registered in Dubai Land Department (via Bayanat), 2017 snapshot",
+   "plots": "4902"
+  },
+  {
+   "code": "al-hudaiba",
+   "name_en": "Al Hudaiba",
+   "name_ar": "الحضيبه",
+   "population": "",
+   "source": "Dubai Pulse — Lands registered in Dubai Land Department (via Bayanat), 2017 snapshot",
+   "plots": "181"
+  },
+  {
+   "code": "al-jadaf",
+   "name_en": "Al Jadaf",
+   "name_ar": "الجداف",
+   "population": "",
+   "source": "Dubai Pulse — Lands registered in Dubai Land Department (via Bayanat), 2017 snapshot",
+   "plots": "528"
+  },
+  {
+   "code": "al-jafliya",
+   "name_en": "Al Jafliya",
+   "name_ar": "الجافليه",
+   "population": "",
+   "source": "Dubai Pulse — Lands registered in Dubai Land Department (via Bayanat), 2017 snapshot",
+   "plots": "765"
+  },
+  {
+   "code": "al-karama",
+   "name_en": "Al Karama",
+   "name_ar": "الكرامه",
+   "population": "",
+   "source": "Dubai Pulse — Lands registered in Dubai Land Department (via Bayanat), 2017 snapshot",
+   "plots": "740"
+  },
+  {
+   "code": "al-khabeesi",
+   "name_en": "Al Khabeesi",
+   "name_ar": "الخبيصى",
+   "population": "",
+   "source": "Dubai Pulse — Lands registered in Dubai Land Department (via Bayanat), 2017 snapshot",
+   "plots": "340"
+  },
+  {
+   "code": "al-khairan-second",
+   "name_en": "Al Khairan  Second",
+   "name_ar": "الخيران الثانية",
+   "population": "",
+   "source": "Dubai Pulse — Lands registered in Dubai Land Department (via Bayanat), 2017 snapshot",
+   "plots": "10"
+  },
+  {
+   "code": "al-khairan-first",
+   "name_en": "Al Khairan First",
+   "name_ar": "الخيران الأولى",
+   "population": "",
+   "source": "Dubai Pulse — Lands registered in Dubai Land Department (via Bayanat), 2017 snapshot",
+   "plots": "34"
+  },
+  {
+   "code": "al-khawaneej",
+   "name_en": "Al Khawaneej",
+   "name_ar": "الخوانيج",
+   "population": "",
+   "source": "Dubai Pulse — Lands registered in Dubai Land Department (via Bayanat), 2017 snapshot",
+   "plots": "1"
+  },
+  {
+   "code": "al-khawaneej-first",
+   "name_en": "Al Khawaneej First",
+   "name_ar": "الخوانيج الأولى",
+   "population": "",
+   "source": "Dubai Pulse — Lands registered in Dubai Land Department (via Bayanat), 2017 snapshot",
+   "plots": "2952"
+  },
+  {
+   "code": "al-khawaneej-second",
+   "name_en": "Al Khawaneej Second",
+   "name_ar": "الخوانيج الثانية",
+   "population": "",
+   "source": "Dubai Pulse — Lands registered in Dubai Land Department (via Bayanat), 2017 snapshot",
+   "plots": "1341"
+  },
+  {
+   "code": "al-kheeran",
+   "name_en": "Al Kheeran",
+   "name_ar": "الخيران",
+   "population": "",
+   "source": "Dubai Pulse — Lands registered in Dubai Land Department (via Bayanat), 2017 snapshot",
+   "plots": "132"
+  },
+  {
+   "code": "al-kifaf",
+   "name_en": "Al Kifaf",
+   "name_ar": "الكفاف",
+   "population": "",
+   "source": "Dubai Pulse — Lands registered in Dubai Land Department (via Bayanat), 2017 snapshot",
+   "plots": "23"
+  },
+  {
+   "code": "al-layan1",
+   "name_en": "Al Layan1",
+   "name_ar": "الليان1",
+   "population": "",
+   "source": "Dubai Pulse — Lands registered in Dubai Land Department (via Bayanat), 2017 snapshot",
+   "plots": "4"
+  },
+  {
+   "code": "al-lusaily",
+   "name_en": "Al Lusaily",
+   "name_ar": "اللسيلى",
+   "population": "",
+   "source": "Dubai Pulse — Lands registered in Dubai Land Department (via Bayanat), 2017 snapshot",
+   "plots": "183"
+  },
+  {
+   "code": "al-maha",
+   "name_en": "Al Maha",
+   "name_ar": "المها",
+   "population": "",
+   "source": "Dubai Pulse — Lands registered in Dubai Land Department (via Bayanat), 2017 snapshot",
+   "plots": "20"
+  },
+  {
+   "code": "al-mamzer",
+   "name_en": "Al Mamzer",
+   "name_ar": "الممزر",
+   "population": "",
+   "source": "Dubai Pulse — Lands registered in Dubai Land Department (via Bayanat), 2017 snapshot",
+   "plots": "741"
+  },
+  {
+   "code": "al-manara",
+   "name_en": "Al Manara",
+   "name_ar": "المناره",
+   "population": "",
+   "source": "Dubai Pulse — Lands registered in Dubai Land Department (via Bayanat), 2017 snapshot",
+   "plots": "780"
+  },
+  {
+   "code": "al-mararr",
+   "name_en": "Al Mararr",
+   "name_ar": "المرر",
+   "population": "",
+   "source": "Dubai Pulse — Lands registered in Dubai Land Department (via Bayanat), 2017 snapshot",
+   "plots": "612"
+  },
+  {
+   "code": "al-marmoom",
+   "name_en": "Al Marmoom",
+   "name_ar": "المرموم",
+   "population": "",
+   "source": "Dubai Pulse — Lands registered in Dubai Land Department (via Bayanat), 2017 snapshot",
+   "plots": "12"
+  },
+  {
+   "code": "al-merkadh",
+   "name_en": "Al Merkadh",
+   "name_ar": "المركاض",
+   "population": "",
+   "source": "Dubai Pulse — Lands registered in Dubai Land Department (via Bayanat), 2017 snapshot",
+   "plots": "1181"
+  },
+  {
+   "code": "al-mezhar",
+   "name_en": "Al Mezhar",
+   "name_ar": "المزهر",
+   "population": "",
+   "source": "Dubai Pulse — Lands registered in Dubai Land Department (via Bayanat), 2017 snapshot",
+   "plots": "2"
+  },
+  {
+   "code": "al-mezhar-first",
+   "name_en": "Al Mezhar First",
+   "name_ar": "المزهر الاولى",
+   "population": "",
+   "source": "Dubai Pulse — Lands registered in Dubai Land Department (via Bayanat), 2017 snapshot",
+   "plots": "2238"
+  },
+  {
+   "code": "al-mezhar-second",
+   "name_en": "Al Mezhar Second",
+   "name_ar": "المزهر الثانيه",
+   "population": "",
+   "source": "Dubai Pulse — Lands registered in Dubai Land Department (via Bayanat), 2017 snapshot",
+   "plots": "1410"
+  },
+  {
+   "code": "al-murqabat",
+   "name_en": "Al Murqabat",
+   "name_ar": "المرقبات",
+   "population": "",
+   "source": "Dubai Pulse — Lands registered in Dubai Land Department (via Bayanat), 2017 snapshot",
+   "plots": "608"
+  },
+  {
+   "code": "al-musalla-dubai",
+   "name_en": "Al Musalla (Dubai)",
+   "name_ar": "المصلى - دبي",
+   "population": "",
+   "source": "Dubai Pulse — Lands registered in Dubai Land Department (via Bayanat), 2017 snapshot",
+   "plots": "15"
+  },
+  {
+   "code": "al-muteena",
+   "name_en": "Al Muteena",
+   "name_ar": "المطينه",
+   "population": "",
+   "source": "Dubai Pulse — Lands registered in Dubai Land Department (via Bayanat), 2017 snapshot",
+   "plots": "760"
+  },
+  {
+   "code": "al-nahda-first",
+   "name_en": "Al Nahda First",
+   "name_ar": "النهده الاولى",
+   "population": "",
+   "source": "Dubai Pulse — Lands registered in Dubai Land Department (via Bayanat), 2017 snapshot",
+   "plots": "124"
+  },
+  {
+   "code": "al-nahda-second",
+   "name_en": "Al Nahda Second",
+   "name_ar": "النهده الثانيه",
+   "population": "",
+   "source": "Dubai Pulse — Lands registered in Dubai Land Department (via Bayanat), 2017 snapshot",
+   "plots": "339"
+  },
+  {
+   "code": "al-qoaz",
+   "name_en": "Al Qoaz",
+   "name_ar": "القوز",
+   "population": "",
+   "source": "Dubai Pulse — Lands registered in Dubai Land Department (via Bayanat), 2017 snapshot",
+   "plots": "149"
+  },
+  {
+   "code": "al-qusais",
+   "name_en": "Al Qusais",
+   "name_ar": "القصيص",
+   "population": "",
+   "source": "Dubai Pulse — Lands registered in Dubai Land Department (via Bayanat), 2017 snapshot",
+   "plots": "4"
+  },
+  {
+   "code": "al-qusais-first",
+   "name_en": "Al Qusais First",
+   "name_ar": "القصيص الاولى",
+   "population": "",
+   "source": "Dubai Pulse — Lands registered in Dubai Land Department (via Bayanat), 2017 snapshot",
+   "plots": "254"
+  },
+  {
+   "code": "al-qusais-industrial-fifth",
+   "name_en": "Al Qusais Industrial Fifth",
+   "name_ar": "القصيص الصناعيه الخامسه",
+   "population": "",
+   "source": "Dubai Pulse — Lands registered in Dubai Land Department (via Bayanat), 2017 snapshot",
+   "plots": "159"
+  },
+  {
+   "code": "al-qusais-industrial-first",
+   "name_en": "Al Qusais Industrial First",
+   "name_ar": "القصيص الصناعيه الاولى",
+   "population": "",
+   "source": "Dubai Pulse — Lands registered in Dubai Land Department (via Bayanat), 2017 snapshot",
+   "plots": "274"
+  },
+  {
+   "code": "al-qusais-industrial-fourth",
+   "name_en": "Al Qusais Industrial Fourth",
+   "name_ar": "القصيص الصناعيه الرابعه",
+   "population": "",
+   "source": "Dubai Pulse — Lands registered in Dubai Land Department (via Bayanat), 2017 snapshot",
+   "plots": "208"
+  },
+  {
+   "code": "al-qusais-industrial-second",
+   "name_en": "Al Qusais Industrial Second",
+   "name_ar": "القصيص الصناعيه الثانيه",
+   "population": "",
+   "source": "Dubai Pulse — Lands registered in Dubai Land Department (via Bayanat), 2017 snapshot",
+   "plots": "185"
+  },
+  {
+   "code": "al-qusais-industrial-third",
+   "name_en": "Al Qusais Industrial Third",
+   "name_ar": "القصيص الصناعيه الثالثه",
+   "population": "",
+   "source": "Dubai Pulse — Lands registered in Dubai Land Department (via Bayanat), 2017 snapshot",
+   "plots": "180"
+  },
+  {
+   "code": "al-qusais-second",
+   "name_en": "Al Qusais Second",
+   "name_ar": "القصيص الثانيه",
+   "population": "",
+   "source": "Dubai Pulse — Lands registered in Dubai Land Department (via Bayanat), 2017 snapshot",
+   "plots": "332"
+  },
+  {
+   "code": "al-qusais-third",
+   "name_en": "Al Qusais Third",
+   "name_ar": "القصيص الثالثه",
+   "population": "",
+   "source": "Dubai Pulse — Lands registered in Dubai Land Department (via Bayanat), 2017 snapshot",
+   "plots": "681"
+  },
+  {
+   "code": "al-raffa",
+   "name_en": "Al Raffa",
+   "name_ar": "الرفاعه",
+   "population": "",
+   "source": "Dubai Pulse — Lands registered in Dubai Land Department (via Bayanat), 2017 snapshot",
+   "plots": "512"
+  },
+  {
+   "code": "al-ras",
+   "name_en": "Al Ras",
+   "name_ar": "الراس",
+   "population": "",
+   "source": "Dubai Pulse — Lands registered in Dubai Land Department (via Bayanat), 2017 snapshot",
+   "plots": "445"
+  },
+  {
+   "code": "al-rashidiya",
+   "name_en": "Al Rashidiya",
+   "name_ar": "الراشديه",
+   "population": "",
+   "source": "Dubai Pulse — Lands registered in Dubai Land Department (via Bayanat), 2017 snapshot",
+   "plots": "2129"
+  },
+  {
+   "code": "al-rega",
+   "name_en": "Al Rega",
+   "name_ar": "الرقه",
+   "population": "",
+   "source": "Dubai Pulse — Lands registered in Dubai Land Department (via Bayanat), 2017 snapshot",
+   "plots": "150"
+  },
+  {
+   "code": "al-rowaiyah-first",
+   "name_en": "Al Rowaiyah First",
+   "name_ar": "الروية الأولى",
+   "population": "",
+   "source": "Dubai Pulse — Lands registered in Dubai Land Department (via Bayanat), 2017 snapshot",
+   "plots": "50"
+  },
+  {
+   "code": "al-rowaiyah-second",
+   "name_en": "Al Rowaiyah Second",
+   "name_ar": "الروية الثانية",
+   "population": "",
+   "source": "Dubai Pulse — Lands registered in Dubai Land Department (via Bayanat), 2017 snapshot",
+   "plots": "9"
+  },
+  {
+   "code": "al-rowaiyah-third",
+   "name_en": "Al Rowaiyah Third",
+   "name_ar": "الرويه الثالثه",
+   "population": "",
+   "source": "Dubai Pulse — Lands registered in Dubai Land Department (via Bayanat), 2017 snapshot",
+   "plots": "66"
+  },
+  {
+   "code": "al-ruwayyah",
+   "name_en": "Al Ruwayyah",
+   "name_ar": "الرويه",
+   "population": "",
+   "source": "Dubai Pulse — Lands registered in Dubai Land Department (via Bayanat), 2017 snapshot",
+   "plots": "315"
+  },
+  {
+   "code": "al-sabkha",
+   "name_en": "Al Sabkha",
+   "name_ar": "السبخه",
+   "population": "",
+   "source": "Dubai Pulse — Lands registered in Dubai Land Department (via Bayanat), 2017 snapshot",
+   "plots": "109"
+  },
+  {
+   "code": "al-safaa",
+   "name_en": "Al Safaa",
+   "name_ar": "الصفا",
+   "population": "",
+   "source": "Dubai Pulse — Lands registered in Dubai Land Department (via Bayanat), 2017 snapshot",
+   "plots": "1"
+  },
+  {
+   "code": "al-saffa-first",
+   "name_en": "Al Saffa First",
+   "name_ar": "الصفا الاولى",
+   "population": "",
+   "source": "Dubai Pulse — Lands registered in Dubai Land Department (via Bayanat), 2017 snapshot",
+   "plots": "300"
+  },
+  {
+   "code": "al-saffa-second",
+   "name_en": "Al Saffa Second",
+   "name_ar": "الصفا الثانيه",
+   "population": "",
+   "source": "Dubai Pulse — Lands registered in Dubai Land Department (via Bayanat), 2017 snapshot",
+   "plots": "546"
+  },
+  {
+   "code": "al-safouh-first",
+   "name_en": "Al Safouh First",
+   "name_ar": "الصفوح الاولى",
+   "population": "",
+   "source": "Dubai Pulse — Lands registered in Dubai Land Department (via Bayanat), 2017 snapshot",
+   "plots": "204"
+  },
+  {
+   "code": "al-safouh-second",
+   "name_en": "Al Safouh Second",
+   "name_ar": "الصفوح الثانيه",
+   "population": "",
+   "source": "Dubai Pulse — Lands registered in Dubai Land Department (via Bayanat), 2017 snapshot",
+   "plots": "104"
+  },
+  {
+   "code": "al-satwa",
+   "name_en": "Al Satwa",
+   "name_ar": "السطوه",
+   "population": "",
+   "source": "Dubai Pulse — Lands registered in Dubai Land Department (via Bayanat), 2017 snapshot",
+   "plots": "2317"
+  },
+  {
+   "code": "al-suq-al-kabeer",
+   "name_en": "Al Suq Al Kabeer",
+   "name_ar": "السوق الكبير",
+   "population": "",
+   "source": "Dubai Pulse — Lands registered in Dubai Land Department (via Bayanat), 2017 snapshot",
+   "plots": "827"
+  },
+  {
+   "code": "al-thanayah-fourth",
+   "name_en": "Al Thanayah Fourth",
+   "name_ar": "الثنيه الرابعة",
+   "population": "",
+   "source": "Dubai Pulse — Lands registered in Dubai Land Department (via Bayanat), 2017 snapshot",
+   "plots": "4128"
+  },
+  {
+   "code": "al-thanyah-fifth",
+   "name_en": "Al Thanyah Fifth",
+   "name_ar": "الثنيه الخامسة",
+   "population": "",
+   "source": "Dubai Pulse — Lands registered in Dubai Land Department (via Bayanat), 2017 snapshot",
+   "plots": "4203"
+  },
+  {
+   "code": "al-thanyah-first",
+   "name_en": "Al Thanyah First",
+   "name_ar": "الثنيه الأولى",
+   "population": "",
+   "source": "Dubai Pulse — Lands registered in Dubai Land Department (via Bayanat), 2017 snapshot",
+   "plots": "128"
+  },
+  {
+   "code": "al-thanyah-second",
+   "name_en": "Al Thanyah Second",
+   "name_ar": "الثنيه الثانية",
+   "population": "",
+   "source": "Dubai Pulse — Lands registered in Dubai Land Department (via Bayanat), 2017 snapshot",
+   "plots": "70"
+  },
+  {
+   "code": "al-thanyah-third",
+   "name_en": "Al Thanyah Third",
+   "name_ar": "الثنيه الثالثة",
+   "population": "",
+   "source": "Dubai Pulse — Lands registered in Dubai Land Department (via Bayanat), 2017 snapshot",
+   "plots": "776"
+  },
+  {
+   "code": "al-ttay",
+   "name_en": "Al Ttay",
+   "name_ar": "الطي",
+   "population": "",
+   "source": "Dubai Pulse — Lands registered in Dubai Land Department (via Bayanat), 2017 snapshot",
+   "plots": "200"
+  },
+  {
+   "code": "al-twar-first",
+   "name_en": "Al Twar First",
+   "name_ar": "الطوار الاولى",
+   "population": "",
+   "source": "Dubai Pulse — Lands registered in Dubai Land Department (via Bayanat), 2017 snapshot",
+   "plots": "501"
+  },
+  {
+   "code": "al-twar-second",
+   "name_en": "Al Twar Second",
+   "name_ar": "الطوار الثانيه",
+   "population": "",
+   "source": "Dubai Pulse — Lands registered in Dubai Land Department (via Bayanat), 2017 snapshot",
+   "plots": "397"
+  },
+  {
+   "code": "al-twar-third",
+   "name_en": "Al Twar Third",
+   "name_ar": "الطوار الثالثه",
+   "population": "",
+   "source": "Dubai Pulse — Lands registered in Dubai Land Department (via Bayanat), 2017 snapshot",
+   "plots": "962"
+  },
+  {
+   "code": "al-waheda",
+   "name_en": "Al Waheda",
+   "name_ar": "الوحيده",
+   "population": "",
+   "source": "Dubai Pulse — Lands registered in Dubai Land Department (via Bayanat), 2017 snapshot",
+   "plots": "1042"
+  },
+  {
+   "code": "al-wajehah-al-bhariyah",
+   "name_en": "Al Wajehah Al Bhariyah",
+   "name_ar": "الواجهة البحرية",
+   "population": "",
+   "source": "Dubai Pulse — Lands registered in Dubai Land Department (via Bayanat), 2017 snapshot",
+   "plots": "1"
+  },
+  {
+   "code": "al-warqa-fifth",
+   "name_en": "Al Warqa Fifth",
+   "name_ar": "الورقاء الخامسة",
+   "population": "",
+   "source": "Dubai Pulse — Lands registered in Dubai Land Department (via Bayanat), 2017 snapshot",
+   "plots": "2"
+  },
+  {
+   "code": "al-warqa-first",
+   "name_en": "Al Warqa First",
+   "name_ar": "الورقاء الاولى",
+   "population": "",
+   "source": "Dubai Pulse — Lands registered in Dubai Land Department (via Bayanat), 2017 snapshot",
+   "plots": "354"
+  },
+  {
+   "code": "al-warqa-fourth",
+   "name_en": "Al Warqa Fourth",
+   "name_ar": "الورقاء الرابعه",
+   "population": "",
+   "source": "Dubai Pulse — Lands registered in Dubai Land Department (via Bayanat), 2017 snapshot",
+   "plots": "1379"
+  },
+  {
+   "code": "al-warqa-second",
+   "name_en": "Al Warqa Second",
+   "name_ar": "الورقاء الثانيه",
+   "population": "",
+   "source": "Dubai Pulse — Lands registered in Dubai Land Department (via Bayanat), 2017 snapshot",
+   "plots": "1504"
+  },
+  {
+   "code": "al-warqa-third",
+   "name_en": "Al Warqa Third",
+   "name_ar": "الورقاء الثالثه",
+   "population": "",
+   "source": "Dubai Pulse — Lands registered in Dubai Land Department (via Bayanat), 2017 snapshot",
+   "plots": "2256"
+  },
+  {
+   "code": "al-warsan-first",
+   "name_en": "Al Warsan First",
+   "name_ar": "ورسان الاولى",
+   "population": "",
+   "source": "Dubai Pulse — Lands registered in Dubai Land Department (via Bayanat), 2017 snapshot",
+   "plots": "1697"
+  },
+  {
+   "code": "al-warsan-second",
+   "name_en": "Al Warsan Second",
+   "name_ar": "ورسان الثانيه",
+   "population": "",
+   "source": "Dubai Pulse — Lands registered in Dubai Land Department (via Bayanat), 2017 snapshot",
+   "plots": "18"
+  },
+  {
+   "code": "al-warsan-third",
+   "name_en": "Al Warsan Third",
+   "name_ar": "ورسان الثالثه",
+   "population": "",
+   "source": "Dubai Pulse — Lands registered in Dubai Land Department (via Bayanat), 2017 snapshot",
+   "plots": "282"
+  },
+  {
+   "code": "al-wasl",
+   "name_en": "Al Wasl",
+   "name_ar": "الوصل",
+   "population": "",
+   "source": "Dubai Pulse — Lands registered in Dubai Land Department (via Bayanat), 2017 snapshot",
+   "plots": "935"
+  },
+  {
+   "code": "al-wohoosh",
+   "name_en": "Al Wohoosh",
+   "name_ar": "الوحوش",
+   "population": "",
+   "source": "Dubai Pulse — Lands registered in Dubai Land Department (via Bayanat), 2017 snapshot",
+   "plots": "1"
+  },
+  {
+   "code": "al-yelayiss-1",
+   "name_en": "Al Yelayiss 1",
+   "name_ar": "اليلايس 1",
+   "population": "",
+   "source": "Dubai Pulse — Lands registered in Dubai Land Department (via Bayanat), 2017 snapshot",
+   "plots": "829"
+  },
+  {
+   "code": "al-yelayiss-2",
+   "name_en": "Al Yelayiss 2",
+   "name_ar": "اليلايس 2",
+   "population": "",
+   "source": "Dubai Pulse — Lands registered in Dubai Land Department (via Bayanat), 2017 snapshot",
+   "plots": "179"
+  },
+  {
+   "code": "al-yelayiss-3",
+   "name_en": "Al Yelayiss 3",
+   "name_ar": "اليلايس 3",
+   "population": "",
+   "source": "Dubai Pulse — Lands registered in Dubai Land Department (via Bayanat), 2017 snapshot",
+   "plots": "16"
+  },
+  {
+   "code": "al-yelayiss-4",
+   "name_en": "Al Yelayiss 4",
+   "name_ar": "اليلايس 4",
+   "population": "",
+   "source": "Dubai Pulse — Lands registered in Dubai Land Department (via Bayanat), 2017 snapshot",
+   "plots": "211"
+  },
+  {
+   "code": "al-yelayiss-5",
+   "name_en": "Al Yelayiss 5",
+   "name_ar": "اليلابس 5",
+   "population": "",
+   "source": "Dubai Pulse — Lands registered in Dubai Land Department (via Bayanat), 2017 snapshot",
+   "plots": "1"
+  },
+  {
+   "code": "al-yufrah-1",
+   "name_en": "Al Yufrah 1",
+   "name_ar": "اليفره 1",
+   "population": "",
+   "source": "Dubai Pulse — Lands registered in Dubai Land Department (via Bayanat), 2017 snapshot",
+   "plots": "12"
+  },
+  {
+   "code": "al-yufrah-2",
+   "name_en": "Al Yufrah 2",
+   "name_ar": "اليفره 2",
+   "population": "",
+   "source": "Dubai Pulse — Lands registered in Dubai Land Department (via Bayanat), 2017 snapshot",
+   "plots": "5771"
+  },
+  {
+   "code": "al-yufrah-3",
+   "name_en": "Al Yufrah 3",
+   "name_ar": "اليفره 3",
+   "population": "",
+   "source": "Dubai Pulse — Lands registered in Dubai Land Department (via Bayanat), 2017 snapshot",
+   "plots": "3331"
+  },
+  {
+   "code": "al-yufrah-4",
+   "name_en": "Al Yufrah 4",
+   "name_ar": "اليفره 4",
+   "population": "",
+   "source": "Dubai Pulse — Lands registered in Dubai Land Department (via Bayanat), 2017 snapshot",
+   "plots": "1"
+  },
+  {
+   "code": "al-zaroob",
+   "name_en": "Al Zaroob",
+   "name_ar": "الزروب",
+   "population": "",
+   "source": "Dubai Pulse — Lands registered in Dubai Land Department (via Bayanat), 2017 snapshot",
+   "plots": "1"
+  },
+  {
+   "code": "al-aweer",
+   "name_en": "Al-Aweer",
+   "name_ar": "العوير",
+   "population": "",
+   "source": "Dubai Pulse — Lands registered in Dubai Land Department (via Bayanat), 2017 snapshot",
+   "plots": "4"
+  },
+  {
+   "code": "al-baloosh",
+   "name_en": "Al-Baloosh",
+   "name_ar": "البلوش",
+   "population": "",
+   "source": "Dubai Pulse — Lands registered in Dubai Land Department (via Bayanat), 2017 snapshot",
+   "plots": "3"
+  },
+  {
+   "code": "al-bastakiyah",
+   "name_en": "Al-Bastakiyah",
+   "name_ar": "البستكيه",
+   "population": "",
+   "source": "Dubai Pulse — Lands registered in Dubai Land Department (via Bayanat), 2017 snapshot",
+   "plots": "3"
+  },
+  {
+   "code": "al-cornich",
+   "name_en": "Al-Cornich",
+   "name_ar": "الكورنيش",
+   "population": "",
+   "source": "Dubai Pulse — Lands registered in Dubai Land Department (via Bayanat), 2017 snapshot",
+   "plots": "28"
+  },
+  {
+   "code": "al-dzahiyyah-al-jadeedah",
+   "name_en": "Al-Dzahiyyah Al-Jadeedah",
+   "name_ar": "الضاحيه الجديده",
+   "population": "",
+   "source": "Dubai Pulse — Lands registered in Dubai Land Department (via Bayanat), 2017 snapshot",
+   "plots": "1"
+  },
+  {
+   "code": "al-murar-qadeem",
+   "name_en": "Al-Murar Qadeem",
+   "name_ar": "المرر القديم",
+   "population": "",
+   "source": "Dubai Pulse — Lands registered in Dubai Land Department (via Bayanat), 2017 snapshot",
+   "plots": "3"
+  },
+  {
+   "code": "al-mustashfa-west",
+   "name_en": "Al-Mustashfa West",
+   "name_ar": "المستشفى غرب",
+   "population": "",
+   "source": "Dubai Pulse — Lands registered in Dubai Land Department (via Bayanat), 2017 snapshot",
+   "plots": "1"
+  },
+  {
+   "code": "al-nakhal",
+   "name_en": "Al-Nakhal",
+   "name_ar": "النخل",
+   "population": "",
+   "source": "Dubai Pulse — Lands registered in Dubai Land Department (via Bayanat), 2017 snapshot",
+   "plots": "7"
+  },
+  {
+   "code": "al-raulah",
+   "name_en": "Al-Raulah",
+   "name_ar": "الروله",
+   "population": "",
+   "source": "Dubai Pulse — Lands registered in Dubai Land Department (via Bayanat), 2017 snapshot",
+   "plots": "6"
+  },
+  {
+   "code": "al-riqqa-east",
+   "name_en": "Al-Riqqa East",
+   "name_ar": "الرقه شرق",
+   "population": "",
+   "source": "Dubai Pulse — Lands registered in Dubai Land Department (via Bayanat), 2017 snapshot",
+   "plots": "2"
+  },
+  {
+   "code": "al-riqqa-west",
+   "name_en": "Al-Riqqa West",
+   "name_ar": "الرقه غرب",
+   "population": "",
+   "source": "Dubai Pulse — Lands registered in Dubai Land Department (via Bayanat), 2017 snapshot",
+   "plots": "3"
+  },
+  {
+   "code": "al-souq-al-kabeer-deira",
+   "name_en": "Al-Souq Al Kabeer (Deira)",
+   "name_ar": "السوق الكبير - ديرة",
+   "population": "",
+   "source": "Dubai Pulse — Lands registered in Dubai Land Department (via Bayanat), 2017 snapshot",
+   "plots": "1"
+  },
+  {
+   "code": "anakhali",
+   "name_en": "Anakhali",
+   "name_ar": "نخلي",
+   "population": "",
+   "source": "Dubai Pulse — Lands registered in Dubai Land Department (via Bayanat), 2017 snapshot",
+   "plots": "1"
+  },
+  {
+   "code": "bukadra",
+   "name_en": "Bukadra",
+   "name_ar": "بوكدرة",
+   "population": "",
+   "source": "Dubai Pulse — Lands registered in Dubai Land Department (via Bayanat), 2017 snapshot",
+   "plots": "187"
+  },
+  {
+   "code": "bur-dubai",
+   "name_en": "Bur Dubai",
+   "name_ar": "بر دبى",
+   "population": "",
+   "source": "Dubai Pulse — Lands registered in Dubai Land Department (via Bayanat), 2017 snapshot",
+   "plots": "21"
+  },
+  {
+   "code": "burj-khalifa",
+   "name_en": "Burj Khalifa",
+   "name_ar": "برج خليفة",
+   "population": "",
+   "source": "Dubai Pulse — Lands registered in Dubai Land Department (via Bayanat), 2017 snapshot",
+   "plots": "177"
+  },
+  {
+   "code": "burj-nahar",
+   "name_en": "Burj Nahar",
+   "name_ar": "برج نهار",
+   "population": "",
+   "source": "Dubai Pulse — Lands registered in Dubai Land Department (via Bayanat), 2017 snapshot",
+   "plots": "8"
+  },
+  {
+   "code": "business-bay",
+   "name_en": "Business Bay",
+   "name_ar": "الخليج التجارى",
+   "population": "",
+   "source": "Dubai Pulse — Lands registered in Dubai Land Department (via Bayanat), 2017 snapshot",
+   "plots": "265"
+  },
+  {
+   "code": "cornich-deira",
+   "name_en": "Cornich Deira",
+   "name_ar": "كورنيش ديره",
+   "population": "",
+   "source": "Dubai Pulse — Lands registered in Dubai Land Department (via Bayanat), 2017 snapshot",
+   "plots": "7"
+  },
+  {
+   "code": "dubai-international-airport",
+   "name_en": "Dubai International Airport",
+   "name_ar": "مطار دبي الدولي",
+   "population": "",
+   "source": "Dubai Pulse — Lands registered in Dubai Land Department (via Bayanat), 2017 snapshot",
+   "plots": "26"
+  },
+  {
+   "code": "dubai-investment-park-first",
+   "name_en": "Dubai Investment Park First",
+   "name_ar": "مجمع دبي للاستثمار الاول",
+   "population": "",
+   "source": "Dubai Pulse — Lands registered in Dubai Land Department (via Bayanat), 2017 snapshot",
+   "plots": "637"
+  },
+  {
+   "code": "dubai-investment-park-second",
+   "name_en": "Dubai Investment Park Second",
+   "name_ar": "مجمع دبي للاستثمار الثاني",
+   "population": "",
+   "source": "Dubai Pulse — Lands registered in Dubai Land Department (via Bayanat), 2017 snapshot",
+   "plots": "568"
+  },
+  {
+   "code": "emirates-hills-fourth",
+   "name_en": "Emirates Hills Fourth",
+   "name_ar": "تلال الامارات الرابعه",
+   "population": "",
+   "source": "Dubai Pulse — Lands registered in Dubai Land Department (via Bayanat), 2017 snapshot",
+   "plots": "1"
+  },
+  {
+   "code": "esalal",
+   "name_en": "Esalal",
+   "name_ar": "الصلال",
+   "population": "",
+   "source": "Dubai Pulse — Lands registered in Dubai Land Department (via Bayanat), 2017 snapshot",
+   "plots": "11"
+  },
+  {
+   "code": "eyal-nasser",
+   "name_en": "Eyal Nasser",
+   "name_ar": "عيال ناصر",
+   "population": "",
+   "source": "Dubai Pulse — Lands registered in Dubai Land Department (via Bayanat), 2017 snapshot",
+   "plots": "301"
+  },
+  {
+   "code": "festival-city-first",
+   "name_en": "Festival City First",
+   "name_ar": "مدينة المهرجان الأولى",
+   "population": "",
+   "source": "Dubai Pulse — Lands registered in Dubai Land Department (via Bayanat), 2017 snapshot",
+   "plots": "1"
+  },
+  {
+   "code": "ghadeer-barashy",
+   "name_en": "Ghadeer Barashy",
+   "name_ar": "غدير براشي",
+   "population": "",
+   "source": "Dubai Pulse — Lands registered in Dubai Land Department (via Bayanat), 2017 snapshot",
+   "plots": "2"
+  },
+  {
+   "code": "grayteesah",
+   "name_en": "Grayteesah",
+   "name_ar": "قريطيسه",
+   "population": "",
+   "source": "Dubai Pulse — Lands registered in Dubai Land Department (via Bayanat), 2017 snapshot",
+   "plots": "27"
+  },
+  {
+   "code": "hadaeq-sheikh-mohammed-bin-rashid",
+   "name_en": "Hadaeq Sheikh Mohammed Bin Rashid",
+   "name_ar": "حدائق الشيخ محمد بن راشد",
+   "population": "",
+   "source": "Dubai Pulse — Lands registered in Dubai Land Department (via Bayanat), 2017 snapshot",
+   "plots": "1836"
+  },
+  {
+   "code": "hafair",
+   "name_en": "Hafair",
+   "name_ar": "حفير",
+   "population": "",
+   "source": "Dubai Pulse — Lands registered in Dubai Land Department (via Bayanat), 2017 snapshot",
+   "plots": "1"
+  },
+  {
+   "code": "hatta",
+   "name_en": "Hatta",
+   "name_ar": "حتا",
+   "population": "",
+   "source": "Dubai Pulse — Lands registered in Dubai Land Department (via Bayanat), 2017 snapshot",
+   "plots": "742"
+  },
+  {
+   "code": "hessyan-first",
+   "name_en": "Hessyan First",
+   "name_ar": "حصيان الاولى",
+   "population": "",
+   "source": "Dubai Pulse — Lands registered in Dubai Land Department (via Bayanat), 2017 snapshot",
+   "plots": "284"
+  },
+  {
+   "code": "hessyan-second",
+   "name_en": "Hessyan Second",
+   "name_ar": "حصيان الثانية",
+   "population": "",
+   "source": "Dubai Pulse — Lands registered in Dubai Land Department (via Bayanat), 2017 snapshot",
+   "plots": "30"
+  },
+  {
+   "code": "hor-al-anz",
+   "name_en": "Hor Al Anz",
+   "name_ar": "هور العنز",
+   "population": "",
+   "source": "Dubai Pulse — Lands registered in Dubai Land Department (via Bayanat), 2017 snapshot",
+   "plots": "1715"
+  },
+  {
+   "code": "hor-al-anz-east",
+   "name_en": "Hor Al Anz East",
+   "name_ar": "هور العنز شرق",
+   "population": "",
+   "source": "Dubai Pulse — Lands registered in Dubai Land Department (via Bayanat), 2017 snapshot",
+   "plots": "348"
+  },
+  {
+   "code": "island-2",
+   "name_en": "Island 2",
+   "name_ar": "جزيرة 2",
+   "population": "",
+   "source": "Dubai Pulse — Lands registered in Dubai Land Department (via Bayanat), 2017 snapshot",
+   "plots": "133"
+  },
+  {
+   "code": "jabal-ali",
+   "name_en": "Jabal Ali",
+   "name_ar": "جبل على",
+   "population": "",
+   "source": "Dubai Pulse — Lands registered in Dubai Land Department (via Bayanat), 2017 snapshot",
+   "plots": "2378"
+  },
+  {
+   "code": "jabal-ali-first",
+   "name_en": "Jabal Ali First",
+   "name_ar": "جبل علي الأولى",
+   "population": "",
+   "source": "Dubai Pulse — Lands registered in Dubai Land Department (via Bayanat), 2017 snapshot",
+   "plots": "3115"
+  },
+  {
+   "code": "jabal-ali-industrial-first",
+   "name_en": "Jabal Ali Industrial First",
+   "name_ar": "جبل على الصناعية الأولى",
+   "population": "",
+   "source": "Dubai Pulse — Lands registered in Dubai Land Department (via Bayanat), 2017 snapshot",
+   "plots": "1105"
+  },
+  {
+   "code": "jabal-ali-industrial-second",
+   "name_en": "Jabal Ali Industrial Second",
+   "name_ar": "جبل علي الصناعية الثانية",
+   "population": "",
+   "source": "Dubai Pulse — Lands registered in Dubai Land Department (via Bayanat), 2017 snapshot",
+   "plots": "89"
+  },
+  {
+   "code": "jabal-ali-industrial-third",
+   "name_en": "Jabal Ali Industrial Third",
+   "name_ar": "جبل علي الصناعية الثالثة",
+   "population": "",
+   "source": "Dubai Pulse — Lands registered in Dubai Land Department (via Bayanat), 2017 snapshot",
+   "plots": "260"
+  },
+  {
+   "code": "jabal-ali-second",
+   "name_en": "Jabal Ali Second",
+   "name_ar": "جبل علي الثانية",
+   "population": "",
+   "source": "Dubai Pulse — Lands registered in Dubai Land Department (via Bayanat), 2017 snapshot",
+   "plots": "7"
+  },
+  {
+   "code": "jabal-ali-third",
+   "name_en": "Jabal Ali Third",
+   "name_ar": "جبل علي الثالثة",
+   "population": "",
+   "source": "Dubai Pulse — Lands registered in Dubai Land Department (via Bayanat), 2017 snapshot",
+   "plots": "3"
+  },
+  {
+   "code": "jumeira-island-first",
+   "name_en": "Jumeira Island First",
+   "name_ar": "جزيرة جميرا الأولى",
+   "population": "",
+   "source": "Dubai Pulse — Lands registered in Dubai Land Department (via Bayanat), 2017 snapshot",
+   "plots": "1"
+  },
+  {
+   "code": "jumeirah",
+   "name_en": "Jumeirah",
+   "name_ar": "جميرا",
+   "population": "",
+   "source": "Dubai Pulse — Lands registered in Dubai Land Department (via Bayanat), 2017 snapshot",
+   "plots": "12"
+  },
+  {
+   "code": "jumeirah-first",
+   "name_en": "Jumeirah First",
+   "name_ar": "جميرا الاولى",
+   "population": "",
+   "source": "Dubai Pulse — Lands registered in Dubai Land Department (via Bayanat), 2017 snapshot",
+   "plots": "1302"
+  },
+  {
+   "code": "jumeirah-second",
+   "name_en": "Jumeirah Second",
+   "name_ar": "جميرا الثانيه",
+   "population": "",
+   "source": "Dubai Pulse — Lands registered in Dubai Land Department (via Bayanat), 2017 snapshot",
+   "plots": "676"
+  },
+  {
+   "code": "jumeirah-third",
+   "name_en": "Jumeirah Third",
+   "name_ar": "جميرا الثالثه",
+   "population": "",
+   "source": "Dubai Pulse — Lands registered in Dubai Land Department (via Bayanat), 2017 snapshot",
+   "plots": "931"
+  },
+  {
+   "code": "le-hemaira",
+   "name_en": "Le Hemaira",
+   "name_ar": "الحميرا",
+   "population": "",
+   "source": "Dubai Pulse — Lands registered in Dubai Land Department (via Bayanat), 2017 snapshot",
+   "plots": "3"
+  },
+  {
+   "code": "lehbab",
+   "name_en": "Lehbab",
+   "name_ar": "لهباب",
+   "population": "",
+   "source": "Dubai Pulse — Lands registered in Dubai Land Department (via Bayanat), 2017 snapshot",
+   "plots": "57"
+  },
+  {
+   "code": "lehbab-first",
+   "name_en": "Lehbab First",
+   "name_ar": "لهباب الاولى",
+   "population": "",
+   "source": "Dubai Pulse — Lands registered in Dubai Land Department (via Bayanat), 2017 snapshot",
+   "plots": "82"
+  },
+  {
+   "code": "lehbab-second",
+   "name_en": "Lehbab Second",
+   "name_ar": "لهباب الثانية",
+   "population": "",
+   "source": "Dubai Pulse — Lands registered in Dubai Land Department (via Bayanat), 2017 snapshot",
+   "plots": "50"
+  },
+  {
+   "code": "madinat-al-mataar",
+   "name_en": "Madinat Al Mataar",
+   "name_ar": "مدينة المطار",
+   "population": "",
+   "source": "Dubai Pulse — Lands registered in Dubai Land Department (via Bayanat), 2017 snapshot",
+   "plots": "255"
+  },
+  {
+   "code": "madinat-dubai-almelaheyah",
+   "name_en": "Madinat Dubai Almelaheyah",
+   "name_ar": "مدينة دبي الملاحية",
+   "population": "",
+   "source": "Dubai Pulse — Lands registered in Dubai Land Department (via Bayanat), 2017 snapshot",
+   "plots": "184"
+  },
+  {
+   "code": "mankhool",
+   "name_en": "Mankhool",
+   "name_ar": "منخول",
+   "population": "",
+   "source": "Dubai Pulse — Lands registered in Dubai Land Department (via Bayanat), 2017 snapshot",
+   "plots": "545"
+  },
+  {
+   "code": "margham",
+   "name_en": "Margham",
+   "name_ar": "مرغم",
+   "population": "",
+   "source": "Dubai Pulse — Lands registered in Dubai Land Department (via Bayanat), 2017 snapshot",
+   "plots": "33"
+  },
+  {
+   "code": "marsa-dubai",
+   "name_en": "Marsa Dubai",
+   "name_ar": "مرسى دبي",
+   "population": "",
+   "source": "Dubai Pulse — Lands registered in Dubai Land Department (via Bayanat), 2017 snapshot",
+   "plots": "227"
+  },
+  {
+   "code": "me-aisem-first",
+   "name_en": "Me'Aisem First",
+   "name_ar": "معيصم الأول",
+   "population": "",
+   "source": "Dubai Pulse — Lands registered in Dubai Land Department (via Bayanat), 2017 snapshot",
+   "plots": "1314"
+  },
+  {
+   "code": "me-aisem-second",
+   "name_en": "Me'Aisem Second",
+   "name_ar": "معيصم الثانية",
+   "population": "",
+   "source": "Dubai Pulse — Lands registered in Dubai Land Department (via Bayanat), 2017 snapshot",
+   "plots": "3"
+  },
+  {
+   "code": "mena-jabal-ali",
+   "name_en": "Mena Jabal Ali",
+   "name_ar": "ميناء جبل علي",
+   "population": "",
+   "source": "Dubai Pulse — Lands registered in Dubai Land Department (via Bayanat), 2017 snapshot",
+   "plots": "6"
+  },
+  {
+   "code": "mereiyeel",
+   "name_en": "Mereiyeel",
+   "name_ar": "مرييل",
+   "population": "",
+   "source": "Dubai Pulse — Lands registered in Dubai Land Department (via Bayanat), 2017 snapshot",
+   "plots": "3"
+  },
+  {
+   "code": "mirdif",
+   "name_en": "Mirdif",
+   "name_ar": "مردف",
+   "population": "",
+   "source": "Dubai Pulse — Lands registered in Dubai Land Department (via Bayanat), 2017 snapshot",
+   "plots": "2812"
+  },
+  {
+   "code": "mugatrah",
+   "name_en": "Mugatrah",
+   "name_ar": "مقطرة",
+   "population": "",
+   "source": "Dubai Pulse — Lands registered in Dubai Land Department (via Bayanat), 2017 snapshot",
+   "plots": "2"
+  },
+  {
+   "code": "muhaisanah-fifth",
+   "name_en": "Muhaisanah Fifth",
+   "name_ar": "محيصنة الخامسة",
+   "population": "",
+   "source": "Dubai Pulse — Lands registered in Dubai Land Department (via Bayanat), 2017 snapshot",
+   "plots": "1"
+  },
+  {
+   "code": "muhaisanah-first",
+   "name_en": "Muhaisanah First",
+   "name_ar": "محيصنه الاولى",
+   "population": "",
+   "source": "Dubai Pulse — Lands registered in Dubai Land Department (via Bayanat), 2017 snapshot",
+   "plots": "977"
+  },
+  {
+   "code": "muhaisanah-fourth",
+   "name_en": "Muhaisanah Fourth",
+   "name_ar": "محيصنه الرابعه",
+   "population": "",
+   "source": "Dubai Pulse — Lands registered in Dubai Land Department (via Bayanat), 2017 snapshot",
+   "plots": "158"
+  },
+  {
+   "code": "muhaisanah-second",
+   "name_en": "Muhaisanah Second",
+   "name_ar": "محيصنه الثانيه",
+   "population": "",
+   "source": "Dubai Pulse — Lands registered in Dubai Land Department (via Bayanat), 2017 snapshot",
+   "plots": "695"
+  },
+  {
+   "code": "muhaisanah-third",
+   "name_en": "Muhaisanah Third",
+   "name_ar": "محيصنه الثالثه",
+   "population": "",
+   "source": "Dubai Pulse — Lands registered in Dubai Land Department (via Bayanat), 2017 snapshot",
+   "plots": "720"
+  },
+  {
+   "code": "muragab",
+   "name_en": "Muragab",
+   "name_ar": "مرقب",
+   "population": "",
+   "source": "Dubai Pulse — Lands registered in Dubai Land Department (via Bayanat), 2017 snapshot",
+   "plots": "23"
+  },
+  {
+   "code": "mushrif-park",
+   "name_en": "Mushrif Park",
+   "name_ar": "حديقة مشرف",
+   "population": "",
+   "source": "Dubai Pulse — Lands registered in Dubai Land Department (via Bayanat), 2017 snapshot",
+   "plots": "4"
+  },
+  {
+   "code": "nad-al-hamar",
+   "name_en": "Nad Al Hamar",
+   "name_ar": "ند الحمر",
+   "population": "",
+   "source": "Dubai Pulse — Lands registered in Dubai Land Department (via Bayanat), 2017 snapshot",
+   "plots": "2059"
+  },
+  {
+   "code": "nad-al-shiba",
+   "name_en": "Nad Al Shiba",
+   "name_ar": "ند الشبا",
+   "population": "",
+   "source": "Dubai Pulse — Lands registered in Dubai Land Department (via Bayanat), 2017 snapshot",
+   "plots": "547"
+  },
+  {
+   "code": "nad-al-shiba-first",
+   "name_en": "Nad Al Shiba First",
+   "name_ar": "ند الشبا الاولى",
+   "population": "",
+   "source": "Dubai Pulse — Lands registered in Dubai Land Department (via Bayanat), 2017 snapshot",
+   "plots": "1003"
+  },
+  {
+   "code": "nad-al-shiba-fourth",
+   "name_en": "Nad Al Shiba Fourth",
+   "name_ar": "ند الشبا الرابعه",
+   "population": "",
+   "source": "Dubai Pulse — Lands registered in Dubai Land Department (via Bayanat), 2017 snapshot",
+   "plots": "1033"
+  },
+  {
+   "code": "nad-al-shiba-second",
+   "name_en": "Nad Al Shiba Second",
+   "name_ar": "ند الشبا الثانيه",
+   "population": "",
+   "source": "Dubai Pulse — Lands registered in Dubai Land Department (via Bayanat), 2017 snapshot",
+   "plots": "263"
+  },
+  {
+   "code": "nad-al-shiba-third",
+   "name_en": "Nad Al Shiba Third",
+   "name_ar": "ند الشبا الثالثه",
+   "population": "",
+   "source": "Dubai Pulse — Lands registered in Dubai Land Department (via Bayanat), 2017 snapshot",
+   "plots": "127"
+  },
+  {
+   "code": "nad-rashid",
+   "name_en": "Nad Rashid",
+   "name_ar": "ند راشد",
+   "population": "",
+   "source": "Dubai Pulse — Lands registered in Dubai Land Department (via Bayanat), 2017 snapshot",
+   "plots": "1"
+  },
+  {
+   "code": "nad-shamma",
+   "name_en": "Nad Shamma",
+   "name_ar": "ند شما",
+   "population": "",
+   "source": "Dubai Pulse — Lands registered in Dubai Land Department (via Bayanat), 2017 snapshot",
+   "plots": "219"
+  },
+  {
+   "code": "nadd-hessa",
+   "name_en": "Nadd Hessa",
+   "name_ar": "ند حصة",
+   "population": "",
+   "source": "Dubai Pulse — Lands registered in Dubai Land Department (via Bayanat), 2017 snapshot",
+   "plots": "1439"
+  },
+  {
+   "code": "naif",
+   "name_en": "Naif",
+   "name_ar": "نايف",
+   "population": "",
+   "source": "Dubai Pulse — Lands registered in Dubai Land Department (via Bayanat), 2017 snapshot",
+   "plots": "842"
+  },
+  {
+   "code": "nazwah",
+   "name_en": "Nazwah",
+   "name_ar": "نزوه",
+   "population": "",
+   "source": "Dubai Pulse — Lands registered in Dubai Land Department (via Bayanat), 2017 snapshot",
+   "plots": "15"
+  },
+  {
+   "code": "oud-al-muteena-first",
+   "name_en": "Oud Al Muteena First",
+   "name_ar": "عود المطينة الأولى",
+   "population": "",
+   "source": "Dubai Pulse — Lands registered in Dubai Land Department (via Bayanat), 2017 snapshot",
+   "plots": "900"
+  },
+  {
+   "code": "oud-al-muteena-second",
+   "name_en": "Oud Al Muteena Second",
+   "name_ar": "عود المطينة الثانية",
+   "population": "",
+   "source": "Dubai Pulse — Lands registered in Dubai Land Department (via Bayanat), 2017 snapshot",
+   "plots": "794"
+  },
+  {
+   "code": "oud-almuteena-third",
+   "name_en": "Oud Almuteena Third",
+   "name_ar": "عود المطينة الثالثة",
+   "population": "",
+   "source": "Dubai Pulse — Lands registered in Dubai Land Department (via Bayanat), 2017 snapshot",
+   "plots": "16"
+  },
+  {
+   "code": "oud-metha",
+   "name_en": "Oud Metha",
+   "name_ar": "عود ميثا",
+   "population": "",
+   "source": "Dubai Pulse — Lands registered in Dubai Land Department (via Bayanat), 2017 snapshot",
+   "plots": "151"
+  },
+  {
+   "code": "palm-deira",
+   "name_en": "Palm Deira",
+   "name_ar": "نخلة ديرة",
+   "population": "",
+   "source": "Dubai Pulse — Lands registered in Dubai Land Department (via Bayanat), 2017 snapshot",
+   "plots": "75"
+  },
+  {
+   "code": "palm-jabal-ali",
+   "name_en": "Palm Jabal Ali",
+   "name_ar": "نخلة جبل علي",
+   "population": "",
+   "source": "Dubai Pulse — Lands registered in Dubai Land Department (via Bayanat), 2017 snapshot",
+   "plots": "1143"
+  },
+  {
+   "code": "palm-jumeirah",
+   "name_en": "Palm Jumeirah",
+   "name_ar": "نخلة جميرا",
+   "population": "",
+   "source": "Dubai Pulse — Lands registered in Dubai Land Department (via Bayanat), 2017 snapshot",
+   "plots": "1954"
+  },
+  {
+   "code": "port-saeed",
+   "name_en": "Port Saeed",
+   "name_ar": "بور سعيد",
+   "population": "",
+   "source": "Dubai Pulse — Lands registered in Dubai Land Department (via Bayanat), 2017 snapshot",
+   "plots": "279"
+  },
+  {
+   "code": "ras-al-khor",
+   "name_en": "Ras Al Khor",
+   "name_ar": "راس الخور",
+   "population": "",
+   "source": "Dubai Pulse — Lands registered in Dubai Land Department (via Bayanat), 2017 snapshot",
+   "plots": "8"
+  },
+  {
+   "code": "ras-al-khor-industrial-first",
+   "name_en": "Ras Al Khor Industrial First",
+   "name_ar": "راس الخور الصناعيه الاولى",
+   "population": "",
+   "source": "Dubai Pulse — Lands registered in Dubai Land Department (via Bayanat), 2017 snapshot",
+   "plots": "339"
+  },
+  {
+   "code": "ras-al-khor-industrial-second",
+   "name_en": "Ras Al Khor Industrial Second",
+   "name_ar": "راس الخور الصناعيه الثانيه",
+   "population": "",
+   "source": "Dubai Pulse — Lands registered in Dubai Land Department (via Bayanat), 2017 snapshot",
+   "plots": "799"
+  },
+  {
+   "code": "ras-al-khor-industrial-third",
+   "name_en": "Ras Al Khor Industrial Third",
+   "name_ar": "راس الخور الصناعيه الثالثه",
+   "population": "",
+   "source": "Dubai Pulse — Lands registered in Dubai Land Department (via Bayanat), 2017 snapshot",
+   "plots": "80"
+  },
+  {
+   "code": "rega-al-buteen",
+   "name_en": "Rega Al Buteen",
+   "name_ar": "رقه البطين",
+   "population": "",
+   "source": "Dubai Pulse — Lands registered in Dubai Land Department (via Bayanat), 2017 snapshot",
+   "plots": "67"
+  },
+  {
+   "code": "remah",
+   "name_en": "Remah",
+   "name_ar": "رماح",
+   "population": "",
+   "source": "Dubai Pulse — Lands registered in Dubai Land Department (via Bayanat), 2017 snapshot",
+   "plots": "3"
+  },
+  {
+   "code": "riqat-masali",
+   "name_en": "Riqat Masali",
+   "name_ar": "رقعه مسالى",
+   "population": "",
+   "source": "Dubai Pulse — Lands registered in Dubai Land Department (via Bayanat), 2017 snapshot",
+   "plots": "2"
+  },
+  {
+   "code": "saih-aldahal",
+   "name_en": "Saih Aldahal",
+   "name_ar": "سيح الدحل",
+   "population": "",
+   "source": "Dubai Pulse — Lands registered in Dubai Land Department (via Bayanat), 2017 snapshot",
+   "plots": "6"
+  },
+  {
+   "code": "saih-alsalam",
+   "name_en": "Saih Alsalam",
+   "name_ar": "سيح السلم",
+   "population": "",
+   "source": "Dubai Pulse — Lands registered in Dubai Land Department (via Bayanat), 2017 snapshot",
+   "plots": "1"
+  },
+  {
+   "code": "saih-shuaib-1",
+   "name_en": "Saih Shuaib 1",
+   "name_ar": "سيح شعيب 1",
+   "population": "",
+   "source": "Dubai Pulse — Lands registered in Dubai Land Department (via Bayanat), 2017 snapshot",
+   "plots": "2994"
+  },
+  {
+   "code": "saih-shuaib-2",
+   "name_en": "Saih Shuaib 2",
+   "name_ar": "سيح شعيب 2",
+   "population": "",
+   "source": "Dubai Pulse — Lands registered in Dubai Land Department (via Bayanat), 2017 snapshot",
+   "plots": "310"
+  },
+  {
+   "code": "saih-shuaib-3",
+   "name_en": "Saih Shuaib 3",
+   "name_ar": "سيح شعيب 3",
+   "population": "",
+   "source": "Dubai Pulse — Lands registered in Dubai Land Department (via Bayanat), 2017 snapshot",
+   "plots": "121"
+  },
+  {
+   "code": "saih-shuaib-4",
+   "name_en": "Saih Shuaib 4",
+   "name_ar": "سيح شعيب 4",
+   "population": "",
+   "source": "Dubai Pulse — Lands registered in Dubai Land Department (via Bayanat), 2017 snapshot",
+   "plots": "160"
+  },
+  {
+   "code": "shandagha",
+   "name_en": "Shandagha",
+   "name_ar": "الشندغه",
+   "population": "",
+   "source": "Dubai Pulse — Lands registered in Dubai Land Department (via Bayanat), 2017 snapshot",
+   "plots": "15"
+  },
+  {
+   "code": "shandagha-east",
+   "name_en": "Shandagha East",
+   "name_ar": "الشندغه شرق",
+   "population": "",
+   "source": "Dubai Pulse — Lands registered in Dubai Land Department (via Bayanat), 2017 snapshot",
+   "plots": "34"
+  },
+  {
+   "code": "shandagha-west",
+   "name_en": "Shandagha West",
+   "name_ar": "الشندغه غرب",
+   "population": "",
+   "source": "Dubai Pulse — Lands registered in Dubai Land Department (via Bayanat), 2017 snapshot",
+   "plots": "25"
+  },
+  {
+   "code": "sikkat-al-khail-north",
+   "name_en": "Sikkat Al Khail North",
+   "name_ar": "سكه الخيل شمال",
+   "population": "",
+   "source": "Dubai Pulse — Lands registered in Dubai Land Department (via Bayanat), 2017 snapshot",
+   "plots": "1"
+  },
+  {
+   "code": "souq-sikkat-al-khail",
+   "name_en": "Souq Sikkat Al Khail",
+   "name_ar": "سوق سكه الخيل",
+   "population": "",
+   "source": "Dubai Pulse — Lands registered in Dubai Land Department (via Bayanat), 2017 snapshot",
+   "plots": "1"
+  },
+  {
+   "code": "tawaa-al-sayegh",
+   "name_en": "Tawaa Al Sayegh",
+   "name_ar": "طوى الصايغ",
+   "population": "",
+   "source": "Dubai Pulse — Lands registered in Dubai Land Department (via Bayanat), 2017 snapshot",
+   "plots": "6"
+  },
+  {
+   "code": "tawi-al-muraqqab",
+   "name_en": "Tawi Al Muraqqab",
+   "name_ar": "طوى مرقب",
+   "population": "",
+   "source": "Dubai Pulse — Lands registered in Dubai Land Department (via Bayanat), 2017 snapshot",
+   "plots": "28"
+  },
+  {
+   "code": "tawi-alfuqa",
+   "name_en": "Tawi Alfuqa",
+   "name_ar": "طوى الفقع",
+   "population": "",
+   "source": "Dubai Pulse — Lands registered in Dubai Land Department (via Bayanat), 2017 snapshot",
+   "plots": "3"
+  },
+  {
+   "code": "trade-center-first",
+   "name_en": "Trade Center First",
+   "name_ar": "المركز التجارى الاولى",
+   "population": "",
+   "source": "Dubai Pulse — Lands registered in Dubai Land Department (via Bayanat), 2017 snapshot",
+   "plots": "112"
+  },
+  {
+   "code": "trade-center-second",
+   "name_en": "Trade Center Second",
+   "name_ar": "المركز التجارى الثانيه",
+   "population": "",
+   "source": "Dubai Pulse — Lands registered in Dubai Land Department (via Bayanat), 2017 snapshot",
+   "plots": "60"
+  },
+  {
+   "code": "um-al-sheif",
+   "name_en": "Um Al Sheif",
+   "name_ar": "ام الشيف",
+   "population": "",
+   "source": "Dubai Pulse — Lands registered in Dubai Land Department (via Bayanat), 2017 snapshot",
+   "plots": "617"
+  },
+  {
+   "code": "um-almoameneen",
+   "name_en": "Um Almoameneen",
+   "name_ar": "ام المؤمنين",
+   "population": "",
+   "source": "Dubai Pulse — Lands registered in Dubai Land Department (via Bayanat), 2017 snapshot",
+   "plots": "3"
+  },
+  {
+   "code": "um-esalay",
+   "name_en": "Um Esalay",
+   "name_ar": "ام السلي",
+   "population": "",
+   "source": "Dubai Pulse — Lands registered in Dubai Land Department (via Bayanat), 2017 snapshot",
+   "plots": "17"
+  },
+  {
+   "code": "um-hurair-first",
+   "name_en": "Um Hurair First",
+   "name_ar": "ام هرير الاولى",
+   "population": "",
+   "source": "Dubai Pulse — Lands registered in Dubai Land Department (via Bayanat), 2017 snapshot",
+   "plots": "56"
+  },
+  {
+   "code": "um-hurair-second",
+   "name_en": "Um Hurair Second",
+   "name_ar": "ام هرير الثانيه",
+   "population": "",
+   "source": "Dubai Pulse — Lands registered in Dubai Land Department (via Bayanat), 2017 snapshot",
+   "plots": "81"
+  },
+  {
+   "code": "um-nahad-first",
+   "name_en": "Um Nahad First",
+   "name_ar": "ام نهد الاولى",
+   "population": "",
+   "source": "Dubai Pulse — Lands registered in Dubai Land Department (via Bayanat), 2017 snapshot",
+   "plots": "10"
+  },
+  {
+   "code": "um-nahad-fourth",
+   "name_en": "Um Nahad Fourth",
+   "name_ar": "ام نهد الرابعة",
+   "population": "",
+   "source": "Dubai Pulse — Lands registered in Dubai Land Department (via Bayanat), 2017 snapshot",
+   "plots": "8"
+  },
+  {
+   "code": "um-nahad-second",
+   "name_en": "Um Nahad Second",
+   "name_ar": "ام نهد الثانية",
+   "population": "",
+   "source": "Dubai Pulse — Lands registered in Dubai Land Department (via Bayanat), 2017 snapshot",
+   "plots": "8"
+  },
+  {
+   "code": "um-nahad-third",
+   "name_en": "Um Nahad Third",
+   "name_ar": "ام نهد الثالثة",
+   "population": "",
+   "source": "Dubai Pulse — Lands registered in Dubai Land Department (via Bayanat), 2017 snapshot",
+   "plots": "38"
+  },
+  {
+   "code": "um-ramool",
+   "name_en": "Um Ramool",
+   "name_ar": "ام رمول",
+   "population": "",
+   "source": "Dubai Pulse — Lands registered in Dubai Land Department (via Bayanat), 2017 snapshot",
+   "plots": "399"
+  },
+  {
+   "code": "um-suqaim",
+   "name_en": "Um Suqaim",
+   "name_ar": "ام سقيم",
+   "population": "",
+   "source": "Dubai Pulse — Lands registered in Dubai Land Department (via Bayanat), 2017 snapshot",
+   "plots": "6"
+  },
+  {
+   "code": "um-suqaim-first",
+   "name_en": "Um Suqaim First",
+   "name_ar": "ام سقيم الاولى",
+   "population": "",
+   "source": "Dubai Pulse — Lands registered in Dubai Land Department (via Bayanat), 2017 snapshot",
+   "plots": "920"
+  },
+  {
+   "code": "um-suqaim-second",
+   "name_en": "Um Suqaim Second",
+   "name_ar": "ام سقيم الثانيه",
+   "population": "",
+   "source": "Dubai Pulse — Lands registered in Dubai Land Department (via Bayanat), 2017 snapshot",
+   "plots": "942"
+  },
+  {
+   "code": "um-suqaim-third",
+   "name_en": "Um Suqaim Third",
+   "name_ar": "ام سقيم الثالثه",
+   "population": "",
+   "source": "Dubai Pulse — Lands registered in Dubai Land Department (via Bayanat), 2017 snapshot",
+   "plots": "540"
+  },
+  {
+   "code": "umm-addamin",
+   "name_en": "Umm Addamin",
+   "name_ar": "أم الدمن",
+   "population": "",
+   "source": "Dubai Pulse — Lands registered in Dubai Land Department (via Bayanat), 2017 snapshot",
+   "plots": "4"
+  },
+  {
+   "code": "universe-islands",
+   "name_en": "Universe Islands",
+   "name_ar": "جزر الكون",
+   "population": "",
+   "source": "Dubai Pulse — Lands registered in Dubai Land Department (via Bayanat), 2017 snapshot",
+   "plots": "1"
+  },
+  {
+   "code": "wadi-al-amardi",
+   "name_en": "Wadi Al Amardi",
+   "name_ar": "وادي العمردي",
+   "population": "",
+   "source": "Dubai Pulse — Lands registered in Dubai Land Department (via Bayanat), 2017 snapshot",
+   "plots": "346"
+  },
+  {
+   "code": "wadi-al-safa-2",
+   "name_en": "Wadi Al Safa 2",
+   "name_ar": "وادي الصفا 2",
+   "population": "",
+   "source": "Dubai Pulse — Lands registered in Dubai Land Department (via Bayanat), 2017 snapshot",
+   "plots": "1710"
+  },
+  {
+   "code": "wadi-al-safa-3",
+   "name_en": "Wadi Al Safa 3",
+   "name_ar": "وادي الصفا 3",
+   "population": "",
+   "source": "Dubai Pulse — Lands registered in Dubai Land Department (via Bayanat), 2017 snapshot",
+   "plots": "1008"
+  },
+  {
+   "code": "wadi-al-safa-4",
+   "name_en": "Wadi Al Safa 4",
+   "name_ar": "وادي الصفا 4",
+   "population": "",
+   "source": "Dubai Pulse — Lands registered in Dubai Land Department (via Bayanat), 2017 snapshot",
+   "plots": "327"
+  },
+  {
+   "code": "wadi-al-safa-5",
+   "name_en": "Wadi Al Safa 5",
+   "name_ar": "وادي الصفا 5",
+   "population": "",
+   "source": "Dubai Pulse — Lands registered in Dubai Land Department (via Bayanat), 2017 snapshot",
+   "plots": "2582"
+  },
+  {
+   "code": "wadi-al-safa-6",
+   "name_en": "Wadi Al Safa 6",
+   "name_ar": "وادي الصفا 6",
+   "population": "",
+   "source": "Dubai Pulse — Lands registered in Dubai Land Department (via Bayanat), 2017 snapshot",
+   "plots": "2867"
+  },
+  {
+   "code": "wadi-al-safa-7",
+   "name_en": "Wadi Al Safa 7",
+   "name_ar": "وادي الصفا 7",
+   "population": "",
+   "source": "Dubai Pulse — Lands registered in Dubai Land Department (via Bayanat), 2017 snapshot",
+   "plots": "2133"
+  },
+  {
+   "code": "wadi-alshabak",
+   "name_en": "Wadi Alshabak",
+   "name_ar": "وادي الشبك",
+   "population": "",
+   "source": "Dubai Pulse — Lands registered in Dubai Land Department (via Bayanat), 2017 snapshot",
+   "plots": "1"
+  },
+  {
+   "code": "warsan-fourth",
+   "name_en": "Warsan Fourth",
+   "name_ar": "ورسان الرابعة",
+   "population": "",
+   "source": "Dubai Pulse — Lands registered in Dubai Land Department (via Bayanat), 2017 snapshot",
+   "plots": "354"
+  },
+  {
+   "code": "world-islands",
+   "name_en": "World Islands",
+   "name_ar": "جزر العالم",
+   "population": "",
+   "source": "Dubai Pulse — Lands registered in Dubai Land Department (via Bayanat), 2017 snapshot",
+   "plots": "259"
+  },
+  {
+   "code": "yaraah",
+   "name_en": "Yaraah",
+   "name_ar": "يراح",
+   "population": "",
+   "source": "Dubai Pulse — Lands registered in Dubai Land Department (via Bayanat), 2017 snapshot",
+   "plots": "5"
+  },
+  {
+   "code": "zaabeel-first",
+   "name_en": "Zaabeel First",
+   "name_ar": "زعبيل الاولى",
+   "population": "",
+   "source": "Dubai Pulse — Lands registered in Dubai Land Department (via Bayanat), 2017 snapshot",
+   "plots": "55"
+  },
+  {
+   "code": "zaabeel-second",
+   "name_en": "Zaabeel Second",
+   "name_ar": "زعبيل الثانيه",
+   "population": "",
+   "source": "Dubai Pulse — Lands registered in Dubai Land Department (via Bayanat), 2017 snapshot",
+   "plots": "97"
+  },
+  {
+   "code": "zareeba-duviya",
+   "name_en": "Zareeba Duviya",
+   "name_ar": "زريبه دوييه",
+   "population": "",
+   "source": "Dubai Pulse — Lands registered in Dubai Land Department (via Bayanat), 2017 snapshot",
+   "plots": "5"
+  }
+ ],
+ "open_datasets": [
+  {
+   "id": "bayanat_entities",
+   "name": "Bayanat — Entities (government entity list)",
+   "publisher": "UAE federal open-data portal Bayanat",
+   "portal": "Bayanat",
+   "url": "https://bayanat.ae/en/entities",
+   "accessed": "2026-11-09",
+   "powers": "Trusted-source registry: 'issued by a registered government entity' check",
+   "rows": 57
+  },
+  {
+   "id": "uae_portal_emirate_population",
+   "name": "The Seven Emirates — population per emirate",
+   "publisher": "UAE Government Portal (u.ae)",
+   "portal": "u.ae",
+   "url": "https://u.ae/en/about-the-uae/the-seven-emirates",
+   "accessed": "2026-11-09",
+   "powers": "Per-100,000-residents risk map and campaign-targeting ranking (denominators; years differ per emirate)",
+   "rows": 7
+  },
+  {
+   "id": "fcsc_pop_by_emirate",
+   "name": "Population By Emirates, Nationality and Gender (1975–2005 census years)",
+   "publisher": "Federal Competitiveness and Statistics Centre (FCSC)",
+   "portal": "Bayanat",
+   "url": "https://bayanat.ae/en/Datasets",
+   "accessed": "2026-11-09",
+   "powers": "Reference baseline (2005 census) for emirate population shares; not used for displayed denominators",
+   "rows": 140
+  },
+  {
+   "id": "dubai_pulse_land_registry",
+   "name": "Lands registered in Dubai Land Department (area names)",
+   "publisher": "Dubai Pulse / Dubai Land Department",
+   "portal": "Dubai Pulse",
+   "url": "https://bayanat.ae/en/Datasets",
+   "accessed": "2026-11-09",
+   "powers": "Dubai community/area names for report location labels",
+   "rows": 264
+  }
+ ]
+}

@@ -1,0 +1,5 @@
+id,name,publisher,portal,url,accessed,powers,rows
+bayanat_entities,Bayanat — Entities (government entity list),UAE federal open-data portal Bayanat,Bayanat,https://bayanat.ae/en/entities,2026-11-09,Trusted-source registry: 'issued by a registered government entity' check,57
+uae_portal_emirate_population,The Seven Emirates — population per emirate,UAE Government Portal (u.ae),u.ae,https://u.ae/en/about-the-uae/the-seven-emirates,2026-11-09,"Per-100,000-residents risk map and campaign-targeting ranking (denominators; years differ per emirate)",7
+fcsc_pop_by_emirate,"Population By Emirates, Nationality and Gender (1975–2005 census years)",Federal Competitiveness and Statistics Centre (FCSC),Bayanat,https://bayanat.ae/en/Datasets,2026-11-09,Reference baseline (2005 census) for emirate population shares; not used for displayed denominators,140
+dubai_pulse_land_registry,Lands registered in Dubai Land Department (area names),Dubai Pulse / Dubai Land Department,Dubai Pulse,https://bayanat.ae/en/Datasets,2026-11-09,Dubai community/area names for report location labels,264

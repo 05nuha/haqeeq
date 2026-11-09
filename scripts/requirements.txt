@@ -1,0 +1,8 @@
+requests>=2.31
+numpy>=1.26
+pillow>=10
+# only for scripts/make_assets.py / scripts/build_open_data.py:
+arabic-reshaper>=3.0
+python-bidi>=0.4.2
+pandas>=2.0
+openpyxl>=3.1
