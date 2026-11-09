@@ -1,0 +1,7 @@
+flask
+twilio
+pillow
+imagehash
+numpy
+scipy
+requests

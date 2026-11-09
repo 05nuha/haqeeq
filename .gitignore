@@ -1,0 +1,13 @@
+node_modules/
+.next/
+.vercel/
+__pycache__/
+*.pyc
+.pytest_cache/
+.venv/
+.env
+.env.local
+.env*.local
+*.db
+legacy-flask/incoming_*
+scripts/e2e/out/
