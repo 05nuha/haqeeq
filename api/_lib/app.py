@@ -59,24 +59,50 @@ def _twiml(text):
     return Response(str(r), mimetype="text/xml")
 
 
-def _public_url():
-    base = (os.environ.get("PUBLIC_BASE_URL") or os.environ.get("BASE_URL") or "").rstrip("/")
-    if not base:
-        proto = request.headers.get("X-Forwarded-Proto", "https").split(",")[0].strip()
-        host = request.headers.get("X-Forwarded-Host") or request.headers.get("Host", "")
-        base = f"{proto}://{host.split(',')[0].strip()}"
-    return base + "/api/whatsapp"
+def _candidate_urls():
+    """URLs Twilio may have signed: configured base, then the host the request arrived on."""
+    bases = []
+    env = (os.environ.get("PUBLIC_BASE_URL") or os.environ.get("BASE_URL") or "").strip().rstrip("/")
+    if env:
+        if env.endswith("/api/whatsapp"):
+            env = env[: -len("/api/whatsapp")]
+        if not env.startswith("http"):
+            env = "https://" + env
+        bases.append(env)
+    proto = request.headers.get("X-Forwarded-Proto", "https").split(",")[0].strip()
+    for h in (request.headers.get("X-Forwarded-Host"), request.headers.get("Host")):
+        if h:
+            bases.append(f"{proto}://{h.split(',')[0].strip()}")
+    urls = []
+    for b in bases:
+        for u in (b + "/api/whatsapp", b + "/api/whatsapp/"):
+            if u not in urls:
+                urls.append(u)
+    return urls
+
+
+LAST = {"at": None}   # last inbound request seen by this instance (no phone numbers stored)
 
 
 def _sig_ok():
+    import datetime
+    sig = request.headers.get("X-Twilio-Signature", "")
+    LAST.update(at=datetime.datetime.utcnow().isoformat(timespec="seconds") + "Z",
+                has_signature=bool(sig), has_token=bool(os.environ.get("TWILIO_AUTH_TOKEN")),
+                urls_tried=_candidate_urls(), num_media=request.form.get("NumMedia"), sig_ok=None)
     if os.environ.get("SKIP_TWILIO_SIG") == "1":
+        LAST["sig_ok"] = "skipped"
         return True
     from twilio.request_validator import RequestValidator
-    token = os.environ.get("TWILIO_AUTH_TOKEN", "")
-    sig = request.headers.get("X-Twilio-Signature", "")
+    token = os.environ.get("TWILIO_AUTH_TOKEN", "").strip()
     if not token or not sig:
+        LAST["sig_ok"] = False
         return False
-    return RequestValidator(token).validate(_public_url(), request.form.to_dict(), sig)
+    v = RequestValidator(token)
+    params = request.form.to_dict()
+    ok = any(v.validate(u, params, sig) for u in LAST["urls_tried"])
+    LAST["sig_ok"] = ok
+    return ok
 
 
 def _download_media(url):
@@ -124,6 +150,11 @@ def health():
                     "base_url": bool(os.environ.get("PUBLIC_BASE_URL") or os.environ.get("BASE_URL")),
                     "admin_token": bool(os.environ.get("DASHBOARD_ADMIN_TOKEN")),
                     "error": err})
+
+
+@app.route("/api/whatsapp", methods=["GET"])
+def whatsapp_status():
+    return jsonify({"ok": True, "hint": "Twilio must POST here", "last_request": LAST})
 
 
 @app.route("/api/whatsapp", methods=["POST"])
