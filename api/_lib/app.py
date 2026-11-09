@@ -60,7 +60,7 @@ def _twiml(text):
 
 
 def _public_url():
-    base = os.environ.get("PUBLIC_BASE_URL", "").rstrip("/")
+    base = (os.environ.get("PUBLIC_BASE_URL") or os.environ.get("BASE_URL") or "").rstrip("/")
     if not base:
         proto = request.headers.get("X-Forwarded-Proto", "https").split(",")[0].strip()
         host = request.headers.get("X-Forwarded-Host") or request.headers.get("Host", "")
