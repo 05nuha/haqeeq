@@ -131,4 +131,5 @@ def test_correct_delivery(client, env, monkeypatch):
 def test_health(client, monkeypatch):
     monkeypatch.setattr(supa, "cached", lambda t: [1, 2, 3])
     monkeypatch.setenv("GEMINI_API_KEY", "k")
-    assert client.get("/api/health").get_json() == {"ok": True, "registry": 3, "ai": True}
+    j = client.get("/api/health").get_json()
+    assert j["ok"] is True and j["registry"] == 3 and j["ai"] is True and j["error"] is None
