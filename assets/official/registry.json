@@ -1,0 +1,58 @@
+[
+  {
+    "id": "public_holiday_notice",
+    "title": "Public holiday notice",
+    "title_ar": "إشعار بالعطلة الرسمية",
+    "issuer": "UAE Government Media Office",
+    "date": "2026-11-24"
+  },
+  {
+    "id": "mohre_announcement",
+    "title": "MOHRE announcement",
+    "title_ar": "إعلان وزارة الموارد البشرية والتوطين",
+    "issuer": "Ministry of Human Resources & Emiratisation (MOHRE)",
+    "date": "2026-10-18"
+  },
+  {
+    "id": "weekend_schedule_notice",
+    "title": "Weekend schedule notice",
+    "title_ar": "إشعار جدول عطلة نهاية الأسبوع",
+    "issuer": "Federal Authority for Government Human Resources",
+    "date": "2026-09-02"
+  },
+  {
+    "id": "golden_visa_update",
+    "title": "Golden Visa update",
+    "title_ar": "تحديث شروط التأشيرة الذهبية",
+    "issuer": "Federal Authority for Identity, Citizenship, Customs & Port Security",
+    "date": "2026-08-11"
+  },
+  {
+    "id": "school_calendar",
+    "title": "School calendar 2026-2027",
+    "title_ar": "التقويم المدرسي 2026-2027",
+    "issuer": "Ministry of Education",
+    "date": "2026-07-20"
+  },
+  {
+    "id": "ramadan_hours",
+    "title": "Ramadan working hours",
+    "title_ar": "ساعات العمل في شهر رمضان",
+    "issuer": "Ministry of Human Resources & Emiratisation (MOHRE)",
+    "date": "2026-12-30"
+  },
+  {
+    "id": "icp_emirates_id",
+    "title": "Emirates ID renewal",
+    "title_ar": "تجديد الهوية الإماراتية",
+    "issuer": "Federal Authority for Identity, Citizenship, Customs & Port Security",
+    "date": "2026-06-05"
+  },
+  {
+    "id": "rta_notice",
+    "title": "RTA traffic and parking notice",
+    "title_ar": "إشعار المرور والمواقف",
+    "issuer": "Roads and Transport Authority (RTA)",
+    "date": "2026-10-02"
+  }
+]
