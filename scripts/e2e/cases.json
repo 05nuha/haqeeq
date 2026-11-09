@@ -1,0 +1,25 @@
+{
+  "_comment": "Image cases for whatsapp_e2e.py. 'url' is absolute, or relative to --image-base-url (e.g. the Supabase public media prefix). Expected verdicts: genuine | altered | unverified. Files under test/ are NOT in the repo's storage yet: upload fixtures from assets/doctored and a tight screenshot of an official post to media/test/ before running (see scripts/e2e/README.md).",
+  "image_cases": [
+    {
+      "name": "official notice, original",
+      "url": "official/public_holiday_notice.png",
+      "expect": "genuine"
+    },
+    {
+      "name": "tight screenshot of the official notice",
+      "url": "test/screenshot_public_holiday_notice.jpg",
+      "expect": "genuine"
+    },
+    {
+      "name": "doctored notice (changed date)",
+      "url": "test/doctored_public_holiday_notice.png",
+      "expect": "altered"
+    },
+    {
+      "name": "known fake: explosions in Downtown Dubai",
+      "url": "fakes/explosions_downtown.png",
+      "expect": "unverified"
+    }
+  ]
+}

@@ -1,0 +1,8 @@
+{
+  "functions": {
+    "api/*.py": {
+      "maxDuration": 15,
+      "includeFiles": "{engine/**,api/_lib/**}"
+    }
+  }
+}
