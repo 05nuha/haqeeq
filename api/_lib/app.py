@@ -118,7 +118,8 @@ def health():
         err = type(e).__name__ + ": " + str(e)[:160]
     return jsonify({"ok": True, "registry": n, "ai": bool(os.environ.get("GEMINI_API_KEY")),
                     "supabase_url": bool(os.environ.get("SUPABASE_URL")),
-                    "service_key": bool(os.environ.get("SUPABASE_SERVICE_ROLE_KEY")),
+                    "service_key": bool(supa.service_key()),
+                    "supabase_env_names": sorted(k for k in os.environ if "SUPABASE" in k.upper()),
                     "twilio": bool(os.environ.get("TWILIO_ACCOUNT_SID") and os.environ.get("TWILIO_AUTH_TOKEN")),
                     "base_url": bool(os.environ.get("PUBLIC_BASE_URL") or os.environ.get("BASE_URL")),
                     "admin_token": bool(os.environ.get("DASHBOARD_ADMIN_TOKEN")),

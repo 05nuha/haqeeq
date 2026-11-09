@@ -14,16 +14,30 @@ def _base():
     return os.environ.get("SUPABASE_URL", "").rstrip("/")
 
 
+_KEY_NAMES = ("SUPABASE_SERVICE_ROLE_KEY", "SUPABASE_SECRET_KEY", "SUPABASE_SERVICE_KEY",
+              "SUPABASE_SERVICE_ROLE", "SUPABASE_KEY")
+
+
+def service_key():
+    for n in _KEY_NAMES:
+        v = os.environ.get(n, "").strip()
+        if v:
+            return v
+    return ""
+
+
 def _headers(extra=None):
-    key = os.environ.get("SUPABASE_SERVICE_ROLE_KEY", "")
-    h = {"apikey": key, "Authorization": "Bearer " + key}
+    key = service_key()
+    h = {"apikey": key}
+    if key.startswith("eyJ"):          # legacy JWT service_role key; new sb_secret_ keys use apikey only
+        h["Authorization"] = "Bearer " + key
     if extra:
         h.update(extra)
     return h
 
 
 def configured():
-    return bool(_base() and os.environ.get("SUPABASE_SERVICE_ROLE_KEY"))
+    return bool(_base() and service_key())
 
 
 def select(table, params=None):
