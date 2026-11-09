@@ -110,12 +110,19 @@ def _save(row_fields, phone):
 
 @app.route("/api/health", methods=["GET"])
 def health():
-    n = 0
+    n, err = 0, None
     try:
         n = len(supa.cached("official_posts"))
-    except Exception:
+    except Exception as e:
         log.exception("health registry")
-    return jsonify({"ok": True, "registry": n, "ai": bool(os.environ.get("GEMINI_API_KEY"))})
+        err = type(e).__name__ + ": " + str(e)[:160]
+    return jsonify({"ok": True, "registry": n, "ai": bool(os.environ.get("GEMINI_API_KEY")),
+                    "supabase_url": bool(os.environ.get("SUPABASE_URL")),
+                    "service_key": bool(os.environ.get("SUPABASE_SERVICE_ROLE_KEY")),
+                    "twilio": bool(os.environ.get("TWILIO_ACCOUNT_SID") and os.environ.get("TWILIO_AUTH_TOKEN")),
+                    "base_url": bool(os.environ.get("PUBLIC_BASE_URL") or os.environ.get("BASE_URL")),
+                    "admin_token": bool(os.environ.get("DASHBOARD_ADMIN_TOKEN")),
+                    "error": err})
 
 
 @app.route("/api/whatsapp", methods=["POST"])
