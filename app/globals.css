@@ -1,6 +1,8 @@
 @import "tailwindcss";
 
 :root {
+  --font-inter: "Segoe UI Variable", "Segoe UI", Arial, sans-serif;
+  --font-kufi: "Noto Sans Arabic", "Segoe UI", Tahoma, Arial, sans-serif;
   --bg: #09151e;
   --panel: rgba(15, 30, 42, 0.94);
   --panel-solid: #10212d;
@@ -720,9 +722,19 @@ body { color: var(--text); background: #0b141d; }
 .hotspot .ring.r2 { animation-delay: 2.1s; }
 .hotspot .nm { color: #edf2f5; text-shadow: 0 1px 3px #071018, 0 0 5px #071018; }
 .flow-arrow-icon { background: transparent !important; border: 0 !important; transition: transform 80ms linear; }
-.flow-arrow-icon span { filter: none; border-left-color: #e3c77d; }
+.flow-arrow-icon { overflow: visible; }
+.flow-arrow-icon span {
+  position: absolute; inset: 0; display: grid; place-items: center; width: 28px; height: 28px;
+  border: 1px solid #e5c978; border-radius: 50%; background: #101d29; color: #f1d57f;
+}
+.flow-arrow-icon svg { display: block; width: 20px; height: 20px; overflow: visible; }
+.flow-arrow-icon path { fill: none; stroke: currentColor; stroke-width: 2.5; stroke-linecap: round; stroke-linejoin: round; }
 .sim-route { animation: route-dashes 2.8s linear infinite; }
 @keyframes route-dashes { to { stroke-dashoffset: -22px; } }
+
+@media (prefers-reduced-motion: reduce) {
+  .sim-route { animation: none; }
+}
 .incident-marker.active { animation: incident-pulse 1.9s ease-out infinite; }
 @keyframes incident-pulse { 0%,100% { stroke-opacity: .95; } 50% { stroke-opacity: .45; } }
 .leaflet-tooltip.hq-tip { color: #edf2f5 !important; background: #172532; border-color: #465967; box-shadow: none; }
