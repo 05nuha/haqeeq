@@ -28,19 +28,19 @@ export default function ActivityChart({ reports }: { reports: Report[] }) {
 
   return (
     <div className="panel">
-      <div className="ph"><span>Fakes vs genuine · last 60 min <span className="ar" dir="rtl">· النشاط</span></span><span>5-min buckets</span></div>
+      <div className="ph"><span>Flagged vs genuine · last 60 min <span className="ar" dir="rtl">· النشاط</span></span><span>5-min buckets</span></div>
       <div className="chart-body">
         <Bar
           data={{ labels, datasets: [
-            { label: "Fakes", data: fakes, backgroundColor: "rgba(239,68,68,.8)", borderRadius: 3, stack: "s" },
-            { label: "Genuine", data: genuine, backgroundColor: "rgba(34,197,94,.7)", borderRadius: 3, stack: "s" },
+            { label: "Flagged", data: fakes, backgroundColor: "rgba(184,77,72,.76)", borderRadius: 3, stack: "s" },
+            { label: "Genuine", data: genuine, backgroundColor: "rgba(25,128,94,.7)", borderRadius: 3, stack: "s" },
           ] }}
           options={{
             responsive: true, maintainAspectRatio: false, animation: { duration: 400 },
-            plugins: { legend: { position: "top", align: "end", labels: { color: "#8193b2", boxWidth: 8, boxHeight: 8, font: { size: 10 } } } },
+            plugins: { legend: { position: "top", align: "end", labels: { color: "#627a7e", boxWidth: 8, boxHeight: 8, font: { size: 10 } } } },
             scales: {
-              x: { stacked: true, ticks: { color: "#64748b", font: { size: 9 } }, grid: { display: false } },
-              y: { stacked: true, ticks: { color: "#64748b", precision: 0, font: { size: 9 } }, grid: { color: "rgba(148,163,184,.08)" } },
+              x: { stacked: true, ticks: { color: "#627a7e", font: { size: 9 } }, grid: { display: false } },
+              y: { stacked: true, ticks: { color: "#627a7e", precision: 0, font: { size: 9 } }, grid: { color: "rgba(22,53,59,.08)" } },
             },
           }}
         />

@@ -297,3 +297,122 @@ body {
 @media (prefers-reduced-motion: reduce) {
   *, *::before, *::after { scroll-behavior: auto !important; animation-duration: .01ms !important; animation-iteration-count: 1 !important; transition-duration: .01ms !important; }
 }
+
+/* Civic light theme: clear surfaces, strong hierarchy, and restrained UAE-inspired accents. */
+:root {
+  --bg: #edf3f2;
+  --panel: #ffffff;
+  --panel-solid: #ffffff;
+  --line: rgba(22, 53, 59, .1);
+  --line-strong: rgba(22, 53, 59, .18);
+  --text: #17353b;
+  --muted: #627a7e;
+  --genuine: #19805e;
+  --altered: #b84d48;
+  --scam: #9a6b16;
+  --unverified: #718288;
+  --corrected: #167d70;
+  --accent: #087c73;
+  --glow: 0 1px 2px rgba(18, 48, 52, .04), 0 8px 24px rgba(18, 48, 52, .07);
+}
+body { background: radial-gradient(80rem 38rem at 52% -20%, rgba(33, 117, 105, .08), transparent 70%), var(--bg); }
+.app { gap: .8rem; padding: .8rem 1.1rem .65rem; }
+.hdr { padding: .25rem 0 .7rem; border-bottom: 1px solid var(--line); }
+.brand { gap: .9rem; }
+.logo { color: #fff; background: linear-gradient(145deg, #116d63, #1d8977); border: 1px solid rgba(200, 172, 111, .65); box-shadow: 0 3px 10px rgba(16, 79, 72, .16); }
+.brand h1 { color: #14343a; font-size: 1.08rem; }
+.brand h1 .ar { color: #167d70; }
+.brand p { color: #627a7e; }
+.hdr-right { gap: .65rem; color: #627a7e; }
+.clock { color: #17353b; }
+.live { color: #17684f; }
+.live.mock { color: #866016; }
+.live.mock i { background: #b8892d; }
+.chip { color: #23464a; background: rgba(255, 255, 255, .82); border-color: rgba(22, 53, 59, .16); }
+.chip .sw { background: #dce6e4; }
+.chip .sw::after { background: #718288; }
+.chip.on .sw { background: rgba(8, 124, 115, .18); }
+.kpi, .panel { background: #fff; border-color: var(--line); box-shadow: var(--glow); backdrop-filter: none; }
+.kpi { border-radius: .85rem; padding: .72rem .9rem .67rem; }
+.kpi::before { width: .17rem; border-radius: 0 4px 4px 0; box-shadow: none; }
+.kpi::after { opacity: .1; }
+.kpi .l { color: #627a7e; letter-spacing: .1em; }
+.kpi .l .ar { color: #536d70; }
+.kpi .v { color: #17353b; font-size: 1.9rem; text-shadow: none; }
+.kpi .s { color: #718288; }
+.panel { border-radius: .9rem; }
+.ph { padding: .7rem .9rem; color: #637a7e; letter-spacing: .1em; border-bottom-color: var(--line); }
+.ph .ar { color: #4b696b; }
+.pb { padding: .65rem; }
+.pb::-webkit-scrollbar-thumb { background: #cad8d5; }
+.empty { color: #718288; }
+.item { background: #f7faf9; border-color: transparent; }
+.item:hover { background: #f0f6f4; }
+.item.sel { border-color: rgba(8, 124, 115, .38); background: #eef7f5; }
+.thumb, .imgbox { background: #f2f6f5; border-color: #dce6e4; }
+.item .sub, .rank-head, .od-foot { color: #627a7e; }
+.tag-sim { color: #667b80; border-color: rgba(74, 102, 107, .32); }
+.pill.genuine { color: #17684f; background: rgba(25, 128, 94, .1); }
+.pill.altered { color: #963a36; background: rgba(184, 77, 72, .1); }
+.pill.scam_risk { color: #80590c; background: rgba(154, 107, 22, .12); }
+.pill.unverified { color: #52666d; background: rgba(113, 130, 136, .12); }
+.pill.corrected { color: #12645b; background: rgba(22, 125, 112, .1); }
+.rank-row:nth-child(odd), .od:nth-child(odd) { background: #f7faf9; }
+.rank-row .bar, .simbar { background: #e4ecea; }
+.rank-row .bar div { background: linear-gradient(90deg, #bd913c, #b9534b); }
+.rank-row.first { background: #fbf3f1; box-shadow: inset 0 0 0 1px rgba(184, 77, 72, .16); }
+.rank-row .n, .rank-row .e small, .rank-row .c, .od .rw { color: #718288; }
+.rank-row .v { color: #17353b; }
+.od .pw { color: #627a7e; }
+.od-foot { padding-top: .55rem; border-top: 1px solid var(--line); }
+.badge.bayanat { color: #145f58; background: #e8f4f1; border-color: #cce3dc; }
+.badge.dubai { color: #315c50; background: #edf4ed; border-color: #d7e5d7; }
+.badge.fcsc { color: #73520d; background: #f8f2e6; border-color: #eadbb7; }
+.badge.other { color: #52666d; background: #eef2f2; border-color: #dbe3e4; }
+.step, .trend { background: #f7faf9; }
+.step .d, .trend .wh { color: #5e7478; }
+.step .d .ar { color: #29484c; }
+.step .note { color: #718288; }
+.vbanner { background: color-mix(in srgb, var(--vc) 10%, white); border-color: color-mix(in srgb, var(--vc) 28%, white); }
+.ic.ok { color: #17684f; background: rgba(25, 128, 94, .12); }
+.ic.bad { color: #963a36; background: rgba(184, 77, 72, .1); }
+.ic.warn { color: #80590c; background: rgba(154, 107, 22, .12); }
+.ic.na { color: #52666d; background: rgba(113, 130, 136, .12); }
+.ai-badge.gem { color: #434a91; background: #f0effb; border-color: #d6d4f1; }
+.ai-badge.rules { color: #52666d; background: #eef2f2; border-color: #dbe3e4; }
+.mini-toggle { color: #963a36; }
+.simrow { color: #627a7e; }
+.simrow b { color: #17353b; }
+.trend { border-color: #edf2f0; }
+.trend.done { border-color: rgba(22, 125, 112, .22); background: #f3faf8; }
+.trend .cnt { color: #a6413d; }
+.trend.done .cnt { color: #12645b; }
+.trend .bar { background: #e4ecea; }
+.trend .bar div { background: linear-gradient(90deg, #b8892d, #b9534b); }
+.trend.done .bar div { background: linear-gradient(90deg, #378d7d, #167d70); }
+.btn { color: #fff; background: #146f64; box-shadow: 0 3px 10px rgba(20, 111, 100, .18); }
+.btn:hover { background: #0f5d55; filter: none; }
+.btn.done { color: #12645b; background: #e6f3f0; }
+.chip.unlocked { color: #12645b; border-color: #b8d9d1; }
+.foot { color: #627a7e; }
+.foot b { color: #345359; }
+.foot .dotsep { color: #a4b4b5; }
+.toast, .modal { color: #17353b; background: #fff; border-color: #c9ded9; box-shadow: 0 16px 40px rgba(18, 48, 52, .18); }
+.toast b { color: #12645b; }
+.toast.err { border-color: #d8aaa4; }
+.toast.err b { color: #963a36; }
+.modal input { color: #17353b; background: #f7faf9; border-color: #cbd8d6; }
+.modal input:focus { border-color: #087c73; }
+.btn.ghost { color: #536d70; border-color: #cbd8d6; }
+.center-card .card { background: #fff; border-color: var(--line); }
+.center-card h2 { color: #17353b; }
+.center-card p { color: #627a7e; }
+.center-card code { color: #145f58; background: #f2f7f5; border-color: #dce6e4; }
+.map-wrap { box-shadow: 0 8px 24px rgba(18, 48, 52, .12); }
+
+@media (max-width: 1100px) {
+  .app { padding: .75rem; }
+  .hdr { align-items: flex-start; flex-wrap: wrap; }
+  .hdr-right { flex-wrap: wrap; justify-content: flex-start; }
+  .kpis { gap: .6rem; }
+}

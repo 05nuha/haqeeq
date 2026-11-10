@@ -21,7 +21,7 @@ export default function Ranking({ reports, population }: { reports: Report[]; po
             <span className="e">{r.emirate}<small className="ar" dir="rtl">{EMIRATES_AR[r.emirate]}</small></span>
             <span className="bar"><div style={{ width: `${((r.per100k ?? 0) / max) * 100}%` }} /></span>
             <span className="v">{r.per100k != null ? r.per100k.toFixed(1) : "–"}<small> /100k</small></span>
-            <span className="c">{r.fakes} raw</span>
+            <span className="c">{r.fakes} reports</span>
             {hasOlder && <span className="c" title="Share of residents aged 60+">60+ {r.olderShare != null ? `${(r.olderShare * 100).toFixed(1)}%` : "–"}
             </span>}
           </div>

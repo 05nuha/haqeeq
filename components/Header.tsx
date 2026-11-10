@@ -18,7 +18,7 @@ export default function Header({
         <div className="logo">ح</div>
         <div>
           <h1>National Trust Control Center <span className="ar" dir="rtl">مركز الثقة الوطني</span></h1>
-          <p>Haqeeq · حقيق — live verification of official content forwarded by UAE residents</p>
+          <p>HAQEEQ · UAE digital trust operations · official content verification</p>
         </div>
       </div>
       <div className="hdr-right">
@@ -26,7 +26,7 @@ export default function Header({
           <span className="sw" /> Demo mode
         </button>
         <button className={`chip ${unlocked ? "unlocked" : ""}`} onClick={onOperator}>
-          {unlocked ? "🔓 Operator unlocked" : "🔒 Operator unlock"}
+          {unlocked ? "Operator access active" : "Operator access"}
         </button>
         <div className={`live ${mode === "mock" ? "mock" : ""}`}><i />{mode === "mock" ? "MOCK DATA" : "LIVE"}</div>
         <div className="clock">{clock}<small>GST · Dubai</small></div>
