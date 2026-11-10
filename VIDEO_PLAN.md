@@ -84,3 +84,39 @@ Recordings to capture: phone screen (genuine → screenshot → doctored → sca
 5. Record demo screens (2–3 takes); trim dead waiting time but don't edit results.
 6. Edit in CapCut / iMovie / DaVinci; add subtitles; check total ≤ 2:50; export 1080p MP4 within the portal's limits.
 7. Watch it once with the sound off (subtitles must carry it) and once with a stranger, then submit.
+
+---------------------------------------------------------------------------------------------------
+
+## 8. Variant: the film is fully AI-generated (characters who look like the team)
+
+Use this instead of sections 2–3's acted scene if you prefer generating the film. Rules that still apply: label it, keep it fictional, and **show the real HAQEEQ reply as a real screen recording — never a generated one** (a generated phone screen would invent a result your product didn't produce).
+
+**Cautions**
+- **Consistency is the hard part.** Generate one still per character first, then animate each shot from those stills (image-to-video) so faces and clothes match across shots.
+- **Likeness rules differ by tool.** Many tools restrict uploading photos of real people. Check what yours allows; if it refuses, describe the look in words (hair, glasses, clothing) — "inspired by" is enough.
+- **Avoid mouths in shot.** Lip-sync and Arabic speech are unreliable. Frame over-the-shoulder, hands, phones and reactions; put the dialogue in voiceover (your own voices) with subtitles.
+- **Keep the real team on camera** for the closing 15–20 seconds. Judges want to see who is pitching, and it shows the AI film is a creative choice, not a substitute for the team.
+- **Time-box it.** If the generated shots aren't usable by [TEAM: set a cut-off time], film the scene with phones as in section 3.
+
+**Character sheet — fill in [TEAM]** (paste the same description into every prompt):
+- Character A (believes it): [TEAM: age, hair, clothing]
+- Character B (about to forward it): [TEAM: age, hair, clothing]
+- Character C (checks first — looks like [TEAM: you or your teammate]): [TEAM: hair, glasses, clothing]
+
+**Style header (start every prompt with this):**
+> "Realistic cinematic look, natural lighting, consistent characters, no on-screen text, no logos, no brand names, 16:9."
+
+**Shots (each 4–6 s; target about 30 s total)**
+
+| # | Prompt (after the style header) | Notes |
+|---|---|---|
+| 1 | "A fictional news presenter in a generic studio with a plain dark-blue backdrop and an empty screen behind them, speaking calmly to camera, medium shot." | Composite the doctored notice on the blank screen in the editor; label *AI-generated · fictional*. VO: "Breaking: the national holiday is extended to twelve days." |
+| 2 | "[Character A] and [Character B] on a sofa in a cosy living room, A excitedly shows B a smartphone, both smiling, over-the-shoulder shot." | VO: A: "Twelve days?! Look!" |
+| 3 | "Close-up of B's thumb hovering over the send button of a smartphone, blank screen, warm evening light, shallow depth of field." | Replace the screen with a real chat recording in the editor. VO: B: "Send it to the family group!" |
+| 4 | "[Character C] steps into frame behind the sofa and raises a hand in a calm 'wait' gesture, serious expression, side angle." | VO: C: "Wait. Do you actually know it's real?" |
+| 5 | "Close-up of [Character C] holding a smartphone, thumbs typing, the face lit by the screen, concentrated, then slightly relieved." | Cut to the **real screen recording** of the HAQEEQ reply (🔴 معدّل) for 4 s. |
+| 6 | "[Character A] and [Character B] look at each other, surprised, then relieved, laughing softly, medium shot." | VO: A: "Good thing we checked." Then title card **HAQEEQ — Make Trust Part of Every Forward**. |
+
+**Disclosure card (first 2 seconds or end card):** "Scenes AI-generated · fictional characters · generative video tool: [TEAM: name] · analysis by Gemini".
+
+**Order of work:** character stills → 6 clips (2–3 tries each) → voiceover → editor (composite notice, real screen recordings, subtitles) → check ≤ 30 s for the film.
