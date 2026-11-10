@@ -92,6 +92,8 @@ export default function UaeMap({
 
   const spots = useMemo(() => spotStats(reports, corrections), [reports, corrections]);
   const rank = useMemo(() => Object.fromEntries(rankEmirates(reports, population).map((r) => [r.emirate, r])), [reports, population]);
+  const flaggedCount = reports.filter((r) => isFake(r.verdict)).length;
+  const openCount = Object.values(spots).reduce((total, spot) => total + spot.open, 0);
 
   const dots = useMemo(
     () =>
@@ -135,9 +137,9 @@ export default function UaeMap({
             <Marker key={s.name} position={EMIRATE_COORDS[s.name]} icon={hotspotIcon(s.name, size, color, done ? "✓" : String(s.open), done)} zIndexOffset={s.name === "Sharjah" ? 1000 : s.open}>
               <Tooltip className="hq-tip" direction="top" offset={[0, -size / 2]}>
                 <b>{s.name}</b> <span className="m ar" dir="rtl">{EMIRATES_AR[s.name]}</span><br />
-                <span className="big">{s.fakes}</span> <span className="m">fake reports · {s.open} still open</span><br />
+                <span className="big">{s.fakes}</span> <span className="m">flagged reports · {s.open} still open</span><br />
                 {rk?.per100k != null ? (
-                  <><b>{rk.per100k.toFixed(2)}</b> <span className="m">fake reports per 100,000 residents</span>
+                  <><b>{rk.per100k.toFixed(2)}</b> <span className="m">flagged reports per 100,000 residents</span>
                     {s.name === "Al Ain" && <><br /><span className="m">(Al Ain counted within Abu Dhabi emirate)</span></>}
                     {s.name === "Abu Dhabi" && <><br /><span className="m">(emirate total incl. Al Ain: {rk.fakes})</span></>}</>
                 ) : <span className="m">population data unavailable</span>}
@@ -148,10 +150,10 @@ export default function UaeMap({
         {ripples.map((rp) => <Marker key={`rp${rp.key}`} position={rp.pos} icon={rippleIcon} interactive={false} zIndexOffset={2000} />)}
       </MapContainer>
       <div className="map-title">
-        <b>Where fakes are being reported <span className="ar" dir="rtl">· أين تُرصد المحتويات المزيفة</span></b>
-        <div>{reports.filter((r) => isFake(r.verdict)).length} fake reports · hotspot size = open (uncorrected) fakes</div>
+        <b>Report activity by emirate <span className="ar" dir="rtl">· رصد البلاغات حسب الإمارة</span></b>
+        <div>{flaggedCount} flagged reports · {openCount} still open</div>
       </div>
-      <div className="map-caption">Map shows where reports come from — not the private WhatsApp spread path. (WhatsApp is end-to-end encrypted.)</div>
+      <div className="map-caption">Official reference data: UAE population statements and Bayanat’s entity list. Report totals are Haqeeq submissions, including seeded demo rows; live emirate locations are illustrative. This map does not show WhatsApp spread.</div>
       <div className="legend">
         <span><i style={{ background: COLORS.altered }} />Altered / scam</span>
         <span><i style={{ background: COLORS.unverified }} />Unverified</span>
