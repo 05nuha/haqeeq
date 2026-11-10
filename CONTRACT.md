@@ -85,7 +85,7 @@ check_text(text: str, entities: list[dict] = ()) -> dict
 # otherwise "Scam indicators: <words>" / "No official source; verify before trusting".
 
 ARABIC_REPLIES = {   # EXACT strings — do not edit
-  "genuine":    "✅ صحيح — هذا محتوى رسمي موثّق.",
+  "genuine":    "✅ صحيح — يتطابق مع مرجع رسمي متاح.",
   "altered":    "🔴 معدّل — نسخة معدّلة من إعلان رسمي. لا تقم بإعادة إرساله.",
   "unverified": "⚪ غير مؤكد — لم يصدر عن أي جهة رسمية. كن حذراً.",
   "scam_risk":  "🔴 احتيال محتمل — الرسالة تحمل مؤشرات احتيال. تحقق قبل أي إجراء.",

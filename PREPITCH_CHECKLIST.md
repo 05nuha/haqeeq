@@ -82,7 +82,7 @@ Forward from the phone, in WhatsApp, to the sandbox number. Use the files alread
 
 | # | Beat | What to forward | Expected reply | What the audience should see |
 |---|---|---|---|---|
-| 1 | Genuine official post | `assets/official/public_holiday_notice.png` (original) | ✅ صحيح — هذا محتوى رسمي موثّق. | Live dot on map; forensic view auto-opens |
+| 1 | Genuine official post | `assets/official/public_holiday_notice.png` (original) | ✅ صحيح — يتطابق مع مرجع رسمي متاح. | Live dot on map; forensic view auto-opens |
 | 2 | **Showstopper**: screenshot of the same post | A tight screenshot of the official post, taken on the phone (not the file). Pre-made: `test/screenshot_public_holiday_notice.jpg` | ✅ still | Slow down. WhatsApp strips signatures; the fingerprint still matches |
 | 3 | Doctored version | `assets/doctored/` copy with the changed date or number | 🔴 معدّل — نسخة معدّلة من إعلان رسمي. لا تقم بإعادة إرساله. | Heat-map on the changed area |
 | 4 | Fake "explosions in Dubai" | `assets/fakes/` explosions image | ⚪ غير مؤكد — لم يصدر عن أي جهة رسمية. كن حذراً. | Appears on map and in the trending list |

@@ -39,7 +39,7 @@ DEFAULT_CASES = HERE / "cases.json"
 
 # EXACT strings from CONTRACT.md section 4 (ARABIC_REPLIES). Do not edit.
 ARABIC_REPLIES = {
-    "genuine": "✅ صحيح — هذا محتوى رسمي موثّق.",
+    "genuine": "✅ صحيح — يتطابق مع مرجع رسمي متاح.",
     "altered": "🔴 معدّل — نسخة معدّلة من إعلان رسمي. لا تقم بإعادة إرساله.",
     "unverified": "⚪ غير مؤكد — لم يصدر عن أي جهة رسمية. كن حذراً.",
     "scam_risk": "🔴 احتيال محتمل — الرسالة تحمل مؤشرات احتيال. تحقق قبل أي إجراء.",

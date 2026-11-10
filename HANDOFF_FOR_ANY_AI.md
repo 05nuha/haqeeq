@@ -460,7 +460,7 @@ Provenance proof points:
 
 Three parts, one Replit project:
 1. **WhatsApp bot (citizen side)**: forward an image or text to the Twilio sandbox number → Arabic reply:
-   - genuine: "✅ صحيح — هذا محتوى رسمي موثّق."
+   - genuine: "✅ صحيح — يتطابق مع مرجع رسمي متاح."
    - altered: "🔴 معدّل — نسخة معدّلة من إعلان رسمي. لا تقم بإعادة إرساله."
    - unverified: "⚪ غير مؤكد — لم يصدر عن أي جهة رسمية. كن حذراً."
    - scam_risk: "🔴 احتيال محتمل — الرسالة تحمل مؤشرات احتيال. تحقق قبل أي إجراء."
