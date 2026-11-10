@@ -343,13 +343,52 @@ def _meta_sig_ok(raw):
     return hmac.compare_digest(sig, want)
 
 
+def _meta_diag(do_subscribe):
+    """Read-only view of the Meta setup (+ optional idempotent WABA->app subscription)."""
+    tok = _meta_token()
+    out = {}
+    try:
+        d = requests.get(f"{_graph()}/debug_token", params={"input_token": tok, "access_token": tok},
+                         timeout=6).json().get("data", {})
+        out["token_valid"] = d.get("is_valid")
+        out["token_expires_at"] = d.get("expires_at")
+        out["app_id"] = d.get("app_id")
+        scopes = d.get("granular_scopes") or []
+        out["scopes"] = [g.get("scope") for g in scopes]
+        wabas = sorted({t for g in scopes if g.get("scope", "").startswith("whatsapp")
+                        for t in (g.get("target_ids") or [])})
+        out["waba_ids"] = wabas
+        h = {"Authorization": "Bearer " + tok}
+        out["subscriptions"] = {}
+        for w in wabas:
+            if do_subscribe:
+                r = requests.post(f"{_graph()}/{w}/subscribed_apps", headers=h, timeout=6)
+                out.setdefault("subscribe_result", {})[w] = r.json()
+            r = requests.get(f"{_graph()}/{w}/subscribed_apps", headers=h, timeout=6)
+            out["subscriptions"][w] = [a.get("whatsapp_business_api_data", a).get("name")
+                                       for a in r.json().get("data", [])] or r.json()
+        pn = requests.get(f"{_graph()}/{os.environ.get('META_PHONE_NUMBER_ID', '').strip()}",
+                          headers=h, params={"fields": "display_phone_number,verified_name,quality_rating"},
+                          timeout=6).json()
+        out["phone_number"] = pn
+    except Exception as e:
+        out["error"] = (type(e).__name__ + ": " + str(e))[:300]
+    return out
+
+
 @app.route("/api/meta", methods=["GET"])
 def meta_verify():
     if request.args.get("hub.mode") == "subscribe":
+        import datetime
         expected = os.environ.get("META_VERIFY_TOKEN", "").strip()
-        if expected and hmac.compare_digest(request.args.get("hub.verify_token", ""), expected):
+        ok = bool(expected) and hmac.compare_digest(request.args.get("hub.verify_token", "").strip(), expected)
+        META_LAST["last_verify"] = {"at": datetime.datetime.utcnow().isoformat(timespec="seconds") + "Z",
+                                    "ok": ok}
+        if ok:
             return Response(request.args.get("hub.challenge", ""), mimetype="text/plain")
         return Response("verify token mismatch", status=403)
+    if request.args.get("diag") == "1":
+        return jsonify(_meta_diag(request.args.get("subscribe") == "1"))
     return jsonify({"ok": True, "configured": bool(_meta_token() and os.environ.get("META_PHONE_NUMBER_ID")),
                     "verify_token_set": bool(os.environ.get("META_VERIFY_TOKEN")),
                     "app_secret_set": bool(os.environ.get("META_APP_SECRET")), "last_request": META_LAST})
