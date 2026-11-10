@@ -120,3 +120,46 @@ Use this instead of sections 2–3's acted scene if you prefer generating the fi
 **Disclosure card (first 2 seconds or end card):** "Scenes AI-generated · fictional characters · generative video tool: [TEAM: name] · analysis by Gemini".
 
 **Order of work:** character stills → 6 clips (2–3 tries each) → voiceover → editor (composite notice, real screen recordings, subtitles) → check ≤ 30 s for the film.
+
+---------------------------------------------------------------------------------------------------
+
+## 9. Storyline v2 — three friends, cartoon style, one platform (Google Flow)  ← use this one
+
+**What changed:** three girls instead of two; the fake is a *social post from a "government page"*; the third friend doubts it and points to the WhatsApp bot. Characters are **cartoon versions of you** (also avoids likeness restrictions in AI tools — check your tool's rules).
+**Film length: about 35–40 s.** Shorten the later sections of the video by ~5 s to stay at 2:50.
+
+### Characters (make them first, for free/cheap)
+Make one cartoon portrait per character with an image generator (e.g. the Gemini app), starting from your photo if the tool allows it:
+> "Turn this photo into a friendly flat 2D cartoon character, clean vector style, soft colours, shoulders-up portrait on a plain light background, keep the hairstyle, hair colour, glasses and clothing of the person, no text." 
+
+Use the finished portraits as the starting images for Flow so the faces stay the same. If Flow can't take images, describe each girl in the same words in every prompt: **Girl 1** [TEAM: hair, clothes] · **Girl 2** [TEAM] · **Girl 3** [TEAM].
+
+### Story beats, dialogue (voiceover, with subtitles) and shots
+
+| # | Beat | Dialogue (VO) | How to make it | ~Sec |
+|---|---|---|---|---|
+| 1 | Two girls sit down; Girl 1 opens her phone | Girl 1: "Wait… look at this!" | **Flow clip A** | 6 |
+| 2 | Zoom into her phone: a post from a government page about a holiday next week | (sound: notification) | **Insert shot — NOT AI.** Use `assets/video/fake_post.png` on a phone screen (see below) | 4 |
+| 3 | She shows Girl 2, who cheers | Girl 2: "No way — a holiday next week? Yay!" | **Flow clip B** | 6 |
+| 4 | Girl 3 walks in, doubtful | Girl 3: "Are you sure that's real? There's no way." Girl 1: "It's from the government page." | **Flow clip C** | 8 |
+| 5 | Girl 3 holds up her phone | Girl 3: "Check before you share. There's a bot on WhatsApp — just forward it the message." | **Flow clip D** | 6 |
+| 6 | Zoom into WhatsApp: forward the post to HAQEEQ, reply appears | (reply, read as subtitle) 🔴 معدّل — نسخة معدّلة من إعلان رسمي. لا تقم بإعادة إرساله. | **Insert shot — REAL screen recording** of the real bot | 6 |
+| 7 | Friends react; title card | Girl 1: "Good thing we checked." | reuse clip D/B reaction or still; title card in the editor | 4 |
+
+**Insert shot 2 (the post):** the file `assets/video/fake_post.png` is a fictional social post ("Gov Notices (fictional page)") containing the doctored holiday notice, clearly marked DEMO. Show it full-screen in a phone frame, or screen-record it scrolling on a real phone. It's a fictional page — don't imitate a real government account.
+**Insert shot 6 (the bot):** on your real phone, open WhatsApp, take a **screenshot of that post** (power + volume-up), forward it to the HAQEEQ test number, and screen-record until the reply arrives. I tested this exact image on the engine: it returns **🔴 altered (about 1% of the notice changed)**. Do it with a fresh Meta token, and re-check on the real phone first — a real screenshot may differ a little.
+
+### Flow prompts (one scene, one action, one camera move; no speech, no text, no logos)
+Style header for all: "Friendly 2D cartoon animation, flat colours, soft shading, consistent characters, warm evening light, 16:9, no on-screen text, no logos."
+
+- **Clip A:** "[Girl 1] and [Girl 2] sit down together on a sofa in a cosy living room. [Girl 1] takes out her smartphone and looks at it with curious surprise. Medium shot, slow gentle push-in toward the phone."
+- **Clip B:** "[Girl 1] turns her phone toward [Girl 2], who gasps then cheers happily with raised arms. Over-the-shoulder medium shot, steady camera."
+- **Clip C:** "[Girl 3] walks into the living room, looks at the phone with a doubtful raised eyebrow and crossed arms, while [Girl 1] shrugs confidently. Medium shot, steady camera."
+- **Clip D:** "[Girl 3] smiles reassuringly and holds up her smartphone toward the other two, pointing at it, while they lean in with interest. Medium shot, gentle push-in on the phone."
+
+**One-shot discipline:** finalise the dialogue and these four prompts before paying; if Flow offers several variations per prompt, use them on these four clips; set a cut-off, and if a clip isn't usable, redo only that scene with your phones or a simple still image.
+
+### Honesty and disclosure
+- Insert shots 2 and 6 are not generated: the post is a clearly fictional graphic, the bot reply is a real recording.
+- Add on screen at the start or end: "Scenes AI-generated · fictional characters · tool: Google Flow · analysis: Gemini."
+- Dialogue is voiceover (your own voices) with subtitles; don't rely on the tool's own audio.
