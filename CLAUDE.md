@@ -20,6 +20,34 @@ Python serverless functions for the WhatsApp webhook and engine) + **Supabase** 
 fallback (move to `legacy-flask/`). Cutoff: if the Vercel version can't pass the full real-phone gate test by
 **Tue 10 Nov 1pm Dubai time**, revert to the Flask version (host it on Railway/Render) and focus on the deck.
 
+## ✅ CURRENT STATUS (Tue 10 Nov, ~12:45 Dubai) — Vercel rebuild is LIVE; this overrides sections 9, 12, 14
+
+- Live: dashboard https://haqeeq.vercel.app (also /dashboard), API under /api/*. Repo github.com/05nuha/haqeeq
+  (push to main auto-deploys on Vercel). Supabase project voqslacetqbrkoueaptz (Postgres + Storage bucket `media` + Realtime).
+- Messaging: **Meta WhatsApp Cloud API** (test number +1 555 167 8203, webhook https://haqeeq.vercel.app/api/meta).
+  Real-phone gate test PASSED via Meta (text, scam text, official image, screenshot, doctored, fake, unrelated).
+  Twilio (/api/whatsapp) still exists but the trial sender (+1 737 221 2163) requires Content templates, which the trial
+  can't create -> replies never deliver. Don't use Twilio for the demo.
+- Meta gotchas learned: (1) the WhatsApp Business Account had to be subscribed to the app — done via
+  GET /api/meta?diag=1&waba=1695628978747111&subscribe=1 (diag also shows token validity/expiry);
+  (2) the temporary token expires after 24 h -> create a permanent System User token (Business settings -> System users,
+  permissions whatsapp_business_messaging + whatsapp_business_management, expiry Never) and put it in Vercel
+  META_WHATSAPP_TOKEN; (3) only phone numbers added under "To" on the API Testing page can use the test number.
+- Debug endpoints: GET /api/health (all env flags + registry count), GET /api/meta (last webhook), GET /api/whatsapp.
+- Engine: numpy pHash + pixel tamper (engine/), plus crop search so phone screenshots with status/browser bars still
+  match (strict threshold 6). Photos of a laptop screen do NOT match (by design: too noisy) — in the demo use a real
+  screenshot. Gemini works (default model gemini-3.5-flash-lite, override GEMINI_MODEL); rules OR AI => scam_risk.
+- Data loaded: 8 official posts + 2 known fakes (scripts/seed_registry.py), open data (scripts/load_open_data.py:
+  57 Bayanat entities, 7 emirate populations from u.ae, 264 Dubai areas, 4 catalogue rows — see DATA_SOURCES.md for
+  caveats: Dubai Pulse + FCSC portal unreachable; population years differ per emirate; no age data), 55 seeded reports.
+  Before the pitch: python scripts/demo_clear.py && python scripts/demo_seed.py (needs SUPABASE_URL + service key).
+- Demo images to forward: https://voqslacetqbrkoueaptz.supabase.co/storage/v1/object/public/media/demo/1-official.png
+  (also 2-screenshot.jpg, 3-doctored.png, 4-fake-explosions.png, 5-unrelated.png, 6-official-mohre.png, 7-doctored-visa.png).
+- Docs: CONTRACT.md (architecture/contract), DEPLOY.md, PREPITCH_CHECKLIST.md (written for Twilio — use Meta instead),
+  DATA_SOURCES.md (Data slide text), api/README.md.
+- TODO: permanent Meta token; test "Push official correction" delivers on WhatsApp via Meta; record backup video;
+  deck (90-day plan + BMC); create team on admin.hackathon.ae; rehearse. Dashboard map uses Esri tiles if CARTO fails.
+
 ## 0. TL;DR
 
 - Event: UAE Hackathon 2026, Track 2 (Youth), **Pioneers** group (university students), **Dubai** location.
