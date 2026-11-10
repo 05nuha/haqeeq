@@ -25,7 +25,8 @@ class FakeResp:
 @pytest.fixture
 def env(monkeypatch):
     for k, v in {"SKIP_TWILIO_SIG": "1", "DASHBOARD_ADMIN_TOKEN": "sekret", "TWILIO_ACCOUNT_SID": "AC1",
-                 "TWILIO_AUTH_TOKEN": "tok", "TWILIO_WHATSAPP_FROM": "whatsapp:+14155238886"}.items():
+                 "TWILIO_AUTH_TOKEN": "tok", "TWILIO_WHATSAPP_FROM": "whatsapp:+14155238886",
+                 "TWILIO_REPLY_MODE": "twiml"}.items():
         monkeypatch.setenv(k, v)
     calls = {"insert": [], "upload": [], "upsert": []}
     monkeypatch.setattr(supa, "cached", lambda t: [])

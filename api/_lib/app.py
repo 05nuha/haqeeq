@@ -217,7 +217,30 @@ def whatsapp():
                          request.form.get("MediaContentType0") or "")
     else:
         reply = _process(phone, request.form.get("Body"))
-    return _twiml(reply)
+    return _twilio_reply(request.form.get("From", ""), request.form.get("To", ""), reply)
+
+
+def _twilio_reply(to, frm, text):
+    """Send the reply via Twilio REST so failures come back with an exact error code
+    (shown at GET /api/whatsapp). Falls back to a TwiML reply if the REST send fails."""
+    LAST.update(reply_mode=None, reply_status=None, reply_error=None)
+    if os.environ.get("TWILIO_REPLY_MODE", "rest") == "rest" and to:
+        try:
+            from twilio.rest import Client
+            client = Client(os.environ.get("TWILIO_ACCOUNT_SID", "").strip(),
+                            os.environ.get("TWILIO_AUTH_TOKEN", "").strip())
+            m = client.messages.create(from_=frm or os.environ.get("TWILIO_WHATSAPP_FROM", ""), to=to, body=text)
+            LAST.update(reply_mode="rest", reply_status=getattr(m, "status", None),
+                        reply_sid=(getattr(m, "sid", "") or "")[:6] + "...")
+            from twilio.twiml.messaging_response import MessagingResponse
+            return Response(str(MessagingResponse()), mimetype="text/xml")   # empty: already sent
+        except Exception as e:
+            log.exception("twilio REST reply failed")
+            LAST.update(reply_mode="rest_failed_fallback_twiml",
+                        reply_error=(type(e).__name__ + ": " + str(e))[:400])
+    else:
+        LAST["reply_mode"] = "twiml"
+    return _twiml(text)
 
 
 # ---------------- Meta WhatsApp Cloud API (alternative to Twilio) ----------------
