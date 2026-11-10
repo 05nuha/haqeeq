@@ -2,7 +2,7 @@
 chat UI around it): multi-scale crop search on pHash, then pixel-accurate box alignment so the
 tamper check compares like with like. Only used when the whole-image match fails."""
 import numpy as np
-from PIL import Image
+from PIL import Image, ImageFilter
 
 from .phash import _C, to_gray
 
@@ -38,6 +38,8 @@ def search(img, rows):
 
     best = (65, None, None)
     for s in np.arange(1.0, 0.44, -0.06):
+        if best[0] <= 2:          # near-perfect hash match already found at a larger scale: stop scanning
+            break
         for ar in ASPECTS:
             cw = s * w
             ch = cw / ar
@@ -66,28 +68,115 @@ def search(img, rows):
     return d, r, box
 
 
-def align(gray, box, official_grey, grid=128):
-    """Refine box edges to minimise mean abs grey diff vs the official image (coarse to fine)."""
-    ref = np.asarray(Image.fromarray(np.clip(official_grey, 0, 255).astype("uint8")).resize((grid, grid)), float)
+def align(gray, box, official_gray, size):
+    """Sub-pixel box refinement.
+
+    `gray` is the full picture (PIL 'L'), `box` a rough (x0,y0,x1,y1) of the post in it, `official_gray` the registry
+    image (PIL 'L'), `size` the comparison grid (w, h). Coordinate descent on the box (float coordinates, Lanczos
+    resampling straight from a source box) minimising the mean absolute grey difference to the official image.
+    Coarse-to-fine: a 48x60 grid first (wide capture range; stops a periodic design such as stripes from locking
+    onto the wrong repeat), then the comparison grid, down to ~0.05 source px. Stage 1 keeps the official's aspect
+    ratio (moves/scales the box as a whole); stage 2 frees the four edges at fine steps. numpy + Pillow only.
+    Returns a float box inside the picture."""
+    from . import config
     W, H = gray.size
+    size = tuple(size)
+    blur = ImageFilter.GaussianBlur(config.BLUR) if config.BLUR else None
 
-    def cost(b):
-        a = np.asarray(gray.crop(tuple(int(round(v)) for v in b)).resize((grid, grid)), float)
-        return float(np.abs(a - ref).mean())
+    def prep(im):
+        return np.asarray(im.filter(blur) if blur else im, dtype=np.float32)
 
-    best_c, best_b = cost(box), tuple(box)
-    for frac in (0.03, 0.012, 0.005, 0.002):
-        w, h = best_b[2] - best_b[0], best_b[3] - best_b[1]
-        improved = True
-        while improved:
-            improved = False
-            for i, step in ((0, w * frac), (1, h * frac), (2, w * frac), (3, h * frac)):
-                for sgn in (-1, 1):
-                    nb = list(best_b)
-                    nb[i] += sgn * step
-                    if nb[0] < 0 or nb[1] < 0 or nb[2] > W or nb[3] > H or nb[2] - nb[0] < 20 or nb[3] - nb[1] < 20:
-                        continue
-                    c = cost(nb)
-                    if c < best_c - 1e-6:
-                        best_c, best_b, improved = c, tuple(nb), True
-    return tuple(int(round(v)) for v in best_b)
+    best = [float(v) for v in box]
+    best[0], best[1] = max(0.0, best[0]), max(0.0, best[1])
+    best[2], best[3] = min(float(W), best[2]), min(float(H), best[3])
+    # Work on a crop around the rough box (cheaper resizes); coordinates are shifted back at the end.
+    mx, my = 0.18 * (best[2] - best[0]), 0.18 * (best[3] - best[1])
+    ox, oy = max(0, int(best[0] - mx)), max(0, int(best[1] - my))
+    ex, ey = min(W, int(best[2] + mx) + 1), min(H, int(best[3] + my) + 1)
+    gray = gray.crop((ox, oy, ex, ey))
+    W, H = gray.size
+    best = [best[0] - ox, best[1] - oy, best[2] - ox, best[3] - oy]
+    pyr = {1: gray}                       # pre-reduced copies make the coarse levels cheap
+    refs = {}
+
+    def cost(b, sz):
+        r = 1
+        f = (b[2] - b[0]) / sz[0]
+        for cand in (2, 4):
+            if f >= 2 * cand:
+                r = cand
+        if r not in pyr:
+            pyr[r] = gray.reduce(r)
+        if sz not in refs:
+            refs[sz] = prep(official_gray.resize(sz, _LANCZOS))
+        a = prep(pyr[r].resize(sz, _LANCZOS, box=tuple(float(v) / r for v in b)))
+        return float(np.abs(a - refs[sz]).mean())
+
+    def inside(nb):
+        return not (nb[0] < 0 or nb[1] < 0 or nb[2] > W or nb[3] > H or nb[2] - nb[0] < 20 or nb[3] - nb[1] < 20)
+
+    def descend(best, moves, fracs_sizes, rounds):
+        for frac, sz in fracs_sizes:
+            cur = cost(best, sz)
+            for _ in range(rounds):
+                improved = False
+                w, h = best[2] - best[0], best[3] - best[1]
+                for v in moves:
+                    nb = [best[i] + v[i] * frac * (w if i % 2 == 0 else h) for i in range(4)]
+                    if inside(nb):
+                        c = cost(nb, sz)
+                        if c < cur - 1e-6:
+                            cur, best, improved = c, nb, True
+                            w, h = best[2] - best[0], best[3] - best[1]
+                if not improved:
+                    break
+        return best
+
+    asp = official_gray.size[0] / official_gray.size[1]
+    cx, cy = (best[0] + best[2]) / 2, (best[1] + best[3]) / 2
+    w0 = best[2] - best[0]
+    reasp = [cx - w0 / 2, cy - w0 / asp / 2, cx + w0 / 2, cy + w0 / asp / 2]
+    if inside(reasp):
+        best = reasp
+    else:                                  # picture is cropped tighter than the official's aspect: shrink to fit
+        k = min(1.0, W / max(1e-6, reasp[2] - reasp[0]), H / max(1e-6, reasp[3] - reasp[1]))
+        hw, hh = (reasp[2] - reasp[0]) * k / 2, (reasp[3] - reasp[1]) * k / 2
+        cx, cy = min(max(cx, hw), W - hw), min(max(cy, hh), H - hh)
+        best = [cx - hw, cy - hh, cx + hw, cy + hh]
+    uni = [[1, 0, 1, 0], [-1, 0, -1, 0], [0, 1, 0, 1], [0, -1, 0, -1]]   # shift x / y (units of box w, h)
+    for sgn in (-1, 1):
+        uni.append([-sgn, -sgn, sgn, sgn])                                 # grow / shrink about the centre
+    tiny = (48, max(16, int(round(48 * size[1] / size[0]))))
+    mid = (max(16, size[0] // 2), max(16, size[1] // 2))
+    plan, f = [(0.04, tiny), (0.015, tiny), (0.006, tiny)], 0.012
+    while f * w0 >= 0.3:
+        plan.append((f, mid))
+        f /= 3
+    # Seed: a small grid of shifts and scales around the rough box on the tiny grid, so the descent starts in the right
+    # basin even when the rough box is off by several percent (flat or repeating designs have local minima).
+    cx, cy = (best[0] + best[2]) / 2, (best[1] + best[3]) / 2
+    bw, bh = best[2] - best[0], best[3] - best[1]
+    seed, seed_c = best, cost(best, tiny)
+    for sc in (0.92, 0.96, 1.0, 1.04, 1.08, 1.12, 1.16):
+        for iy in range(-3, 4):
+            for ix in range(-3, 4):
+                nb = [cx + ix * 0.03 * bw - bw * sc / 2, cy + iy * 0.03 * bh - bh * sc / 2,
+                      cx + ix * 0.03 * bw + bw * sc / 2, cy + iy * 0.03 * bh + bh * sc / 2]
+                if inside(nb):
+                    c = cost(nb, tiny)
+                    if c < seed_c:
+                        seed, seed_c = nb, c
+    best = descend(seed, uni, plan, 8)
+    # Stage 2: free edges. Single-edge moves plus compound moves (stretch / shift along one axis): moving one edge
+    # alone rescales the whole content, so two edges that are both slightly wrong can only be fixed together.
+    free = []
+    for i in range(4):
+        for sgn in (-1, 1):
+            v = [0.0] * 4
+            v[i] = sgn
+            free.append(v)
+    for sgn in (-1, 1):
+        free += [[-sgn, 0, sgn, 0], [0, -sgn, 0, sgn], [sgn, 0, sgn, 0], [0, sgn, 0, sgn]]
+    best = descend(best, free, [(0.012, mid), (0.004, mid), (0.0013, mid)], 5)
+    best = descend(best, free, [(f, size) for f in (0.0006, 0.0002) if f * w0 >= 0.08], 3)
+    return (best[0] + ox, best[1] + oy, best[2] + ox, best[3] + oy)

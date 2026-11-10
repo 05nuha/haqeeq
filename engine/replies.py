@@ -12,5 +12,8 @@ def reply_for(result):
     if v == "scam_risk" and result.get("ai_reason"):
         msg += "\n🤖 " + str(result["ai_reason"])
     elif v == "altered" and result.get("changed_pct") is not None:
-        msg += f"\nتم رصد تعديل في {result['changed_pct']:.1f}% من الصورة."
+        if result["changed_pct"] >= 0.1:
+            msg += f"\nتم رصد تعديل في {result['changed_pct']:.1f}% من الصورة."
+        else:   # a small localised edit (e.g. one digit of a date): a "0.0%" would read as "no change"
+            msg += "\nتم رصد تعديل موضعي في جزء صغير من الصورة (مثل تاريخ أو رقم)."
     return msg

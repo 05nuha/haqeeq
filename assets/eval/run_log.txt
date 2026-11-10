@@ -1,62 +1,28 @@
-built 325 labelled images in 9.1s; running engine with defaults {'MATCH_THRESH': 12, 'PIXEL_THRESH': 55, 'TAMPER_PCT': 0.04, 'CROP_MATCH_THRESH': 6}
-engine run done in 73.5s
-sweep spot-check: 48 real re-runs, 0 mismatches
+built 536 labelled images in 19.5s; running engine with defaults {'MATCH_THRESH': 12, 'PIXEL_THRESH': 25, 'TAMPER_PCT': 0.04, 'CROP_MATCH_THRESH': 6}
+engine run done in 190.4s
+sweep spot-check: skipped (engine v2 verdict also depends on the window rule)
 
 HEADLINE (defaults):
   tamper_pct: 0.04
   genuine_n: 72
-  genuine_recall_pct: 93.06
-  false_altered_on_genuine_pct: 6.94
+  genuine_recall_pct: 100.0
+  false_altered_on_genuine_pct: 0.0
   genuine_called_unverified_pct: 0.0
   genuine_wrong_post_matched: 0
   edit_n: 213
-  edit_detection_pct: 52.11
-  edit_flagged_not_genuine_pct: 74.18
-  edit_false_genuine_n: 55
-  edit_false_genuine_pct: 25.82
+  edit_detection_pct: 77.93
+  edit_flagged_not_genuine_pct: 100.0
+  edit_false_genuine_n: 0
+  edit_false_genuine_pct: 0.0
   edit_called_unverified_n: 47
   unmatched_n: 40
   unrelated_false_match_pct: 0.0
   unrelated_false_genuine_n: 0
   correct_post_matched_pct: 83.51
 
-SWEEP:  thr | false-genuine on edits | edit detection | false-altered on genuine | genuine recall
-  0.01  | 29/213 (13.62%) | 64.32% | 6.94% | 93.06%
-  0.02  | 45/213 (21.13%) | 56.81% | 6.94% | 93.06%
-  0.03  | 47/213 (22.07%) | 55.87% | 6.94% | 93.06%
-  0.04  | 55/213 (25.82%) | 52.11% | 6.94% | 93.06%
-  0.06  | 64/213 (30.05%) | 47.89% | 6.94% | 93.06%
-  0.1   | 77/213 (36.15%) | 41.78% | 2.78% | 97.22%
+SWEEP (TAMPER_PCT; v1 engine only):  thr | false-genuine on edits | edit detection | false-altered on genuine | genuine recall
 
 EXPLORE (direct-match, non-screenshot): pixel_thresh tamper_pct false_altered_genuine/n false_genuine_edits/n
-   25 0.0    0/64  0/114
-   25 0.002  0/64  0/114
-   25 0.005  0/64  0/114
-   25 0.01   0/64  13/114
-   25 0.02   0/64  32/114
-   25 0.03   0/64  32/114
-   25 0.04   0/64  40/114
-   25 0.06   0/64  48/114
-   25 0.1    0/64  53/114
-   35 0.0    0/64  0/114
-   35 0.002  0/64  0/114
-   35 0.005  0/64  10/114
-   35 0.01   0/64  22/114
-   35 0.02   0/64  32/114
-   35 0.03   0/64  36/114
-   35 0.04   0/64  40/114
-   35 0.06   0/64  50/114
-   35 0.1    0/64  56/114
-   55 0.0    0/64  2/114
-   55 0.002  0/64  8/114
-   55 0.005  0/64  18/114
-   55 0.01   0/64  26/114
-   55 0.02   0/64  38/114
-   55 0.03   0/64  40/114
-   55 0.04   0/64  46/114
-   55 0.06   0/64  54/114
-   55 0.1    0/64  60/114
-EXTRA SWEEP: [(0.0, 2, 6.94), (0.002, 8, 6.94), (0.005, 19, 6.94)]
 
 by_genuine_transform:
   lossless_copy                                 {'n': 8, 'genuine': 8, 'altered': 0, 'unverified': 0, 'wrong': 0}
@@ -65,15 +31,15 @@ by_genuine_transform:
   jpeg_q40                                      {'n': 8, 'genuine': 8, 'altered': 0, 'unverified': 0, 'wrong': 0}
   downscale_0.75_jpeg                           {'n': 8, 'genuine': 8, 'altered': 0, 'unverified': 0, 'wrong': 0}
   downscale_0.5_jpeg                            {'n': 8, 'genuine': 8, 'altered': 0, 'unverified': 0, 'wrong': 0}
-  simulated_phone_screenshot                    {'n': 8, 'genuine': 3, 'altered': 5, 'unverified': 0, 'wrong': 0}
+  simulated_phone_screenshot                    {'n': 8, 'genuine': 8, 'altered': 0, 'unverified': 0, 'wrong': 0}
   brightness_contrast                           {'n': 8, 'genuine': 8, 'altered': 0, 'unverified': 0, 'wrong': 0}
   whatsapp_style_1600_q70                       {'n': 8, 'genuine': 8, 'altered': 0, 'unverified': 0, 'wrong': 0}
 
 by_edit_type:
-  date_1digit                                   {'n': 24, 'genuine': 19, 'altered': 5, 'unverified': 0, 'wrong': 0}
-  date_2digit                                   {'n': 24, 'genuine': 19, 'altered': 5, 'unverified': 0, 'wrong': 0}
-  key_line_1digit                               {'n': 21, 'genuine': 12, 'altered': 9, 'unverified': 0, 'wrong': 0}
-  number_changed                                {'n': 24, 'genuine': 5, 'altered': 19, 'unverified': 0, 'wrong': 0}
+  date_1digit                                   {'n': 24, 'genuine': 0, 'altered': 24, 'unverified': 0, 'wrong': 0}
+  date_2digit                                   {'n': 24, 'genuine': 0, 'altered': 24, 'unverified': 0, 'wrong': 0}
+  key_line_1digit                               {'n': 21, 'genuine': 0, 'altered': 21, 'unverified': 0, 'wrong': 0}
+  number_changed                                {'n': 24, 'genuine': 0, 'altered': 24, 'unverified': 0, 'wrong': 0}
   word_changed_body                             {'n': 24, 'genuine': 0, 'altered': 24, 'unverified': 0, 'wrong': 0}
   patch_2pct                                    {'n': 24, 'genuine': 0, 'altered': 11, 'unverified': 13, 'wrong': 0}
   patch_5pct                                    {'n': 24, 'genuine': 0, 'altered': 9, 'unverified': 15, 'wrong': 0}
@@ -81,9 +47,9 @@ by_edit_type:
   headline_replaced                             {'n': 24, 'genuine': 0, 'altered': 23, 'unverified': 1, 'wrong': 0}
 
 by_edit_transform:
-  lossless                                      {'n': 71, 'genuine': 23, 'altered': 34, 'unverified': 14, 'wrong': 0}
-  jpeg_q60                                      {'n': 71, 'genuine': 23, 'altered': 34, 'unverified': 14, 'wrong': 0}
-  simulated_phone_screenshot                    {'n': 71, 'genuine': 9, 'altered': 43, 'unverified': 19, 'wrong': 0}
+  lossless                                      {'n': 71, 'genuine': 0, 'altered': 57, 'unverified': 14, 'wrong': 0}
+  jpeg_q60                                      {'n': 71, 'genuine': 0, 'altered': 57, 'unverified': 14, 'wrong': 0}
+  simulated_phone_screenshot                    {'n': 71, 'genuine': 0, 'altered': 52, 'unverified': 19, 'wrong': 0}
 
 by_unmatched_group:
   fake_rumour                                   {'n': 2, 'genuine': 0, 'altered': 0, 'unverified': 2, 'wrong': 0}
@@ -93,31 +59,93 @@ by_unmatched_group:
   leave_one_out | simulated_phone_screenshot    {'n': 8, 'genuine': 0, 'altered': 0, 'unverified': 8, 'wrong': 0}
 
 timing: {
+ "extended_screenshots": {
+  "n": 125,
+  "median_ms": 2766.3,
+  "p95_ms": 3206.7,
+  "max_ms": 3383.5
+ },
  "matched": {
   "n": 238,
-  "median_ms": 23.3,
-  "p95_ms": 1878.9,
-  "max_ms": 2063.8
+  "median_ms": 61.3,
+  "p95_ms": 2520.7,
+  "max_ms": 3181.4
  },
  "unmatched": {
   "n": 87,
-  "median_ms": 1640.0,
-  "p95_ms": 1784.0,
-  "max_ms": 1824.1
+  "median_ms": 1721.6,
+  "p95_ms": 1885.0,
+  "max_ms": 1915.4
  },
  "matched_direct_phash": {
   "n": 178,
-  "median_ms": 20.2,
-  "p95_ms": 38.4,
-  "max_ms": 53.2
+  "median_ms": 41.5,
+  "p95_ms": 684.5,
+  "max_ms": 772.7
  },
  "matched_via_crop_search": {
   "n": 60,
-  "median_ms": 1804.0,
-  "p95_ms": 1982.6,
-  "max_ms": 2063.8
+  "median_ms": 2339.3,
+  "p95_ms": 3106.4,
+  "max_ms": 3181.4
  }
 }
-false-genuine edits: 55
-false-altered genuine: 5
+
+EXTENDED: {
+ "genuine_n": 56,
+ "genuine_called_genuine": 54,
+ "genuine_called_altered": 0,
+ "genuine_called_unverified": 2,
+ "edit_n": 155,
+ "edit_called_altered": 151,
+ "edit_called_unverified": 4,
+ "edit_false_genuine": 0,
+ "genuine_by_transform": {
+  "shot_small_q60": {
+   "genuine": 8
+  },
+  "shot_png_1290": {
+   "genuine": 8
+  },
+  "shot_chat_bubble_q70": {
+   "genuine": 7,
+   "unverified": 1
+  },
+  "shot_tablet_q90": {
+   "genuine": 7,
+   "unverified": 1
+  },
+  "crop_1pct_q80": {
+   "genuine": 8
+  },
+  "jpeg_q30": {
+   "genuine": 8
+  },
+  "whatsapp_q50_1280": {
+   "genuine": 8
+  }
+ },
+ "edit_by_transform": {
+  "shot_small_q60": {
+   "altered": 30,
+   "unverified": 1
+  },
+  "shot_png_1290": {
+   "altered": 31
+  },
+  "shot_chat_bubble_q70": {
+   "altered": 28,
+   "unverified": 3
+  },
+  "crop_1pct_q80": {
+   "altered": 31
+  },
+  "whatsapp_q50_1280": {
+   "altered": 31
+  }
+ }
+}
+WINDOW SWEEP: [{'win_px': 2, 'false_genuine_edits': 0, 'false_altered_genuine': 0}, {'win_px': 4, 'false_genuine_edits': 0, 'false_altered_genuine': 0}, {'win_px': 6, 'false_genuine_edits': 0, 'false_altered_genuine': 0}, {'win_px': 8, 'false_genuine_edits': 0, 'false_altered_genuine': 0}, {'win_px': 12, 'false_genuine_edits': 3, 'false_altered_genuine': 0}, {'win_px': 16, 'false_genuine_edits': 3, 'false_altered_genuine': 0}, {'win_px': 24, 'false_genuine_edits': 18, 'false_altered_genuine': 0}]
+false-genuine edits: 0
+false-altered genuine: 0
 unmatched false matches: 0

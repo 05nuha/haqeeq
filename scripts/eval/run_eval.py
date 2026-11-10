@@ -15,6 +15,7 @@ import json
 import os
 import random
 import statistics
+import collections
 import sys
 import time
 from multiprocessing import Pool
@@ -26,8 +27,11 @@ HERE = os.path.dirname(os.path.abspath(__file__))
 ROOT = os.path.dirname(os.path.dirname(HERE))
 sys.path.insert(0, ROOT)
 sys.path.insert(0, os.path.join(ROOT, "scripts"))
+if os.environ.get("HAQEEQ_ENGINE_ROOT"):       # evaluate another checkout's engine/ (e.g. the BEFORE version)
+    sys.path.insert(0, os.environ["HAQEEQ_ENGINE_ROOT"])
 import make_assets as MA  # noqa: E402  (re-use fonts/layouts)
 from engine import config, phash, verify_image  # noqa: E402
+V2 = hasattr(config, "TAMPER_WIN_PX")           # engine v2: localised window rule in addition to the global %
 
 A = os.path.join(ROOT, "assets")
 SWEEP = [0.01, 0.02, 0.03, 0.04, 0.06, 0.1]
@@ -97,6 +101,63 @@ GENUINE_TX = [
 # Transforms applied to EDITED images (as they arrive via WhatsApp)
 EDIT_TX = [("lossless", lossless), ("jpeg_q60", lambda i: jpeg(i, 60)),
            ("simulated_phone_screenshot", phone_screenshot)]
+
+
+# ---- extended variants (reported separately; the base 325-image set above is unchanged so runs stay comparable)
+def _canvas_shot(img, size, post_w, xy_top, bars, q, fmt="jpeg", bg=(245, 245, 245)):
+    c = Image.new("RGB", size, bg)
+    d = ImageDraw.Draw(c)
+    for box, col in bars:
+        d.rectangle(box, fill=col)
+    ph = round(post_w * img.height / img.width)
+    c.paste(img.convert("RGB").resize((post_w, ph), Image.LANCZOS), xy_top)
+    return png(c) if fmt == "png" else jpeg(c, q)
+
+
+def shot_small_q60(img):      # smaller phone, post narrower than the screen, q60
+    return _canvas_shot(img, (1080, 2340), 1020, (30, 420),
+                        [((0, 0, 1080, 120), (20, 20, 20)), ((0, 120, 1080, 260), (232, 232, 236))], 60)
+
+
+def shot_png(img):            # lossless full-width screenshot, different bar heights
+    return _canvas_shot(img, (1290, 2796), 1290, (0, 380),
+                        [((0, 0, 1290, 170), (10, 10, 10)), ((0, 170, 1290, 340), (225, 225, 230))], 0, "png")
+
+
+def shot_chat_bubble(img):    # post inside a dark chat UI with margins (not full width), q70
+    return _canvas_shot(img, (1170, 2532), 820, (175, 700),
+                        [((0, 0, 1170, 150), (30, 36, 40)), ((150, 660, 1020, 2100), (255, 255, 255))],
+                        70, bg=(14, 20, 24))
+
+
+def shot_tablet(img):         # tablet-sized canvas, post centred at an odd scale, q90
+    return _canvas_shot(img, (1640, 2360), 903, (368, 200), [((0, 0, 1640, 90), (240, 240, 240))], 90, bg=(200, 200, 205))
+
+
+def crop_1pct(img):           # 1% of each border cropped off, then q80
+    img = img.convert("RGB")
+    mx, my = round(img.width * 0.01), round(img.height * 0.01)
+    return jpeg(img.crop((mx, my, img.width - mx, img.height - my)), 80)
+
+
+def jpeg_q30(img):
+    return jpeg(img, 30)
+
+
+def whatsapp_q50_1280(img):
+    img = img.convert("RGB")
+    s = 1280 / max(img.size)
+    return jpeg(img.resize((round(img.width * s), round(img.height * s)), Image.LANCZOS) if s < 1 else img, 50)
+
+
+EXT_GENUINE_TX = [("shot_small_q60", shot_small_q60), ("shot_png_1290", shot_png),
+                  ("shot_chat_bubble_q70", shot_chat_bubble), ("shot_tablet_q90", shot_tablet),
+                  ("crop_1pct_q80", crop_1pct), ("jpeg_q30", jpeg_q30), ("whatsapp_q50_1280", whatsapp_q50_1280)]
+EXT_EDIT_TX = [("shot_small_q60", shot_small_q60), ("shot_png_1290", shot_png),
+               ("shot_chat_bubble_q70", shot_chat_bubble), ("crop_1pct_q80", crop_1pct),
+               ("whatsapp_q50_1280", whatsapp_q50_1280)]
+EXT_EDIT_TYPES = ("date_1digit", "date_2digit", "key_line_1digit", "number_changed")
+EXT_SHOT_NAMES = {"shot_small_q60", "shot_png_1290", "shot_chat_bubble_q70", "shot_tablet_q90"}
 
 
 # ---------------------------------------------------------------- edits
@@ -227,7 +288,7 @@ def _run(task):
     r = verify_image(data, reg, _load)
     dt = time.perf_counter() - t
     return {**meta, "verdict": r["verdict"], "matched_id": r["matched_id"], "distance": r["distance"],
-            "changed_pct": r["changed_pct"], "ms": round(dt * 1000, 1), "bytes": len(data)}
+            "changed_pct": r["changed_pct"], "win": r.get("max_window_px"), "ms": round(dt * 1000, 1), "bytes": len(data)}
 
 
 # ---------------------------------------------------------------- build tasks
@@ -252,6 +313,17 @@ def build_tasks():
             for tname, fn in EDIT_TX:
                 add(dict(group="edit", kind=etype, size=size, transform=tname, post=i, expected="altered"),
                     fn(img), f"edit_{etype}_{tname}" if i == ids[0] else None)
+    # extended variants (separate groups)
+    for i in ids:
+        for name, fn in EXT_GENUINE_TX:
+            add(dict(group="genuine_ext", kind=name, post=i, expected="genuine"), fn(off[i]))
+    for n, i in enumerate(ids):
+        donor = off[ids[(n + 3) % len(ids)]]
+        for etype, size, img in make_edits(posts[i], donor, seed=100 + n):
+            if etype not in EXT_EDIT_TYPES:
+                continue
+            for tname, fn in EXT_EDIT_TX:
+                add(dict(group="edit_ext", kind=etype, size=size, transform=tname, post=i, expected="altered"), fn(img))
     # unrelated / unmatched
     for sub, group in (("fakes", "fake_rumour"), ("unrelated", "unrelated_art")):
         for f in sorted(os.listdir(os.path.join(A, sub))):
@@ -269,7 +341,7 @@ def build_tasks():
 def verdict_at(rec, thr):
     """Verdict at a given TAMPER_PCT. TAMPER_PCT is only used in the final comparison, so for matched
     images this is exact (spot-checked against real re-runs in main())."""
-    if rec["changed_pct"] is None:
+    if rec["changed_pct"] is None or (V2 and thr == config.TAMPER_PCT):
         return rec["verdict"]
     return "genuine" if rec["changed_pct"] <= thr else "altered"
 
@@ -304,6 +376,27 @@ def metrics(res, thr):
     return m
 
 
+def ext_summary(res):
+    g = [r for r in res if r["group"] == "genuine_ext"]
+    e = [r for r in res if r["group"] == "edit_ext"]
+    out = dict(genuine_n=len(g), genuine_called_genuine=sum(r["verdict"] == "genuine" and r["matched_id"] == r["post"] for r in g),
+               genuine_called_altered=sum(r["verdict"] == "altered" for r in g),
+               genuine_called_unverified=sum(r["verdict"] == "unverified" for r in g),
+               edit_n=len(e), edit_called_altered=sum(r["verdict"] == "altered" for r in e),
+               edit_called_unverified=sum(r["verdict"] == "unverified" for r in e),
+               edit_false_genuine=sum(r["verdict"] == "genuine" for r in e))
+    byg, bye = {}, {}
+    for r in g:
+        c = byg.setdefault(r["kind"], collections.Counter())
+        c[r["verdict"]] += 1
+    for r in e:
+        c = bye.setdefault(r["transform"], collections.Counter())
+        c[r["verdict"]] += 1
+    out["genuine_by_transform"] = {k: dict(v) for k, v in byg.items()}
+    out["edit_by_transform"] = {k: dict(v) for k, v in bye.items()}
+    return out
+
+
 def group_table(res, thr, keyf, groups):
     rows = {}
     for r in res:
@@ -319,13 +412,17 @@ def group_table(res, thr, keyf, groups):
 
 
 def timing(res):
+    ext_shots = [r for r in res if r["group"].endswith("_ext") and (r["kind"] in EXT_SHOT_NAMES or r.get("transform") in EXT_SHOT_NAMES)]
+    res = [r for r in res if not r["group"].endswith("_ext")]      # base set only, comparable with older runs
+
     def st(xs):
         if not xs:
             return None
         xs = sorted(xs)
         return dict(n=len(xs), median_ms=round(statistics.median(xs), 1),
                     p95_ms=round(xs[min(len(xs) - 1, int(0.95 * len(xs)))], 1), max_ms=round(xs[-1], 1))
-    return dict(matched=st([r["ms"] for r in res if r["matched_id"]]),
+    return dict(extended_screenshots=st([r["ms"] for r in ext_shots]),
+                matched=st([r["ms"] for r in res if r["matched_id"]]),
                 unmatched=st([r["ms"] for r in res if not r["matched_id"]]),
                 matched_direct_phash=st([r["ms"] for r in res if r["matched_id"] and
                                          r["kind"] != "simulated_phone_screenshot" and
@@ -357,7 +454,7 @@ def main():
     _init()
     chk = [t for t in tasks if t[0]["group"] == "edit"][::9]
     mism = 0
-    for thr in (0.01, 0.1):
+    for thr in (() if V2 else (0.01, 0.1)):
         config.TAMPER_PCT = thr
         for meta, data in chk:
             r = verify_image(data, [x for x in _REG if x["id"] != meta.get("exclude")], _load)
@@ -365,13 +462,14 @@ def main():
                        x.get("transform") == meta.get("transform"))
             mism += int(r["verdict"] != verdict_at(rec, thr))
     config.TAMPER_PCT = DEFAULTS["TAMPER_PCT"]
-    print(f"sweep spot-check: {len(chk)*2} real re-runs, {mism} mismatches")
+    print("sweep spot-check: skipped (engine v2 verdict also depends on the window rule)" if V2 else
+          f"sweep spot-check: {len(chk)*2} real re-runs, {mism} mismatches")
 
     # exploratory 2-D sweep on images that match directly (no crop search needed): PIXEL_THRESH x TAMPER_PCT
     direct = [(t, r) for t, r in zip(tasks, res) if r["matched_id"] and r["group"] in ("genuine", "edit") and
               r["kind"] != "simulated_phone_screenshot" and r.get("transform") != "simulated_phone_screenshot"]
     explore = []
-    for pt in PIX_EXPLORE:
+    for pt in ([] if V2 else PIX_EXPLORE):
         config.PIXEL_THRESH = pt
         pcts = [(r["group"], verify_image(t[1], _REG, _load)["changed_pct"]) for t, r in direct]
         for thr in SWEEP_EXTRA + SWEEP:
@@ -384,9 +482,18 @@ def main():
 
     summary = dict(defaults=DEFAULTS, n_images=len(res), spot_check_mismatches=mism,
                    headline=metrics(res, config.TAMPER_PCT),
-                   sweep=[metrics(res, t) for t in SWEEP], sweep_extra=[metrics(res, t) for t in SWEEP_EXTRA],
+                   sweep=[] if V2 else [metrics(res, t) for t in SWEEP],
+                   sweep_extra=[] if V2 else [metrics(res, t) for t in SWEEP_EXTRA],
                    explore_pixel_thresh_direct_only=explore, timing=timing(res))
     tg = lambda groups, keyf: group_table(res, config.TAMPER_PCT, keyf, groups)
+    summary["extended"] = ext_summary(res)
+    if V2:   # window-rule sweep, computed from the recorded max_window_px and changed_pct (global rule fixed at TAMPER_PCT)
+        ge = [r for r in res if r["group"] == "genuine"]
+        ee = [r for r in res if r["group"] == "edit"]
+        summary["window_sweep"] = [dict(win_px=k,
+                                        false_genuine_edits=sum(not (r["changed_pct"] is not None and (r["changed_pct"] > config.TAMPER_PCT or r["win"] >= k)) for r in ee if r["matched_id"]),
+                                        false_altered_genuine=sum(r["changed_pct"] is not None and (r["changed_pct"] > config.TAMPER_PCT or r["win"] >= k) for r in ge))
+                                   for k in (2, 4, 6, 8, 12, 16, 24)]
     summary["by_genuine_transform"] = tg({"genuine"}, lambda r: r["kind"])
     summary["by_edit_type"] = tg({"edit"}, lambda r: r["kind"])
     summary["by_edit_size"] = tg({"edit"}, lambda r: r["size"])
@@ -417,19 +524,23 @@ def main():
     print("\nHEADLINE (defaults):")
     for k, v in h.items():
         print(f"  {k}: {v}")
-    print("\nSWEEP:  thr | false-genuine on edits | edit detection | false-altered on genuine | genuine recall")
+    print("\nSWEEP (TAMPER_PCT; v1 engine only):  thr | false-genuine on edits | edit detection | false-altered on genuine | genuine recall")
     for m in summary["sweep"]:
         print(f"  {m['tamper_pct']:<5} | {m['edit_false_genuine_n']}/{m['edit_n']} ({m['edit_false_genuine_pct']}%) | "
               f"{m['edit_detection_pct']}% | {m['false_altered_on_genuine_pct']}% | {m['genuine_recall_pct']}%")
     print("\nEXPLORE (direct-match, non-screenshot): pixel_thresh tamper_pct false_altered_genuine/n false_genuine_edits/n")
     for x in explore:
         print(f"  {x['pixel_thresh']:>3} {x['tamper_pct']:<6} {x['false_altered_genuine']}/{x['n_genuine']}  {x['false_genuine_edits']}/{x['n_edit']}")
-    print("EXTRA SWEEP:", [(m['tamper_pct'], m['edit_false_genuine_n'], m['false_altered_on_genuine_pct']) for m in summary['sweep_extra']])
+    if not V2:
+        print("EXTRA SWEEP:", [(m['tamper_pct'], m['edit_false_genuine_n'], m['false_altered_on_genuine_pct']) for m in summary['sweep_extra']])
     for name in ("by_genuine_transform", "by_edit_type", "by_edit_transform", "by_unmatched_group"):
         print(f"\n{name}:")
         for k, c in summary[name].items():
             print(f"  {k:45s} {c}")
     print("\ntiming:", json.dumps(summary["timing"], indent=1))
+    print("\nEXTENDED:", json.dumps(summary["extended"], indent=1))
+    if V2:
+        print("WINDOW SWEEP:", summary["window_sweep"])
     print("false-genuine edits:", len(summary["false_genuine_edits"]))
     print("false-altered genuine:", len(summary["false_altered_genuine"]))
     print("unmatched false matches:", len(summary["unmatched_false_matches"]))

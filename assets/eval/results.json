@@ -8,7 +8,8 @@
   "matched_id": "public_holiday_notice",
   "distance": 0,
   "changed_pct": 0.0,
-  "ms": 35.9,
+  "win": 0,
+  "ms": 70.8,
   "bytes": 83160
  },
  {
@@ -20,7 +21,8 @@
   "matched_id": "public_holiday_notice",
   "distance": 0,
   "changed_pct": 0.0,
-  "ms": 17.2,
+  "win": 0,
+  "ms": 37.1,
   "bytes": 126431
  },
  {
@@ -32,7 +34,8 @@
   "matched_id": "public_holiday_notice",
   "distance": 0,
   "changed_pct": 0.0,
-  "ms": 38.0,
+  "win": 0,
+  "ms": 64.8,
   "bytes": 98728
  },
  {
@@ -44,7 +47,8 @@
   "matched_id": "public_holiday_notice",
   "distance": 0,
   "changed_pct": 0.0,
-  "ms": 18.7,
+  "win": 0,
+  "ms": 35.9,
   "bytes": 84441
  },
  {
@@ -56,7 +60,8 @@
   "matched_id": "public_holiday_notice",
   "distance": 2,
   "changed_pct": 0.0,
-  "ms": 33.5,
+  "win": 0,
+  "ms": 56.5,
   "bytes": 91231
  },
  {
@@ -68,7 +73,8 @@
   "matched_id": "public_holiday_notice",
   "distance": 2,
   "changed_pct": 0.0,
-  "ms": 6.6,
+  "win": 0,
+  "ms": 21.8,
   "bytes": 54237
  },
  {
@@ -80,7 +86,8 @@
   "matched_id": "public_holiday_notice",
   "distance": 2,
   "changed_pct": 0.0,
-  "ms": 1813.9,
+  "win": 0,
+  "ms": 2336.8,
   "bytes": 163854
  },
  {
@@ -92,7 +99,8 @@
   "matched_id": "public_holiday_notice",
   "distance": 2,
   "changed_pct": 0.0,
-  "ms": 18.5,
+  "win": 0,
+  "ms": 35.7,
   "bytes": 167958
  },
  {
@@ -104,7 +112,8 @@
   "matched_id": "public_holiday_notice",
   "distance": 0,
   "changed_pct": 0.0,
-  "ms": 16.9,
+  "win": 0,
+  "ms": 35.1,
   "bytes": 109699
  },
  {
@@ -116,7 +125,8 @@
   "matched_id": "mohre_announcement",
   "distance": 0,
   "changed_pct": 0.0,
-  "ms": 33.3,
+  "win": 0,
+  "ms": 64.7,
   "bytes": 75180
  },
  {
@@ -128,7 +138,8 @@
   "matched_id": "mohre_announcement",
   "distance": 0,
   "changed_pct": 0.0,
-  "ms": 38.4,
+  "win": 0,
+  "ms": 57.9,
   "bytes": 111238
  },
  {
@@ -140,7 +151,8 @@
   "matched_id": "mohre_announcement",
   "distance": 0,
   "changed_pct": 0.0,
-  "ms": 19.6,
+  "win": 0,
+  "ms": 39.2,
   "bytes": 88039
  },
  {
@@ -152,7 +164,8 @@
   "matched_id": "mohre_announcement",
   "distance": 0,
   "changed_pct": 0.0,
-  "ms": 35.0,
+  "win": 0,
+  "ms": 56.8,
   "bytes": 75664
  },
  {
@@ -164,7 +177,8 @@
   "matched_id": "mohre_announcement",
   "distance": 0,
   "changed_pct": 0.0,
-  "ms": 12.5,
+  "win": 0,
+  "ms": 26.1,
   "bytes": 83381
  },
  {
@@ -176,7 +190,8 @@
   "matched_id": "mohre_announcement",
   "distance": 0,
   "changed_pct": 0.0,
-  "ms": 6.8,
+  "win": 0,
+  "ms": 23.1,
   "bytes": 46797
  },
  {
@@ -188,7 +203,8 @@
   "matched_id": "mohre_announcement",
   "distance": 2,
   "changed_pct": 0.0,
-  "ms": 1807.2,
+  "win": 0,
+  "ms": 1032.8,
   "bytes": 147020
  },
  {
@@ -200,7 +216,8 @@
   "matched_id": "mohre_announcement",
   "distance": 2,
   "changed_pct": 0.0,
-  "ms": 22.5,
+  "win": 0,
+  "ms": 36.9,
   "bytes": 147874
  },
  {
@@ -212,7 +229,8 @@
   "matched_id": "mohre_announcement",
   "distance": 0,
   "changed_pct": 0.0,
-  "ms": 18.9,
+  "win": 0,
+  "ms": 37.8,
   "bytes": 96987
  },
  {
@@ -224,7 +242,8 @@
   "matched_id": "weekend_schedule_notice",
   "distance": 0,
   "changed_pct": 0.0,
-  "ms": 35.9,
+  "win": 0,
+  "ms": 61.2,
   "bytes": 66185
  },
  {
@@ -236,7 +255,8 @@
   "matched_id": "weekend_schedule_notice",
   "distance": 0,
   "changed_pct": 0.0,
-  "ms": 19.4,
+  "win": 0,
+  "ms": 36.5,
   "bytes": 111005
  },
  {
@@ -248,7 +268,8 @@
   "matched_id": "weekend_schedule_notice",
   "distance": 0,
   "changed_pct": 0.0,
-  "ms": 34.1,
+  "win": 0,
+  "ms": 56.6,
   "bytes": 86771
  },
  {
@@ -260,7 +281,8 @@
   "matched_id": "weekend_schedule_notice",
   "distance": 2,
   "changed_pct": 0.0,
-  "ms": 18.5,
+  "win": 0,
+  "ms": 36.6,
   "bytes": 73670
  },
  {
@@ -272,7 +294,8 @@
   "matched_id": "weekend_schedule_notice",
   "distance": 0,
   "changed_pct": 0.0,
-  "ms": 13.0,
+  "win": 0,
+  "ms": 26.2,
   "bytes": 84051
  },
  {
@@ -284,7 +307,8 @@
   "matched_id": "weekend_schedule_notice",
   "distance": 2,
   "changed_pct": 0.0,
-  "ms": 6.7,
+  "win": 0,
+  "ms": 21.1,
   "bytes": 47500
  },
  {
@@ -292,11 +316,12 @@
   "kind": "simulated_phone_screenshot",
   "post": "weekend_schedule_notice",
   "expected": "genuine",
-  "verdict": "altered",
+  "verdict": "genuine",
   "matched_id": "weekend_schedule_notice",
   "distance": 2,
-  "changed_pct": 0.09,
-  "ms": 1928.8,
+  "changed_pct": 0.0,
+  "win": 0,
+  "ms": 2353.6,
   "bytes": 154687
  },
  {
@@ -308,7 +333,8 @@
   "matched_id": "weekend_schedule_notice",
   "distance": 2,
   "changed_pct": 0.0,
-  "ms": 20.6,
+  "win": 0,
+  "ms": 37.5,
   "bytes": 149109
  },
  {
@@ -320,7 +346,8 @@
   "matched_id": "weekend_schedule_notice",
   "distance": 0,
   "changed_pct": 0.0,
-  "ms": 18.5,
+  "win": 0,
+  "ms": 37.5,
   "bytes": 96352
  },
  {
@@ -332,7 +359,8 @@
   "matched_id": "golden_visa_update",
   "distance": 0,
   "changed_pct": 0.0,
-  "ms": 38.4,
+  "win": 0,
+  "ms": 68.3,
   "bytes": 72927
  },
  {
@@ -344,7 +372,8 @@
   "matched_id": "golden_visa_update",
   "distance": 0,
   "changed_pct": 0.0,
-  "ms": 17.3,
+  "win": 0,
+  "ms": 37.8,
   "bytes": 113621
  },
  {
@@ -356,7 +385,8 @@
   "matched_id": "golden_visa_update",
   "distance": 0,
   "changed_pct": 0.0,
-  "ms": 17.0,
+  "win": 0,
+  "ms": 37.0,
   "bytes": 89473
  },
  {
@@ -368,7 +398,8 @@
   "matched_id": "golden_visa_update",
   "distance": 0,
   "changed_pct": 0.0,
-  "ms": 17.3,
+  "win": 0,
+  "ms": 37.2,
   "bytes": 76805
  },
  {
@@ -380,7 +411,8 @@
   "matched_id": "golden_visa_update",
   "distance": 0,
   "changed_pct": 0.0,
-  "ms": 13.5,
+  "win": 0,
+  "ms": 27.0,
   "bytes": 86504
  },
  {
@@ -392,7 +424,8 @@
   "matched_id": "golden_visa_update",
   "distance": 0,
   "changed_pct": 0.0,
-  "ms": 7.5,
+  "win": 0,
+  "ms": 22.6,
   "bytes": 50409
  },
  {
@@ -404,7 +437,8 @@
   "matched_id": "golden_visa_update",
   "distance": 2,
   "changed_pct": 0.0,
-  "ms": 1982.6,
+  "win": 0,
+  "ms": 1277.1,
   "bytes": 148999
  },
  {
@@ -416,7 +450,8 @@
   "matched_id": "golden_visa_update",
   "distance": 2,
   "changed_pct": 0.0,
-  "ms": 31.8,
+  "win": 0,
+  "ms": 58.7,
   "bytes": 150062
  },
  {
@@ -428,7 +463,8 @@
   "matched_id": "golden_visa_update",
   "distance": 0,
   "changed_pct": 0.0,
-  "ms": 16.9,
+  "win": 0,
+  "ms": 35.2,
   "bytes": 99166
  },
  {
@@ -440,7 +476,8 @@
   "matched_id": "school_calendar",
   "distance": 0,
   "changed_pct": 0.0,
-  "ms": 39.6,
+  "win": 0,
+  "ms": 64.1,
   "bytes": 83538
  },
  {
@@ -452,7 +489,8 @@
   "matched_id": "school_calendar",
   "distance": 0,
   "changed_pct": 0.0,
-  "ms": 18.4,
+  "win": 0,
+  "ms": 33.5,
   "bytes": 130045
  },
  {
@@ -464,7 +502,8 @@
   "matched_id": "school_calendar",
   "distance": 0,
   "changed_pct": 0.0,
-  "ms": 36.6,
+  "win": 0,
+  "ms": 34.4,
   "bytes": 100567
  },
  {
@@ -476,7 +515,8 @@
   "matched_id": "school_calendar",
   "distance": 0,
   "changed_pct": 0.0,
-  "ms": 19.2,
+  "win": 0,
+  "ms": 32.3,
   "bytes": 83823
  },
  {
@@ -488,7 +528,8 @@
   "matched_id": "school_calendar",
   "distance": 0,
   "changed_pct": 0.0,
-  "ms": 11.7,
+  "win": 0,
+  "ms": 25.2,
   "bytes": 98426
  },
  {
@@ -500,7 +541,8 @@
   "matched_id": "school_calendar",
   "distance": 0,
   "changed_pct": 0.0,
-  "ms": 6.5,
+  "win": 0,
+  "ms": 20.2,
   "bytes": 55562
  },
  {
@@ -508,11 +550,12 @@
   "kind": "simulated_phone_screenshot",
   "post": "school_calendar",
   "expected": "genuine",
-  "verdict": "altered",
+  "verdict": "genuine",
   "matched_id": "school_calendar",
   "distance": 2,
-  "changed_pct": 0.09,
-  "ms": 1901.4,
+  "changed_pct": 0.0,
+  "win": 0,
+  "ms": 1119.8,
   "bytes": 169257
  },
  {
@@ -524,7 +567,8 @@
   "matched_id": "school_calendar",
   "distance": 2,
   "changed_pct": 0.0,
-  "ms": 20.1,
+  "win": 0,
+  "ms": 35.3,
   "bytes": 178096
  },
  {
@@ -536,7 +580,8 @@
   "matched_id": "school_calendar",
   "distance": 0,
   "changed_pct": 0.0,
-  "ms": 18.0,
+  "win": 0,
+  "ms": 81.2,
   "bytes": 112081
  },
  {
@@ -548,7 +593,8 @@
   "matched_id": "ramadan_hours",
   "distance": 0,
   "changed_pct": 0.0,
-  "ms": 37.6,
+  "win": 0,
+  "ms": 65.9,
   "bytes": 69667
  },
  {
@@ -560,7 +606,8 @@
   "matched_id": "ramadan_hours",
   "distance": 0,
   "changed_pct": 0.0,
-  "ms": 17.3,
+  "win": 0,
+  "ms": 35.6,
   "bytes": 101723
  },
  {
@@ -572,7 +619,8 @@
   "matched_id": "ramadan_hours",
   "distance": 2,
   "changed_pct": 0.0,
-  "ms": 19.7,
+  "win": 0,
+  "ms": 34.7,
   "bytes": 78010
  },
  {
@@ -584,7 +632,8 @@
   "matched_id": "ramadan_hours",
   "distance": 0,
   "changed_pct": 0.0,
-  "ms": 18.4,
+  "win": 0,
+  "ms": 34.2,
   "bytes": 66246
  },
  {
@@ -596,7 +645,8 @@
   "matched_id": "ramadan_hours",
   "distance": 0,
   "changed_pct": 0.0,
-  "ms": 12.1,
+  "win": 0,
+  "ms": 26.0,
   "bytes": 76056
  },
  {
@@ -608,7 +658,8 @@
   "matched_id": "ramadan_hours",
   "distance": 2,
   "changed_pct": 0.0,
-  "ms": 7.0,
+  "win": 0,
+  "ms": 22.9,
   "bytes": 42759
  },
  {
@@ -616,11 +667,12 @@
   "kind": "simulated_phone_screenshot",
   "post": "ramadan_hours",
   "expected": "genuine",
-  "verdict": "altered",
+  "verdict": "genuine",
   "matched_id": "ramadan_hours",
   "distance": 2,
-  "changed_pct": 0.133,
-  "ms": 1908.5,
+  "changed_pct": 0.0,
+  "win": 0,
+  "ms": 2520.7,
   "bytes": 137634
  },
  {
@@ -632,7 +684,8 @@
   "matched_id": "ramadan_hours",
   "distance": 4,
   "changed_pct": 0.0,
-  "ms": 34.2,
+  "win": 0,
+  "ms": 65.9,
   "bytes": 143241
  },
  {
@@ -644,7 +697,8 @@
   "matched_id": "ramadan_hours",
   "distance": 0,
   "changed_pct": 0.0,
-  "ms": 18.6,
+  "win": 0,
+  "ms": 34.7,
   "bytes": 87091
  },
  {
@@ -656,7 +710,8 @@
   "matched_id": "icp_emirates_id",
   "distance": 0,
   "changed_pct": 0.0,
-  "ms": 39.5,
+  "win": 0,
+  "ms": 65.8,
   "bytes": 66159
  },
  {
@@ -668,7 +723,8 @@
   "matched_id": "icp_emirates_id",
   "distance": 0,
   "changed_pct": 0.0,
-  "ms": 18.5,
+  "win": 0,
+  "ms": 37.0,
   "bytes": 107879
  },
  {
@@ -680,7 +736,8 @@
   "matched_id": "icp_emirates_id",
   "distance": 0,
   "changed_pct": 0.0,
-  "ms": 24.4,
+  "win": 0,
+  "ms": 36.4,
   "bytes": 83537
  },
  {
@@ -692,7 +749,8 @@
   "matched_id": "icp_emirates_id",
   "distance": 0,
   "changed_pct": 0.0,
-  "ms": 22.4,
+  "win": 0,
+  "ms": 35.9,
   "bytes": 70850
  },
  {
@@ -704,7 +762,8 @@
   "matched_id": "icp_emirates_id",
   "distance": 0,
   "changed_pct": 0.0,
-  "ms": 17.5,
+  "win": 0,
+  "ms": 26.7,
   "bytes": 79632
  },
  {
@@ -716,7 +775,8 @@
   "matched_id": "icp_emirates_id",
   "distance": 0,
   "changed_pct": 0.0,
-  "ms": 9.2,
+  "win": 0,
+  "ms": 22.5,
   "bytes": 44637
  },
  {
@@ -724,11 +784,12 @@
   "kind": "simulated_phone_screenshot",
   "post": "icp_emirates_id",
   "expected": "genuine",
-  "verdict": "altered",
+  "verdict": "genuine",
   "matched_id": "icp_emirates_id",
   "distance": 0,
-  "changed_pct": 0.089,
-  "ms": 1837.7,
+  "changed_pct": 0.0,
+  "win": 0,
+  "ms": 1073.4,
   "bytes": 148374
  },
  {
@@ -740,7 +801,8 @@
   "matched_id": "icp_emirates_id",
   "distance": 2,
   "changed_pct": 0.0,
-  "ms": 20.3,
+  "win": 0,
+  "ms": 35.3,
   "bytes": 145319
  },
  {
@@ -752,7 +814,8 @@
   "matched_id": "icp_emirates_id",
   "distance": 0,
   "changed_pct": 0.0,
-  "ms": 25.3,
+  "win": 0,
+  "ms": 36.4,
   "bytes": 93047
  },
  {
@@ -764,7 +827,8 @@
   "matched_id": "rta_notice",
   "distance": 0,
   "changed_pct": 0.0,
-  "ms": 53.2,
+  "win": 0,
+  "ms": 59.6,
   "bytes": 64258
  },
  {
@@ -776,7 +840,8 @@
   "matched_id": "rta_notice",
   "distance": 0,
   "changed_pct": 0.0,
-  "ms": 18.5,
+  "win": 0,
+  "ms": 60.4,
   "bytes": 130393
  },
  {
@@ -788,7 +853,8 @@
   "matched_id": "rta_notice",
   "distance": 0,
   "changed_pct": 0.0,
-  "ms": 18.0,
+  "win": 0,
+  "ms": 36.6,
   "bytes": 105922
  },
  {
@@ -800,7 +866,8 @@
   "matched_id": "rta_notice",
   "distance": 0,
   "changed_pct": 0.0,
-  "ms": 18.1,
+  "win": 0,
+  "ms": 33.1,
   "bytes": 92296
  },
  {
@@ -812,7 +879,8 @@
   "matched_id": "rta_notice",
   "distance": 0,
   "changed_pct": 0.0,
-  "ms": 13.1,
+  "win": 0,
+  "ms": 26.1,
   "bytes": 106727
  },
  {
@@ -824,7 +892,8 @@
   "matched_id": "rta_notice",
   "distance": 0,
   "changed_pct": 0.0,
-  "ms": 7.1,
+  "win": 0,
+  "ms": 24.0,
   "bytes": 62311
  },
  {
@@ -832,11 +901,12 @@
   "kind": "simulated_phone_screenshot",
   "post": "rta_notice",
   "expected": "genuine",
-  "verdict": "altered",
+  "verdict": "genuine",
   "matched_id": "rta_notice",
   "distance": 2,
-  "changed_pct": 1.318,
-  "ms": 1910.5,
+  "changed_pct": 0.0,
+  "win": 0,
+  "ms": 3075.2,
   "bytes": 180986
  },
  {
@@ -848,7 +918,8 @@
   "matched_id": "rta_notice",
   "distance": 0,
   "changed_pct": 0.0,
-  "ms": 33.3,
+  "win": 0,
+  "ms": 33.6,
   "bytes": 166946
  },
  {
@@ -860,7 +931,8 @@
   "matched_id": "rta_notice",
   "distance": 0,
   "changed_pct": 0.0,
-  "ms": 18.5,
+  "win": 0,
+  "ms": 32.6,
   "bytes": 114786
  },
  {
@@ -870,11 +942,12 @@
   "transform": "lossless",
   "post": "public_holiday_notice",
   "expected": "altered",
-  "verdict": "genuine",
+  "verdict": "altered",
   "matched_id": "public_holiday_notice",
   "distance": 0,
-  "changed_pct": 0.006,
-  "ms": 22.4,
+  "changed_pct": 0.013,
+  "win": 43,
+  "ms": 39.0,
   "bytes": 83132
  },
  {
@@ -884,11 +957,12 @@
   "transform": "jpeg_q60",
   "post": "public_holiday_notice",
   "expected": "altered",
-  "verdict": "genuine",
+  "verdict": "altered",
   "matched_id": "public_holiday_notice",
   "distance": 0,
-  "changed_pct": 0.006,
-  "ms": 18.3,
+  "changed_pct": 0.013,
+  "win": 42,
+  "ms": 33.2,
   "bytes": 98716
  },
  {
@@ -898,11 +972,12 @@
   "transform": "simulated_phone_screenshot",
   "post": "public_holiday_notice",
   "expected": "altered",
-  "verdict": "genuine",
+  "verdict": "altered",
   "matched_id": "public_holiday_notice",
   "distance": 2,
-  "changed_pct": 0.006,
-  "ms": 1861.0,
+  "changed_pct": 0.013,
+  "win": 42,
+  "ms": 2403.1,
   "bytes": 163870
  },
  {
@@ -912,11 +987,12 @@
   "transform": "lossless",
   "post": "public_holiday_notice",
   "expected": "altered",
-  "verdict": "genuine",
+  "verdict": "altered",
   "matched_id": "public_holiday_notice",
   "distance": 0,
-  "changed_pct": 0.012,
-  "ms": 23.5,
+  "changed_pct": 0.024,
+  "win": 58,
+  "ms": 40.2,
   "bytes": 83367
  },
  {
@@ -926,11 +1002,12 @@
   "transform": "jpeg_q60",
   "post": "public_holiday_notice",
   "expected": "altered",
-  "verdict": "genuine",
+  "verdict": "altered",
   "matched_id": "public_holiday_notice",
   "distance": 0,
-  "changed_pct": 0.012,
-  "ms": 18.1,
+  "changed_pct": 0.023,
+  "win": 55,
+  "ms": 36.2,
   "bytes": 98710
  },
  {
@@ -940,11 +1017,12 @@
   "transform": "simulated_phone_screenshot",
   "post": "public_holiday_notice",
   "expected": "altered",
-  "verdict": "genuine",
+  "verdict": "altered",
   "matched_id": "public_holiday_notice",
   "distance": 2,
-  "changed_pct": 0.012,
-  "ms": 1876.5,
+  "changed_pct": 0.024,
+  "win": 57,
+  "ms": 2412.1,
   "bytes": 163868
  },
  {
@@ -954,11 +1032,12 @@
   "transform": "lossless",
   "post": "public_holiday_notice",
   "expected": "altered",
-  "verdict": "genuine",
+  "verdict": "altered",
   "matched_id": "public_holiday_notice",
   "distance": 0,
-  "changed_pct": 0.014,
-  "ms": 32.2,
+  "changed_pct": 0.032,
+  "win": 70,
+  "ms": 42.8,
   "bytes": 83163
  },
  {
@@ -968,11 +1047,12 @@
   "transform": "jpeg_q60",
   "post": "public_holiday_notice",
   "expected": "altered",
-  "verdict": "genuine",
+  "verdict": "altered",
   "matched_id": "public_holiday_notice",
   "distance": 0,
-  "changed_pct": 0.014,
-  "ms": 24.1,
+  "changed_pct": 0.032,
+  "win": 69,
+  "ms": 36.6,
   "bytes": 98727
  },
  {
@@ -982,11 +1062,12 @@
   "transform": "simulated_phone_screenshot",
   "post": "public_holiday_notice",
   "expected": "altered",
-  "verdict": "genuine",
+  "verdict": "altered",
   "matched_id": "public_holiday_notice",
   "distance": 2,
-  "changed_pct": 0.02,
-  "ms": 1903.9,
+  "changed_pct": 0.033,
+  "win": 71,
+  "ms": 2376.1,
   "bytes": 163905
  },
  {
@@ -999,8 +1080,9 @@
   "verdict": "altered",
   "matched_id": "public_holiday_notice",
   "distance": 2,
-  "changed_pct": 0.11,
-  "ms": 23.7,
+  "changed_pct": 0.182,
+  "win": 83,
+  "ms": 653.5,
   "bytes": 83281
  },
  {
@@ -1013,8 +1095,9 @@
   "verdict": "altered",
   "matched_id": "public_holiday_notice",
   "distance": 2,
-  "changed_pct": 0.11,
-  "ms": 16.9,
+  "changed_pct": 0.181,
+  "win": 83,
+  "ms": 634.3,
   "bytes": 99040
  },
  {
@@ -1027,8 +1110,9 @@
   "verdict": "altered",
   "matched_id": "public_holiday_notice",
   "distance": 2,
-  "changed_pct": 0.124,
-  "ms": 1797.7,
+  "changed_pct": 0.182,
+  "win": 84,
+  "ms": 2459.5,
   "bytes": 164076
  },
  {
@@ -1041,8 +1125,9 @@
   "verdict": "altered",
   "matched_id": "public_holiday_notice",
   "distance": 2,
-  "changed_pct": 0.681,
-  "ms": 22.2,
+  "changed_pct": 1.131,
+  "win": 90,
+  "ms": 676.0,
   "bytes": 82970
  },
  {
@@ -1055,8 +1140,9 @@
   "verdict": "altered",
   "matched_id": "public_holiday_notice",
   "distance": 2,
-  "changed_pct": 0.682,
-  "ms": 18.0,
+  "changed_pct": 1.135,
+  "win": 92,
+  "ms": 626.8,
   "bytes": 98399
  },
  {
@@ -1069,8 +1155,9 @@
   "verdict": "altered",
   "matched_id": "public_holiday_notice",
   "distance": 2,
-  "changed_pct": 0.681,
-  "ms": 1747.2,
+  "changed_pct": 1.142,
+  "win": 92,
+  "ms": 2389.4,
   "bytes": 163543
  },
  {
@@ -1084,7 +1171,8 @@
   "matched_id": null,
   "distance": 18,
   "changed_pct": null,
-  "ms": 1567.9,
+  "win": null,
+  "ms": 1824.7,
   "bytes": 82753
  },
  {
@@ -1098,7 +1186,8 @@
   "matched_id": null,
   "distance": 18,
   "changed_pct": null,
-  "ms": 1707.4,
+  "win": null,
+  "ms": 1722.3,
   "bytes": 97825
  },
  {
@@ -1112,7 +1201,8 @@
   "matched_id": null,
   "distance": 28,
   "changed_pct": null,
-  "ms": 1570.2,
+  "win": null,
+  "ms": 1613.3,
   "bytes": 162259
  },
  {
@@ -1125,8 +1215,9 @@
   "verdict": "altered",
   "matched_id": "public_holiday_notice",
   "distance": 12,
-  "changed_pct": 4.831,
-  "ms": 23.1,
+  "changed_pct": 5.004,
+  "win": 100,
+  "ms": 650.5,
   "bytes": 78729
  },
  {
@@ -1139,8 +1230,9 @@
   "verdict": "altered",
   "matched_id": "public_holiday_notice",
   "distance": 12,
-  "changed_pct": 4.834,
-  "ms": 18.7,
+  "changed_pct": 4.998,
+  "win": 100,
+  "ms": 685.2,
   "bytes": 94800
  },
  {
@@ -1154,7 +1246,8 @@
   "matched_id": null,
   "distance": 24,
   "changed_pct": null,
-  "ms": 1556.5,
+  "win": null,
+  "ms": 1701.0,
   "bytes": 159341
  },
  {
@@ -1168,7 +1261,8 @@
   "matched_id": null,
   "distance": 16,
   "changed_pct": null,
-  "ms": 1608.1,
+  "win": null,
+  "ms": 1785.5,
   "bytes": 86586
  },
  {
@@ -1182,7 +1276,8 @@
   "matched_id": null,
   "distance": 16,
   "changed_pct": null,
-  "ms": 1725.8,
+  "win": null,
+  "ms": 1856.1,
   "bytes": 100654
  },
  {
@@ -1196,7 +1291,8 @@
   "matched_id": null,
   "distance": 24,
   "changed_pct": null,
-  "ms": 1521.0,
+  "win": null,
+  "ms": 1595.1,
   "bytes": 168887
  },
  {
@@ -1209,8 +1305,9 @@
   "verdict": "altered",
   "matched_id": "public_holiday_notice",
   "distance": 4,
-  "changed_pct": 2.621,
-  "ms": 35.8,
+  "changed_pct": 3.17,
+  "win": 96,
+  "ms": 701.2,
   "bytes": 79965
  },
  {
@@ -1223,8 +1320,9 @@
   "verdict": "altered",
   "matched_id": "public_holiday_notice",
   "distance": 4,
-  "changed_pct": 2.631,
-  "ms": 20.5,
+  "changed_pct": 3.17,
+  "win": 97,
+  "ms": 724.3,
   "bytes": 96214
  },
  {
@@ -1237,8 +1335,9 @@
   "verdict": "altered",
   "matched_id": "public_holiday_notice",
   "distance": 6,
-  "changed_pct": 2.718,
-  "ms": 1782.9,
+  "changed_pct": 3.178,
+  "win": 97,
+  "ms": 2201.2,
   "bytes": 159076
  },
  {
@@ -1248,11 +1347,12 @@
   "transform": "lossless",
   "post": "mohre_announcement",
   "expected": "altered",
-  "verdict": "genuine",
+  "verdict": "altered",
   "matched_id": "mohre_announcement",
   "distance": 0,
-  "changed_pct": 0.011,
-  "ms": 23.3,
+  "changed_pct": 0.02,
+  "win": 65,
+  "ms": 39.0,
   "bytes": 74608
  },
  {
@@ -1262,11 +1362,12 @@
   "transform": "jpeg_q60",
   "post": "mohre_announcement",
   "expected": "altered",
-  "verdict": "genuine",
+  "verdict": "altered",
   "matched_id": "mohre_announcement",
   "distance": 0,
-  "changed_pct": 0.011,
-  "ms": 33.0,
+  "changed_pct": 0.02,
+  "win": 64,
+  "ms": 41.2,
   "bytes": 87974
  },
  {
@@ -1276,11 +1377,12 @@
   "transform": "simulated_phone_screenshot",
   "post": "mohre_announcement",
   "expected": "altered",
-  "verdict": "genuine",
+  "verdict": "altered",
   "matched_id": "mohre_announcement",
   "distance": 2,
-  "changed_pct": 0.011,
-  "ms": 1862.3,
+  "changed_pct": 0.02,
+  "win": 65,
+  "ms": 1089.1,
   "bytes": 146959
  },
  {
@@ -1290,11 +1392,12 @@
   "transform": "lossless",
   "post": "mohre_announcement",
   "expected": "altered",
-  "verdict": "genuine",
+  "verdict": "altered",
   "matched_id": "mohre_announcement",
   "distance": 0,
-  "changed_pct": 0.02,
-  "ms": 28.0,
+  "changed_pct": 0.031,
+  "win": 74,
+  "ms": 66.0,
   "bytes": 74793
  },
  {
@@ -1304,11 +1407,12 @@
   "transform": "jpeg_q60",
   "post": "mohre_announcement",
   "expected": "altered",
-  "verdict": "genuine",
+  "verdict": "altered",
   "matched_id": "mohre_announcement",
   "distance": 0,
-  "changed_pct": 0.02,
-  "ms": 18.5,
+  "changed_pct": 0.03,
+  "win": 74,
+  "ms": 37.5,
   "bytes": 88016
  },
  {
@@ -1318,11 +1422,12 @@
   "transform": "simulated_phone_screenshot",
   "post": "mohre_announcement",
   "expected": "altered",
-  "verdict": "genuine",
+  "verdict": "altered",
   "matched_id": "mohre_announcement",
   "distance": 2,
-  "changed_pct": 0.02,
-  "ms": 1595.5,
+  "changed_pct": 0.031,
+  "win": 74,
+  "ms": 1090.4,
   "bytes": 146976
  },
  {
@@ -1332,11 +1437,12 @@
   "transform": "lossless",
   "post": "mohre_announcement",
   "expected": "altered",
-  "verdict": "genuine",
+  "verdict": "altered",
   "matched_id": "mohre_announcement",
   "distance": 0,
-  "changed_pct": 0.032,
-  "ms": 20.5,
+  "changed_pct": 0.052,
+  "win": 83,
+  "ms": 44.4,
   "bytes": 75186
  },
  {
@@ -1346,11 +1452,12 @@
   "transform": "jpeg_q60",
   "post": "mohre_announcement",
   "expected": "altered",
-  "verdict": "genuine",
+  "verdict": "altered",
   "matched_id": "mohre_announcement",
   "distance": 0,
-  "changed_pct": 0.035,
-  "ms": 24.5,
+  "changed_pct": 0.053,
+  "win": 85,
+  "ms": 41.6,
   "bytes": 88015
  },
  {
@@ -1360,11 +1467,12 @@
   "transform": "simulated_phone_screenshot",
   "post": "mohre_announcement",
   "expected": "altered",
-  "verdict": "genuine",
+  "verdict": "altered",
   "matched_id": "mohre_announcement",
   "distance": 2,
-  "changed_pct": 0.034,
-  "ms": 1727.2,
+  "changed_pct": 0.053,
+  "win": 84,
+  "ms": 1064.9,
   "bytes": 147104
  },
  {
@@ -1374,11 +1482,12 @@
   "transform": "lossless",
   "post": "mohre_announcement",
   "expected": "altered",
-  "verdict": "genuine",
+  "verdict": "altered",
   "matched_id": "mohre_announcement",
   "distance": 0,
-  "changed_pct": 0.032,
-  "ms": 20.2,
+  "changed_pct": 0.052,
+  "win": 83,
+  "ms": 37.6,
   "bytes": 75186
  },
  {
@@ -1388,11 +1497,12 @@
   "transform": "jpeg_q60",
   "post": "mohre_announcement",
   "expected": "altered",
-  "verdict": "genuine",
+  "verdict": "altered",
   "matched_id": "mohre_announcement",
   "distance": 0,
-  "changed_pct": 0.035,
-  "ms": 16.8,
+  "changed_pct": 0.053,
+  "win": 85,
+  "ms": 34.1,
   "bytes": 88015
  },
  {
@@ -1402,11 +1512,12 @@
   "transform": "simulated_phone_screenshot",
   "post": "mohre_announcement",
   "expected": "altered",
-  "verdict": "genuine",
+  "verdict": "altered",
   "matched_id": "mohre_announcement",
   "distance": 2,
-  "changed_pct": 0.034,
-  "ms": 1798.0,
+  "changed_pct": 0.053,
+  "win": 84,
+  "ms": 905.1,
   "bytes": 147104
  },
  {
@@ -1419,8 +1530,9 @@
   "verdict": "altered",
   "matched_id": "mohre_announcement",
   "distance": 2,
-  "changed_pct": 0.574,
-  "ms": 23.5,
+  "changed_pct": 0.886,
+  "win": 80,
+  "ms": 664.6,
   "bytes": 75218
  },
  {
@@ -1433,8 +1545,9 @@
   "verdict": "altered",
   "matched_id": "mohre_announcement",
   "distance": 2,
-  "changed_pct": 0.575,
-  "ms": 16.7,
+  "changed_pct": 0.893,
+  "win": 82,
+  "ms": 668.2,
   "bytes": 88544
  },
  {
@@ -1447,8 +1560,9 @@
   "verdict": "altered",
   "matched_id": "mohre_announcement",
   "distance": 4,
-  "changed_pct": 0.58,
-  "ms": 1781.8,
+  "changed_pct": 0.899,
+  "win": 83,
+  "ms": 2535.4,
   "bytes": 147665
  },
  {
@@ -1461,8 +1575,9 @@
   "verdict": "altered",
   "matched_id": "mohre_announcement",
   "distance": 0,
-  "changed_pct": 0.351,
-  "ms": 23.0,
+  "changed_pct": 0.447,
+  "win": 95,
+  "ms": 42.7,
   "bytes": 77750
  },
  {
@@ -1475,8 +1590,9 @@
   "verdict": "altered",
   "matched_id": "mohre_announcement",
   "distance": 0,
-  "changed_pct": 0.352,
-  "ms": 17.8,
+  "changed_pct": 0.449,
+  "win": 95,
+  "ms": 37.4,
   "bytes": 89187
  },
  {
@@ -1489,8 +1605,9 @@
   "verdict": "altered",
   "matched_id": "mohre_announcement",
   "distance": 2,
-  "changed_pct": 0.351,
-  "ms": 1841.3,
+  "changed_pct": 0.448,
+  "win": 95,
+  "ms": 1068.7,
   "bytes": 149244
  },
  {
@@ -1504,7 +1621,8 @@
   "matched_id": null,
   "distance": 14,
   "changed_pct": null,
-  "ms": 1556.0,
+  "win": null,
+  "ms": 1809.1,
   "bytes": 77633
  },
  {
@@ -1518,7 +1636,8 @@
   "matched_id": null,
   "distance": 14,
   "changed_pct": null,
-  "ms": 1762.3,
+  "win": null,
+  "ms": 1825.1,
   "bytes": 89382
  },
  {
@@ -1532,7 +1651,8 @@
   "matched_id": null,
   "distance": 22,
   "changed_pct": null,
-  "ms": 1418.7,
+  "win": null,
+  "ms": 1570.4,
   "bytes": 148694
  },
  {
@@ -1545,8 +1665,9 @@
   "verdict": "altered",
   "matched_id": "mohre_announcement",
   "distance": 6,
-  "changed_pct": 1.318,
-  "ms": 23.5,
+  "changed_pct": 2.044,
+  "win": 100,
+  "ms": 657.0,
   "bytes": 82307
  },
  {
@@ -1559,8 +1680,9 @@
   "verdict": "altered",
   "matched_id": "mohre_announcement",
   "distance": 6,
-  "changed_pct": 1.349,
-  "ms": 18.8,
+  "changed_pct": 2.095,
+  "win": 100,
+  "ms": 732.0,
   "bytes": 94571
  },
  {
@@ -1573,8 +1695,9 @@
   "verdict": "altered",
   "matched_id": "mohre_announcement",
   "distance": 4,
-  "changed_pct": 1.373,
-  "ms": 1727.8,
+  "changed_pct": 2.076,
+  "win": 100,
+  "ms": 2416.5,
   "bytes": 156471
  },
  {
@@ -1587,8 +1710,9 @@
   "verdict": "altered",
   "matched_id": "mohre_announcement",
   "distance": 8,
-  "changed_pct": 4.617,
-  "ms": 23.2,
+  "changed_pct": 6.562,
+  "win": 100,
+  "ms": 650.3,
   "bytes": 76564
  },
  {
@@ -1601,8 +1725,9 @@
   "verdict": "altered",
   "matched_id": "mohre_announcement",
   "distance": 6,
-  "changed_pct": 4.652,
-  "ms": 18.6,
+  "changed_pct": 6.595,
+  "win": 100,
+  "ms": 710.8,
   "bytes": 89367
  },
  {
@@ -1615,8 +1740,9 @@
   "verdict": "altered",
   "matched_id": "mohre_announcement",
   "distance": 6,
-  "changed_pct": 4.767,
-  "ms": 1693.8,
+  "changed_pct": 6.592,
+  "win": 100,
+  "ms": 2471.4,
   "bytes": 148676
  },
  {
@@ -1626,11 +1752,12 @@
   "transform": "lossless",
   "post": "weekend_schedule_notice",
   "expected": "altered",
-  "verdict": "genuine",
+  "verdict": "altered",
   "matched_id": "weekend_schedule_notice",
   "distance": 0,
-  "changed_pct": 0.003,
-  "ms": 23.6,
+  "changed_pct": 0.007,
+  "win": 22,
+  "ms": 64.0,
   "bytes": 66226
  },
  {
@@ -1640,11 +1767,12 @@
   "transform": "jpeg_q60",
   "post": "weekend_schedule_notice",
   "expected": "altered",
-  "verdict": "genuine",
+  "verdict": "altered",
   "matched_id": "weekend_schedule_notice",
   "distance": 0,
-  "changed_pct": 0.003,
-  "ms": 17.3,
+  "changed_pct": 0.006,
+  "win": 21,
+  "ms": 35.0,
   "bytes": 86808
  },
  {
@@ -1657,8 +1785,9 @@
   "verdict": "altered",
   "matched_id": "weekend_schedule_notice",
   "distance": 2,
-  "changed_pct": 0.092,
-  "ms": 1702.9,
+  "changed_pct": 0.006,
+  "win": 21,
+  "ms": 2408.9,
   "bytes": 154690
  },
  {
@@ -1668,11 +1797,12 @@
   "transform": "lossless",
   "post": "weekend_schedule_notice",
   "expected": "altered",
-  "verdict": "genuine",
+  "verdict": "altered",
   "matched_id": "weekend_schedule_notice",
   "distance": 0,
-  "changed_pct": 0.005,
-  "ms": 22.5,
+  "changed_pct": 0.013,
+  "win": 35,
+  "ms": 41.9,
   "bytes": 66547
  },
  {
@@ -1682,11 +1812,12 @@
   "transform": "jpeg_q60",
   "post": "weekend_schedule_notice",
   "expected": "altered",
-  "verdict": "genuine",
+  "verdict": "altered",
   "matched_id": "weekend_schedule_notice",
   "distance": 0,
-  "changed_pct": 0.005,
-  "ms": 28.9,
+  "changed_pct": 0.013,
+  "win": 36,
+  "ms": 37.5,
   "bytes": 86781
  },
  {
@@ -1699,8 +1830,9 @@
   "verdict": "altered",
   "matched_id": "weekend_schedule_notice",
   "distance": 2,
-  "changed_pct": 0.093,
-  "ms": 1718.3,
+  "changed_pct": 0.013,
+  "win": 35,
+  "ms": 2656.7,
   "bytes": 154703
  },
  {
@@ -1713,8 +1845,9 @@
   "verdict": "altered",
   "matched_id": "weekend_schedule_notice",
   "distance": 0,
-  "changed_pct": 0.125,
-  "ms": 22.3,
+  "changed_pct": 0.224,
+  "win": 68,
+  "ms": 40.0,
   "bytes": 67124
  },
  {
@@ -1727,8 +1860,9 @@
   "verdict": "altered",
   "matched_id": "weekend_schedule_notice",
   "distance": 0,
-  "changed_pct": 0.125,
-  "ms": 19.5,
+  "changed_pct": 0.224,
+  "win": 68,
+  "ms": 37.2,
   "bytes": 86945
  },
  {
@@ -1741,8 +1875,9 @@
   "verdict": "altered",
   "matched_id": "weekend_schedule_notice",
   "distance": 2,
-  "changed_pct": 0.224,
-  "ms": 1739.5,
+  "changed_pct": 0.226,
+  "win": 72,
+  "ms": 2454.1,
   "bytes": 154981
  },
  {
@@ -1755,8 +1890,9 @@
   "verdict": "altered",
   "matched_id": "weekend_schedule_notice",
   "distance": 2,
-  "changed_pct": 0.702,
-  "ms": 23.0,
+  "changed_pct": 1.063,
+  "win": 90,
+  "ms": 673.6,
   "bytes": 65963
  },
  {
@@ -1769,8 +1905,9 @@
   "verdict": "altered",
   "matched_id": "weekend_schedule_notice",
   "distance": 2,
-  "changed_pct": 0.699,
-  "ms": 17.7,
+  "changed_pct": 1.064,
+  "win": 90,
+  "ms": 646.3,
   "bytes": 87173
  },
  {
@@ -1783,8 +1920,9 @@
   "verdict": "altered",
   "matched_id": "weekend_schedule_notice",
   "distance": 2,
-  "changed_pct": 0.766,
-  "ms": 1775.2,
+  "changed_pct": 1.066,
+  "win": 91,
+  "ms": 2320.5,
   "bytes": 154984
  },
  {
@@ -1797,8 +1935,9 @@
   "verdict": "altered",
   "matched_id": "weekend_schedule_notice",
   "distance": 8,
-  "changed_pct": 0.42,
-  "ms": 21.6,
+  "changed_pct": 0.614,
+  "win": 91,
+  "ms": 59.8,
   "bytes": 68332
  },
  {
@@ -1811,8 +1950,9 @@
   "verdict": "altered",
   "matched_id": "weekend_schedule_notice",
   "distance": 8,
-  "changed_pct": 0.418,
-  "ms": 16.6,
+  "changed_pct": 0.615,
+  "win": 91,
+  "ms": 35.9,
   "bytes": 87336
  },
  {
@@ -1826,7 +1966,8 @@
   "matched_id": null,
   "distance": 24,
   "changed_pct": null,
-  "ms": 1508.3,
+  "win": null,
+  "ms": 1529.8,
   "bytes": 156002
  },
  {
@@ -1839,8 +1980,9 @@
   "verdict": "altered",
   "matched_id": "weekend_schedule_notice",
   "distance": 12,
-  "changed_pct": 0.639,
-  "ms": 23.8,
+  "changed_pct": 0.903,
+  "win": 97,
+  "ms": 668.1,
   "bytes": 64997
  },
  {
@@ -1853,8 +1995,9 @@
   "verdict": "altered",
   "matched_id": "weekend_schedule_notice",
   "distance": 12,
-  "changed_pct": 0.638,
-  "ms": 24.1,
+  "changed_pct": 0.906,
+  "win": 97,
+  "ms": 663.0,
   "bytes": 84615
  },
  {
@@ -1868,7 +2011,8 @@
   "matched_id": null,
   "distance": 22,
   "changed_pct": null,
-  "ms": 1472.1,
+  "win": null,
+  "ms": 1490.2,
   "bytes": 151500
  },
  {
@@ -1882,7 +2026,8 @@
   "matched_id": null,
   "distance": 14,
   "changed_pct": null,
-  "ms": 1635.1,
+  "win": null,
+  "ms": 1695.1,
   "bytes": 63430
  },
  {
@@ -1896,7 +2041,8 @@
   "matched_id": null,
   "distance": 14,
   "changed_pct": null,
-  "ms": 1755.4,
+  "win": null,
+  "ms": 1593.4,
   "bytes": 82386
  },
  {
@@ -1910,7 +2056,8 @@
   "matched_id": null,
   "distance": 26,
   "changed_pct": null,
-  "ms": 1496.5,
+  "win": null,
+  "ms": 1521.8,
   "bytes": 147315
  },
  {
@@ -1923,8 +2070,9 @@
   "verdict": "altered",
   "matched_id": "weekend_schedule_notice",
   "distance": 8,
-  "changed_pct": 1.549,
-  "ms": 24.2,
+  "changed_pct": 2.16,
+  "win": 91,
+  "ms": 664.5,
   "bytes": 67244
  },
  {
@@ -1937,8 +2085,9 @@
   "verdict": "altered",
   "matched_id": "weekend_schedule_notice",
   "distance": 8,
-  "changed_pct": 1.546,
-  "ms": 17.0,
+  "changed_pct": 2.154,
+  "win": 91,
+  "ms": 633.8,
   "bytes": 88678
  },
  {
@@ -1952,7 +2101,8 @@
   "matched_id": null,
   "distance": 26,
   "changed_pct": null,
-  "ms": 1450.7,
+  "win": null,
+  "ms": 1581.5,
   "bytes": 158593
  },
  {
@@ -1962,11 +2112,12 @@
   "transform": "lossless",
   "post": "golden_visa_update",
   "expected": "altered",
-  "verdict": "genuine",
+  "verdict": "altered",
   "matched_id": "golden_visa_update",
   "distance": 0,
-  "changed_pct": 0.002,
-  "ms": 24.4,
+  "changed_pct": 0.005,
+  "win": 17,
+  "ms": 64.7,
   "bytes": 73091
  },
  {
@@ -1976,11 +2127,12 @@
   "transform": "jpeg_q60",
   "post": "golden_visa_update",
   "expected": "altered",
-  "verdict": "genuine",
+  "verdict": "altered",
   "matched_id": "golden_visa_update",
   "distance": 0,
-  "changed_pct": 0.002,
-  "ms": 17.9,
+  "changed_pct": 0.005,
+  "win": 18,
+  "ms": 40.6,
   "bytes": 89504
  },
  {
@@ -1990,11 +2142,12 @@
   "transform": "simulated_phone_screenshot",
   "post": "golden_visa_update",
   "expected": "altered",
-  "verdict": "genuine",
+  "verdict": "altered",
   "matched_id": "golden_visa_update",
   "distance": 2,
-  "changed_pct": 0.003,
-  "ms": 1833.1,
+  "changed_pct": 0.005,
+  "win": 18,
+  "ms": 1171.2,
   "bytes": 149018
  },
  {
@@ -2004,11 +2157,12 @@
   "transform": "lossless",
   "post": "golden_visa_update",
   "expected": "altered",
-  "verdict": "genuine",
+  "verdict": "altered",
   "matched_id": "golden_visa_update",
   "distance": 0,
-  "changed_pct": 0.002,
-  "ms": 22.5,
+  "changed_pct": 0.01,
+  "win": 30,
+  "ms": 42.0,
   "bytes": 73025
  },
  {
@@ -2018,11 +2172,12 @@
   "transform": "jpeg_q60",
   "post": "golden_visa_update",
   "expected": "altered",
-  "verdict": "genuine",
+  "verdict": "altered",
   "matched_id": "golden_visa_update",
   "distance": 0,
-  "changed_pct": 0.002,
-  "ms": 19.0,
+  "changed_pct": 0.011,
+  "win": 33,
+  "ms": 37.1,
   "bytes": 89525
  },
  {
@@ -2032,11 +2187,12 @@
   "transform": "simulated_phone_screenshot",
   "post": "golden_visa_update",
   "expected": "altered",
-  "verdict": "genuine",
+  "verdict": "altered",
   "matched_id": "golden_visa_update",
   "distance": 2,
-  "changed_pct": 0.006,
-  "ms": 2063.8,
+  "changed_pct": 0.011,
+  "win": 32,
+  "ms": 1196.5,
   "bytes": 149054
  },
  {
@@ -2049,8 +2205,9 @@
   "verdict": "altered",
   "matched_id": "golden_visa_update",
   "distance": 0,
-  "changed_pct": 0.081,
-  "ms": 37.6,
+  "changed_pct": 0.09,
+  "win": 85,
+  "ms": 62.5,
   "bytes": 73955
  },
  {
@@ -2063,8 +2220,9 @@
   "verdict": "altered",
   "matched_id": "golden_visa_update",
   "distance": 0,
-  "changed_pct": 0.078,
-  "ms": 16.8,
+  "changed_pct": 0.09,
+  "win": 84,
+  "ms": 36.4,
   "bytes": 89485
  },
  {
@@ -2077,8 +2235,9 @@
   "verdict": "altered",
   "matched_id": "golden_visa_update",
   "distance": 2,
-  "changed_pct": 0.073,
-  "ms": 1694.8,
+  "changed_pct": 0.089,
+  "win": 85,
+  "ms": 1152.1,
   "bytes": 148971
  },
  {
@@ -2091,8 +2250,9 @@
   "verdict": "altered",
   "matched_id": "golden_visa_update",
   "distance": 2,
-  "changed_pct": 0.539,
-  "ms": 25.2,
+  "changed_pct": 0.666,
+  "win": 98,
+  "ms": 649.3,
   "bytes": 72802
  },
  {
@@ -2105,8 +2265,9 @@
   "verdict": "altered",
   "matched_id": "golden_visa_update",
   "distance": 2,
-  "changed_pct": 0.533,
-  "ms": 17.6,
+  "changed_pct": 0.663,
+  "win": 98,
+  "ms": 677.0,
   "bytes": 89451
  },
  {
@@ -2119,8 +2280,9 @@
   "verdict": "altered",
   "matched_id": "golden_visa_update",
   "distance": 4,
-  "changed_pct": 0.522,
-  "ms": 1754.9,
+  "changed_pct": 0.664,
+  "win": 98,
+  "ms": 2341.8,
   "bytes": 148791
  },
  {
@@ -2133,8 +2295,9 @@
   "verdict": "altered",
   "matched_id": "golden_visa_update",
   "distance": 0,
-  "changed_pct": 0.052,
-  "ms": 39.9,
+  "changed_pct": 0.099,
+  "win": 69,
+  "ms": 61.4,
   "bytes": 72516
  },
  {
@@ -2147,8 +2310,9 @@
   "verdict": "altered",
   "matched_id": "golden_visa_update",
   "distance": 0,
-  "changed_pct": 0.052,
-  "ms": 17.4,
+  "changed_pct": 0.102,
+  "win": 71,
+  "ms": 49.8,
   "bytes": 89435
  },
  {
@@ -2161,8 +2325,9 @@
   "verdict": "altered",
   "matched_id": "golden_visa_update",
   "distance": 2,
-  "changed_pct": 0.052,
-  "ms": 1817.3,
+  "changed_pct": 0.1,
+  "win": 70,
+  "ms": 1136.8,
   "bytes": 148899
  },
  {
@@ -2175,8 +2340,9 @@
   "verdict": "altered",
   "matched_id": "golden_visa_update",
   "distance": 6,
-  "changed_pct": 0.616,
-  "ms": 22.6,
+  "changed_pct": 0.814,
+  "win": 91,
+  "ms": 636.9,
   "bytes": 71576
  },
  {
@@ -2189,8 +2355,9 @@
   "verdict": "altered",
   "matched_id": "golden_visa_update",
   "distance": 6,
-  "changed_pct": 0.62,
-  "ms": 19.5,
+  "changed_pct": 0.827,
+  "win": 91,
+  "ms": 664.3,
   "bytes": 87375
  },
  {
@@ -2203,8 +2370,9 @@
   "verdict": "altered",
   "matched_id": "golden_visa_update",
   "distance": 6,
-  "changed_pct": 0.742,
-  "ms": 1799.5,
+  "changed_pct": 0.821,
+  "win": 91,
+  "ms": 2432.7,
   "bytes": 146987
  },
  {
@@ -2217,8 +2385,9 @@
   "verdict": "altered",
   "matched_id": "golden_visa_update",
   "distance": 10,
-  "changed_pct": 4.466,
-  "ms": 21.9,
+  "changed_pct": 4.752,
+  "win": 100,
+  "ms": 648.3,
   "bytes": 73472
  },
  {
@@ -2231,8 +2400,9 @@
   "verdict": "altered",
   "matched_id": "golden_visa_update",
   "distance": 10,
-  "changed_pct": 4.482,
-  "ms": 16.6,
+  "changed_pct": 4.763,
+  "win": 100,
+  "ms": 651.3,
   "bytes": 90195
  },
  {
@@ -2246,7 +2416,8 @@
   "matched_id": null,
   "distance": 18,
   "changed_pct": null,
-  "ms": 1418.1,
+  "win": null,
+  "ms": 1487.7,
   "bytes": 150657
  },
  {
@@ -2259,8 +2430,9 @@
   "verdict": "altered",
   "matched_id": "golden_visa_update",
   "distance": 2,
-  "changed_pct": 1.91,
-  "ms": 21.1,
+  "changed_pct": 2.336,
+  "win": 95,
+  "ms": 658.6,
   "bytes": 72057
  },
  {
@@ -2273,8 +2445,9 @@
   "verdict": "altered",
   "matched_id": "golden_visa_update",
   "distance": 2,
-  "changed_pct": 1.91,
-  "ms": 20.7,
+  "changed_pct": 2.394,
+  "win": 96,
+  "ms": 622.8,
   "bytes": 88398
  },
  {
@@ -2287,8 +2460,9 @@
   "verdict": "altered",
   "matched_id": "golden_visa_update",
   "distance": 2,
-  "changed_pct": 1.91,
-  "ms": 1799.7,
+  "changed_pct": 2.391,
+  "win": 95,
+  "ms": 1008.8,
   "bytes": 147369
  },
  {
@@ -2301,8 +2475,9 @@
   "verdict": "altered",
   "matched_id": "golden_visa_update",
   "distance": 6,
-  "changed_pct": 2.913,
-  "ms": 22.1,
+  "changed_pct": 3.71,
+  "win": 99,
+  "ms": 685.1,
   "bytes": 73874
  },
  {
@@ -2315,8 +2490,9 @@
   "verdict": "altered",
   "matched_id": "golden_visa_update",
   "distance": 6,
-  "changed_pct": 2.902,
-  "ms": 17.5,
+  "changed_pct": 3.717,
+  "win": 99,
+  "ms": 642.9,
   "bytes": 90989
  },
  {
@@ -2329,8 +2505,9 @@
   "verdict": "altered",
   "matched_id": "golden_visa_update",
   "distance": 6,
-  "changed_pct": 2.916,
-  "ms": 1708.8,
+  "changed_pct": 3.713,
+  "win": 99,
+  "ms": 2415.7,
   "bytes": 151113
  },
  {
@@ -2340,11 +2517,12 @@
   "transform": "lossless",
   "post": "school_calendar",
   "expected": "altered",
-  "verdict": "genuine",
+  "verdict": "altered",
   "matched_id": "school_calendar",
   "distance": 0,
-  "changed_pct": 0.003,
-  "ms": 23.3,
+  "changed_pct": 0.007,
+  "win": 22,
+  "ms": 36.1,
   "bytes": 83848
  },
  {
@@ -2354,11 +2532,12 @@
   "transform": "jpeg_q60",
   "post": "school_calendar",
   "expected": "altered",
-  "verdict": "genuine",
+  "verdict": "altered",
   "matched_id": "school_calendar",
   "distance": 0,
-  "changed_pct": 0.003,
-  "ms": 31.0,
+  "changed_pct": 0.007,
+  "win": 22,
+  "ms": 50.7,
   "bytes": 100558
  },
  {
@@ -2371,8 +2550,9 @@
   "verdict": "altered",
   "matched_id": "school_calendar",
   "distance": 2,
-  "changed_pct": 0.092,
-  "ms": 1834.2,
+  "changed_pct": 0.007,
+  "win": 22,
+  "ms": 1076.9,
   "bytes": 169274
  },
  {
@@ -2382,11 +2562,12 @@
   "transform": "lossless",
   "post": "school_calendar",
   "expected": "altered",
-  "verdict": "genuine",
+  "verdict": "altered",
   "matched_id": "school_calendar",
   "distance": 0,
-  "changed_pct": 0.006,
-  "ms": 32.0,
+  "changed_pct": 0.013,
+  "win": 35,
+  "ms": 63.4,
   "bytes": 84057
  },
  {
@@ -2396,11 +2577,12 @@
   "transform": "jpeg_q60",
   "post": "school_calendar",
   "expected": "altered",
-  "verdict": "genuine",
+  "verdict": "altered",
   "matched_id": "school_calendar",
   "distance": 0,
-  "changed_pct": 0.005,
-  "ms": 15.1,
+  "changed_pct": 0.013,
+  "win": 34,
+  "ms": 36.1,
   "bytes": 100559
  },
  {
@@ -2413,8 +2595,9 @@
   "verdict": "altered",
   "matched_id": "school_calendar",
   "distance": 2,
-  "changed_pct": 0.093,
-  "ms": 1360.0,
+  "changed_pct": 0.014,
+  "win": 37,
+  "ms": 1000.3,
   "bytes": 169247
  },
  {
@@ -2424,11 +2607,12 @@
   "transform": "lossless",
   "post": "school_calendar",
   "expected": "altered",
-  "verdict": "genuine",
+  "verdict": "altered",
   "matched_id": "school_calendar",
   "distance": 0,
-  "changed_pct": 0.014,
-  "ms": 20.2,
+  "changed_pct": 0.018,
+  "win": 57,
+  "ms": 38.3,
   "bytes": 83234
  },
  {
@@ -2438,11 +2622,12 @@
   "transform": "jpeg_q60",
   "post": "school_calendar",
   "expected": "altered",
-  "verdict": "genuine",
+  "verdict": "altered",
   "matched_id": "school_calendar",
   "distance": 0,
-  "changed_pct": 0.014,
-  "ms": 18.6,
+  "changed_pct": 0.019,
+  "win": 59,
+  "ms": 36.1,
   "bytes": 100592
  },
  {
@@ -2455,8 +2640,9 @@
   "verdict": "altered",
   "matched_id": "school_calendar",
   "distance": 2,
-  "changed_pct": 0.104,
-  "ms": 1766.1,
+  "changed_pct": 0.019,
+  "win": 60,
+  "ms": 933.1,
   "bytes": 169322
  },
  {
@@ -2466,11 +2652,12 @@
   "transform": "lossless",
   "post": "school_calendar",
   "expected": "altered",
-  "verdict": "genuine",
+  "verdict": "altered",
   "matched_id": "school_calendar",
   "distance": 0,
-  "changed_pct": 0.04,
-  "ms": 21.7,
+  "changed_pct": 0.076,
+  "win": 68,
+  "ms": 41.0,
   "bytes": 83683
  },
  {
@@ -2480,11 +2667,12 @@
   "transform": "jpeg_q60",
   "post": "school_calendar",
   "expected": "altered",
-  "verdict": "genuine",
+  "verdict": "altered",
   "matched_id": "school_calendar",
   "distance": 0,
-  "changed_pct": 0.04,
-  "ms": 16.5,
+  "changed_pct": 0.075,
+  "win": 67,
+  "ms": 35.5,
   "bytes": 100648
  },
  {
@@ -2497,8 +2685,9 @@
   "verdict": "altered",
   "matched_id": "school_calendar",
   "distance": 2,
-  "changed_pct": 0.133,
-  "ms": 1750.8,
+  "changed_pct": 0.074,
+  "win": 69,
+  "ms": 1124.9,
   "bytes": 169373
  },
  {
@@ -2511,8 +2700,9 @@
   "verdict": "altered",
   "matched_id": "school_calendar",
   "distance": 0,
-  "changed_pct": 0.287,
-  "ms": 22.9,
+  "changed_pct": 0.499,
+  "win": 84,
+  "ms": 44.9,
   "bytes": 83231
  },
  {
@@ -2525,8 +2715,9 @@
   "verdict": "altered",
   "matched_id": "school_calendar",
   "distance": 0,
-  "changed_pct": 0.29,
-  "ms": 20.1,
+  "changed_pct": 0.505,
+  "win": 85,
+  "ms": 38.4,
   "bytes": 100334
  },
  {
@@ -2539,8 +2730,9 @@
   "verdict": "altered",
   "matched_id": "school_calendar",
   "distance": 2,
-  "changed_pct": 0.395,
-  "ms": 1743.0,
+  "changed_pct": 0.505,
+  "win": 85,
+  "ms": 1022.5,
   "bytes": 169053
  },
  {
@@ -2554,7 +2746,8 @@
   "matched_id": null,
   "distance": 20,
   "changed_pct": null,
-  "ms": 1317.9,
+  "win": null,
+  "ms": 1721.6,
   "bytes": 84234
  },
  {
@@ -2568,7 +2761,8 @@
   "matched_id": null,
   "distance": 20,
   "changed_pct": null,
-  "ms": 1337.4,
+  "win": null,
+  "ms": 1604.6,
   "bytes": 102259
  },
  {
@@ -2582,7 +2776,8 @@
   "matched_id": null,
   "distance": 26,
   "changed_pct": null,
-  "ms": 1360.1,
+  "win": null,
+  "ms": 1347.4,
   "bytes": 171216
  },
  {
@@ -2595,8 +2790,9 @@
   "verdict": "altered",
   "matched_id": "school_calendar",
   "distance": 4,
-  "changed_pct": 0.337,
-  "ms": 24.8,
+  "changed_pct": 0.48,
+  "win": 85,
+  "ms": 42.6,
   "bytes": 83484
  },
  {
@@ -2609,8 +2805,9 @@
   "verdict": "altered",
   "matched_id": "school_calendar",
   "distance": 4,
-  "changed_pct": 0.337,
-  "ms": 17.1,
+  "changed_pct": 0.479,
+  "win": 86,
+  "ms": 34.3,
   "bytes": 99933
  },
  {
@@ -2623,8 +2820,9 @@
   "verdict": "altered",
   "matched_id": "school_calendar",
   "distance": 6,
-  "changed_pct": 0.311,
-  "ms": 1695.3,
+  "changed_pct": 0.481,
+  "win": 84,
+  "ms": 2472.2,
   "bytes": 168422
  },
  {
@@ -2638,7 +2836,8 @@
   "matched_id": null,
   "distance": 20,
   "changed_pct": null,
-  "ms": 1638.6,
+  "win": null,
+  "ms": 1649.3,
   "bytes": 84878
  },
  {
@@ -2652,7 +2851,8 @@
   "matched_id": null,
   "distance": 20,
   "changed_pct": null,
-  "ms": 1705.1,
+  "win": null,
+  "ms": 1740.1,
   "bytes": 104260
  },
  {
@@ -2666,7 +2866,8 @@
   "matched_id": null,
   "distance": 22,
   "changed_pct": null,
-  "ms": 1470.5,
+  "win": null,
+  "ms": 1413.1,
   "bytes": 174023
  },
  {
@@ -2679,8 +2880,9 @@
   "verdict": "altered",
   "matched_id": "school_calendar",
   "distance": 4,
-  "changed_pct": 1.268,
-  "ms": 24.2,
+  "changed_pct": 1.779,
+  "win": 90,
+  "ms": 679.8,
   "bytes": 82933
  },
  {
@@ -2693,8 +2895,9 @@
   "verdict": "altered",
   "matched_id": "school_calendar",
   "distance": 4,
-  "changed_pct": 1.271,
-  "ms": 18.5,
+  "changed_pct": 1.797,
+  "win": 90,
+  "ms": 656.4,
   "bytes": 102146
  },
  {
@@ -2707,8 +2910,9 @@
   "verdict": "altered",
   "matched_id": "school_calendar",
   "distance": 4,
-  "changed_pct": 1.268,
-  "ms": 1658.6,
+  "changed_pct": 1.793,
+  "win": 90,
+  "ms": 2327.3,
   "bytes": 171501
  },
  {
@@ -2718,11 +2922,12 @@
   "transform": "lossless",
   "post": "ramadan_hours",
   "expected": "altered",
-  "verdict": "genuine",
+  "verdict": "altered",
   "matched_id": "ramadan_hours",
   "distance": 0,
-  "changed_pct": 0.005,
-  "ms": 40.7,
+  "changed_pct": 0.007,
+  "win": 22,
+  "ms": 43.5,
   "bytes": 69651
  },
  {
@@ -2732,11 +2937,12 @@
   "transform": "jpeg_q60",
   "post": "ramadan_hours",
   "expected": "altered",
-  "verdict": "genuine",
+  "verdict": "altered",
   "matched_id": "ramadan_hours",
   "distance": 2,
-  "changed_pct": 0.005,
-  "ms": 17.8,
+  "changed_pct": 0.007,
+  "win": 22,
+  "ms": 39.0,
   "bytes": 78017
  },
  {
@@ -2749,8 +2955,9 @@
   "verdict": "altered",
   "matched_id": "ramadan_hours",
   "distance": 2,
-  "changed_pct": 0.136,
-  "ms": 1862.9,
+  "changed_pct": 0.007,
+  "win": 22,
+  "ms": 2489.2,
   "bytes": 137648
  },
  {
@@ -2760,11 +2967,12 @@
   "transform": "lossless",
   "post": "ramadan_hours",
   "expected": "altered",
-  "verdict": "genuine",
+  "verdict": "altered",
   "matched_id": "ramadan_hours",
   "distance": 0,
-  "changed_pct": 0.009,
-  "ms": 23.7,
+  "changed_pct": 0.012,
+  "win": 37,
+  "ms": 36.7,
   "bytes": 69669
  },
  {
@@ -2774,11 +2982,12 @@
   "transform": "jpeg_q60",
   "post": "ramadan_hours",
   "expected": "altered",
-  "verdict": "genuine",
+  "verdict": "altered",
   "matched_id": "ramadan_hours",
   "distance": 2,
-  "changed_pct": 0.009,
-  "ms": 18.0,
+  "changed_pct": 0.012,
+  "win": 38,
+  "ms": 59.9,
   "bytes": 78028
  },
  {
@@ -2791,8 +3000,9 @@
   "verdict": "altered",
   "matched_id": "ramadan_hours",
   "distance": 2,
-  "changed_pct": 0.14,
-  "ms": 1811.7,
+  "changed_pct": 0.012,
+  "win": 37,
+  "ms": 2421.0,
   "bytes": 137634
  },
  {
@@ -2805,8 +3015,9 @@
   "verdict": "altered",
   "matched_id": "ramadan_hours",
   "distance": 0,
-  "changed_pct": 0.044,
-  "ms": 22.9,
+  "changed_pct": 0.062,
+  "win": 87,
+  "ms": 67.0,
   "bytes": 69668
  },
  {
@@ -2819,8 +3030,9 @@
   "verdict": "altered",
   "matched_id": "ramadan_hours",
   "distance": 2,
-  "changed_pct": 0.044,
-  "ms": 16.7,
+  "changed_pct": 0.062,
+  "win": 87,
+  "ms": 45.6,
   "bytes": 78073
  },
  {
@@ -2833,8 +3045,9 @@
   "verdict": "altered",
   "matched_id": "ramadan_hours",
   "distance": 2,
-  "changed_pct": 0.172,
-  "ms": 1889.3,
+  "changed_pct": 0.062,
+  "win": 87,
+  "ms": 2157.4,
   "bytes": 137653
  },
  {
@@ -2847,8 +3060,9 @@
   "verdict": "altered",
   "matched_id": "ramadan_hours",
   "distance": 0,
-  "changed_pct": 0.044,
-  "ms": 35.3,
+  "changed_pct": 0.062,
+  "win": 87,
+  "ms": 43.7,
   "bytes": 69668
  },
  {
@@ -2861,8 +3075,9 @@
   "verdict": "altered",
   "matched_id": "ramadan_hours",
   "distance": 2,
-  "changed_pct": 0.044,
-  "ms": 34.7,
+  "changed_pct": 0.062,
+  "win": 87,
+  "ms": 32.0,
   "bytes": 78073
  },
  {
@@ -2875,8 +3090,9 @@
   "verdict": "altered",
   "matched_id": "ramadan_hours",
   "distance": 2,
-  "changed_pct": 0.172,
-  "ms": 1724.8,
+  "changed_pct": 0.062,
+  "win": 87,
+  "ms": 2509.2,
   "bytes": 137653
  },
  {
@@ -2889,8 +3105,9 @@
   "verdict": "altered",
   "matched_id": "ramadan_hours",
   "distance": 0,
-  "changed_pct": 0.644,
-  "ms": 23.0,
+  "changed_pct": 0.988,
+  "win": 87,
+  "ms": 684.5,
   "bytes": 69544
  },
  {
@@ -2903,8 +3120,9 @@
   "verdict": "altered",
   "matched_id": "ramadan_hours",
   "distance": 2,
-  "changed_pct": 0.645,
-  "ms": 16.7,
+  "changed_pct": 0.995,
+  "win": 87,
+  "ms": 679.9,
   "bytes": 78103
  },
  {
@@ -2917,8 +3135,9 @@
   "verdict": "altered",
   "matched_id": "ramadan_hours",
   "distance": 2,
-  "changed_pct": 0.745,
-  "ms": 1803.3,
+  "changed_pct": 0.995,
+  "win": 87,
+  "ms": 2519.2,
   "bytes": 137846
  },
  {
@@ -2932,7 +3151,8 @@
   "matched_id": null,
   "distance": 18,
   "changed_pct": null,
-  "ms": 1824.1,
+  "win": null,
+  "ms": 1723.3,
   "bytes": 70900
  },
  {
@@ -2946,7 +3166,8 @@
   "matched_id": null,
   "distance": 18,
   "changed_pct": null,
-  "ms": 1730.1,
+  "win": null,
+  "ms": 1660.6,
   "bytes": 80977
  },
  {
@@ -2960,7 +3181,8 @@
   "matched_id": null,
   "distance": 28,
   "changed_pct": null,
-  "ms": 1616.1,
+  "win": null,
+  "ms": 1535.5,
   "bytes": 141372
  },
  {
@@ -2974,7 +3196,8 @@
   "matched_id": null,
   "distance": 20,
   "changed_pct": null,
-  "ms": 1725.7,
+  "win": null,
+  "ms": 1772.7,
   "bytes": 64739
  },
  {
@@ -2988,7 +3211,8 @@
   "matched_id": null,
   "distance": 20,
   "changed_pct": null,
-  "ms": 1711.8,
+  "win": null,
+  "ms": 1718.3,
   "bytes": 76213
  },
  {
@@ -3002,7 +3226,8 @@
   "matched_id": null,
   "distance": 24,
   "changed_pct": null,
-  "ms": 1487.4,
+  "win": null,
+  "ms": 1556.0,
   "bytes": 133944
  },
  {
@@ -3016,7 +3241,8 @@
   "matched_id": null,
   "distance": 24,
   "changed_pct": null,
-  "ms": 1597.7,
+  "win": null,
+  "ms": 1797.2,
   "bytes": 74854
  },
  {
@@ -3030,7 +3256,8 @@
   "matched_id": null,
   "distance": 24,
   "changed_pct": null,
-  "ms": 1767.2,
+  "win": null,
+  "ms": 1811.3,
   "bytes": 83647
  },
  {
@@ -3044,7 +3271,8 @@
   "matched_id": null,
   "distance": 28,
   "changed_pct": null,
-  "ms": 1499.3,
+  "win": null,
+  "ms": 1634.9,
   "bytes": 145256
  },
  {
@@ -3057,8 +3285,9 @@
   "verdict": "altered",
   "matched_id": "ramadan_hours",
   "distance": 4,
-  "changed_pct": 1.843,
-  "ms": 24.0,
+  "changed_pct": 2.492,
+  "win": 100,
+  "ms": 674.1,
   "bytes": 68651
  },
  {
@@ -3071,8 +3300,9 @@
   "verdict": "altered",
   "matched_id": "ramadan_hours",
   "distance": 4,
-  "changed_pct": 1.842,
-  "ms": 18.9,
+  "changed_pct": 2.492,
+  "win": 100,
+  "ms": 666.8,
   "bytes": 80749
  },
  {
@@ -3085,8 +3315,9 @@
   "verdict": "altered",
   "matched_id": "ramadan_hours",
   "distance": 2,
-  "changed_pct": 1.883,
-  "ms": 1990.0,
+  "changed_pct": 2.504,
+  "win": 100,
+  "ms": 2585.0,
   "bytes": 141333
  },
  {
@@ -3096,11 +3327,12 @@
   "transform": "lossless",
   "post": "icp_emirates_id",
   "expected": "altered",
-  "verdict": "genuine",
+  "verdict": "altered",
   "matched_id": "icp_emirates_id",
   "distance": 0,
-  "changed_pct": 0.0,
-  "ms": 41.1,
+  "changed_pct": 0.003,
+  "win": 10,
+  "ms": 79.0,
   "bytes": 66336
  },
  {
@@ -3110,11 +3342,12 @@
   "transform": "jpeg_q60",
   "post": "icp_emirates_id",
   "expected": "altered",
-  "verdict": "genuine",
+  "verdict": "altered",
   "matched_id": "icp_emirates_id",
   "distance": 0,
-  "changed_pct": 0.0,
-  "ms": 19.2,
+  "changed_pct": 0.003,
+  "win": 11,
+  "ms": 38.4,
   "bytes": 83589
  },
  {
@@ -3127,8 +3360,9 @@
   "verdict": "altered",
   "matched_id": "icp_emirates_id",
   "distance": 0,
-  "changed_pct": 0.089,
-  "ms": 1868.3,
+  "changed_pct": 0.003,
+  "win": 9,
+  "ms": 1182.4,
   "bytes": 148384
  },
  {
@@ -3138,11 +3372,12 @@
   "transform": "lossless",
   "post": "icp_emirates_id",
   "expected": "altered",
-  "verdict": "genuine",
+  "verdict": "altered",
   "matched_id": "icp_emirates_id",
   "distance": 0,
-  "changed_pct": 0.002,
-  "ms": 24.5,
+  "changed_pct": 0.007,
+  "win": 19,
+  "ms": 43.4,
   "bytes": 66660
  },
  {
@@ -3152,11 +3387,12 @@
   "transform": "jpeg_q60",
   "post": "icp_emirates_id",
   "expected": "altered",
-  "verdict": "genuine",
+  "verdict": "altered",
   "matched_id": "icp_emirates_id",
   "distance": 0,
-  "changed_pct": 0.002,
-  "ms": 18.3,
+  "changed_pct": 0.007,
+  "win": 19,
+  "ms": 38.2,
   "bytes": 83589
  },
  {
@@ -3169,8 +3405,9 @@
   "verdict": "altered",
   "matched_id": "icp_emirates_id",
   "distance": 0,
-  "changed_pct": 0.09,
-  "ms": 1950.7,
+  "changed_pct": 0.007,
+  "win": 20,
+  "ms": 1173.1,
   "bytes": 148371
  },
  {
@@ -3180,11 +3417,12 @@
   "transform": "lossless",
   "post": "icp_emirates_id",
   "expected": "altered",
-  "verdict": "genuine",
+  "verdict": "altered",
   "matched_id": "icp_emirates_id",
   "distance": 0,
-  "changed_pct": 0.02,
-  "ms": 23.7,
+  "changed_pct": 0.031,
+  "win": 69,
+  "ms": 44.5,
   "bytes": 65317
  },
  {
@@ -3194,11 +3432,12 @@
   "transform": "jpeg_q60",
   "post": "icp_emirates_id",
   "expected": "altered",
-  "verdict": "genuine",
+  "verdict": "altered",
   "matched_id": "icp_emirates_id",
   "distance": 0,
-  "changed_pct": 0.02,
-  "ms": 19.2,
+  "changed_pct": 0.031,
+  "win": 71,
+  "ms": 36.4,
   "bytes": 83495
  },
  {
@@ -3211,8 +3450,9 @@
   "verdict": "altered",
   "matched_id": "icp_emirates_id",
   "distance": 0,
-  "changed_pct": 0.108,
-  "ms": 1888.6,
+  "changed_pct": 0.031,
+  "win": 70,
+  "ms": 1275.3,
   "bytes": 148374
  },
  {
@@ -3225,8 +3465,9 @@
   "verdict": "altered",
   "matched_id": "icp_emirates_id",
   "distance": 0,
-  "changed_pct": 0.076,
-  "ms": 23.3,
+  "changed_pct": 0.11,
+  "win": 88,
+  "ms": 69.1,
   "bytes": 66633
  },
  {
@@ -3239,8 +3480,9 @@
   "verdict": "altered",
   "matched_id": "icp_emirates_id",
   "distance": 0,
-  "changed_pct": 0.076,
-  "ms": 16.3,
+  "changed_pct": 0.11,
+  "win": 90,
+  "ms": 42.8,
   "bytes": 83606
  },
  {
@@ -3253,8 +3495,9 @@
   "verdict": "altered",
   "matched_id": "icp_emirates_id",
   "distance": 0,
-  "changed_pct": 0.171,
-  "ms": 1810.8,
+  "changed_pct": 0.11,
+  "win": 89,
+  "ms": 1204.1,
   "bytes": 148434
  },
  {
@@ -3267,8 +3510,9 @@
   "verdict": "altered",
   "matched_id": "icp_emirates_id",
   "distance": 0,
-  "changed_pct": 0.052,
-  "ms": 23.6,
+  "changed_pct": 0.098,
+  "win": 79,
+  "ms": 42.7,
   "bytes": 66161
  },
  {
@@ -3281,8 +3525,9 @@
   "verdict": "altered",
   "matched_id": "icp_emirates_id",
   "distance": 0,
-  "changed_pct": 0.052,
-  "ms": 18.7,
+  "changed_pct": 0.099,
+  "win": 78,
+  "ms": 39.8,
   "bytes": 83546
  },
  {
@@ -3295,8 +3540,9 @@
   "verdict": "altered",
   "matched_id": "icp_emirates_id",
   "distance": 0,
-  "changed_pct": 0.142,
-  "ms": 1825.2,
+  "changed_pct": 0.099,
+  "win": 74,
+  "ms": 1230.6,
   "bytes": 148444
  },
  {
@@ -3309,8 +3555,9 @@
   "verdict": "altered",
   "matched_id": "icp_emirates_id",
   "distance": 0,
-  "changed_pct": 0.45,
-  "ms": 40.8,
+  "changed_pct": 0.641,
+  "win": 80,
+  "ms": 45.6,
   "bytes": 70294
  },
  {
@@ -3323,8 +3570,9 @@
   "verdict": "altered",
   "matched_id": "icp_emirates_id",
   "distance": 0,
-  "changed_pct": 0.459,
-  "ms": 17.2,
+  "changed_pct": 0.646,
+  "win": 80,
+  "ms": 38.3,
   "bytes": 85555
  },
  {
@@ -3337,8 +3585,9 @@
   "verdict": "altered",
   "matched_id": "icp_emirates_id",
   "distance": 0,
-  "changed_pct": 0.729,
-  "ms": 1878.9,
+  "changed_pct": 0.642,
+  "win": 80,
+  "ms": 1139.1,
   "bytes": 151698
  },
  {
@@ -3352,7 +3601,8 @@
   "matched_id": null,
   "distance": 16,
   "changed_pct": null,
-  "ms": 1723.6,
+  "win": null,
+  "ms": 1722.8,
   "bytes": 72459
  },
  {
@@ -3366,7 +3616,8 @@
   "matched_id": null,
   "distance": 16,
   "changed_pct": null,
-  "ms": 1666.6,
+  "win": null,
+  "ms": 1735.5,
   "bytes": 87887
  },
  {
@@ -3380,7 +3631,8 @@
   "matched_id": null,
   "distance": 22,
   "changed_pct": null,
-  "ms": 1546.1,
+  "win": null,
+  "ms": 1641.6,
   "bytes": 154521
  },
  {
@@ -3394,7 +3646,8 @@
   "matched_id": null,
   "distance": 20,
   "changed_pct": null,
-  "ms": 1808.6,
+  "win": null,
+  "ms": 1786.5,
   "bytes": 62646
  },
  {
@@ -3408,7 +3661,8 @@
   "matched_id": null,
   "distance": 20,
   "changed_pct": null,
-  "ms": 1672.5,
+  "win": null,
+  "ms": 1782.0,
   "bytes": 82796
  },
  {
@@ -3422,7 +3676,8 @@
   "matched_id": null,
   "distance": 26,
   "changed_pct": null,
-  "ms": 1456.8,
+  "win": null,
+  "ms": 1537.9,
   "bytes": 145741
  },
  {
@@ -3435,8 +3690,9 @@
   "verdict": "altered",
   "matched_id": "icp_emirates_id",
   "distance": 8,
-  "changed_pct": 1.868,
-  "ms": 24.1,
+  "changed_pct": 2.451,
+  "win": 94,
+  "ms": 772.7,
   "bytes": 65857
  },
  {
@@ -3449,8 +3705,9 @@
   "verdict": "altered",
   "matched_id": "icp_emirates_id",
   "distance": 8,
-  "changed_pct": 1.83,
-  "ms": 18.2,
+  "changed_pct": 2.457,
+  "win": 95,
+  "ms": 664.7,
   "bytes": 84172
  },
  {
@@ -3463,8 +3720,9 @@
   "verdict": "altered",
   "matched_id": "icp_emirates_id",
   "distance": 4,
-  "changed_pct": 1.884,
-  "ms": 1859.6,
+  "changed_pct": 2.46,
+  "win": 96,
+  "ms": 2604.8,
   "bytes": 149691
  },
  {
@@ -3474,11 +3732,12 @@
   "transform": "lossless",
   "post": "rta_notice",
   "expected": "altered",
-  "verdict": "genuine",
+  "verdict": "altered",
   "matched_id": "rta_notice",
   "distance": 0,
-  "changed_pct": 0.005,
-  "ms": 23.5,
+  "changed_pct": 0.008,
+  "win": 26,
+  "ms": 62.8,
   "bytes": 64248
  },
  {
@@ -3488,11 +3747,12 @@
   "transform": "jpeg_q60",
   "post": "rta_notice",
   "expected": "altered",
-  "verdict": "genuine",
+  "verdict": "altered",
   "matched_id": "rta_notice",
   "distance": 0,
-  "changed_pct": 0.006,
-  "ms": 17.3,
+  "changed_pct": 0.008,
+  "win": 27,
+  "ms": 36.0,
   "bytes": 105926
  },
  {
@@ -3505,8 +3765,9 @@
   "verdict": "altered",
   "matched_id": "rta_notice",
   "distance": 2,
-  "changed_pct": 1.321,
-  "ms": 1804.8,
+  "changed_pct": 0.008,
+  "win": 27,
+  "ms": 3174.0,
   "bytes": 180988
  },
  {
@@ -3516,11 +3777,12 @@
   "transform": "lossless",
   "post": "rta_notice",
   "expected": "altered",
-  "verdict": "genuine",
+  "verdict": "altered",
   "matched_id": "rta_notice",
   "distance": 0,
-  "changed_pct": 0.008,
-  "ms": 22.6,
+  "changed_pct": 0.016,
+  "win": 40,
+  "ms": 39.7,
   "bytes": 64325
  },
  {
@@ -3530,11 +3792,12 @@
   "transform": "jpeg_q60",
   "post": "rta_notice",
   "expected": "altered",
-  "verdict": "genuine",
+  "verdict": "altered",
   "matched_id": "rta_notice",
   "distance": 0,
-  "changed_pct": 0.008,
-  "ms": 34.8,
+  "changed_pct": 0.016,
+  "win": 39,
+  "ms": 36.0,
   "bytes": 105918
  },
  {
@@ -3547,8 +3810,9 @@
   "verdict": "altered",
   "matched_id": "rta_notice",
   "distance": 2,
-  "changed_pct": 1.328,
-  "ms": 1632.2,
+  "changed_pct": 0.016,
+  "win": 41,
+  "ms": 3106.4,
   "bytes": 181023
  },
  {
@@ -3558,11 +3822,12 @@
   "transform": "lossless",
   "post": "rta_notice",
   "expected": "altered",
-  "verdict": "genuine",
+  "verdict": "altered",
   "matched_id": "rta_notice",
   "distance": 0,
-  "changed_pct": 0.021,
-  "ms": 24.3,
+  "changed_pct": 0.033,
+  "win": 74,
+  "ms": 44.2,
   "bytes": 64113
  },
  {
@@ -3572,11 +3837,12 @@
   "transform": "jpeg_q60",
   "post": "rta_notice",
   "expected": "altered",
-  "verdict": "genuine",
+  "verdict": "altered",
   "matched_id": "rta_notice",
   "distance": 0,
-  "changed_pct": 0.021,
-  "ms": 17.3,
+  "changed_pct": 0.033,
+  "win": 75,
+  "ms": 39.6,
   "bytes": 105960
  },
  {
@@ -3589,8 +3855,9 @@
   "verdict": "altered",
   "matched_id": "rta_notice",
   "distance": 2,
-  "changed_pct": 1.346,
-  "ms": 1861.7,
+  "changed_pct": 0.033,
+  "win": 77,
+  "ms": 3181.4,
   "bytes": 180978
  },
  {
@@ -3603,8 +3870,9 @@
   "verdict": "altered",
   "matched_id": "rta_notice",
   "distance": 0,
-  "changed_pct": 0.095,
-  "ms": 23.1,
+  "changed_pct": 0.123,
+  "win": 89,
+  "ms": 41.4,
   "bytes": 63415
  },
  {
@@ -3617,8 +3885,9 @@
   "verdict": "altered",
   "matched_id": "rta_notice",
   "distance": 0,
-  "changed_pct": 0.096,
-  "ms": 33.8,
+  "changed_pct": 0.124,
+  "win": 88,
+  "ms": 58.8,
   "bytes": 105797
  },
  {
@@ -3631,8 +3900,9 @@
   "verdict": "altered",
   "matched_id": "rta_notice",
   "distance": 2,
-  "changed_pct": 1.405,
-  "ms": 1779.5,
+  "changed_pct": 0.123,
+  "win": 87,
+  "ms": 3031.4,
   "bytes": 180827
  },
  {
@@ -3645,8 +3915,9 @@
   "verdict": "altered",
   "matched_id": "rta_notice",
   "distance": 0,
-  "changed_pct": 0.119,
-  "ms": 21.5,
+  "changed_pct": 0.206,
+  "win": 82,
+  "ms": 38.2,
   "bytes": 64247
  },
  {
@@ -3659,8 +3930,9 @@
   "verdict": "altered",
   "matched_id": "rta_notice",
   "distance": 0,
-  "changed_pct": 0.121,
-  "ms": 16.6,
+  "changed_pct": 0.206,
+  "win": 83,
+  "ms": 35.3,
   "bytes": 106323
  },
  {
@@ -3673,8 +3945,9 @@
   "verdict": "altered",
   "matched_id": "rta_notice",
   "distance": 2,
-  "changed_pct": 1.442,
-  "ms": 1786.7,
+  "changed_pct": 0.207,
+  "win": 82,
+  "ms": 2945.2,
   "bytes": 181567
  },
  {
@@ -3688,7 +3961,8 @@
   "matched_id": null,
   "distance": 18,
   "changed_pct": null,
-  "ms": 1644.3,
+  "win": null,
+  "ms": 1643.9,
   "bytes": 67737
  },
  {
@@ -3702,7 +3976,8 @@
   "matched_id": null,
   "distance": 18,
   "changed_pct": null,
-  "ms": 1668.9,
+  "win": null,
+  "ms": 1656.9,
   "bytes": 108364
  },
  {
@@ -3716,7 +3991,8 @@
   "matched_id": null,
   "distance": 18,
   "changed_pct": null,
-  "ms": 1535.4,
+  "win": null,
+  "ms": 1208.3,
   "bytes": 185134
  },
  {
@@ -3730,7 +4006,8 @@
   "matched_id": null,
   "distance": 18,
   "changed_pct": null,
-  "ms": 1668.7,
+  "win": null,
+  "ms": 1779.6,
   "bytes": 68205
  },
  {
@@ -3744,7 +4021,8 @@
   "matched_id": null,
   "distance": 18,
   "changed_pct": null,
-  "ms": 1679.8,
+  "win": null,
+  "ms": 1777.6,
   "bytes": 109521
  },
  {
@@ -3758,7 +4036,8 @@
   "matched_id": null,
   "distance": 26,
   "changed_pct": null,
-  "ms": 1519.9,
+  "win": null,
+  "ms": 1469.8,
   "bytes": 185828
  },
  {
@@ -3772,7 +4051,8 @@
   "matched_id": null,
   "distance": 16,
   "changed_pct": null,
-  "ms": 1699.3,
+  "win": null,
+  "ms": 1670.0,
   "bytes": 68654
  },
  {
@@ -3786,7 +4066,8 @@
   "matched_id": null,
   "distance": 16,
   "changed_pct": null,
-  "ms": 1730.4,
+  "win": null,
+  "ms": 1344.2,
   "bytes": 112567
  },
  {
@@ -3800,7 +4081,8 @@
   "matched_id": null,
   "distance": 26,
   "changed_pct": null,
-  "ms": 1464.4,
+  "win": null,
+  "ms": 1179.5,
   "bytes": 193331
  },
  {
@@ -3813,8 +4095,9 @@
   "verdict": "altered",
   "matched_id": "rta_notice",
   "distance": 6,
-  "changed_pct": 3.746,
-  "ms": 24.9,
+  "changed_pct": 5.188,
+  "win": 100,
+  "ms": 692.2,
   "bytes": 64254
  },
  {
@@ -3827,8 +4110,9 @@
   "verdict": "altered",
   "matched_id": "rta_notice",
   "distance": 6,
-  "changed_pct": 3.758,
-  "ms": 19.4,
+  "changed_pct": 5.19,
+  "win": 100,
+  "ms": 632.6,
   "bytes": 107878
  },
  {
@@ -3841,9 +4125,3063 @@
   "verdict": "altered",
   "matched_id": "rta_notice",
   "distance": 4,
-  "changed_pct": 4.315,
-  "ms": 1801.4,
+  "changed_pct": 5.192,
+  "win": 100,
+  "ms": 2904.6,
   "bytes": 185000
+ },
+ {
+  "group": "genuine_ext",
+  "kind": "shot_small_q60",
+  "post": "public_holiday_notice",
+  "expected": "genuine",
+  "verdict": "genuine",
+  "matched_id": "public_holiday_notice",
+  "distance": 4,
+  "changed_pct": 0.0,
+  "win": 0,
+  "ms": 2860.7,
+  "bytes": 112458
+ },
+ {
+  "group": "genuine_ext",
+  "kind": "shot_png_1290",
+  "post": "public_holiday_notice",
+  "expected": "genuine",
+  "verdict": "genuine",
+  "matched_id": "public_holiday_notice",
+  "distance": 2,
+  "changed_pct": 0.0,
+  "win": 0,
+  "ms": 1975.2,
+  "bytes": 309792
+ },
+ {
+  "group": "genuine_ext",
+  "kind": "shot_chat_bubble_q70",
+  "post": "public_holiday_notice",
+  "expected": "genuine",
+  "verdict": "genuine",
+  "matched_id": "public_holiday_notice",
+  "distance": 4,
+  "changed_pct": 0.0,
+  "win": 0,
+  "ms": 2616.7,
+  "bytes": 120656
+ },
+ {
+  "group": "genuine_ext",
+  "kind": "shot_tablet_q90",
+  "post": "public_holiday_notice",
+  "expected": "genuine",
+  "verdict": "genuine",
+  "matched_id": "public_holiday_notice",
+  "distance": 2,
+  "changed_pct": 0.0,
+  "win": 0,
+  "ms": 3107.6,
+  "bytes": 176568
+ },
+ {
+  "group": "genuine_ext",
+  "kind": "crop_1pct_q80",
+  "post": "public_holiday_notice",
+  "expected": "genuine",
+  "verdict": "genuine",
+  "matched_id": "public_holiday_notice",
+  "distance": 2,
+  "changed_pct": 0.0,
+  "win": 0,
+  "ms": 1063.0,
+  "bytes": 116166
+ },
+ {
+  "group": "genuine_ext",
+  "kind": "jpeg_q30",
+  "post": "public_holiday_notice",
+  "expected": "genuine",
+  "verdict": "genuine",
+  "matched_id": "public_holiday_notice",
+  "distance": 0,
+  "changed_pct": 0.0,
+  "win": 0,
+  "ms": 42.3,
+  "bytes": 76504
+ },
+ {
+  "group": "genuine_ext",
+  "kind": "whatsapp_q50_1280",
+  "post": "public_holiday_notice",
+  "expected": "genuine",
+  "verdict": "genuine",
+  "matched_id": "public_holiday_notice",
+  "distance": 2,
+  "changed_pct": 0.0,
+  "win": 0,
+  "ms": 31.9,
+  "bytes": 77100
+ },
+ {
+  "group": "genuine_ext",
+  "kind": "shot_small_q60",
+  "post": "mohre_announcement",
+  "expected": "genuine",
+  "verdict": "genuine",
+  "matched_id": "mohre_announcement",
+  "distance": 4,
+  "changed_pct": 0.0,
+  "win": 0,
+  "ms": 3012.8,
+  "bytes": 104643
+ },
+ {
+  "group": "genuine_ext",
+  "kind": "shot_png_1290",
+  "post": "mohre_announcement",
+  "expected": "genuine",
+  "verdict": "genuine",
+  "matched_id": "mohre_announcement",
+  "distance": 4,
+  "changed_pct": 0.0,
+  "win": 0,
+  "ms": 2736.2,
+  "bytes": 277307
+ },
+ {
+  "group": "genuine_ext",
+  "kind": "shot_chat_bubble_q70",
+  "post": "mohre_announcement",
+  "expected": "genuine",
+  "verdict": "genuine",
+  "matched_id": "mohre_announcement",
+  "distance": 2,
+  "changed_pct": 0.0,
+  "win": 0,
+  "ms": 2779.5,
+  "bytes": 112248
+ },
+ {
+  "group": "genuine_ext",
+  "kind": "shot_tablet_q90",
+  "post": "mohre_announcement",
+  "expected": "genuine",
+  "verdict": "genuine",
+  "matched_id": "mohre_announcement",
+  "distance": 2,
+  "changed_pct": 0.0,
+  "win": 0,
+  "ms": 3383.5,
+  "bytes": 163692
+ },
+ {
+  "group": "genuine_ext",
+  "kind": "crop_1pct_q80",
+  "post": "mohre_announcement",
+  "expected": "genuine",
+  "verdict": "genuine",
+  "matched_id": "mohre_announcement",
+  "distance": 4,
+  "changed_pct": 0.0,
+  "win": 0,
+  "ms": 1431.0,
+  "bytes": 111596
+ },
+ {
+  "group": "genuine_ext",
+  "kind": "jpeg_q30",
+  "post": "mohre_announcement",
+  "expected": "genuine",
+  "verdict": "genuine",
+  "matched_id": "mohre_announcement",
+  "distance": 0,
+  "changed_pct": 0.0,
+  "win": 0,
+  "ms": 35.7,
+  "bytes": 68479
+ },
+ {
+  "group": "genuine_ext",
+  "kind": "whatsapp_q50_1280",
+  "post": "mohre_announcement",
+  "expected": "genuine",
+  "verdict": "genuine",
+  "matched_id": "mohre_announcement",
+  "distance": 0,
+  "changed_pct": 0.0,
+  "win": 0,
+  "ms": 46.8,
+  "bytes": 74729
+ },
+ {
+  "group": "genuine_ext",
+  "kind": "shot_small_q60",
+  "post": "weekend_schedule_notice",
+  "expected": "genuine",
+  "verdict": "genuine",
+  "matched_id": "weekend_schedule_notice",
+  "distance": 6,
+  "changed_pct": 0.0,
+  "win": 0,
+  "ms": 2947.1,
+  "bytes": 108325
+ },
+ {
+  "group": "genuine_ext",
+  "kind": "shot_png_1290",
+  "post": "weekend_schedule_notice",
+  "expected": "genuine",
+  "verdict": "genuine",
+  "matched_id": "weekend_schedule_notice",
+  "distance": 6,
+  "changed_pct": 0.0,
+  "win": 0,
+  "ms": 2764.2,
+  "bytes": 278382
+ },
+ {
+  "group": "genuine_ext",
+  "kind": "shot_chat_bubble_q70",
+  "post": "weekend_schedule_notice",
+  "expected": "genuine",
+  "verdict": "unverified",
+  "matched_id": null,
+  "distance": 28,
+  "changed_pct": null,
+  "win": null,
+  "ms": 1592.1,
+  "bytes": 117497
+ },
+ {
+  "group": "genuine_ext",
+  "kind": "shot_tablet_q90",
+  "post": "weekend_schedule_notice",
+  "expected": "genuine",
+  "verdict": "unverified",
+  "matched_id": null,
+  "distance": 26,
+  "changed_pct": null,
+  "win": null,
+  "ms": 1803.7,
+  "bytes": 167946
+ },
+ {
+  "group": "genuine_ext",
+  "kind": "crop_1pct_q80",
+  "post": "weekend_schedule_notice",
+  "expected": "genuine",
+  "verdict": "genuine",
+  "matched_id": "weekend_schedule_notice",
+  "distance": 2,
+  "changed_pct": 0.0,
+  "win": 0,
+  "ms": 1066.4,
+  "bytes": 105832
+ },
+ {
+  "group": "genuine_ext",
+  "kind": "jpeg_q30",
+  "post": "weekend_schedule_notice",
+  "expected": "genuine",
+  "verdict": "genuine",
+  "matched_id": "weekend_schedule_notice",
+  "distance": 2,
+  "changed_pct": 0.0,
+  "win": 0,
+  "ms": 37.8,
+  "bytes": 67075
+ },
+ {
+  "group": "genuine_ext",
+  "kind": "whatsapp_q50_1280",
+  "post": "weekend_schedule_notice",
+  "expected": "genuine",
+  "verdict": "genuine",
+  "matched_id": "weekend_schedule_notice",
+  "distance": 0,
+  "changed_pct": 0.0,
+  "win": 0,
+  "ms": 35.2,
+  "bytes": 73264
+ },
+ {
+  "group": "genuine_ext",
+  "kind": "shot_small_q60",
+  "post": "golden_visa_update",
+  "expected": "genuine",
+  "verdict": "genuine",
+  "matched_id": "golden_visa_update",
+  "distance": 2,
+  "changed_pct": 0.0,
+  "win": 0,
+  "ms": 2864.5,
+  "bytes": 105729
+ },
+ {
+  "group": "genuine_ext",
+  "kind": "shot_png_1290",
+  "post": "golden_visa_update",
+  "expected": "genuine",
+  "verdict": "genuine",
+  "matched_id": "golden_visa_update",
+  "distance": 0,
+  "changed_pct": 0.0,
+  "win": 0,
+  "ms": 2346.7,
+  "bytes": 312440
+ },
+ {
+  "group": "genuine_ext",
+  "kind": "shot_chat_bubble_q70",
+  "post": "golden_visa_update",
+  "expected": "genuine",
+  "verdict": "genuine",
+  "matched_id": "golden_visa_update",
+  "distance": 4,
+  "changed_pct": 0.0,
+  "win": 0,
+  "ms": 2766.3,
+  "bytes": 114706
+ },
+ {
+  "group": "genuine_ext",
+  "kind": "shot_tablet_q90",
+  "post": "golden_visa_update",
+  "expected": "genuine",
+  "verdict": "genuine",
+  "matched_id": "golden_visa_update",
+  "distance": 0,
+  "changed_pct": 0.0,
+  "win": 0,
+  "ms": 3211.4,
+  "bytes": 167776
+ },
+ {
+  "group": "genuine_ext",
+  "kind": "crop_1pct_q80",
+  "post": "golden_visa_update",
+  "expected": "genuine",
+  "verdict": "genuine",
+  "matched_id": "golden_visa_update",
+  "distance": 4,
+  "changed_pct": 0.0,
+  "win": 0,
+  "ms": 1157.1,
+  "bytes": 117267
+ },
+ {
+  "group": "genuine_ext",
+  "kind": "jpeg_q30",
+  "post": "golden_visa_update",
+  "expected": "genuine",
+  "verdict": "genuine",
+  "matched_id": "golden_visa_update",
+  "distance": 0,
+  "changed_pct": 0.0,
+  "win": 0,
+  "ms": 35.0,
+  "bytes": 69456
+ },
+ {
+  "group": "genuine_ext",
+  "kind": "whatsapp_q50_1280",
+  "post": "golden_visa_update",
+  "expected": "genuine",
+  "verdict": "genuine",
+  "matched_id": "golden_visa_update",
+  "distance": 0,
+  "changed_pct": 0.0,
+  "win": 0,
+  "ms": 32.5,
+  "bytes": 77589
+ },
+ {
+  "group": "genuine_ext",
+  "kind": "shot_small_q60",
+  "post": "school_calendar",
+  "expected": "genuine",
+  "verdict": "genuine",
+  "matched_id": "school_calendar",
+  "distance": 4,
+  "changed_pct": 0.0,
+  "win": 0,
+  "ms": 3206.7,
+  "bytes": 115918
+ },
+ {
+  "group": "genuine_ext",
+  "kind": "shot_png_1290",
+  "post": "school_calendar",
+  "expected": "genuine",
+  "verdict": "genuine",
+  "matched_id": "school_calendar",
+  "distance": 4,
+  "changed_pct": 0.0,
+  "win": 0,
+  "ms": 2699.2,
+  "bytes": 309836
+ },
+ {
+  "group": "genuine_ext",
+  "kind": "shot_chat_bubble_q70",
+  "post": "school_calendar",
+  "expected": "genuine",
+  "verdict": "genuine",
+  "matched_id": "school_calendar",
+  "distance": 2,
+  "changed_pct": 0.0,
+  "win": 0,
+  "ms": 2370.3,
+  "bytes": 124190
+ },
+ {
+  "group": "genuine_ext",
+  "kind": "shot_tablet_q90",
+  "post": "school_calendar",
+  "expected": "genuine",
+  "verdict": "genuine",
+  "matched_id": "school_calendar",
+  "distance": 2,
+  "changed_pct": 0.0,
+  "win": 0,
+  "ms": 2854.9,
+  "bytes": 185464
+ },
+ {
+  "group": "genuine_ext",
+  "kind": "crop_1pct_q80",
+  "post": "school_calendar",
+  "expected": "genuine",
+  "verdict": "genuine",
+  "matched_id": "school_calendar",
+  "distance": 4,
+  "changed_pct": 0.0,
+  "win": 0,
+  "ms": 868.3,
+  "bytes": 127860
+ },
+ {
+  "group": "genuine_ext",
+  "kind": "jpeg_q30",
+  "post": "school_calendar",
+  "expected": "genuine",
+  "verdict": "genuine",
+  "matched_id": "school_calendar",
+  "distance": 0,
+  "changed_pct": 0.0,
+  "win": 0,
+  "ms": 34.7,
+  "bytes": 75736
+ },
+ {
+  "group": "genuine_ext",
+  "kind": "whatsapp_q50_1280",
+  "post": "school_calendar",
+  "expected": "genuine",
+  "verdict": "genuine",
+  "matched_id": "school_calendar",
+  "distance": 0,
+  "changed_pct": 0.0,
+  "win": 0,
+  "ms": 31.6,
+  "bytes": 84168
+ },
+ {
+  "group": "genuine_ext",
+  "kind": "shot_small_q60",
+  "post": "ramadan_hours",
+  "expected": "genuine",
+  "verdict": "genuine",
+  "matched_id": "ramadan_hours",
+  "distance": 4,
+  "changed_pct": 0.0,
+  "win": 0,
+  "ms": 3057.3,
+  "bytes": 98706
+ },
+ {
+  "group": "genuine_ext",
+  "kind": "shot_png_1290",
+  "post": "ramadan_hours",
+  "expected": "genuine",
+  "verdict": "genuine",
+  "matched_id": "ramadan_hours",
+  "distance": 2,
+  "changed_pct": 0.0,
+  "win": 0,
+  "ms": 2797.8,
+  "bytes": 304558
+ },
+ {
+  "group": "genuine_ext",
+  "kind": "shot_chat_bubble_q70",
+  "post": "ramadan_hours",
+  "expected": "genuine",
+  "verdict": "genuine",
+  "matched_id": "ramadan_hours",
+  "distance": 2,
+  "changed_pct": 0.0,
+  "win": 0,
+  "ms": 2698.4,
+  "bytes": 107924
+ },
+ {
+  "group": "genuine_ext",
+  "kind": "shot_tablet_q90",
+  "post": "ramadan_hours",
+  "expected": "genuine",
+  "verdict": "genuine",
+  "matched_id": "ramadan_hours",
+  "distance": 4,
+  "changed_pct": 0.0,
+  "win": 0,
+  "ms": 3363.4,
+  "bytes": 159584
+ },
+ {
+  "group": "genuine_ext",
+  "kind": "crop_1pct_q80",
+  "post": "ramadan_hours",
+  "expected": "genuine",
+  "verdict": "genuine",
+  "matched_id": "ramadan_hours",
+  "distance": 2,
+  "changed_pct": 0.0,
+  "win": 0,
+  "ms": 1239.1,
+  "bytes": 100919
+ },
+ {
+  "group": "genuine_ext",
+  "kind": "jpeg_q30",
+  "post": "ramadan_hours",
+  "expected": "genuine",
+  "verdict": "genuine",
+  "matched_id": "ramadan_hours",
+  "distance": 2,
+  "changed_pct": 0.0,
+  "win": 0,
+  "ms": 34.2,
+  "bytes": 59853
+ },
+ {
+  "group": "genuine_ext",
+  "kind": "whatsapp_q50_1280",
+  "post": "ramadan_hours",
+  "expected": "genuine",
+  "verdict": "genuine",
+  "matched_id": "ramadan_hours",
+  "distance": 2,
+  "changed_pct": 0.0,
+  "win": 0,
+  "ms": 36.6,
+  "bytes": 64698
+ },
+ {
+  "group": "genuine_ext",
+  "kind": "shot_small_q60",
+  "post": "icp_emirates_id",
+  "expected": "genuine",
+  "verdict": "genuine",
+  "matched_id": "icp_emirates_id",
+  "distance": 2,
+  "changed_pct": 0.0,
+  "win": 0,
+  "ms": 3236.7,
+  "bytes": 104478
+ },
+ {
+  "group": "genuine_ext",
+  "kind": "shot_png_1290",
+  "post": "icp_emirates_id",
+  "expected": "genuine",
+  "verdict": "genuine",
+  "matched_id": "icp_emirates_id",
+  "distance": 2,
+  "changed_pct": 0.0,
+  "win": 0,
+  "ms": 2605.6,
+  "bytes": 278873
+ },
+ {
+  "group": "genuine_ext",
+  "kind": "shot_chat_bubble_q70",
+  "post": "icp_emirates_id",
+  "expected": "genuine",
+  "verdict": "genuine",
+  "matched_id": "icp_emirates_id",
+  "distance": 2,
+  "changed_pct": 0.0,
+  "win": 0,
+  "ms": 2678.9,
+  "bytes": 109228
+ },
+ {
+  "group": "genuine_ext",
+  "kind": "shot_tablet_q90",
+  "post": "icp_emirates_id",
+  "expected": "genuine",
+  "verdict": "genuine",
+  "matched_id": "icp_emirates_id",
+  "distance": 4,
+  "changed_pct": 0.0,
+  "win": 0,
+  "ms": 3163.1,
+  "bytes": 162504
+ },
+ {
+  "group": "genuine_ext",
+  "kind": "crop_1pct_q80",
+  "post": "icp_emirates_id",
+  "expected": "genuine",
+  "verdict": "genuine",
+  "matched_id": "icp_emirates_id",
+  "distance": 0,
+  "changed_pct": 0.0,
+  "win": 0,
+  "ms": 1185.8,
+  "bytes": 107961
+ },
+ {
+  "group": "genuine_ext",
+  "kind": "jpeg_q30",
+  "post": "icp_emirates_id",
+  "expected": "genuine",
+  "verdict": "genuine",
+  "matched_id": "icp_emirates_id",
+  "distance": 0,
+  "changed_pct": 0.0,
+  "win": 0,
+  "ms": 37.9,
+  "bytes": 63776
+ },
+ {
+  "group": "genuine_ext",
+  "kind": "whatsapp_q50_1280",
+  "post": "icp_emirates_id",
+  "expected": "genuine",
+  "verdict": "genuine",
+  "matched_id": "icp_emirates_id",
+  "distance": 0,
+  "changed_pct": 0.0,
+  "win": 0,
+  "ms": 34.5,
+  "bytes": 72406
+ },
+ {
+  "group": "genuine_ext",
+  "kind": "shot_small_q60",
+  "post": "rta_notice",
+  "expected": "genuine",
+  "verdict": "genuine",
+  "matched_id": "rta_notice",
+  "distance": 2,
+  "changed_pct": 0.0,
+  "win": 0,
+  "ms": 1674.6,
+  "bytes": 126794
+ },
+ {
+  "group": "genuine_ext",
+  "kind": "shot_png_1290",
+  "post": "rta_notice",
+  "expected": "genuine",
+  "verdict": "genuine",
+  "matched_id": "rta_notice",
+  "distance": 2,
+  "changed_pct": 0.0,
+  "win": 0,
+  "ms": 1207.6,
+  "bytes": 244655
+ },
+ {
+  "group": "genuine_ext",
+  "kind": "shot_chat_bubble_q70",
+  "post": "rta_notice",
+  "expected": "genuine",
+  "verdict": "genuine",
+  "matched_id": "rta_notice",
+  "distance": 4,
+  "changed_pct": 0.0,
+  "win": 0,
+  "ms": 2881.3,
+  "bytes": 136081
+ },
+ {
+  "group": "genuine_ext",
+  "kind": "shot_tablet_q90",
+  "post": "rta_notice",
+  "expected": "genuine",
+  "verdict": "genuine",
+  "matched_id": "rta_notice",
+  "distance": 4,
+  "changed_pct": 0.0,
+  "win": 0,
+  "ms": 3377.1,
+  "bytes": 194308
+ },
+ {
+  "group": "genuine_ext",
+  "kind": "crop_1pct_q80",
+  "post": "rta_notice",
+  "expected": "genuine",
+  "verdict": "genuine",
+  "matched_id": "rta_notice",
+  "distance": 4,
+  "changed_pct": 0.0,
+  "win": 0,
+  "ms": 1871.8,
+  "bytes": 139591
+ },
+ {
+  "group": "genuine_ext",
+  "kind": "jpeg_q30",
+  "post": "rta_notice",
+  "expected": "genuine",
+  "verdict": "genuine",
+  "matched_id": "rta_notice",
+  "distance": 0,
+  "changed_pct": 0.0,
+  "win": 0,
+  "ms": 37.5,
+  "bytes": 85085
+ },
+ {
+  "group": "genuine_ext",
+  "kind": "whatsapp_q50_1280",
+  "post": "rta_notice",
+  "expected": "genuine",
+  "verdict": "genuine",
+  "matched_id": "rta_notice",
+  "distance": 0,
+  "changed_pct": 0.0,
+  "win": 0,
+  "ms": 34.8,
+  "bytes": 97772
+ },
+ {
+  "group": "edit_ext",
+  "kind": "date_1digit",
+  "size": "tiny",
+  "transform": "shot_small_q60",
+  "post": "public_holiday_notice",
+  "expected": "altered",
+  "verdict": "altered",
+  "matched_id": "public_holiday_notice",
+  "distance": 4,
+  "changed_pct": 0.013,
+  "win": 44,
+  "ms": 2753.8,
+  "bytes": 112443
+ },
+ {
+  "group": "edit_ext",
+  "kind": "date_1digit",
+  "size": "tiny",
+  "transform": "shot_png_1290",
+  "post": "public_holiday_notice",
+  "expected": "altered",
+  "verdict": "altered",
+  "matched_id": "public_holiday_notice",
+  "distance": 2,
+  "changed_pct": 0.012,
+  "win": 40,
+  "ms": 2384.5,
+  "bytes": 309677
+ },
+ {
+  "group": "edit_ext",
+  "kind": "date_1digit",
+  "size": "tiny",
+  "transform": "shot_chat_bubble_q70",
+  "post": "public_holiday_notice",
+  "expected": "altered",
+  "verdict": "altered",
+  "matched_id": "public_holiday_notice",
+  "distance": 4,
+  "changed_pct": 0.013,
+  "win": 42,
+  "ms": 2775.1,
+  "bytes": 120563
+ },
+ {
+  "group": "edit_ext",
+  "kind": "date_1digit",
+  "size": "tiny",
+  "transform": "crop_1pct_q80",
+  "post": "public_holiday_notice",
+  "expected": "altered",
+  "verdict": "altered",
+  "matched_id": "public_holiday_notice",
+  "distance": 2,
+  "changed_pct": 0.013,
+  "win": 43,
+  "ms": 1045.6,
+  "bytes": 116126
+ },
+ {
+  "group": "edit_ext",
+  "kind": "date_1digit",
+  "size": "tiny",
+  "transform": "whatsapp_q50_1280",
+  "post": "public_holiday_notice",
+  "expected": "altered",
+  "verdict": "altered",
+  "matched_id": "public_holiday_notice",
+  "distance": 2,
+  "changed_pct": 0.013,
+  "win": 42,
+  "ms": 36.3,
+  "bytes": 77087
+ },
+ {
+  "group": "edit_ext",
+  "kind": "date_2digit",
+  "size": "tiny",
+  "transform": "shot_small_q60",
+  "post": "public_holiday_notice",
+  "expected": "altered",
+  "verdict": "altered",
+  "matched_id": "public_holiday_notice",
+  "distance": 4,
+  "changed_pct": 0.023,
+  "win": 57,
+  "ms": 2836.9,
+  "bytes": 112403
+ },
+ {
+  "group": "edit_ext",
+  "kind": "date_2digit",
+  "size": "tiny",
+  "transform": "shot_png_1290",
+  "post": "public_holiday_notice",
+  "expected": "altered",
+  "verdict": "altered",
+  "matched_id": "public_holiday_notice",
+  "distance": 2,
+  "changed_pct": 0.023,
+  "win": 56,
+  "ms": 2390.3,
+  "bytes": 309644
+ },
+ {
+  "group": "edit_ext",
+  "kind": "date_2digit",
+  "size": "tiny",
+  "transform": "shot_chat_bubble_q70",
+  "post": "public_holiday_notice",
+  "expected": "altered",
+  "verdict": "altered",
+  "matched_id": "public_holiday_notice",
+  "distance": 4,
+  "changed_pct": 0.023,
+  "win": 56,
+  "ms": 2790.0,
+  "bytes": 120609
+ },
+ {
+  "group": "edit_ext",
+  "kind": "date_2digit",
+  "size": "tiny",
+  "transform": "crop_1pct_q80",
+  "post": "public_holiday_notice",
+  "expected": "altered",
+  "verdict": "altered",
+  "matched_id": "public_holiday_notice",
+  "distance": 2,
+  "changed_pct": 0.024,
+  "win": 57,
+  "ms": 1000.5,
+  "bytes": 116135
+ },
+ {
+  "group": "edit_ext",
+  "kind": "date_2digit",
+  "size": "tiny",
+  "transform": "whatsapp_q50_1280",
+  "post": "public_holiday_notice",
+  "expected": "altered",
+  "verdict": "altered",
+  "matched_id": "public_holiday_notice",
+  "distance": 2,
+  "changed_pct": 0.023,
+  "win": 56,
+  "ms": 30.8,
+  "bytes": 77080
+ },
+ {
+  "group": "edit_ext",
+  "kind": "key_line_1digit",
+  "size": "small",
+  "transform": "shot_small_q60",
+  "post": "public_holiday_notice",
+  "expected": "altered",
+  "verdict": "altered",
+  "matched_id": "public_holiday_notice",
+  "distance": 4,
+  "changed_pct": 0.034,
+  "win": 73,
+  "ms": 2685.4,
+  "bytes": 112429
+ },
+ {
+  "group": "edit_ext",
+  "kind": "key_line_1digit",
+  "size": "small",
+  "transform": "shot_png_1290",
+  "post": "public_holiday_notice",
+  "expected": "altered",
+  "verdict": "altered",
+  "matched_id": "public_holiday_notice",
+  "distance": 2,
+  "changed_pct": 0.033,
+  "win": 70,
+  "ms": 2235.5,
+  "bytes": 309783
+ },
+ {
+  "group": "edit_ext",
+  "kind": "key_line_1digit",
+  "size": "small",
+  "transform": "shot_chat_bubble_q70",
+  "post": "public_holiday_notice",
+  "expected": "altered",
+  "verdict": "altered",
+  "matched_id": "public_holiday_notice",
+  "distance": 4,
+  "changed_pct": 0.032,
+  "win": 71,
+  "ms": 3015.8,
+  "bytes": 120612
+ },
+ {
+  "group": "edit_ext",
+  "kind": "key_line_1digit",
+  "size": "small",
+  "transform": "crop_1pct_q80",
+  "post": "public_holiday_notice",
+  "expected": "altered",
+  "verdict": "altered",
+  "matched_id": "public_holiday_notice",
+  "distance": 2,
+  "changed_pct": 0.035,
+  "win": 74,
+  "ms": 983.1,
+  "bytes": 116192
+ },
+ {
+  "group": "edit_ext",
+  "kind": "key_line_1digit",
+  "size": "small",
+  "transform": "whatsapp_q50_1280",
+  "post": "public_holiday_notice",
+  "expected": "altered",
+  "verdict": "altered",
+  "matched_id": "public_holiday_notice",
+  "distance": 2,
+  "changed_pct": 0.033,
+  "win": 70,
+  "ms": 35.5,
+  "bytes": 77111
+ },
+ {
+  "group": "edit_ext",
+  "kind": "number_changed",
+  "size": "small",
+  "transform": "shot_small_q60",
+  "post": "public_holiday_notice",
+  "expected": "altered",
+  "verdict": "altered",
+  "matched_id": "public_holiday_notice",
+  "distance": 4,
+  "changed_pct": 0.185,
+  "win": 84,
+  "ms": 2851.3,
+  "bytes": 112494
+ },
+ {
+  "group": "edit_ext",
+  "kind": "number_changed",
+  "size": "small",
+  "transform": "shot_png_1290",
+  "post": "public_holiday_notice",
+  "expected": "altered",
+  "verdict": "altered",
+  "matched_id": "public_holiday_notice",
+  "distance": 2,
+  "changed_pct": 0.181,
+  "win": 84,
+  "ms": 2542.4,
+  "bytes": 310382
+ },
+ {
+  "group": "edit_ext",
+  "kind": "number_changed",
+  "size": "small",
+  "transform": "shot_chat_bubble_q70",
+  "post": "public_holiday_notice",
+  "expected": "altered",
+  "verdict": "altered",
+  "matched_id": "public_holiday_notice",
+  "distance": 4,
+  "changed_pct": 0.184,
+  "win": 86,
+  "ms": 2686.0,
+  "bytes": 120741
+ },
+ {
+  "group": "edit_ext",
+  "kind": "number_changed",
+  "size": "small",
+  "transform": "crop_1pct_q80",
+  "post": "public_holiday_notice",
+  "expected": "altered",
+  "verdict": "altered",
+  "matched_id": "public_holiday_notice",
+  "distance": 2,
+  "changed_pct": 0.194,
+  "win": 84,
+  "ms": 1022.6,
+  "bytes": 116352
+ },
+ {
+  "group": "edit_ext",
+  "kind": "number_changed",
+  "size": "small",
+  "transform": "whatsapp_q50_1280",
+  "post": "public_holiday_notice",
+  "expected": "altered",
+  "verdict": "altered",
+  "matched_id": "public_holiday_notice",
+  "distance": 2,
+  "changed_pct": 0.182,
+  "win": 83,
+  "ms": 701.9,
+  "bytes": 77236
+ },
+ {
+  "group": "edit_ext",
+  "kind": "date_1digit",
+  "size": "tiny",
+  "transform": "shot_small_q60",
+  "post": "mohre_announcement",
+  "expected": "altered",
+  "verdict": "altered",
+  "matched_id": "mohre_announcement",
+  "distance": 4,
+  "changed_pct": 0.02,
+  "win": 65,
+  "ms": 3265.3,
+  "bytes": 104563
+ },
+ {
+  "group": "edit_ext",
+  "kind": "date_1digit",
+  "size": "tiny",
+  "transform": "shot_png_1290",
+  "post": "mohre_announcement",
+  "expected": "altered",
+  "verdict": "altered",
+  "matched_id": "mohre_announcement",
+  "distance": 4,
+  "changed_pct": 0.02,
+  "win": 65,
+  "ms": 2767.4,
+  "bytes": 276557
+ },
+ {
+  "group": "edit_ext",
+  "kind": "date_1digit",
+  "size": "tiny",
+  "transform": "shot_chat_bubble_q70",
+  "post": "mohre_announcement",
+  "expected": "altered",
+  "verdict": "altered",
+  "matched_id": "mohre_announcement",
+  "distance": 2,
+  "changed_pct": 0.02,
+  "win": 64,
+  "ms": 2940.8,
+  "bytes": 112130
+ },
+ {
+  "group": "edit_ext",
+  "kind": "date_1digit",
+  "size": "tiny",
+  "transform": "crop_1pct_q80",
+  "post": "mohre_announcement",
+  "expected": "altered",
+  "verdict": "altered",
+  "matched_id": "mohre_announcement",
+  "distance": 2,
+  "changed_pct": 0.02,
+  "win": 66,
+  "ms": 1435.7,
+  "bytes": 111516
+ },
+ {
+  "group": "edit_ext",
+  "kind": "date_1digit",
+  "size": "tiny",
+  "transform": "whatsapp_q50_1280",
+  "post": "mohre_announcement",
+  "expected": "altered",
+  "verdict": "altered",
+  "matched_id": "mohre_announcement",
+  "distance": 0,
+  "changed_pct": 0.02,
+  "win": 64,
+  "ms": 36.9,
+  "bytes": 74708
+ },
+ {
+  "group": "edit_ext",
+  "kind": "date_2digit",
+  "size": "tiny",
+  "transform": "shot_small_q60",
+  "post": "mohre_announcement",
+  "expected": "altered",
+  "verdict": "altered",
+  "matched_id": "mohre_announcement",
+  "distance": 4,
+  "changed_pct": 0.031,
+  "win": 75,
+  "ms": 2812.6,
+  "bytes": 104589
+ },
+ {
+  "group": "edit_ext",
+  "kind": "date_2digit",
+  "size": "tiny",
+  "transform": "shot_png_1290",
+  "post": "mohre_announcement",
+  "expected": "altered",
+  "verdict": "altered",
+  "matched_id": "mohre_announcement",
+  "distance": 4,
+  "changed_pct": 0.031,
+  "win": 74,
+  "ms": 2787.1,
+  "bytes": 276899
+ },
+ {
+  "group": "edit_ext",
+  "kind": "date_2digit",
+  "size": "tiny",
+  "transform": "shot_chat_bubble_q70",
+  "post": "mohre_announcement",
+  "expected": "altered",
+  "verdict": "altered",
+  "matched_id": "mohre_announcement",
+  "distance": 2,
+  "changed_pct": 0.031,
+  "win": 74,
+  "ms": 2681.3,
+  "bytes": 112178
+ },
+ {
+  "group": "edit_ext",
+  "kind": "date_2digit",
+  "size": "tiny",
+  "transform": "crop_1pct_q80",
+  "post": "mohre_announcement",
+  "expected": "altered",
+  "verdict": "altered",
+  "matched_id": "mohre_announcement",
+  "distance": 4,
+  "changed_pct": 0.034,
+  "win": 76,
+  "ms": 1425.1,
+  "bytes": 111576
+ },
+ {
+  "group": "edit_ext",
+  "kind": "date_2digit",
+  "size": "tiny",
+  "transform": "whatsapp_q50_1280",
+  "post": "mohre_announcement",
+  "expected": "altered",
+  "verdict": "altered",
+  "matched_id": "mohre_announcement",
+  "distance": 0,
+  "changed_pct": 0.031,
+  "win": 74,
+  "ms": 35.6,
+  "bytes": 74726
+ },
+ {
+  "group": "edit_ext",
+  "kind": "key_line_1digit",
+  "size": "small",
+  "transform": "shot_small_q60",
+  "post": "mohre_announcement",
+  "expected": "altered",
+  "verdict": "altered",
+  "matched_id": "mohre_announcement",
+  "distance": 2,
+  "changed_pct": 0.052,
+  "win": 84,
+  "ms": 3029.5,
+  "bytes": 104683
+ },
+ {
+  "group": "edit_ext",
+  "kind": "key_line_1digit",
+  "size": "small",
+  "transform": "shot_png_1290",
+  "post": "mohre_announcement",
+  "expected": "altered",
+  "verdict": "altered",
+  "matched_id": "mohre_announcement",
+  "distance": 2,
+  "changed_pct": 0.052,
+  "win": 85,
+  "ms": 1171.7,
+  "bytes": 277294
+ },
+ {
+  "group": "edit_ext",
+  "kind": "key_line_1digit",
+  "size": "small",
+  "transform": "shot_chat_bubble_q70",
+  "post": "mohre_announcement",
+  "expected": "altered",
+  "verdict": "altered",
+  "matched_id": "mohre_announcement",
+  "distance": 2,
+  "changed_pct": 0.053,
+  "win": 84,
+  "ms": 2526.0,
+  "bytes": 112265
+ },
+ {
+  "group": "edit_ext",
+  "kind": "key_line_1digit",
+  "size": "small",
+  "transform": "crop_1pct_q80",
+  "post": "mohre_announcement",
+  "expected": "altered",
+  "verdict": "altered",
+  "matched_id": "mohre_announcement",
+  "distance": 4,
+  "changed_pct": 0.054,
+  "win": 84,
+  "ms": 1405.7,
+  "bytes": 111693
+ },
+ {
+  "group": "edit_ext",
+  "kind": "key_line_1digit",
+  "size": "small",
+  "transform": "whatsapp_q50_1280",
+  "post": "mohre_announcement",
+  "expected": "altered",
+  "verdict": "altered",
+  "matched_id": "mohre_announcement",
+  "distance": 0,
+  "changed_pct": 0.053,
+  "win": 85,
+  "ms": 32.8,
+  "bytes": 74766
+ },
+ {
+  "group": "edit_ext",
+  "kind": "number_changed",
+  "size": "small",
+  "transform": "shot_small_q60",
+  "post": "mohre_announcement",
+  "expected": "altered",
+  "verdict": "altered",
+  "matched_id": "mohre_announcement",
+  "distance": 2,
+  "changed_pct": 0.052,
+  "win": 84,
+  "ms": 2860.1,
+  "bytes": 104683
+ },
+ {
+  "group": "edit_ext",
+  "kind": "number_changed",
+  "size": "small",
+  "transform": "shot_png_1290",
+  "post": "mohre_announcement",
+  "expected": "altered",
+  "verdict": "altered",
+  "matched_id": "mohre_announcement",
+  "distance": 2,
+  "changed_pct": 0.052,
+  "win": 85,
+  "ms": 1406.2,
+  "bytes": 277294
+ },
+ {
+  "group": "edit_ext",
+  "kind": "number_changed",
+  "size": "small",
+  "transform": "shot_chat_bubble_q70",
+  "post": "mohre_announcement",
+  "expected": "altered",
+  "verdict": "altered",
+  "matched_id": "mohre_announcement",
+  "distance": 2,
+  "changed_pct": 0.053,
+  "win": 84,
+  "ms": 2920.0,
+  "bytes": 112265
+ },
+ {
+  "group": "edit_ext",
+  "kind": "number_changed",
+  "size": "small",
+  "transform": "crop_1pct_q80",
+  "post": "mohre_announcement",
+  "expected": "altered",
+  "verdict": "altered",
+  "matched_id": "mohre_announcement",
+  "distance": 4,
+  "changed_pct": 0.054,
+  "win": 84,
+  "ms": 1578.9,
+  "bytes": 111693
+ },
+ {
+  "group": "edit_ext",
+  "kind": "number_changed",
+  "size": "small",
+  "transform": "whatsapp_q50_1280",
+  "post": "mohre_announcement",
+  "expected": "altered",
+  "verdict": "altered",
+  "matched_id": "mohre_announcement",
+  "distance": 0,
+  "changed_pct": 0.053,
+  "win": 85,
+  "ms": 32.6,
+  "bytes": 74766
+ },
+ {
+  "group": "edit_ext",
+  "kind": "date_1digit",
+  "size": "tiny",
+  "transform": "shot_small_q60",
+  "post": "weekend_schedule_notice",
+  "expected": "altered",
+  "verdict": "altered",
+  "matched_id": "weekend_schedule_notice",
+  "distance": 6,
+  "changed_pct": 0.006,
+  "win": 21,
+  "ms": 2769.6,
+  "bytes": 108334
+ },
+ {
+  "group": "edit_ext",
+  "kind": "date_1digit",
+  "size": "tiny",
+  "transform": "shot_png_1290",
+  "post": "weekend_schedule_notice",
+  "expected": "altered",
+  "verdict": "altered",
+  "matched_id": "weekend_schedule_notice",
+  "distance": 6,
+  "changed_pct": 0.006,
+  "win": 21,
+  "ms": 2989.7,
+  "bytes": 278394
+ },
+ {
+  "group": "edit_ext",
+  "kind": "date_1digit",
+  "size": "tiny",
+  "transform": "shot_chat_bubble_q70",
+  "post": "weekend_schedule_notice",
+  "expected": "altered",
+  "verdict": "unverified",
+  "matched_id": null,
+  "distance": 28,
+  "changed_pct": null,
+  "win": null,
+  "ms": 1335.2,
+  "bytes": 117497
+ },
+ {
+  "group": "edit_ext",
+  "kind": "date_1digit",
+  "size": "tiny",
+  "transform": "crop_1pct_q80",
+  "post": "weekend_schedule_notice",
+  "expected": "altered",
+  "verdict": "altered",
+  "matched_id": "weekend_schedule_notice",
+  "distance": 2,
+  "changed_pct": 0.008,
+  "win": 25,
+  "ms": 1083.3,
+  "bytes": 105830
+ },
+ {
+  "group": "edit_ext",
+  "kind": "date_1digit",
+  "size": "tiny",
+  "transform": "whatsapp_q50_1280",
+  "post": "weekend_schedule_notice",
+  "expected": "altered",
+  "verdict": "altered",
+  "matched_id": "weekend_schedule_notice",
+  "distance": 0,
+  "changed_pct": 0.006,
+  "win": 21,
+  "ms": 36.5,
+  "bytes": 73338
+ },
+ {
+  "group": "edit_ext",
+  "kind": "date_2digit",
+  "size": "tiny",
+  "transform": "shot_small_q60",
+  "post": "weekend_schedule_notice",
+  "expected": "altered",
+  "verdict": "altered",
+  "matched_id": "weekend_schedule_notice",
+  "distance": 6,
+  "changed_pct": 0.013,
+  "win": 36,
+  "ms": 2947.1,
+  "bytes": 108337
+ },
+ {
+  "group": "edit_ext",
+  "kind": "date_2digit",
+  "size": "tiny",
+  "transform": "shot_png_1290",
+  "post": "weekend_schedule_notice",
+  "expected": "altered",
+  "verdict": "altered",
+  "matched_id": "weekend_schedule_notice",
+  "distance": 6,
+  "changed_pct": 0.013,
+  "win": 35,
+  "ms": 2826.6,
+  "bytes": 278393
+ },
+ {
+  "group": "edit_ext",
+  "kind": "date_2digit",
+  "size": "tiny",
+  "transform": "shot_chat_bubble_q70",
+  "post": "weekend_schedule_notice",
+  "expected": "altered",
+  "verdict": "unverified",
+  "matched_id": null,
+  "distance": 28,
+  "changed_pct": null,
+  "win": null,
+  "ms": 1600.2,
+  "bytes": 117523
+ },
+ {
+  "group": "edit_ext",
+  "kind": "date_2digit",
+  "size": "tiny",
+  "transform": "crop_1pct_q80",
+  "post": "weekend_schedule_notice",
+  "expected": "altered",
+  "verdict": "altered",
+  "matched_id": "weekend_schedule_notice",
+  "distance": 2,
+  "changed_pct": 0.015,
+  "win": 37,
+  "ms": 1025.5,
+  "bytes": 105807
+ },
+ {
+  "group": "edit_ext",
+  "kind": "date_2digit",
+  "size": "tiny",
+  "transform": "whatsapp_q50_1280",
+  "post": "weekend_schedule_notice",
+  "expected": "altered",
+  "verdict": "altered",
+  "matched_id": "weekend_schedule_notice",
+  "distance": 0,
+  "changed_pct": 0.013,
+  "win": 35,
+  "ms": 36.9,
+  "bytes": 73282
+ },
+ {
+  "group": "edit_ext",
+  "kind": "number_changed",
+  "size": "small",
+  "transform": "shot_small_q60",
+  "post": "weekend_schedule_notice",
+  "expected": "altered",
+  "verdict": "unverified",
+  "matched_id": null,
+  "distance": 26,
+  "changed_pct": null,
+  "win": null,
+  "ms": 1640.2,
+  "bytes": 108475
+ },
+ {
+  "group": "edit_ext",
+  "kind": "number_changed",
+  "size": "small",
+  "transform": "shot_png_1290",
+  "post": "weekend_schedule_notice",
+  "expected": "altered",
+  "verdict": "altered",
+  "matched_id": "weekend_schedule_notice",
+  "distance": 6,
+  "changed_pct": 0.224,
+  "win": 69,
+  "ms": 2695.0,
+  "bytes": 279956
+ },
+ {
+  "group": "edit_ext",
+  "kind": "number_changed",
+  "size": "small",
+  "transform": "shot_chat_bubble_q70",
+  "post": "weekend_schedule_notice",
+  "expected": "altered",
+  "verdict": "unverified",
+  "matched_id": null,
+  "distance": 28,
+  "changed_pct": null,
+  "win": null,
+  "ms": 1650.3,
+  "bytes": 117615
+ },
+ {
+  "group": "edit_ext",
+  "kind": "number_changed",
+  "size": "small",
+  "transform": "crop_1pct_q80",
+  "post": "weekend_schedule_notice",
+  "expected": "altered",
+  "verdict": "altered",
+  "matched_id": "weekend_schedule_notice",
+  "distance": 2,
+  "changed_pct": 0.232,
+  "win": 68,
+  "ms": 880.5,
+  "bytes": 106065
+ },
+ {
+  "group": "edit_ext",
+  "kind": "number_changed",
+  "size": "small",
+  "transform": "whatsapp_q50_1280",
+  "post": "weekend_schedule_notice",
+  "expected": "altered",
+  "verdict": "altered",
+  "matched_id": "weekend_schedule_notice",
+  "distance": 0,
+  "changed_pct": 0.223,
+  "win": 67,
+  "ms": 36.4,
+  "bytes": 73443
+ },
+ {
+  "group": "edit_ext",
+  "kind": "date_1digit",
+  "size": "tiny",
+  "transform": "shot_small_q60",
+  "post": "golden_visa_update",
+  "expected": "altered",
+  "verdict": "altered",
+  "matched_id": "golden_visa_update",
+  "distance": 2,
+  "changed_pct": 0.005,
+  "win": 18,
+  "ms": 2936.3,
+  "bytes": 105751
+ },
+ {
+  "group": "edit_ext",
+  "kind": "date_1digit",
+  "size": "tiny",
+  "transform": "shot_png_1290",
+  "post": "golden_visa_update",
+  "expected": "altered",
+  "verdict": "altered",
+  "matched_id": "golden_visa_update",
+  "distance": 0,
+  "changed_pct": 0.005,
+  "win": 18,
+  "ms": 2330.1,
+  "bytes": 312829
+ },
+ {
+  "group": "edit_ext",
+  "kind": "date_1digit",
+  "size": "tiny",
+  "transform": "shot_chat_bubble_q70",
+  "post": "golden_visa_update",
+  "expected": "altered",
+  "verdict": "altered",
+  "matched_id": "golden_visa_update",
+  "distance": 4,
+  "changed_pct": 0.005,
+  "win": 18,
+  "ms": 2581.2,
+  "bytes": 114691
+ },
+ {
+  "group": "edit_ext",
+  "kind": "date_1digit",
+  "size": "tiny",
+  "transform": "crop_1pct_q80",
+  "post": "golden_visa_update",
+  "expected": "altered",
+  "verdict": "altered",
+  "matched_id": "golden_visa_update",
+  "distance": 4,
+  "changed_pct": 0.006,
+  "win": 19,
+  "ms": 1217.9,
+  "bytes": 117326
+ },
+ {
+  "group": "edit_ext",
+  "kind": "date_1digit",
+  "size": "tiny",
+  "transform": "whatsapp_q50_1280",
+  "post": "golden_visa_update",
+  "expected": "altered",
+  "verdict": "altered",
+  "matched_id": "golden_visa_update",
+  "distance": 0,
+  "changed_pct": 0.005,
+  "win": 17,
+  "ms": 35.1,
+  "bytes": 77612
+ },
+ {
+  "group": "edit_ext",
+  "kind": "date_2digit",
+  "size": "tiny",
+  "transform": "shot_small_q60",
+  "post": "golden_visa_update",
+  "expected": "altered",
+  "verdict": "altered",
+  "matched_id": "golden_visa_update",
+  "distance": 2,
+  "changed_pct": 0.011,
+  "win": 32,
+  "ms": 2656.3,
+  "bytes": 105753
+ },
+ {
+  "group": "edit_ext",
+  "kind": "date_2digit",
+  "size": "tiny",
+  "transform": "shot_png_1290",
+  "post": "golden_visa_update",
+  "expected": "altered",
+  "verdict": "altered",
+  "matched_id": "golden_visa_update",
+  "distance": 0,
+  "changed_pct": 0.011,
+  "win": 31,
+  "ms": 2303.2,
+  "bytes": 313169
+ },
+ {
+  "group": "edit_ext",
+  "kind": "date_2digit",
+  "size": "tiny",
+  "transform": "shot_chat_bubble_q70",
+  "post": "golden_visa_update",
+  "expected": "altered",
+  "verdict": "altered",
+  "matched_id": "golden_visa_update",
+  "distance": 4,
+  "changed_pct": 0.011,
+  "win": 32,
+  "ms": 2943.1,
+  "bytes": 114734
+ },
+ {
+  "group": "edit_ext",
+  "kind": "date_2digit",
+  "size": "tiny",
+  "transform": "crop_1pct_q80",
+  "post": "golden_visa_update",
+  "expected": "altered",
+  "verdict": "altered",
+  "matched_id": "golden_visa_update",
+  "distance": 4,
+  "changed_pct": 0.012,
+  "win": 35,
+  "ms": 1161.2,
+  "bytes": 117360
+ },
+ {
+  "group": "edit_ext",
+  "kind": "date_2digit",
+  "size": "tiny",
+  "transform": "whatsapp_q50_1280",
+  "post": "golden_visa_update",
+  "expected": "altered",
+  "verdict": "altered",
+  "matched_id": "golden_visa_update",
+  "distance": 0,
+  "changed_pct": 0.011,
+  "win": 32,
+  "ms": 36.4,
+  "bytes": 77622
+ },
+ {
+  "group": "edit_ext",
+  "kind": "key_line_1digit",
+  "size": "small",
+  "transform": "shot_small_q60",
+  "post": "golden_visa_update",
+  "expected": "altered",
+  "verdict": "altered",
+  "matched_id": "golden_visa_update",
+  "distance": 0,
+  "changed_pct": 0.09,
+  "win": 85,
+  "ms": 2813.0,
+  "bytes": 105790
+ },
+ {
+  "group": "edit_ext",
+  "kind": "key_line_1digit",
+  "size": "small",
+  "transform": "shot_png_1290",
+  "post": "golden_visa_update",
+  "expected": "altered",
+  "verdict": "altered",
+  "matched_id": "golden_visa_update",
+  "distance": 0,
+  "changed_pct": 0.091,
+  "win": 85,
+  "ms": 2989.0,
+  "bytes": 312292
+ },
+ {
+  "group": "edit_ext",
+  "kind": "key_line_1digit",
+  "size": "small",
+  "transform": "shot_chat_bubble_q70",
+  "post": "golden_visa_update",
+  "expected": "altered",
+  "verdict": "altered",
+  "matched_id": "golden_visa_update",
+  "distance": 4,
+  "changed_pct": 0.089,
+  "win": 85,
+  "ms": 2715.4,
+  "bytes": 114811
+ },
+ {
+  "group": "edit_ext",
+  "kind": "key_line_1digit",
+  "size": "small",
+  "transform": "crop_1pct_q80",
+  "post": "golden_visa_update",
+  "expected": "altered",
+  "verdict": "altered",
+  "matched_id": "golden_visa_update",
+  "distance": 4,
+  "changed_pct": 0.097,
+  "win": 88,
+  "ms": 1227.3,
+  "bytes": 117238
+ },
+ {
+  "group": "edit_ext",
+  "kind": "key_line_1digit",
+  "size": "small",
+  "transform": "whatsapp_q50_1280",
+  "post": "golden_visa_update",
+  "expected": "altered",
+  "verdict": "altered",
+  "matched_id": "golden_visa_update",
+  "distance": 0,
+  "changed_pct": 0.088,
+  "win": 84,
+  "ms": 36.0,
+  "bytes": 77577
+ },
+ {
+  "group": "edit_ext",
+  "kind": "number_changed",
+  "size": "small",
+  "transform": "shot_small_q60",
+  "post": "golden_visa_update",
+  "expected": "altered",
+  "verdict": "altered",
+  "matched_id": "golden_visa_update",
+  "distance": 0,
+  "changed_pct": 0.661,
+  "win": 98,
+  "ms": 2688.4,
+  "bytes": 105801
+ },
+ {
+  "group": "edit_ext",
+  "kind": "number_changed",
+  "size": "small",
+  "transform": "shot_png_1290",
+  "post": "golden_visa_update",
+  "expected": "altered",
+  "verdict": "altered",
+  "matched_id": "golden_visa_update",
+  "distance": 0,
+  "changed_pct": 0.667,
+  "win": 98,
+  "ms": 2434.1,
+  "bytes": 309172
+ },
+ {
+  "group": "edit_ext",
+  "kind": "number_changed",
+  "size": "small",
+  "transform": "shot_chat_bubble_q70",
+  "post": "golden_visa_update",
+  "expected": "altered",
+  "verdict": "altered",
+  "matched_id": "golden_visa_update",
+  "distance": 0,
+  "changed_pct": 0.662,
+  "win": 97,
+  "ms": 2838.3,
+  "bytes": 114326
+ },
+ {
+  "group": "edit_ext",
+  "kind": "number_changed",
+  "size": "small",
+  "transform": "crop_1pct_q80",
+  "post": "golden_visa_update",
+  "expected": "altered",
+  "verdict": "altered",
+  "matched_id": "golden_visa_update",
+  "distance": 4,
+  "changed_pct": 0.694,
+  "win": 99,
+  "ms": 1078.1,
+  "bytes": 117159
+ },
+ {
+  "group": "edit_ext",
+  "kind": "number_changed",
+  "size": "small",
+  "transform": "whatsapp_q50_1280",
+  "post": "golden_visa_update",
+  "expected": "altered",
+  "verdict": "altered",
+  "matched_id": "golden_visa_update",
+  "distance": 2,
+  "changed_pct": 0.662,
+  "win": 98,
+  "ms": 566.7,
+  "bytes": 77516
+ },
+ {
+  "group": "edit_ext",
+  "kind": "date_1digit",
+  "size": "tiny",
+  "transform": "shot_small_q60",
+  "post": "school_calendar",
+  "expected": "altered",
+  "verdict": "altered",
+  "matched_id": "school_calendar",
+  "distance": 4,
+  "changed_pct": 0.006,
+  "win": 21,
+  "ms": 3184.0,
+  "bytes": 115912
+ },
+ {
+  "group": "edit_ext",
+  "kind": "date_1digit",
+  "size": "tiny",
+  "transform": "shot_png_1290",
+  "post": "school_calendar",
+  "expected": "altered",
+  "verdict": "altered",
+  "matched_id": "school_calendar",
+  "distance": 4,
+  "changed_pct": 0.007,
+  "win": 22,
+  "ms": 2652.6,
+  "bytes": 309783
+ },
+ {
+  "group": "edit_ext",
+  "kind": "date_1digit",
+  "size": "tiny",
+  "transform": "shot_chat_bubble_q70",
+  "post": "school_calendar",
+  "expected": "altered",
+  "verdict": "altered",
+  "matched_id": "school_calendar",
+  "distance": 2,
+  "changed_pct": 0.007,
+  "win": 22,
+  "ms": 2704.0,
+  "bytes": 124182
+ },
+ {
+  "group": "edit_ext",
+  "kind": "date_1digit",
+  "size": "tiny",
+  "transform": "crop_1pct_q80",
+  "post": "school_calendar",
+  "expected": "altered",
+  "verdict": "altered",
+  "matched_id": "school_calendar",
+  "distance": 4,
+  "changed_pct": 0.007,
+  "win": 23,
+  "ms": 992.6,
+  "bytes": 127848
+ },
+ {
+  "group": "edit_ext",
+  "kind": "date_1digit",
+  "size": "tiny",
+  "transform": "whatsapp_q50_1280",
+  "post": "school_calendar",
+  "expected": "altered",
+  "verdict": "altered",
+  "matched_id": "school_calendar",
+  "distance": 0,
+  "changed_pct": 0.007,
+  "win": 22,
+  "ms": 33.3,
+  "bytes": 84171
+ },
+ {
+  "group": "edit_ext",
+  "kind": "date_2digit",
+  "size": "tiny",
+  "transform": "shot_small_q60",
+  "post": "school_calendar",
+  "expected": "altered",
+  "verdict": "altered",
+  "matched_id": "school_calendar",
+  "distance": 4,
+  "changed_pct": 0.013,
+  "win": 36,
+  "ms": 3019.2,
+  "bytes": 115908
+ },
+ {
+  "group": "edit_ext",
+  "kind": "date_2digit",
+  "size": "tiny",
+  "transform": "shot_png_1290",
+  "post": "school_calendar",
+  "expected": "altered",
+  "verdict": "altered",
+  "matched_id": "school_calendar",
+  "distance": 4,
+  "changed_pct": 0.013,
+  "win": 36,
+  "ms": 2740.1,
+  "bytes": 310458
+ },
+ {
+  "group": "edit_ext",
+  "kind": "date_2digit",
+  "size": "tiny",
+  "transform": "shot_chat_bubble_q70",
+  "post": "school_calendar",
+  "expected": "altered",
+  "verdict": "altered",
+  "matched_id": "school_calendar",
+  "distance": 2,
+  "changed_pct": 0.013,
+  "win": 35,
+  "ms": 2623.1,
+  "bytes": 124190
+ },
+ {
+  "group": "edit_ext",
+  "kind": "date_2digit",
+  "size": "tiny",
+  "transform": "crop_1pct_q80",
+  "post": "school_calendar",
+  "expected": "altered",
+  "verdict": "altered",
+  "matched_id": "school_calendar",
+  "distance": 4,
+  "changed_pct": 0.014,
+  "win": 38,
+  "ms": 1034.2,
+  "bytes": 127848
+ },
+ {
+  "group": "edit_ext",
+  "kind": "date_2digit",
+  "size": "tiny",
+  "transform": "whatsapp_q50_1280",
+  "post": "school_calendar",
+  "expected": "altered",
+  "verdict": "altered",
+  "matched_id": "school_calendar",
+  "distance": 0,
+  "changed_pct": 0.013,
+  "win": 35,
+  "ms": 34.2,
+  "bytes": 84161
+ },
+ {
+  "group": "edit_ext",
+  "kind": "key_line_1digit",
+  "size": "small",
+  "transform": "shot_small_q60",
+  "post": "school_calendar",
+  "expected": "altered",
+  "verdict": "altered",
+  "matched_id": "school_calendar",
+  "distance": 4,
+  "changed_pct": 0.019,
+  "win": 60,
+  "ms": 3071.0,
+  "bytes": 115947
+ },
+ {
+  "group": "edit_ext",
+  "kind": "key_line_1digit",
+  "size": "small",
+  "transform": "shot_png_1290",
+  "post": "school_calendar",
+  "expected": "altered",
+  "verdict": "altered",
+  "matched_id": "school_calendar",
+  "distance": 4,
+  "changed_pct": 0.018,
+  "win": 58,
+  "ms": 2479.0,
+  "bytes": 308941
+ },
+ {
+  "group": "edit_ext",
+  "kind": "key_line_1digit",
+  "size": "small",
+  "transform": "shot_chat_bubble_q70",
+  "post": "school_calendar",
+  "expected": "altered",
+  "verdict": "altered",
+  "matched_id": "school_calendar",
+  "distance": 2,
+  "changed_pct": 0.019,
+  "win": 60,
+  "ms": 2831.3,
+  "bytes": 124210
+ },
+ {
+  "group": "edit_ext",
+  "kind": "key_line_1digit",
+  "size": "small",
+  "transform": "crop_1pct_q80",
+  "post": "school_calendar",
+  "expected": "altered",
+  "verdict": "altered",
+  "matched_id": "school_calendar",
+  "distance": 4,
+  "changed_pct": 0.021,
+  "win": 65,
+  "ms": 972.3,
+  "bytes": 127915
+ },
+ {
+  "group": "edit_ext",
+  "kind": "key_line_1digit",
+  "size": "small",
+  "transform": "whatsapp_q50_1280",
+  "post": "school_calendar",
+  "expected": "altered",
+  "verdict": "altered",
+  "matched_id": "school_calendar",
+  "distance": 0,
+  "changed_pct": 0.02,
+  "win": 64,
+  "ms": 35.2,
+  "bytes": 84187
+ },
+ {
+  "group": "edit_ext",
+  "kind": "number_changed",
+  "size": "small",
+  "transform": "shot_small_q60",
+  "post": "school_calendar",
+  "expected": "altered",
+  "verdict": "altered",
+  "matched_id": "school_calendar",
+  "distance": 4,
+  "changed_pct": 0.074,
+  "win": 68,
+  "ms": 3076.6,
+  "bytes": 115910
+ },
+ {
+  "group": "edit_ext",
+  "kind": "number_changed",
+  "size": "small",
+  "transform": "shot_png_1290",
+  "post": "school_calendar",
+  "expected": "altered",
+  "verdict": "altered",
+  "matched_id": "school_calendar",
+  "distance": 4,
+  "changed_pct": 0.074,
+  "win": 68,
+  "ms": 2755.7,
+  "bytes": 310176
+ },
+ {
+  "group": "edit_ext",
+  "kind": "number_changed",
+  "size": "small",
+  "transform": "shot_chat_bubble_q70",
+  "post": "school_calendar",
+  "expected": "altered",
+  "verdict": "altered",
+  "matched_id": "school_calendar",
+  "distance": 2,
+  "changed_pct": 0.075,
+  "win": 68,
+  "ms": 2837.8,
+  "bytes": 124204
+ },
+ {
+  "group": "edit_ext",
+  "kind": "number_changed",
+  "size": "small",
+  "transform": "crop_1pct_q80",
+  "post": "school_calendar",
+  "expected": "altered",
+  "verdict": "altered",
+  "matched_id": "school_calendar",
+  "distance": 4,
+  "changed_pct": 0.08,
+  "win": 69,
+  "ms": 994.5,
+  "bytes": 127968
+ },
+ {
+  "group": "edit_ext",
+  "kind": "number_changed",
+  "size": "small",
+  "transform": "whatsapp_q50_1280",
+  "post": "school_calendar",
+  "expected": "altered",
+  "verdict": "altered",
+  "matched_id": "school_calendar",
+  "distance": 0,
+  "changed_pct": 0.075,
+  "win": 69,
+  "ms": 35.1,
+  "bytes": 84140
+ },
+ {
+  "group": "edit_ext",
+  "kind": "date_1digit",
+  "size": "tiny",
+  "transform": "shot_small_q60",
+  "post": "ramadan_hours",
+  "expected": "altered",
+  "verdict": "altered",
+  "matched_id": "ramadan_hours",
+  "distance": 4,
+  "changed_pct": 0.006,
+  "win": 21,
+  "ms": 2971.9,
+  "bytes": 98704
+ },
+ {
+  "group": "edit_ext",
+  "kind": "date_1digit",
+  "size": "tiny",
+  "transform": "shot_png_1290",
+  "post": "ramadan_hours",
+  "expected": "altered",
+  "verdict": "altered",
+  "matched_id": "ramadan_hours",
+  "distance": 2,
+  "changed_pct": 0.007,
+  "win": 22,
+  "ms": 2852.1,
+  "bytes": 304491
+ },
+ {
+  "group": "edit_ext",
+  "kind": "date_1digit",
+  "size": "tiny",
+  "transform": "shot_chat_bubble_q70",
+  "post": "ramadan_hours",
+  "expected": "altered",
+  "verdict": "altered",
+  "matched_id": "ramadan_hours",
+  "distance": 2,
+  "changed_pct": 0.007,
+  "win": 22,
+  "ms": 2769.1,
+  "bytes": 107931
+ },
+ {
+  "group": "edit_ext",
+  "kind": "date_1digit",
+  "size": "tiny",
+  "transform": "crop_1pct_q80",
+  "post": "ramadan_hours",
+  "expected": "altered",
+  "verdict": "altered",
+  "matched_id": "ramadan_hours",
+  "distance": 2,
+  "changed_pct": 0.005,
+  "win": 17,
+  "ms": 1288.2,
+  "bytes": 100906
+ },
+ {
+  "group": "edit_ext",
+  "kind": "date_1digit",
+  "size": "tiny",
+  "transform": "whatsapp_q50_1280",
+  "post": "ramadan_hours",
+  "expected": "altered",
+  "verdict": "altered",
+  "matched_id": "ramadan_hours",
+  "distance": 2,
+  "changed_pct": 0.007,
+  "win": 22,
+  "ms": 35.3,
+  "bytes": 64704
+ },
+ {
+  "group": "edit_ext",
+  "kind": "date_2digit",
+  "size": "tiny",
+  "transform": "shot_small_q60",
+  "post": "ramadan_hours",
+  "expected": "altered",
+  "verdict": "altered",
+  "matched_id": "ramadan_hours",
+  "distance": 4,
+  "changed_pct": 0.012,
+  "win": 36,
+  "ms": 3130.2,
+  "bytes": 98685
+ },
+ {
+  "group": "edit_ext",
+  "kind": "date_2digit",
+  "size": "tiny",
+  "transform": "shot_png_1290",
+  "post": "ramadan_hours",
+  "expected": "altered",
+  "verdict": "altered",
+  "matched_id": "ramadan_hours",
+  "distance": 2,
+  "changed_pct": 0.012,
+  "win": 37,
+  "ms": 2732.6,
+  "bytes": 304544
+ },
+ {
+  "group": "edit_ext",
+  "kind": "date_2digit",
+  "size": "tiny",
+  "transform": "shot_chat_bubble_q70",
+  "post": "ramadan_hours",
+  "expected": "altered",
+  "verdict": "altered",
+  "matched_id": "ramadan_hours",
+  "distance": 2,
+  "changed_pct": 0.012,
+  "win": 38,
+  "ms": 2755.4,
+  "bytes": 107965
+ },
+ {
+  "group": "edit_ext",
+  "kind": "date_2digit",
+  "size": "tiny",
+  "transform": "crop_1pct_q80",
+  "post": "ramadan_hours",
+  "expected": "altered",
+  "verdict": "altered",
+  "matched_id": "ramadan_hours",
+  "distance": 2,
+  "changed_pct": 0.01,
+  "win": 30,
+  "ms": 1290.6,
+  "bytes": 100910
+ },
+ {
+  "group": "edit_ext",
+  "kind": "date_2digit",
+  "size": "tiny",
+  "transform": "whatsapp_q50_1280",
+  "post": "ramadan_hours",
+  "expected": "altered",
+  "verdict": "altered",
+  "matched_id": "ramadan_hours",
+  "distance": 2,
+  "changed_pct": 0.012,
+  "win": 37,
+  "ms": 36.1,
+  "bytes": 64703
+ },
+ {
+  "group": "edit_ext",
+  "kind": "key_line_1digit",
+  "size": "small",
+  "transform": "shot_small_q60",
+  "post": "ramadan_hours",
+  "expected": "altered",
+  "verdict": "altered",
+  "matched_id": "ramadan_hours",
+  "distance": 4,
+  "changed_pct": 0.062,
+  "win": 87,
+  "ms": 3175.4,
+  "bytes": 98753
+ },
+ {
+  "group": "edit_ext",
+  "kind": "key_line_1digit",
+  "size": "small",
+  "transform": "shot_png_1290",
+  "post": "ramadan_hours",
+  "expected": "altered",
+  "verdict": "altered",
+  "matched_id": "ramadan_hours",
+  "distance": 2,
+  "changed_pct": 0.062,
+  "win": 87,
+  "ms": 2758.7,
+  "bytes": 304627
+ },
+ {
+  "group": "edit_ext",
+  "kind": "key_line_1digit",
+  "size": "small",
+  "transform": "shot_chat_bubble_q70",
+  "post": "ramadan_hours",
+  "expected": "altered",
+  "verdict": "altered",
+  "matched_id": "ramadan_hours",
+  "distance": 2,
+  "changed_pct": 0.063,
+  "win": 87,
+  "ms": 2848.6,
+  "bytes": 108000
+ },
+ {
+  "group": "edit_ext",
+  "kind": "key_line_1digit",
+  "size": "small",
+  "transform": "crop_1pct_q80",
+  "post": "ramadan_hours",
+  "expected": "altered",
+  "verdict": "altered",
+  "matched_id": "ramadan_hours",
+  "distance": 2,
+  "changed_pct": 0.064,
+  "win": 87,
+  "ms": 1274.9,
+  "bytes": 100890
+ },
+ {
+  "group": "edit_ext",
+  "kind": "key_line_1digit",
+  "size": "small",
+  "transform": "whatsapp_q50_1280",
+  "post": "ramadan_hours",
+  "expected": "altered",
+  "verdict": "altered",
+  "matched_id": "ramadan_hours",
+  "distance": 2,
+  "changed_pct": 0.062,
+  "win": 87,
+  "ms": 36.1,
+  "bytes": 64736
+ },
+ {
+  "group": "edit_ext",
+  "kind": "number_changed",
+  "size": "small",
+  "transform": "shot_small_q60",
+  "post": "ramadan_hours",
+  "expected": "altered",
+  "verdict": "altered",
+  "matched_id": "ramadan_hours",
+  "distance": 4,
+  "changed_pct": 0.062,
+  "win": 87,
+  "ms": 3147.4,
+  "bytes": 98753
+ },
+ {
+  "group": "edit_ext",
+  "kind": "number_changed",
+  "size": "small",
+  "transform": "shot_png_1290",
+  "post": "ramadan_hours",
+  "expected": "altered",
+  "verdict": "altered",
+  "matched_id": "ramadan_hours",
+  "distance": 2,
+  "changed_pct": 0.062,
+  "win": 87,
+  "ms": 2651.6,
+  "bytes": 304627
+ },
+ {
+  "group": "edit_ext",
+  "kind": "number_changed",
+  "size": "small",
+  "transform": "shot_chat_bubble_q70",
+  "post": "ramadan_hours",
+  "expected": "altered",
+  "verdict": "altered",
+  "matched_id": "ramadan_hours",
+  "distance": 2,
+  "changed_pct": 0.063,
+  "win": 87,
+  "ms": 2771.9,
+  "bytes": 108000
+ },
+ {
+  "group": "edit_ext",
+  "kind": "number_changed",
+  "size": "small",
+  "transform": "crop_1pct_q80",
+  "post": "ramadan_hours",
+  "expected": "altered",
+  "verdict": "altered",
+  "matched_id": "ramadan_hours",
+  "distance": 2,
+  "changed_pct": 0.064,
+  "win": 87,
+  "ms": 1249.6,
+  "bytes": 100890
+ },
+ {
+  "group": "edit_ext",
+  "kind": "number_changed",
+  "size": "small",
+  "transform": "whatsapp_q50_1280",
+  "post": "ramadan_hours",
+  "expected": "altered",
+  "verdict": "altered",
+  "matched_id": "ramadan_hours",
+  "distance": 2,
+  "changed_pct": 0.062,
+  "win": 87,
+  "ms": 35.3,
+  "bytes": 64736
+ },
+ {
+  "group": "edit_ext",
+  "kind": "date_1digit",
+  "size": "tiny",
+  "transform": "shot_small_q60",
+  "post": "icp_emirates_id",
+  "expected": "altered",
+  "verdict": "altered",
+  "matched_id": "icp_emirates_id",
+  "distance": 0,
+  "changed_pct": 0.003,
+  "win": 11,
+  "ms": 2982.3,
+  "bytes": 104496
+ },
+ {
+  "group": "edit_ext",
+  "kind": "date_1digit",
+  "size": "tiny",
+  "transform": "shot_png_1290",
+  "post": "icp_emirates_id",
+  "expected": "altered",
+  "verdict": "altered",
+  "matched_id": "icp_emirates_id",
+  "distance": 2,
+  "changed_pct": 0.003,
+  "win": 11,
+  "ms": 2591.5,
+  "bytes": 279151
+ },
+ {
+  "group": "edit_ext",
+  "kind": "date_1digit",
+  "size": "tiny",
+  "transform": "shot_chat_bubble_q70",
+  "post": "icp_emirates_id",
+  "expected": "altered",
+  "verdict": "altered",
+  "matched_id": "icp_emirates_id",
+  "distance": 2,
+  "changed_pct": 0.003,
+  "win": 10,
+  "ms": 2802.9,
+  "bytes": 109229
+ },
+ {
+  "group": "edit_ext",
+  "kind": "date_1digit",
+  "size": "tiny",
+  "transform": "crop_1pct_q80",
+  "post": "icp_emirates_id",
+  "expected": "altered",
+  "verdict": "altered",
+  "matched_id": "icp_emirates_id",
+  "distance": 0,
+  "changed_pct": 0.003,
+  "win": 10,
+  "ms": 1187.7,
+  "bytes": 108009
+ },
+ {
+  "group": "edit_ext",
+  "kind": "date_1digit",
+  "size": "tiny",
+  "transform": "whatsapp_q50_1280",
+  "post": "icp_emirates_id",
+  "expected": "altered",
+  "verdict": "altered",
+  "matched_id": "icp_emirates_id",
+  "distance": 0,
+  "changed_pct": 0.004,
+  "win": 12,
+  "ms": 40.3,
+  "bytes": 72417
+ },
+ {
+  "group": "edit_ext",
+  "kind": "date_2digit",
+  "size": "tiny",
+  "transform": "shot_small_q60",
+  "post": "icp_emirates_id",
+  "expected": "altered",
+  "verdict": "altered",
+  "matched_id": "icp_emirates_id",
+  "distance": 0,
+  "changed_pct": 0.007,
+  "win": 18,
+  "ms": 2880.9,
+  "bytes": 104501
+ },
+ {
+  "group": "edit_ext",
+  "kind": "date_2digit",
+  "size": "tiny",
+  "transform": "shot_png_1290",
+  "post": "icp_emirates_id",
+  "expected": "altered",
+  "verdict": "altered",
+  "matched_id": "icp_emirates_id",
+  "distance": 2,
+  "changed_pct": 0.008,
+  "win": 21,
+  "ms": 2657.4,
+  "bytes": 279028
+ },
+ {
+  "group": "edit_ext",
+  "kind": "date_2digit",
+  "size": "tiny",
+  "transform": "shot_chat_bubble_q70",
+  "post": "icp_emirates_id",
+  "expected": "altered",
+  "verdict": "altered",
+  "matched_id": "icp_emirates_id",
+  "distance": 2,
+  "changed_pct": 0.008,
+  "win": 21,
+  "ms": 2757.4,
+  "bytes": 109251
+ },
+ {
+  "group": "edit_ext",
+  "kind": "date_2digit",
+  "size": "tiny",
+  "transform": "crop_1pct_q80",
+  "post": "icp_emirates_id",
+  "expected": "altered",
+  "verdict": "altered",
+  "matched_id": "icp_emirates_id",
+  "distance": 0,
+  "changed_pct": 0.008,
+  "win": 21,
+  "ms": 1199.9,
+  "bytes": 108000
+ },
+ {
+  "group": "edit_ext",
+  "kind": "date_2digit",
+  "size": "tiny",
+  "transform": "whatsapp_q50_1280",
+  "post": "icp_emirates_id",
+  "expected": "altered",
+  "verdict": "altered",
+  "matched_id": "icp_emirates_id",
+  "distance": 0,
+  "changed_pct": 0.008,
+  "win": 19,
+  "ms": 36.0,
+  "bytes": 72416
+ },
+ {
+  "group": "edit_ext",
+  "kind": "key_line_1digit",
+  "size": "small",
+  "transform": "shot_small_q60",
+  "post": "icp_emirates_id",
+  "expected": "altered",
+  "verdict": "altered",
+  "matched_id": "icp_emirates_id",
+  "distance": 2,
+  "changed_pct": 0.031,
+  "win": 70,
+  "ms": 3179.0,
+  "bytes": 104391
+ },
+ {
+  "group": "edit_ext",
+  "kind": "key_line_1digit",
+  "size": "small",
+  "transform": "shot_png_1290",
+  "post": "icp_emirates_id",
+  "expected": "altered",
+  "verdict": "altered",
+  "matched_id": "icp_emirates_id",
+  "distance": 2,
+  "changed_pct": 0.031,
+  "win": 70,
+  "ms": 2580.7,
+  "bytes": 278382
+ },
+ {
+  "group": "edit_ext",
+  "kind": "key_line_1digit",
+  "size": "small",
+  "transform": "shot_chat_bubble_q70",
+  "post": "icp_emirates_id",
+  "expected": "altered",
+  "verdict": "altered",
+  "matched_id": "icp_emirates_id",
+  "distance": 4,
+  "changed_pct": 0.03,
+  "win": 70,
+  "ms": 2593.9,
+  "bytes": 109247
+ },
+ {
+  "group": "edit_ext",
+  "kind": "key_line_1digit",
+  "size": "small",
+  "transform": "crop_1pct_q80",
+  "post": "icp_emirates_id",
+  "expected": "altered",
+  "verdict": "altered",
+  "matched_id": "icp_emirates_id",
+  "distance": 0,
+  "changed_pct": 0.033,
+  "win": 73,
+  "ms": 1173.8,
+  "bytes": 108069
+ },
+ {
+  "group": "edit_ext",
+  "kind": "key_line_1digit",
+  "size": "small",
+  "transform": "whatsapp_q50_1280",
+  "post": "icp_emirates_id",
+  "expected": "altered",
+  "verdict": "altered",
+  "matched_id": "icp_emirates_id",
+  "distance": 0,
+  "changed_pct": 0.031,
+  "win": 71,
+  "ms": 37.2,
+  "bytes": 72436
+ },
+ {
+  "group": "edit_ext",
+  "kind": "number_changed",
+  "size": "small",
+  "transform": "shot_small_q60",
+  "post": "icp_emirates_id",
+  "expected": "altered",
+  "verdict": "altered",
+  "matched_id": "icp_emirates_id",
+  "distance": 2,
+  "changed_pct": 0.11,
+  "win": 89,
+  "ms": 3102.3,
+  "bytes": 104432
+ },
+ {
+  "group": "edit_ext",
+  "kind": "number_changed",
+  "size": "small",
+  "transform": "shot_png_1290",
+  "post": "icp_emirates_id",
+  "expected": "altered",
+  "verdict": "altered",
+  "matched_id": "icp_emirates_id",
+  "distance": 2,
+  "changed_pct": 0.109,
+  "win": 89,
+  "ms": 2699.0,
+  "bytes": 279930
+ },
+ {
+  "group": "edit_ext",
+  "kind": "number_changed",
+  "size": "small",
+  "transform": "shot_chat_bubble_q70",
+  "post": "icp_emirates_id",
+  "expected": "altered",
+  "verdict": "altered",
+  "matched_id": "icp_emirates_id",
+  "distance": 2,
+  "changed_pct": 0.11,
+  "win": 88,
+  "ms": 2708.0,
+  "bytes": 109311
+ },
+ {
+  "group": "edit_ext",
+  "kind": "number_changed",
+  "size": "small",
+  "transform": "crop_1pct_q80",
+  "post": "icp_emirates_id",
+  "expected": "altered",
+  "verdict": "altered",
+  "matched_id": "icp_emirates_id",
+  "distance": 0,
+  "changed_pct": 0.112,
+  "win": 89,
+  "ms": 1193.3,
+  "bytes": 108133
+ },
+ {
+  "group": "edit_ext",
+  "kind": "number_changed",
+  "size": "small",
+  "transform": "whatsapp_q50_1280",
+  "post": "icp_emirates_id",
+  "expected": "altered",
+  "verdict": "altered",
+  "matched_id": "icp_emirates_id",
+  "distance": 0,
+  "changed_pct": 0.109,
+  "win": 89,
+  "ms": 34.4,
+  "bytes": 72432
+ },
+ {
+  "group": "edit_ext",
+  "kind": "date_1digit",
+  "size": "tiny",
+  "transform": "shot_small_q60",
+  "post": "rta_notice",
+  "expected": "altered",
+  "verdict": "altered",
+  "matched_id": "rta_notice",
+  "distance": 2,
+  "changed_pct": 0.008,
+  "win": 27,
+  "ms": 1656.4,
+  "bytes": 126786
+ },
+ {
+  "group": "edit_ext",
+  "kind": "date_1digit",
+  "size": "tiny",
+  "transform": "shot_png_1290",
+  "post": "rta_notice",
+  "expected": "altered",
+  "verdict": "altered",
+  "matched_id": "rta_notice",
+  "distance": 2,
+  "changed_pct": 0.008,
+  "win": 27,
+  "ms": 1281.9,
+  "bytes": 244657
+ },
+ {
+  "group": "edit_ext",
+  "kind": "date_1digit",
+  "size": "tiny",
+  "transform": "shot_chat_bubble_q70",
+  "post": "rta_notice",
+  "expected": "altered",
+  "verdict": "altered",
+  "matched_id": "rta_notice",
+  "distance": 4,
+  "changed_pct": 0.009,
+  "win": 28,
+  "ms": 2836.2,
+  "bytes": 136025
+ },
+ {
+  "group": "edit_ext",
+  "kind": "date_1digit",
+  "size": "tiny",
+  "transform": "crop_1pct_q80",
+  "post": "rta_notice",
+  "expected": "altered",
+  "verdict": "altered",
+  "matched_id": "rta_notice",
+  "distance": 4,
+  "changed_pct": 0.009,
+  "win": 29,
+  "ms": 1764.4,
+  "bytes": 139595
+ },
+ {
+  "group": "edit_ext",
+  "kind": "date_1digit",
+  "size": "tiny",
+  "transform": "whatsapp_q50_1280",
+  "post": "rta_notice",
+  "expected": "altered",
+  "verdict": "altered",
+  "matched_id": "rta_notice",
+  "distance": 0,
+  "changed_pct": 0.008,
+  "win": 27,
+  "ms": 32.7,
+  "bytes": 97763
+ },
+ {
+  "group": "edit_ext",
+  "kind": "date_2digit",
+  "size": "tiny",
+  "transform": "shot_small_q60",
+  "post": "rta_notice",
+  "expected": "altered",
+  "verdict": "altered",
+  "matched_id": "rta_notice",
+  "distance": 2,
+  "changed_pct": 0.016,
+  "win": 40,
+  "ms": 1805.9,
+  "bytes": 126782
+ },
+ {
+  "group": "edit_ext",
+  "kind": "date_2digit",
+  "size": "tiny",
+  "transform": "shot_png_1290",
+  "post": "rta_notice",
+  "expected": "altered",
+  "verdict": "altered",
+  "matched_id": "rta_notice",
+  "distance": 2,
+  "changed_pct": 0.016,
+  "win": 39,
+  "ms": 1246.2,
+  "bytes": 244632
+ },
+ {
+  "group": "edit_ext",
+  "kind": "date_2digit",
+  "size": "tiny",
+  "transform": "shot_chat_bubble_q70",
+  "post": "rta_notice",
+  "expected": "altered",
+  "verdict": "altered",
+  "matched_id": "rta_notice",
+  "distance": 4,
+  "changed_pct": 0.016,
+  "win": 41,
+  "ms": 2857.6,
+  "bytes": 136069
+ },
+ {
+  "group": "edit_ext",
+  "kind": "date_2digit",
+  "size": "tiny",
+  "transform": "crop_1pct_q80",
+  "post": "rta_notice",
+  "expected": "altered",
+  "verdict": "altered",
+  "matched_id": "rta_notice",
+  "distance": 4,
+  "changed_pct": 0.016,
+  "win": 40,
+  "ms": 1817.6,
+  "bytes": 139605
+ },
+ {
+  "group": "edit_ext",
+  "kind": "date_2digit",
+  "size": "tiny",
+  "transform": "whatsapp_q50_1280",
+  "post": "rta_notice",
+  "expected": "altered",
+  "verdict": "altered",
+  "matched_id": "rta_notice",
+  "distance": 0,
+  "changed_pct": 0.016,
+  "win": 40,
+  "ms": 36.9,
+  "bytes": 97763
+ },
+ {
+  "group": "edit_ext",
+  "kind": "key_line_1digit",
+  "size": "small",
+  "transform": "shot_small_q60",
+  "post": "rta_notice",
+  "expected": "altered",
+  "verdict": "altered",
+  "matched_id": "rta_notice",
+  "distance": 2,
+  "changed_pct": 0.032,
+  "win": 76,
+  "ms": 1641.1,
+  "bytes": 126801
+ },
+ {
+  "group": "edit_ext",
+  "kind": "key_line_1digit",
+  "size": "small",
+  "transform": "shot_png_1290",
+  "post": "rta_notice",
+  "expected": "altered",
+  "verdict": "altered",
+  "matched_id": "rta_notice",
+  "distance": 2,
+  "changed_pct": 0.033,
+  "win": 76,
+  "ms": 1472.6,
+  "bytes": 244386
+ },
+ {
+  "group": "edit_ext",
+  "kind": "key_line_1digit",
+  "size": "small",
+  "transform": "shot_chat_bubble_q70",
+  "post": "rta_notice",
+  "expected": "altered",
+  "verdict": "altered",
+  "matched_id": "rta_notice",
+  "distance": 4,
+  "changed_pct": 0.033,
+  "win": 76,
+  "ms": 2959.6,
+  "bytes": 136064
+ },
+ {
+  "group": "edit_ext",
+  "kind": "key_line_1digit",
+  "size": "small",
+  "transform": "crop_1pct_q80",
+  "post": "rta_notice",
+  "expected": "altered",
+  "verdict": "altered",
+  "matched_id": "rta_notice",
+  "distance": 4,
+  "changed_pct": 0.034,
+  "win": 82,
+  "ms": 2067.1,
+  "bytes": 139501
+ },
+ {
+  "group": "edit_ext",
+  "kind": "key_line_1digit",
+  "size": "small",
+  "transform": "whatsapp_q50_1280",
+  "post": "rta_notice",
+  "expected": "altered",
+  "verdict": "altered",
+  "matched_id": "rta_notice",
+  "distance": 0,
+  "changed_pct": 0.034,
+  "win": 76,
+  "ms": 36.0,
+  "bytes": 97777
+ },
+ {
+  "group": "edit_ext",
+  "kind": "number_changed",
+  "size": "small",
+  "transform": "shot_small_q60",
+  "post": "rta_notice",
+  "expected": "altered",
+  "verdict": "altered",
+  "matched_id": "rta_notice",
+  "distance": 2,
+  "changed_pct": 0.122,
+  "win": 88,
+  "ms": 1651.9,
+  "bytes": 126760
+ },
+ {
+  "group": "edit_ext",
+  "kind": "number_changed",
+  "size": "small",
+  "transform": "shot_png_1290",
+  "post": "rta_notice",
+  "expected": "altered",
+  "verdict": "altered",
+  "matched_id": "rta_notice",
+  "distance": 2,
+  "changed_pct": 0.123,
+  "win": 88,
+  "ms": 1197.0,
+  "bytes": 243085
+ },
+ {
+  "group": "edit_ext",
+  "kind": "number_changed",
+  "size": "small",
+  "transform": "shot_chat_bubble_q70",
+  "post": "rta_notice",
+  "expected": "altered",
+  "verdict": "altered",
+  "matched_id": "rta_notice",
+  "distance": 2,
+  "changed_pct": 0.124,
+  "win": 87,
+  "ms": 3118.4,
+  "bytes": 135912
+ },
+ {
+  "group": "edit_ext",
+  "kind": "number_changed",
+  "size": "small",
+  "transform": "crop_1pct_q80",
+  "post": "rta_notice",
+  "expected": "altered",
+  "verdict": "altered",
+  "matched_id": "rta_notice",
+  "distance": 4,
+  "changed_pct": 0.13,
+  "win": 87,
+  "ms": 1764.3,
+  "bytes": 139402
+ },
+ {
+  "group": "edit_ext",
+  "kind": "number_changed",
+  "size": "small",
+  "transform": "whatsapp_q50_1280",
+  "post": "rta_notice",
+  "expected": "altered",
+  "verdict": "altered",
+  "matched_id": "rta_notice",
+  "distance": 0,
+  "changed_pct": 0.122,
+  "win": 87,
+  "ms": 31.9,
+  "bytes": 97661
  },
  {
   "group": "fake_rumour",
@@ -3854,7 +7192,8 @@
   "matched_id": null,
   "distance": 34,
   "changed_pct": null,
-  "ms": 1694.8,
+  "win": null,
+  "ms": 1909.7,
   "bytes": 40624
  },
  {
@@ -3866,7 +7205,8 @@
   "matched_id": null,
   "distance": 26,
   "changed_pct": null,
-  "ms": 1654.8,
+  "win": null,
+  "ms": 1810.2,
   "bytes": 62802
  },
  {
@@ -3878,7 +7218,8 @@
   "matched_id": null,
   "distance": 30,
   "changed_pct": null,
-  "ms": 1658.4,
+  "win": null,
+  "ms": 1742.9,
   "bytes": 19572
  },
  {
@@ -3890,7 +7231,8 @@
   "matched_id": null,
   "distance": 22,
   "changed_pct": null,
-  "ms": 1624.3,
+  "win": null,
+  "ms": 1689.3,
   "bytes": 38548
  },
  {
@@ -3902,7 +7244,8 @@
   "matched_id": null,
   "distance": 30,
   "changed_pct": null,
-  "ms": 1663.7,
+  "win": null,
+  "ms": 1720.9,
   "bytes": 871558
  },
  {
@@ -3914,7 +7257,8 @@
   "matched_id": null,
   "distance": 24,
   "changed_pct": null,
-  "ms": 1640.0,
+  "win": null,
+  "ms": 1719.4,
   "bytes": 34715
  },
  {
@@ -3926,7 +7270,8 @@
   "matched_id": null,
   "distance": 24,
   "changed_pct": null,
-  "ms": 1635.4,
+  "win": null,
+  "ms": 1858.8,
   "bytes": 58339
  },
  {
@@ -3938,7 +7283,8 @@
   "matched_id": null,
   "distance": 26,
   "changed_pct": null,
-  "ms": 1609.3,
+  "win": null,
+  "ms": 1696.6,
   "bytes": 45707
  },
  {
@@ -3950,7 +7296,8 @@
   "matched_id": null,
   "distance": 26,
   "changed_pct": null,
-  "ms": 1795.6,
+  "win": null,
+  "ms": 1737.2,
   "bytes": 871158
  },
  {
@@ -3962,7 +7309,8 @@
   "matched_id": null,
   "distance": 24,
   "changed_pct": null,
-  "ms": 1725.5,
+  "win": null,
+  "ms": 1915.4,
   "bytes": 35540
  },
  {
@@ -3974,7 +7322,8 @@
   "matched_id": null,
   "distance": 22,
   "changed_pct": null,
-  "ms": 1716.4,
+  "win": null,
+  "ms": 1827.4,
   "bytes": 58760
  },
  {
@@ -3986,7 +7335,8 @@
   "matched_id": null,
   "distance": 32,
   "changed_pct": null,
-  "ms": 1792.2,
+  "win": null,
+  "ms": 1770.9,
   "bytes": 43409
  },
  {
@@ -3998,7 +7348,8 @@
   "matched_id": null,
   "distance": 32,
   "changed_pct": null,
-  "ms": 1784.0,
+  "win": null,
+  "ms": 1799.4,
   "bytes": 871596
  },
  {
@@ -4010,7 +7361,8 @@
   "matched_id": null,
   "distance": 24,
   "changed_pct": null,
-  "ms": 1663.6,
+  "win": null,
+  "ms": 1795.1,
   "bytes": 32460
  },
  {
@@ -4022,7 +7374,8 @@
   "matched_id": null,
   "distance": 22,
   "changed_pct": null,
-  "ms": 1713.6,
+  "win": null,
+  "ms": 1788.1,
   "bytes": 65166
  },
  {
@@ -4034,7 +7387,8 @@
   "matched_id": null,
   "distance": 24,
   "changed_pct": null,
-  "ms": 1762.2,
+  "win": null,
+  "ms": 1892.7,
   "bytes": 51370
  },
  {
@@ -4046,7 +7400,8 @@
   "matched_id": null,
   "distance": 26,
   "changed_pct": null,
-  "ms": 1741.6,
+  "win": null,
+  "ms": 1770.8,
   "bytes": 870389
  },
  {
@@ -4058,7 +7413,8 @@
   "matched_id": null,
   "distance": 26,
   "changed_pct": null,
-  "ms": 1733.0,
+  "win": null,
+  "ms": 1756.8,
   "bytes": 33750
  },
  {
@@ -4070,7 +7426,8 @@
   "matched_id": null,
   "distance": 24,
   "changed_pct": null,
-  "ms": 1596.5,
+  "win": null,
+  "ms": 1784.1,
   "bytes": 48329
  },
  {
@@ -4082,7 +7439,8 @@
   "matched_id": null,
   "distance": 30,
   "changed_pct": null,
-  "ms": 1700.2,
+  "win": null,
+  "ms": 1741.5,
   "bytes": 43524
  },
  {
@@ -4094,7 +7452,8 @@
   "matched_id": null,
   "distance": 22,
   "changed_pct": null,
-  "ms": 1692.2,
+  "win": null,
+  "ms": 1735.7,
   "bytes": 871556
  },
  {
@@ -4106,7 +7465,8 @@
   "matched_id": null,
   "distance": 20,
   "changed_pct": null,
-  "ms": 1595.4,
+  "win": null,
+  "ms": 1658.1,
   "bytes": 32617
  },
  {
@@ -4118,7 +7478,8 @@
   "matched_id": null,
   "distance": 28,
   "changed_pct": null,
-  "ms": 1600.3,
+  "win": null,
+  "ms": 1719.9,
   "bytes": 55411
  },
  {
@@ -4130,7 +7491,8 @@
   "matched_id": null,
   "distance": 28,
   "changed_pct": null,
-  "ms": 1659.6,
+  "win": null,
+  "ms": 1729.0,
   "bytes": 49338
  },
  {
@@ -4143,7 +7505,8 @@
   "matched_id": null,
   "distance": 18,
   "changed_pct": null,
-  "ms": 1659.2,
+  "win": null,
+  "ms": 1885.0,
   "bytes": 83160
  },
  {
@@ -4156,7 +7519,8 @@
   "matched_id": null,
   "distance": 26,
   "changed_pct": null,
-  "ms": 1475.9,
+  "win": null,
+  "ms": 1609.5,
   "bytes": 163854
  },
  {
@@ -4169,7 +7533,8 @@
   "matched_id": null,
   "distance": 26,
   "changed_pct": null,
-  "ms": 1596.7,
+  "win": null,
+  "ms": 1725.5,
   "bytes": 75180
  },
  {
@@ -4182,7 +7547,8 @@
   "matched_id": null,
   "distance": 24,
   "changed_pct": null,
-  "ms": 1501.3,
+  "win": null,
+  "ms": 1614.2,
   "bytes": 147020
  },
  {
@@ -4195,7 +7561,8 @@
   "matched_id": null,
   "distance": 28,
   "changed_pct": null,
-  "ms": 1686.8,
+  "win": null,
+  "ms": 1894.1,
   "bytes": 66185
  },
  {
@@ -4208,7 +7575,8 @@
   "matched_id": null,
   "distance": 28,
   "changed_pct": null,
-  "ms": 1425.7,
+  "win": null,
+  "ms": 1608.4,
   "bytes": 154687
  },
  {
@@ -4221,7 +7589,8 @@
   "matched_id": null,
   "distance": 26,
   "changed_pct": null,
-  "ms": 1781.7,
+  "win": null,
+  "ms": 1834.1,
   "bytes": 72927
  },
  {
@@ -4234,7 +7603,8 @@
   "matched_id": null,
   "distance": 24,
   "changed_pct": null,
-  "ms": 1423.3,
+  "win": null,
+  "ms": 1854.2,
   "bytes": 148999
  },
  {
@@ -4247,7 +7617,8 @@
   "matched_id": null,
   "distance": 18,
   "changed_pct": null,
-  "ms": 1758.2,
+  "win": null,
+  "ms": 1651.2,
   "bytes": 83538
  },
  {
@@ -4260,7 +7631,8 @@
   "matched_id": null,
   "distance": 26,
   "changed_pct": null,
-  "ms": 1473.0,
+  "win": null,
+  "ms": 1587.2,
   "bytes": 169257
  },
  {
@@ -4273,7 +7645,8 @@
   "matched_id": null,
   "distance": 26,
   "changed_pct": null,
-  "ms": 1707.2,
+  "win": null,
+  "ms": 1881.0,
   "bytes": 69667
  },
  {
@@ -4286,7 +7659,8 @@
   "matched_id": null,
   "distance": 20,
   "changed_pct": null,
-  "ms": 1569.3,
+  "win": null,
+  "ms": 1564.7,
   "bytes": 137634
  },
  {
@@ -4299,7 +7673,8 @@
   "matched_id": null,
   "distance": 24,
   "changed_pct": null,
-  "ms": 1724.0,
+  "win": null,
+  "ms": 1787.0,
   "bytes": 66159
  },
  {
@@ -4312,7 +7687,8 @@
   "matched_id": null,
   "distance": 20,
   "changed_pct": null,
-  "ms": 1530.3,
+  "win": null,
+  "ms": 1538.1,
   "bytes": 148374
  },
  {
@@ -4325,7 +7701,8 @@
   "matched_id": null,
   "distance": 26,
   "changed_pct": null,
-  "ms": 1634.0,
+  "win": null,
+  "ms": 1734.6,
   "bytes": 64258
  },
  {
@@ -4338,7 +7715,8 @@
   "matched_id": null,
   "distance": 24,
   "changed_pct": null,
-  "ms": 1467.7,
+  "win": null,
+  "ms": 1498.8,
   "bytes": 180986
  }
 ]
