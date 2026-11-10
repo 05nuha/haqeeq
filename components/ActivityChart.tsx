@@ -8,7 +8,7 @@ import { parseTs } from "@/lib/utils";
 
 ChartJS.register(CategoryScale, LinearScale, BarElement, Tooltip, Legend);
 
-export default function ActivityChart({ reports }: { reports: Report[] }) {
+export default function ActivityChart({ reports, flagsVisible, genuineVisible }: { reports: Report[]; flagsVisible: boolean; genuineVisible: boolean }) {
   const [tick, setTick] = useState(() => Date.now());
   useEffect(() => {
     const iv = setInterval(() => setTick(Date.now()), 15000);
@@ -28,19 +28,19 @@ export default function ActivityChart({ reports }: { reports: Report[] }) {
 
   return (
     <div className="panel">
-      <div className="ph"><span>Fakes vs genuine · last 60 min <span className="ar" dir="rtl">· النشاط</span></span><span>5-min buckets</span></div>
+      <div className="ph"><span>Flagged vs genuine · last 60 min <span className="ar" dir="rtl">· النشاط</span></span><span>5-min buckets</span></div>
       <div className="chart-body">
         <Bar
           data={{ labels, datasets: [
-            { label: "Fakes", data: fakes, backgroundColor: "rgba(239,68,68,.8)", borderRadius: 3, stack: "s" },
-            { label: "Genuine", data: genuine, backgroundColor: "rgba(34,197,94,.7)", borderRadius: 3, stack: "s" },
+            ...(flagsVisible ? [{ label: "Flagged", data: fakes, backgroundColor: "#d76661", borderRadius: 2, stack: "s" }] : []),
+            ...(genuineVisible ? [{ label: "Genuine", data: genuine, backgroundColor: "#4ca57a", borderRadius: 2, stack: "s" }] : []),
           ] }}
           options={{
             responsive: true, maintainAspectRatio: false, animation: { duration: 400 },
-            plugins: { legend: { position: "top", align: "end", labels: { color: "#8193b2", boxWidth: 8, boxHeight: 8, font: { size: 10 } } } },
+            plugins: { legend: { position: "top", align: "end", labels: { color: "#bbc8d3", boxWidth: 8, boxHeight: 8, padding: 12, font: { size: 13 } } } },
             scales: {
-              x: { stacked: true, ticks: { color: "#64748b", font: { size: 9 } }, grid: { display: false } },
-              y: { stacked: true, ticks: { color: "#64748b", precision: 0, font: { size: 9 } }, grid: { color: "rgba(148,163,184,.08)" } },
+              x: { stacked: true, border: { color: "#435465", width: 1 }, ticks: { color: "#a9b7c5", maxTicksLimit: 6, font: { size: 13 } }, grid: { display: false } },
+              y: { stacked: true, border: { color: "#435465", width: 1 }, ticks: { color: "#a9b7c5", precision: 0, font: { size: 13 } }, grid: { display: false } },
             },
           }}
         />

@@ -30,7 +30,7 @@ export default function Feed({
               )}
               <div className="meta">
                 <div className="top">
-                  <span className="t">{LABELS[st].en} <span className="ar" dir="rtl" style={{ color: "#8193b2" }}>{LABELS[st].ar}</span></span>
+                  <span className="t">{LABELS[st].en} <span className="ar" dir="rtl" style={{ color: "#536d70" }}>{LABELS[st].ar}</span></span>
                   <span className={`pill ${st}`}>{PILL_ICON[st]} {st.replace("_", " ")}</span>
                 </div>
                 <div className="sub">{r.detail ?? ""}</div>

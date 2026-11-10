@@ -1,4 +1,5 @@
 "use client";
+import Image from "next/image";
 import { useEffect, useState } from "react";
 import type { Mode } from "@/lib/useDashboardData";
 
@@ -15,18 +16,18 @@ export default function Header({
   return (
     <header className="hdr">
       <div className="brand">
-        <div className="logo">ح</div>
+        <Image className="brand-logo" src="/logo.png" alt="Haqeeq mark" width={38} height={38} priority />
         <div>
-          <h1>National Trust Control Center <span className="ar" dir="rtl">مركز الثقة الوطني</span></h1>
-          <p>Haqeeq · حقيق — live verification of official content forwarded by UAE residents</p>
+          <h1>HAQEEQ</h1>
+          <p>Content integrity monitoring</p>
         </div>
       </div>
       <div className="hdr-right">
         <button className={`chip ${demoMode ? "on" : ""}`} onClick={onDemo} title="ON: KPIs count live forwards only. OFF: KPIs include simulated background activity.">
-          <span className="sw" /> Demo mode
+          <span className="sw" /> {demoMode ? "Live only" : "Include simulated"}
         </button>
         <button className={`chip ${unlocked ? "unlocked" : ""}`} onClick={onOperator}>
-          {unlocked ? "🔓 Operator unlocked" : "🔒 Operator unlock"}
+          {unlocked ? "Operator access active" : "Operator access"}
         </button>
         <div className={`live ${mode === "mock" ? "mock" : ""}`}><i />{mode === "mock" ? "MOCK DATA" : "LIVE"}</div>
         <div className="clock">{clock}<small>GST · Dubai</small></div>

@@ -6,7 +6,7 @@ import { ago, statusOf } from "@/lib/utils";
 
 type StepKind = "ok" | "bad" | "warn" | "na";
 interface Step { k: StepKind; t: string; d: React.ReactNode; badge?: React.ReactNode; note?: string }
-const ICON: Record<StepKind, string> = { ok: "✓", bad: "✕", warn: "!", na: "–" };
+const ICON: Record<StepKind, string> = { ok: "✓", bad: "✕", warn: "–", na: "–" };
 
 function Heat({ heat }: { heat: number[][] }) {
   return (
@@ -17,8 +17,8 @@ function Heat({ heat }: { heat: number[][] }) {
 }
 
 export default function Forensic({
-  report, corrections, officialPosts, entitiesCount,
-}: { report: Report | null; corrections: Record<string, Correction>; officialPosts: Record<string, OfficialPost>; entitiesCount: number }) {
+  report, corrections, officialPosts, entitiesCount, onPush,
+}: { report: Report | null; corrections: Record<string, Correction>; officialPosts: Record<string, OfficialPost>; entitiesCount: number; onPush?: (detail: string) => void }) {
   const [now, setNow] = useState(() => Date.now());
   const [showHeat, setShowHeat] = useState(true);
   useEffect(() => {
@@ -49,34 +49,41 @@ export default function Forensic({
   const steps: Step[] = [];
 
   if (r.kind === "image") {
-    steps.push({ k: "bad", t: "1 · Signature check (C2PA)", d: "C2PA signature not found — stripped by WhatsApp in transit.", note: "Signing key is a mocked government key (demo)." });
+    steps.push({ k: "bad", t: "1 · Signature", d: "No C2PA signature. WhatsApp may strip it.", note: "Signing key is mocked for this demo." });
     if (r.matched_id) {
-      steps.push({ k: "ok", t: "2 · Fingerprint match", d: <>Matches official post “{official?.title ?? r.matched_id}”{official ? ` (${official.issuer})` : ""} · distance <b>{r.distance}/64</b> · similarity <b>{sim}%</b></> });
+      steps.push({ k: "ok", t: "2 · Registry match", d: <>Official post: <b>{official?.title ?? r.matched_id}</b>{official ? ` · ${official.issuer}` : ""}</> });
       const pct = r.changed_pct != null ? `${r.changed_pct}%` : "";
       steps.push(r.verdict === "altered"
-        ? { k: "bad", t: "3 · Tamper check", d: <>Edited region detected versus the official original — <b>{pct} of pixels changed</b>.</> }
-        : { k: "ok", t: "3 · Tamper check", d: <>No edited regions — {pct ? `${pct} changed, ` : ""}identical content to the official original.</> });
+        ? { k: "bad", t: "3 · Tamper check", d: <>Edited region found · <b>{pct} of pixels changed</b>.</> }
+        : { k: "ok", t: "3 · Tamper check", d: <>No edited region detected{pct ? <> · <b>{pct}</b> changed</> : ""}.</> });
     } else {
-      steps.push({ k: "na", t: "2 · Fingerprint match", d: <>No match in the official registry (closest <b>{r.distance ?? "–"}/64</b>, similarity {sim ?? "–"}%).</> });
-      steps.push({ k: "warn", t: "3 · Source check", d: `Not issued by any of the ${n} registered government entities. Unverified — not proof of a fake.` });
+      steps.push({ k: "na", t: "2 · Registry match", d: <>No official match · closest <b>{r.distance ?? "–"}/64</b>.</> });
+      steps.push({ k: "warn", t: "3 · Source check", d: `Not verified by ${n} registered entities. Unverified never means proven fake.` });
     }
   } else {
-    steps.push({ k: "na", t: "1 · Source check", d: `Forwarded text — no match among ${n} registered government entities (Bayanat / Dubai Pulse).` });
+    steps.push({ k: "na", t: "1 · Source check", d: `No match among ${n} registered government entities.` });
     steps.push({
       k: r.verdict === "scam_risk" ? "bad" : "na",
-      t: "2 · AI scam analysis",
+      t: "2 · Risk signals",
       badge: r.ai_used ? <span className="ai-badge gem">✦ GEMINI</span> : <span className="ai-badge rules">RULES</span>,
       d: <>{r.detail}{r.ai_reason && <span className="ar" dir="rtl">{r.ai_reason}</span>}</>,
     });
+    steps.push({
+      k: r.verdict === "scam_risk" ? "warn" : "na",
+      t: "3 · Assessment",
+      d: r.verdict === "scam_risk" ? "Risk signals flagged for review; this is not an official finding." : "Unverified never means proven fake.",
+    });
   }
-  if (corrections[r.detail ?? ""]) steps.push({ k: "ok", t: "Official correction sent", d: <span className="ar" dir="rtl" style={{ fontSize: ".72rem" }}>{corrections[r.detail ?? ""].message}</span> });
+  const correction = corrections[r.detail ?? ""];
 
   return (
     <div className="panel">
       <div className="ph"><span>Forensic view <span className="ar" dir="rtl">· التحليل الجنائي</span></span><span>#{r.id}</span></div>
       <div className="pb" key={r.id}>
         <div className="vbanner" style={{ ["--vc" as string]: COLORS[st] }}>
-          <div><b>{LABELS[st].en}</b><span className="ar" dir="rtl">{LABELS[st].ar}</span></div>
+          <div className="verdict-title"><b>{LABELS[st].en}</b><span className="ar" dir="rtl">{LABELS[st].ar}</span>
+            {correction && <span className="verdict-correction">Corrected · sent to {correction.recipients} citizens</span>}
+          </div>
           <small>{r.emirate ?? ""}{r.area ? ` · ${r.area}` : ""}<br />{ago(r.ts, now)}{r.seeded ? " · simulated" : " · live forward"}</small>
         </div>
         <div className="steps">
@@ -98,7 +105,6 @@ export default function Forensic({
                 <div className="imgbox">
                   {fwd ? /* eslint-disable-next-line @next/next/no-img-element */ <img src={fwd} alt="Forwarded" /> : <div className="none">Forwarded image</div>}
                   {r.heat && showHeat && <Heat heat={r.heat} />}
-                  <div className="scan" />
                 </div>
                 <figcaption>Forwarded by citizen {r.heat && <button className="mini-toggle" onClick={() => setShowHeat((v) => !v)}>{showHeat ? "hide" : "show"} heat-map</button>}</figcaption>
               </figure>
@@ -111,11 +117,15 @@ export default function Forensic({
             </div>
             {sim != null && (
               <>
-                <div className="simrow"><span>Visual fingerprint similarity</span><b>{sim}%</b></div>
+                <div className="simrow"><span>Image similarity</span><b>{sim}%</b></div>
                 <div className="simbar"><div style={{ width: `${sim}%` }} /></div>
               </>
             )}
           </>
+        )}
+        {(r.verdict === "altered" || r.verdict === "scam_risk") && r.detail && (
+          correction ? <div className="forensic-corrected">Corrected · sent to {correction.recipients} citizens</div> :
+          <button className="forensic-push" onClick={() => onPush?.(r.detail!)}>Push official correction</button>
         )}
       </div>
     </div>
