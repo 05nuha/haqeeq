@@ -115,7 +115,7 @@ export default function Dashboard() {
     return (
       <div className="center-card">
         <div className="card">
-          <Image className="brand-logo" src="/logo.svg" alt="Haqeeq shield and check mark" width={44} height={44} priority />
+          <Image className="brand-logo" src="/logo.png" alt="Haqeeq shield and check mark" width={44} height={44} priority />
           <h2>{mode === "error" ? "Could not load dashboard data" : "Dashboard not configured"}</h2>
           {mode === "error" ? (
             <p>Supabase returned an error: <code>{errorMsg}</code>. Check the project URL, anon key, and that migration <code>0001_init.sql</code> has been applied.</p>

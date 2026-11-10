@@ -16,7 +16,7 @@ export default function Header({
   return (
     <header className="hdr">
       <div className="brand">
-        <Image className="brand-logo" src="/logo.svg" alt="Haqeeq mark" width={34} height={34} priority />
+        <Image className="brand-logo" src="/logo.png" alt="Haqeeq mark" width={38} height={38} priority />
         <div>
           <h1>HAQEEQ</h1>
           <p>Content integrity monitoring</p>
