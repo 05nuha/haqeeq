@@ -1,8 +1,8 @@
 "use client";
 import "leaflet/dist/leaflet.css";
 import L from "leaflet";
-import { useEffect, useMemo, useState } from "react";
-import { CircleMarker, MapContainer, Marker, TileLayer, Tooltip, useMap } from "react-leaflet";
+import { Fragment, useEffect, useMemo, useState } from "react";
+import { CircleMarker, MapContainer, Marker, Polyline, TileLayer, Tooltip, useMap } from "react-leaflet";
 import { COLORS, EMIRATE_COORDS, EMIRATES_AR, LABELS, LABEL_POS, foldEmirate, isFake } from "@/lib/constants";
 import { rankEmirates, spotStats } from "@/lib/stats";
 import type { Correction, Population, Report } from "@/lib/types";
@@ -62,6 +62,58 @@ function hotspotIcon(name: string, size: number, color: string, label: string, d
   });
 }
 const rippleIcon = L.divIcon({ className: "", iconSize: [20, 20], iconAnchor: [10, 10], html: '<div class="ripple"></div>' });
+const ROUTE_CITIES = Object.entries(EMIRATE_COORDS);
+type Coordinate = [number, number];
+const flowIcon = (angle: number) => L.divIcon({
+  className: "flow-arrow-icon", iconSize: [28, 28], iconAnchor: [14, 14],
+  html: `<span style="transform:rotate(${angle}deg)"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3.5 12h15m-6.5-6.5 6.5 6.5-6.5 6.5" /></svg></span>`,
+});
+function makeRoute(id: number, from: string, to: string, count: number, status: Report["verdict"]) {
+  const start = EMIRATE_COORDS[from] as Coordinate;
+  const end = EMIRATE_COORDS[to] as Coordinate;
+  const midLat = (start[0] + end[0]) / 2;
+  const midLon = (start[1] + end[1]) / 2;
+  const dx = end[1] - start[1], dy = end[0] - start[0];
+  const length = Math.hypot(dx, dy) || 1;
+  const bend = (id % 2 ? 1 : -1) * Math.min(.42, Math.max(.14, length * .2));
+  const control: Coordinate = [midLat - dx / length * bend, midLon + dy / length * bend];
+  const path = Array.from({ length: 33 }, (_, point) => {
+    const t = point / 32, u = 1 - t;
+    return [u * u * start[0] + 2 * u * t * control[0] + t * t * end[0], u * u * start[1] + 2 * u * t * control[1] + t * t * end[1]] as Coordinate;
+  });
+  const forwardIcons = path.slice(0, -1).map((a, index) => {
+    const b = path[index + 1];
+    return flowIcon(Math.atan2(-(b[0] - a[0]), b[1] - a[1]) * 180 / Math.PI);
+  });
+  const reverseIcons = path.slice(0, -1).map((a, index) => {
+    const b = path[index + 1];
+    return flowIcon(Math.atan2(-(b[0] - a[0]), b[1] - a[1]) * 180 / Math.PI + 180);
+  });
+  return { id, start, end, from, to, path, forwardIcons, reverseIcons, count, status, phase: id / 10 };
+}
+
+function AnimatedFlows({ routes }: { routes: ReturnType<typeof makeRoute>[] }) {
+  const [elapsed, setElapsed] = useState(0);
+  useEffect(() => {
+    if (!routes.length) return;
+    const timer = setInterval(() => setElapsed((time) => time + .033), 33);
+    return () => clearInterval(timer);
+  }, [routes.length]);
+  return <>{routes.flatMap((route) => {
+    const progress = (elapsed / 10 + route.phase) % 1;
+    const segment = Math.min(route.path.length - 2, Math.floor(progress * (route.path.length - 1)));
+    const local = progress * (route.path.length - 1) - segment;
+    const a = route.path[segment], b = route.path[segment + 1];
+    const outbound: Coordinate = [a[0] + (b[0] - a[0]) * local, a[1] + (b[1] - a[1]) * local];
+    const reverseSegment = route.path.length - 2 - segment;
+    const c = route.path[reverseSegment], d = route.path[reverseSegment + 1];
+    const inbound: Coordinate = [d[0] - (d[0] - c[0]) * local, d[1] - (d[1] - c[1]) * local];
+    return [
+      <Marker key={`${route.id}-out`} position={outbound} icon={route.forwardIcons[segment]} interactive={false} zIndexOffset={1800} />,
+      <Marker key={`${route.id}-back`} position={inbound} icon={route.reverseIcons[reverseSegment]} interactive={false} zIndexOffset={1800} />,
+    ];
+  })}</>;
+}
 
 export default function UaeMap({
   reports, corrections, population, latest, focus, onSelect,
@@ -94,6 +146,20 @@ export default function UaeMap({
   const rank = useMemo(() => Object.fromEntries(rankEmirates(reports, population).map((r) => [r.emirate, r])), [reports, population]);
   const flaggedCount = reports.filter((r) => isFake(r.verdict)).length;
   const openCount = Object.values(spots).reduce((total, spot) => total + spot.open, 0);
+  const flowRoutes = useMemo(() => {
+    const groups = new Map<string, { from: string; count: number; status: Report["verdict"] }>();
+    for (const report of reports) {
+      if (report.kind !== "image" || report.verdict === "genuine" || !report.emirate || !EMIRATE_COORDS[report.emirate]) continue;
+      const group = groups.get(report.emirate);
+      if (group) group.count += 1;
+      else groups.set(report.emirate, { from: report.emirate, count: 1, status: report.verdict });
+    }
+    return [...groups.values()].map((group, id) => {
+      const fromIndex = ROUTE_CITIES.findIndex(([name]) => name === group.from);
+      const to = ROUTE_CITIES[(fromIndex + 3) % ROUTE_CITIES.length][0];
+      return makeRoute(id, group.from, to, group.count, group.status);
+    });
+  }, [reports]);
 
   const dots = useMemo(
     () =>
@@ -121,8 +187,18 @@ export default function UaeMap({
           </>
         )}
         <Controller focus={focus} resetNonce={resetNonce} />
+        {flowRoutes.map((route) => <Fragment key={`flow-${route.id}`}>
+            <Polyline positions={route.path} pathOptions={{ color: route.status === "scam_risk" ? "#c9854b" : route.status === "altered" ? "#bb6864" : "#98a6b2", weight: 1.8, opacity: .72, dashArray: "3 7", className: "sim-route" }} />
+            <CircleMarker center={route.start} radius={4} pathOptions={{ color: "#e6d4a2", weight: 1.5, fillColor: "#182733", fillOpacity: 1 }}>
+              <Tooltip className="hq-tip"><b>{route.from}</b><br /><span className="m">Approximate report origin · {route.count} flagged media items</span></Tooltip>
+            </CircleMarker>
+            <CircleMarker center={route.end} radius={4} pathOptions={{ color: "#e6d4a2", weight: 1.5, fillColor: "#182733", fillOpacity: 1 }}>
+              <Tooltip className="hq-tip"><b>{route.to}</b><br /><span className="m">Illustrative destination · not observed forwarding</span></Tooltip>
+            </CircleMarker>
+          </Fragment>)}
+        <AnimatedFlows routes={flowRoutes} />
         {dots.map(({ r, pos, st }) => (
-          <CircleMarker key={r.id} center={pos} radius={r.id === latest?.id ? 6 : 3.6} pathOptions={{ weight: 0, fillOpacity: 0.85, fillColor: COLORS[st] }}
+          <CircleMarker key={r.id} center={pos} radius={r.id === latest?.id ? 6 : isFake(r.verdict) ? 4.6 : 3.8} pathOptions={{ weight: r.id === latest?.id ? 1.6 : 1, color: "#101a24", fillOpacity: 0.95, fillColor: COLORS[st], className: r.id === latest?.id ? "incident-marker active" : "incident-marker" }}
             eventHandlers={{ click: () => onSelect(r.id) }}>
             <Tooltip className="hq-tip" direction="top"><b>{LABELS[st].en}</b><br /><span className="m">{r.emirate} · click to inspect</span></Tooltip>
           </CircleMarker>
@@ -150,15 +226,14 @@ export default function UaeMap({
         {ripples.map((rp) => <Marker key={`rp${rp.key}`} position={rp.pos} icon={rippleIcon} interactive={false} zIndexOffset={2000} />)}
       </MapContainer>
       <div className="map-title">
-        <b>Report activity by emirate <span className="ar" dir="rtl">· رصد البلاغات حسب الإمارة</span></b>
-        <div>{flaggedCount} flagged reports · {openCount} still open</div>
+        <b>UAE incident activity <span className="ar" dir="rtl">· رصد البلاغات في الإمارات</span></b>
+        <div>{reports.length} reports · {flaggedCount} flagged · {openCount} open</div>
       </div>
-      <div className="map-caption">Official reference data: UAE population statements and Bayanat’s entity list. Report totals are Haqeeq submissions, including seeded demo rows; live emirate locations are illustrative. This map does not show WhatsApp spread.</div>
+      <div className="map-caption">Moving arrows show simulated, bidirectional circulation for flagged media. Destinations are illustrative; actual forwards are unavailable. Unverified does not mean fake.</div>
       <div className="legend">
-        <span><i style={{ background: COLORS.altered }} />Altered / scam</span>
-        <span><i style={{ background: COLORS.unverified }} />Unverified</span>
-        <span><i style={{ background: COLORS.genuine }} />Genuine</span>
-        <span><i style={{ background: COLORS.corrected }} />Corrected ✓</span>
+        <span><i className="legend-route" />Simulated media flow</span>
+        <span><i style={{ background: COLORS.altered }} />Flagged report</span>
+        <span><i style={{ background: COLORS.genuine }} />Genuine report</span>
       </div>
       <button className="chip reset-btn" onClick={() => setResetNonce((n) => n + 1)}>⤢ Reset view</button>
     </div>
