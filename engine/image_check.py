@@ -38,6 +38,20 @@ def verify_image(image_bytes, registry, load_image, known_fakes=()):
     h = phash(img)
     best, dist = _best(h, registry)
 
+    crop_box = None
+    if (best is None or dist > config.MATCH_THRESH) and config.CROP_SEARCH:
+        # The post may sit inside a bigger picture (phone screenshot with status/browser bars).
+        from . import crop
+        cd, crow, cbox = crop.search(img, list(registry or ()) + list(known_fakes or ()))
+        if crow is not None and cd <= config.CROP_MATCH_THRESH:
+            if crow in list(known_fakes or ()):
+                return {"verdict": "unverified", "matched_id": None, "distance": int(cd),
+                        "changed_pct": None, "heat": None,
+                        "detail": crow.get("detail") or crow.get("title", "")}
+            gray = to_gray(img)
+            crop_box = crop.align(gray, cbox, _official_grey(crow["image_path"], load_image))
+            img, best, dist = gray.crop(crop_box), crow, cd
+
     if best is None or dist > config.MATCH_THRESH:
         fake, fd = _best(h, known_fakes)
         if fake is not None and fd <= config.MATCH_THRESH:
@@ -54,6 +68,8 @@ def verify_image(image_bytes, registry, load_image, known_fakes=()):
     heat = [[float(changed[r*step:(r+1)*step, c*step:(c+1)*step].mean()) for c in range(16)]
             for r in range(16)]
     base = {"matched_id": best["id"], "distance": int(dist), "changed_pct": round(pct, 3), "heat": heat}
+    if crop_box is not None:
+        base["crop_box"] = list(crop_box)
     if pct <= config.TAMPER_PCT:
         return {"verdict": "genuine", **base, "detail": f"Matches {best['title']} ({best['issuer']})"}
     return {"verdict": "altered", **base, "detail": f"Altered: {best['title']} — {pct:.1f}% changed"}
