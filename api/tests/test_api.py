@@ -134,3 +134,26 @@ def test_health(client, monkeypatch):
     monkeypatch.setenv("GEMINI_API_KEY", "k")
     j = client.get("/api/health").get_json()
     assert j["ok"] is True and j["registry"] == 3 and j["ai"] is True and j["error"] is None
+
+
+def test_twilio_send_content_fallback(monkeypatch):
+    sent = []
+
+    class Msgs:
+        def create(self, **kw):
+            if "body" in kw:
+                raise Exception("HTTP 400 error: Unable to create record: ContentSid Required")
+            sent.append(kw)
+            return type("M", (), {"status": "queued"})()
+
+    class FakeClient:
+        def __init__(self, *a): self.messages = Msgs()
+
+    import twilio.rest
+    monkeypatch.setattr(twilio.rest, "Client", FakeClient)
+    monkeypatch.setenv("TWILIO_CONTENT_SID", "HX123")
+    appmod._CONTENT.clear(); appmod._CONTENT["sid"] = None
+    appmod.twilio_send("whatsapp:+971500000001", "whatsapp:+14155238886", "سطر١\nسطر٢")
+    assert sent[0]["content_sid"] == "HX123"
+    assert "\\n" not in sent[0]["content_variables"] and "سطر١ · سطر٢" in sent[0]["content_variables"]
+    appmod._CONTENT.clear(); appmod._CONTENT["sid"] = None

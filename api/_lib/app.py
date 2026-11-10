@@ -217,7 +217,62 @@ def whatsapp():
                          request.form.get("MediaContentType0") or "")
     else:
         reply = _process(phone, request.form.get("Body"))
+    LAST["our_twilio_number"] = request.form.get("To", "")   # the bot's own number (not the citizen's)
     return _twilio_reply(request.form.get("From", ""), request.form.get("To", ""), reply)
+
+
+_CONTENT = {"sid": None}
+CONTENT_NAME = "haqeeq_reply"
+
+
+def _tw_auth():
+    return (os.environ.get("TWILIO_ACCOUNT_SID", "").strip(), os.environ.get("TWILIO_AUTH_TOKEN", "").strip())
+
+
+def _content_sid():
+    """A Content template whose whole body is one variable, so any reply text can be sent
+    where the WhatsApp sender requires a ContentSid. Found by name or created once."""
+    sid = os.environ.get("TWILIO_CONTENT_SID", "").strip() or _CONTENT["sid"]
+    if sid:
+        return sid
+    r = requests.get("https://content.twilio.com/v1/Content", params={"PageSize": 100},
+                     auth=_tw_auth(), timeout=5)
+    r.raise_for_status()
+    for c in r.json().get("contents", []):
+        if c.get("friendly_name") == CONTENT_NAME:
+            _CONTENT["sid"] = c["sid"]
+            return c["sid"]
+    body = "{" + "{1}" + "}"          # Twilio variable placeholder: double braces around 1
+    r = requests.post("https://content.twilio.com/v1/Content", auth=_tw_auth(), timeout=5,
+                      json={"friendly_name": CONTENT_NAME, "language": "ar",
+                            "variables": {"1": "reply"}, "types": {"twilio/text": {"body": body}}})
+    r.raise_for_status()
+    _CONTENT["sid"] = r.json()["sid"]
+    return _CONTENT["sid"]
+
+
+def _clean_var(text):
+    # WhatsApp template variables may not contain newlines/tabs or long runs of spaces.
+    t = re.sub(r"[\r\n\t]+", " · ", text or "")
+    return re.sub(r" {4,}", "   ", t)[:1000]
+
+
+def twilio_send(to, frm, text):
+    """Send a WhatsApp message via Twilio REST. Tries plain text first; if the sender
+    demands a ContentSid, switches to the one-variable Content template (and remembers)."""
+    from twilio.rest import Client
+    client = Client(*_tw_auth())
+    frm = frm or os.environ.get("TWILIO_WHATSAPP_FROM", "")
+    if not _CONTENT.get("needed"):
+        try:
+            return client.messages.create(from_=frm, to=to, body=text)
+        except Exception as e:
+            if "ContentSid" not in str(e):
+                raise
+            _CONTENT["needed"] = True
+    import json as _json
+    return client.messages.create(from_=frm, to=to, content_sid=_content_sid(),
+                                  content_variables=_json.dumps({"1": _clean_var(text)}, ensure_ascii=False))
 
 
 def _twilio_reply(to, frm, text):
@@ -226,12 +281,9 @@ def _twilio_reply(to, frm, text):
     LAST.update(reply_mode=None, reply_status=None, reply_error=None)
     if os.environ.get("TWILIO_REPLY_MODE", "rest") == "rest" and to:
         try:
-            from twilio.rest import Client
-            client = Client(os.environ.get("TWILIO_ACCOUNT_SID", "").strip(),
-                            os.environ.get("TWILIO_AUTH_TOKEN", "").strip())
-            m = client.messages.create(from_=frm or os.environ.get("TWILIO_WHATSAPP_FROM", ""), to=to, body=text)
-            LAST.update(reply_mode="rest", reply_status=getattr(m, "status", None),
-                        reply_sid=(getattr(m, "sid", "") or "")[:6] + "...")
+            m = twilio_send(to, frm, text)
+            LAST.update(reply_mode="rest+template" if _CONTENT.get("needed") else "rest",
+                        reply_status=getattr(m, "status", None))
             from twilio.twiml.messaging_response import MessagingResponse
             return Response(str(MessagingResponse()), mimetype="text/xml")   # empty: already sent
         except Exception as e:
@@ -389,7 +441,7 @@ def correct():
             client = None
         for p in phones if client else []:
             try:
-                client.messages.create(from_=frm, to="whatsapp:" + p, body=message)
+                twilio_send("whatsapp:" + p, frm, message)
                 delivered += 1
             except Exception:
                 log.exception("send failed")
