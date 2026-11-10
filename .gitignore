@@ -11,3 +11,6 @@ __pycache__/
 *.db
 legacy-flask/incoming_*
 scripts/e2e/out/
+
+# Claude Code agent worktrees and local state
+.claude/
