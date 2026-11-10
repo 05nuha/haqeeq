@@ -149,6 +149,7 @@ def health():
                     "twilio": bool(os.environ.get("TWILIO_ACCOUNT_SID") and os.environ.get("TWILIO_AUTH_TOKEN")),
                     "base_url": bool(os.environ.get("PUBLIC_BASE_URL") or os.environ.get("BASE_URL")),
                     "admin_token": bool(os.environ.get("DASHBOARD_ADMIN_TOKEN")),
+                    "meta": bool(_meta_token() and os.environ.get("META_PHONE_NUMBER_ID")),
                     "error": err})
 
 
@@ -157,26 +158,18 @@ def whatsapp_status():
     return jsonify({"ok": True, "hint": "Twilio must POST here", "last_request": LAST})
 
 
-@app.route("/api/whatsapp", methods=["POST"])
-def whatsapp():
-    if not _sig_ok():
-        return Response("invalid signature", status=403)
-    phone = request.form.get("From", "").replace("whatsapp:", "")
-    body = (request.form.get("Body") or "").strip()
-    try:
-        num_media = int(request.form.get("NumMedia", "0") or 0)
-    except ValueError:
-        num_media = 0
-
-    if num_media > 0:
-        ctype = (request.form.get("MediaContentType0") or "").lower()
-        if not ctype.startswith("image/"):
+def _process(phone, body, media_loader=None, ctype=""):
+    """Channel-agnostic core: run the engine, record the report, return the Arabic reply text.
+    media_loader: zero-arg callable returning image bytes, or None for a text message."""
+    body = (body or "").strip()
+    if media_loader is not None:
+        if not (ctype or "").lower().startswith("image/"):
             # audio/video/docs: not verifiable yet. Schema allows only image/text/link -> 'text'.
             _save({"kind": "text", "verdict": "unverified",
                    "detail": "Unsupported media (voice/video) - not checked", "ai_used": False}, phone)
-            return _twiml(MEDIA_UNSUPPORTED_AR)
+            return MEDIA_UNSUPPORTED_AR
         try:
-            data = _download_media(request.form.get("MediaUrl0", ""))
+            data = media_loader()
             path = f"incoming/{uuid.uuid4()}.jpg"
             try:
                 supa.upload(path, data, "image/jpeg")
@@ -187,17 +180,15 @@ def whatsapp():
                                _safe_table("known_fakes"))
         except Exception:
             log.exception("image check failed")
-            return _twiml(UNVERIFIED_AR)
+            return UNVERIFIED_AR
         _save({"kind": "image", "verdict": res["verdict"], "matched_id": res.get("matched_id"),
                "distance": res.get("distance"), "changed_pct": res.get("changed_pct"),
                "heat": res.get("heat"), "detail": res.get("detail"), "ai_reason": None,
                "ai_used": False, "image_path": path}, phone)
-        return _twiml(reply_for(res))
+        return reply_for(res)
 
-    if body.lower() in ("help", "start") or body in ("مساعدة",):
-        return _twiml(HELP_AR)
-    if not body:
-        return _twiml(HELP_AR)
+    if not body or body.lower() in ("help", "start") or body in ("مساعدة",):
+        return HELP_AR
     try:
         res = check_text(body, _safe_table("entities"))
     except Exception:
@@ -207,7 +198,119 @@ def whatsapp():
     _save({"kind": "link" if URL_RE.search(body) else "text", "verdict": res["verdict"],
            "detail": res.get("detail"), "ai_reason": res.get("ai_reason"),
            "ai_used": bool(res.get("ai_used"))}, phone)
-    return _twiml(reply_for(res))
+    return reply_for(res)
+
+
+@app.route("/api/whatsapp", methods=["POST"])
+def whatsapp():
+    """Twilio WhatsApp webhook -> TwiML reply."""
+    if not _sig_ok():
+        return Response("invalid signature", status=403)
+    phone = request.form.get("From", "").replace("whatsapp:", "")
+    try:
+        num_media = int(request.form.get("NumMedia", "0") or 0)
+    except ValueError:
+        num_media = 0
+    if num_media > 0:
+        url = request.form.get("MediaUrl0", "")
+        reply = _process(phone, None, lambda: _download_media(url),
+                         request.form.get("MediaContentType0") or "")
+    else:
+        reply = _process(phone, request.form.get("Body"))
+    return _twiml(reply)
+
+
+# ---------------- Meta WhatsApp Cloud API (alternative to Twilio) ----------------
+
+def _graph():
+    return "https://graph.facebook.com/" + os.environ.get("META_GRAPH_VERSION", "v23.0")
+
+
+def _meta_token():
+    return os.environ.get("META_WHATSAPP_TOKEN", "").strip()
+
+
+def meta_send(to_digits, text):
+    """Send a WhatsApp text via Meta Cloud API. to_digits: international number without '+'."""
+    r = requests.post(f"{_graph()}/{os.environ.get('META_PHONE_NUMBER_ID', '').strip()}/messages",
+                      headers={"Authorization": "Bearer " + _meta_token()},
+                      json={"messaging_product": "whatsapp", "to": to_digits.lstrip("+"),
+                            "type": "text", "text": {"body": text}}, timeout=6)
+    META_LAST["send_status"] = r.status_code
+    if r.status_code >= 300:
+        META_LAST["send_error"] = r.text[:300]
+    r.raise_for_status()
+
+
+def _meta_media(media_id):
+    h = {"Authorization": "Bearer " + _meta_token()}
+    meta = requests.get(f"{_graph()}/{media_id}", headers=h, timeout=5)
+    meta.raise_for_status()
+    with requests.get(meta.json()["url"], headers=h, timeout=6, stream=True) as r:
+        r.raise_for_status()
+        buf = bytearray()
+        for chunk in r.iter_content(65536):
+            buf.extend(chunk)
+            if len(buf) > MAX_MEDIA:
+                raise ValueError("media too large")
+        return bytes(buf)
+
+
+META_LAST = {"at": None}   # debugging aid for GET /api/meta?status=1 (no phone numbers stored)
+
+
+def _meta_sig_ok(raw):
+    secret = os.environ.get("META_APP_SECRET", "").strip()
+    if not secret:
+        return True          # optional; set META_APP_SECRET to enforce
+    sig = request.headers.get("X-Hub-Signature-256", "")
+    want = "sha256=" + hmac.new(secret.encode(), raw, "sha256").hexdigest()
+    return hmac.compare_digest(sig, want)
+
+
+@app.route("/api/meta", methods=["GET"])
+def meta_verify():
+    if request.args.get("hub.mode") == "subscribe":
+        expected = os.environ.get("META_VERIFY_TOKEN", "").strip()
+        if expected and hmac.compare_digest(request.args.get("hub.verify_token", ""), expected):
+            return Response(request.args.get("hub.challenge", ""), mimetype="text/plain")
+        return Response("verify token mismatch", status=403)
+    return jsonify({"ok": True, "configured": bool(_meta_token() and os.environ.get("META_PHONE_NUMBER_ID")),
+                    "verify_token_set": bool(os.environ.get("META_VERIFY_TOKEN")),
+                    "app_secret_set": bool(os.environ.get("META_APP_SECRET")), "last_request": META_LAST})
+
+
+@app.route("/api/meta", methods=["POST"])
+def meta_webhook():
+    import datetime
+    raw = request.get_data()
+    META_LAST.update(at=datetime.datetime.utcnow().isoformat(timespec="seconds") + "Z",
+                     sig_ok=None, handled=0, send_status=None, send_error=None)
+    if not _meta_sig_ok(raw):
+        META_LAST["sig_ok"] = False
+        return Response("invalid signature", status=403)
+    META_LAST["sig_ok"] = True
+    payload = request.get_json(silent=True) or {}
+    for entry in payload.get("entry", []):
+        for change in entry.get("changes", []):
+            for msg in (change.get("value") or {}).get("messages", []) or []:
+                wa_id = msg.get("from", "")
+                phone = "+" + wa_id.lstrip("+")
+                mtype = msg.get("type")
+                try:
+                    if mtype == "text":
+                        reply = _process(phone, (msg.get("text") or {}).get("body"))
+                    elif mtype in ("image", "audio", "video", "document", "sticker"):
+                        m = msg.get(mtype) or {}
+                        ctype = m.get("mime_type", "image/jpeg" if mtype == "image" else mtype + "/x")
+                        reply = _process(phone, None, lambda mid=m.get("id"): _meta_media(mid), ctype)
+                    else:
+                        reply = HELP_AR
+                    meta_send(wa_id, reply)
+                    META_LAST["handled"] += 1
+                except Exception:
+                    log.exception("meta message failed")
+    return jsonify({"ok": True})   # always 200 so Meta doesn't retry
 
 
 def _safe_table(name):
@@ -245,6 +348,14 @@ def correct():
         log.exception("correct: lookup failed")
         return jsonify({"ok": False, "error": "database error"}), 502
     delivered = 0
+    if phones and _meta_token() and os.environ.get("META_PHONE_NUMBER_ID"):
+        for p in phones:
+            try:
+                meta_send(p, message)
+                delivered += 1
+            except Exception:
+                log.exception("meta correction send failed")
+        phones = []          # Meta configured: don't double-send via Twilio
     if phones:
         try:
             from twilio.rest import Client
