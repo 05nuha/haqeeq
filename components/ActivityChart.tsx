@@ -8,7 +8,7 @@ import { parseTs } from "@/lib/utils";
 
 ChartJS.register(CategoryScale, LinearScale, BarElement, Tooltip, Legend);
 
-export default function ActivityChart({ reports }: { reports: Report[] }) {
+export default function ActivityChart({ reports, flagsVisible, genuineVisible }: { reports: Report[]; flagsVisible: boolean; genuineVisible: boolean }) {
   const [tick, setTick] = useState(() => Date.now());
   useEffect(() => {
     const iv = setInterval(() => setTick(Date.now()), 15000);
@@ -32,15 +32,15 @@ export default function ActivityChart({ reports }: { reports: Report[] }) {
       <div className="chart-body">
         <Bar
           data={{ labels, datasets: [
-            { label: "Flagged", data: fakes, backgroundColor: "#b84d48", borderRadius: 2, stack: "s" },
-            { label: "Genuine", data: genuine, backgroundColor: "#19805e", borderRadius: 2, stack: "s" },
+            ...(flagsVisible ? [{ label: "Flagged", data: fakes, backgroundColor: "#d76661", borderRadius: 2, stack: "s" }] : []),
+            ...(genuineVisible ? [{ label: "Genuine", data: genuine, backgroundColor: "#4ca57a", borderRadius: 2, stack: "s" }] : []),
           ] }}
           options={{
             responsive: true, maintainAspectRatio: false, animation: { duration: 400 },
-            plugins: { legend: { position: "top", align: "end", labels: { color: "#435d61", boxWidth: 8, boxHeight: 8, padding: 12, font: { size: 13 } } } },
+            plugins: { legend: { position: "top", align: "end", labels: { color: "#bbc8d3", boxWidth: 8, boxHeight: 8, padding: 12, font: { size: 13 } } } },
             scales: {
-              x: { stacked: true, border: { color: "#bdcdca", width: 1 }, ticks: { color: "#435d61", maxTicksLimit: 6, font: { size: 13 } }, grid: { display: false } },
-              y: { stacked: true, border: { color: "#bdcdca", width: 1 }, ticks: { color: "#435d61", precision: 0, font: { size: 13 } }, grid: { display: false } },
+              x: { stacked: true, border: { color: "#435465", width: 1 }, ticks: { color: "#a9b7c5", maxTicksLimit: 6, font: { size: 13 } }, grid: { display: false } },
+              y: { stacked: true, border: { color: "#435465", width: 1 }, ticks: { color: "#a9b7c5", precision: 0, font: { size: 13 } }, grid: { display: false } },
             },
           }}
         />

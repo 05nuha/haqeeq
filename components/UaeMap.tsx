@@ -64,12 +64,46 @@ function hotspotIcon(name: string, size: number, color: string, label: string, d
 const rippleIcon = L.divIcon({ className: "", iconSize: [20, 20], iconAnchor: [10, 10], html: '<div class="ripple"></div>' });
 const flowIcon = (angle: number) => L.divIcon({ className: "flow-arrow-icon", iconSize: [16, 16], iconAnchor: [8, 8], html: `<span style="transform:rotate(${angle}deg)"></span>` });
 const ROUTE_CITIES = Object.entries(EMIRATE_COORDS);
-const SIMULATED_ROUTES = Array.from({ length: 14 }, (_, i) => {
-  const from = i % ROUTE_CITIES.length;
-  let to = (i * 5 + 3) % ROUTE_CITIES.length;
+type Coordinate = [number, number];
+function makeRoute(id: number) {
+  const from = id % ROUTE_CITIES.length;
+  let to = (id * 5 + 3) % ROUTE_CITIES.length;
   if (to === from) to = (to + 1) % ROUTE_CITIES.length;
-  return { id: i, from: ROUTE_CITIES[from][1] as [number, number], to: ROUTE_CITIES[to][1] as [number, number], phase: i / 14 };
-});
+  const start = ROUTE_CITIES[from][1] as Coordinate;
+  const end = ROUTE_CITIES[to][1] as Coordinate;
+  const midLat = (start[0] + end[0]) / 2;
+  const midLon = (start[1] + end[1]) / 2;
+  const dx = end[1] - start[1], dy = end[0] - start[0];
+  const length = Math.hypot(dx, dy) || 1;
+  const bend = (id % 2 ? 1 : -1) * Math.min(.42, Math.max(.14, length * .2));
+  const control: Coordinate = [midLat - dx / length * bend, midLon + dy / length * bend];
+  const path = Array.from({ length: 33 }, (_, point) => {
+    const t = point / 32, u = 1 - t;
+    return [u * u * start[0] + 2 * u * t * control[0] + t * t * end[0], u * u * start[1] + 2 * u * t * control[1] + t * t * end[1]] as Coordinate;
+  });
+  const icons = path.slice(0, -1).map((a, index) => {
+    const b = path[index + 1];
+    return flowIcon(Math.atan2(-(b[0] - a[0]), b[1] - a[1]) * 180 / Math.PI);
+  });
+  return { id, start, end, path, icons, phase: id / 10 };
+}
+const SIMULATED_ROUTES = Array.from({ length: 10 }, (_, id) => makeRoute(id));
+
+function AnimatedFlows() {
+  const [elapsed, setElapsed] = useState(0);
+  useEffect(() => {
+    const timer = setInterval(() => setElapsed((time) => time + .033), 33);
+    return () => clearInterval(timer);
+  }, []);
+  return <>{SIMULATED_ROUTES.map((route) => {
+    const progress = (elapsed / 10 + route.phase) % 1;
+    const segment = Math.min(route.path.length - 2, Math.floor(progress * (route.path.length - 1)));
+    const local = progress * (route.path.length - 1) - segment;
+    const a = route.path[segment], b = route.path[segment + 1];
+    const position: Coordinate = [a[0] + (b[0] - a[0]) * local, a[1] + (b[1] - a[1]) * local];
+    return <Marker key={route.id} position={position} icon={route.icons[segment]} interactive={false} zIndexOffset={1800} />;
+  })}</>;
+}
 
 export default function UaeMap({
   reports, corrections, population, latest, focus, onSelect,
@@ -80,16 +114,10 @@ export default function UaeMap({
   const [ripples, setRipples] = useState<{ key: number; pos: [number, number] }[]>([]);
   const [resetNonce, setResetNonce] = useState(0);
   const [tiles, setTiles] = useState<TileSet | null>(null);
-  const [flowTime, setFlowTime] = useState(0);
   useEffect(() => {
     let alive = true;
     pickTiles().then((t) => alive && setTiles(t));
     return () => { alive = false; };
-  }, []);
-
-  useEffect(() => {
-    const timer = setInterval(() => setFlowTime((time) => time + 0.12), 120);
-    return () => clearInterval(timer);
   }, []);
 
   useEffect(() => {
@@ -135,20 +163,14 @@ export default function UaeMap({
           </>
         )}
         <Controller focus={focus} resetNonce={resetNonce} />
-        {SIMULATED_ROUTES.map((route) => {
-          const progress = (flowTime / 7 + route.phase) % 1;
-          const position: [number, number] = [
-            route.from[0] + (route.to[0] - route.from[0]) * progress,
-            route.from[1] + (route.to[1] - route.from[1]) * progress,
-          ];
-          const angle = Math.atan2(-(route.to[0] - route.from[0]), route.to[1] - route.from[1]) * 180 / Math.PI;
-          return <Fragment key={`flow-${route.id}`}>
-            <Polyline positions={[route.from, route.to]} pathOptions={{ color: "#d5b15e", weight: 1.5, opacity: 0.5, dashArray: "3 8", className: "sim-route" }} />
-            <Marker position={position} icon={flowIcon(angle)} interactive={false} zIndexOffset={1800} />
-          </Fragment>;
-        })}
+        {SIMULATED_ROUTES.map((route) => <Fragment key={`flow-${route.id}`}>
+            <Polyline positions={route.path} pathOptions={{ color: "#c7a85a", weight: 1.35, opacity: .48, dashArray: "2 9", className: "sim-route" }} />
+            <CircleMarker center={route.start} radius={2.7} pathOptions={{ color: "#e7cf8d", weight: 1, fillColor: "#182733", fillOpacity: 1 }} interactive={false} />
+            <CircleMarker center={route.end} radius={2.7} pathOptions={{ color: "#e7cf8d", weight: 1, fillColor: "#182733", fillOpacity: 1 }} interactive={false} />
+          </Fragment>)}
+        <AnimatedFlows />
         {dots.map(({ r, pos, st }) => (
-          <CircleMarker key={r.id} center={pos} radius={r.id === latest?.id ? 6 : 3.6} pathOptions={{ weight: 0, fillOpacity: 0.85, fillColor: COLORS[st] }}
+          <CircleMarker key={r.id} center={pos} radius={r.id === latest?.id ? 6 : isFake(r.verdict) ? 4.6 : 3.8} pathOptions={{ weight: r.id === latest?.id ? 1.6 : 1, color: "#101a24", fillOpacity: 0.95, fillColor: COLORS[st], className: r.id === latest?.id ? "incident-marker active" : "incident-marker" }}
             eventHandlers={{ click: () => onSelect(r.id) }}>
             <Tooltip className="hq-tip" direction="top"><b>{LABELS[st].en}</b><br /><span className="m">{r.emirate} · click to inspect</span></Tooltip>
           </CircleMarker>
@@ -176,8 +198,8 @@ export default function UaeMap({
         {ripples.map((rp) => <Marker key={`rp${rp.key}`} position={rp.pos} icon={rippleIcon} interactive={false} zIndexOffset={2000} />)}
       </MapContainer>
       <div className="map-title">
-        <b>UAE message activity <span className="ar" dir="rtl">· حركة الرسائل في الإمارات</span></b>
-        <div>{reports.length} reports plotted · {flaggedCount} flagged · {openCount} open</div>
+        <b>UAE incident activity <span className="ar" dir="rtl">· رصد البلاغات في الإمارات</span></b>
+        <div>{reports.length} reports · {flaggedCount} flagged · {openCount} open</div>
       </div>
       <div className="map-caption">Animated routes are simulated illustrations, not observed WhatsApp forwarding paths. Report locations are approximate emirate-level origins.</div>
       <div className="legend">

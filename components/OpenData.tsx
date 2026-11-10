@@ -7,7 +7,7 @@ const badgeClass = (p: string) => (/bayanat/i.test(p) ? "bayanat" : /pulse/i.tes
 export default function OpenData({ datasets, entitiesCount }: { datasets: OpenDataset[]; entitiesCount: number }) {
   return (
     <div className="panel">
-      <div className="ph"><span>Open data <span className="ar" dir="rtl">· البيانات المفتوحة</span></span><span>{datasets.length} datasets</span></div>
+      <div className="ph"><span>Threat intelligence sources <span className="ar" dir="rtl">· مصادر البيانات</span></span><span>{datasets.length} datasets</span></div>
       <div className="pb">
         {!datasets.length && <div className="empty">No datasets catalogued.</div>}
         {datasets.map((d) => (

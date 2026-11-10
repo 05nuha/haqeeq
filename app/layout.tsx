@@ -6,10 +6,10 @@ const inter = Inter({ subsets: ["latin"], variable: "--font-inter", display: "sw
 const kufi = Noto_Kufi_Arabic({ subsets: ["arabic"], weight: ["600", "700"], variable: "--font-kufi", display: "swap" });
 
 export const metadata: Metadata = {
-  title: "Haqeeq — National Trust Control Center",
-  description: "Live verification of official content forwarded by UAE residents on WhatsApp.",
+  title: "HAQEEQ | Content Integrity",
+  description: "Operational monitoring for content verification reports.",
 };
-export const viewport: Viewport = { width: "device-width", initialScale: 1, themeColor: "#edf3f2" };
+export const viewport: Viewport = { width: "device-width", initialScale: 1, themeColor: "#0b141d" };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
