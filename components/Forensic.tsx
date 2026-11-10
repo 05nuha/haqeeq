@@ -17,8 +17,8 @@ function Heat({ heat }: { heat: number[][] }) {
 }
 
 export default function Forensic({
-  report, corrections, officialPosts, entitiesCount,
-}: { report: Report | null; corrections: Record<string, Correction>; officialPosts: Record<string, OfficialPost>; entitiesCount: number }) {
+  report, corrections, officialPosts, entitiesCount, onPush,
+}: { report: Report | null; corrections: Record<string, Correction>; officialPosts: Record<string, OfficialPost>; entitiesCount: number; onPush?: (detail: string) => void }) {
   const [now, setNow] = useState(() => Date.now());
   const [showHeat, setShowHeat] = useState(true);
   useEffect(() => {
@@ -122,6 +122,10 @@ export default function Forensic({
               </>
             )}
           </>
+        )}
+        {(r.verdict === "altered" || r.verdict === "scam_risk") && r.detail && (
+          correction ? <div className="forensic-corrected">Corrected · sent to {correction.recipients} citizens</div> :
+          <button className="forensic-push" onClick={() => onPush?.(r.detail!)}>Push official correction</button>
         )}
       </div>
     </div>

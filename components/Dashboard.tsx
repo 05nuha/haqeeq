@@ -10,7 +10,6 @@ import Kpis from "./Kpis";
 import MapLoader from "./MapLoader";
 import OpenData from "./OpenData";
 import Ranking from "./Ranking";
-import Trending from "./Trending";
 
 const TOKEN_KEY = "haqeeq_admin_token";
 const safeGet = (k: string) => { try { return localStorage.getItem(k) ?? ""; } catch { return ""; } };
@@ -21,6 +20,8 @@ export default function Dashboard() {
   const [selectedId, setSelectedId] = useState<number | null>(null);
   const [focus, setFocus] = useState<{ emirate: string | null; nonce: number } | null>(null);
   const [demoMode, setDemoMode] = useState(false);
+  const [view, setView] = useState<"map" | "reports" | "analytics">("map");
+  const [showActivity, setShowActivity] = useState(false);
   const [token, setToken] = useState("");
   const [modal, setModal] = useState<null | { pending?: string }>(null);
   const [draft, setDraft] = useState("");
@@ -104,25 +105,36 @@ export default function Dashboard() {
   const { reports, corrections, officialPosts, population, openDatasets, entitiesCount } = data;
   return (
     <div className="app">
-      <Header mode={mode} demoMode={demoMode} onDemo={() => setDemoMode((v) => !v)} unlocked={Boolean(token)}
+      <Header mode={mode} unlocked={Boolean(token)}
         onOperator={() => { if (token) { safeSet(TOKEN_KEY, ""); setToken(""); showToast(<><b>Operator locked</b></>); } else { setDraft(""); setModal({}); } }} />
-      <Kpis reports={reports} corrections={corrections} demoMode={demoMode} />
+      <nav className="view-tabs" aria-label="Dashboard views" role="tablist">
+        <button role="tab" aria-selected={view === "map"} className={view === "map" ? "active" : ""} onClick={() => setView("map")}>Map &amp; forensic</button>
+        <button role="tab" aria-selected={view === "reports"} className={view === "reports" ? "active" : ""} onClick={() => setView("reports")}>Live reports <span>{reports.length}</span></button>
+        <button role="tab" aria-selected={view === "analytics"} className={view === "analytics" ? "active" : ""} onClick={() => setView("analytics")}>Analytics</button>
+      </nav>
       <main className="main">
-        <div className="col col-left">
-          <Feed reports={reports} corrections={corrections} selectedId={effectiveSelected} newIds={newIds} onSelect={onSelect} />
-          <OpenData datasets={openDatasets} entitiesCount={entitiesCount} />
-        </div>
-        <div className="col col-center">
+        {view === "map" && <div className="map-stage">
           <MapLoader reports={reports} corrections={corrections} population={population} latest={latest} focus={focus} onSelect={onSelect} />
-          <div className="bottom-row">
-            <ActivityChart reports={reports} />
-            <Ranking reports={reports} population={population} />
+          <Forensic report={selected} corrections={corrections} officialPosts={officialPosts} entitiesCount={entitiesCount} onPush={onPush} />
+        </div>}
+        {view === "reports" && <div className="secondary-view reports-view">
+          <Feed reports={reports} corrections={corrections} selectedId={effectiveSelected} newIds={newIds} onSelect={(id) => { onSelect(id); setView("map"); }} />
+        </div>}
+        {view === "analytics" && <div className="secondary-view analytics-view">
+          <div className="analytics-toolbar">
+            <div><h2>Analytics</h2><p>Counts include simulated background activity unless filtered.</p></div>
+            <button className={`chip ${demoMode ? "on" : ""}`} onClick={() => setDemoMode((v) => !v)} title="ON: KPIs count live forwards only. OFF: KPIs include simulated background activity."><span className="sw" /> Live forwards only</button>
           </div>
-        </div>
-        <div className="col col-right">
-          <Forensic report={selected} corrections={corrections} officialPosts={officialPosts} entitiesCount={entitiesCount} />
-          <Trending reports={reports} corrections={corrections} onPush={onPush} />
-        </div>
+          <Kpis reports={reports} corrections={corrections} demoMode={demoMode} />
+          <div className="analytics-content">
+            <section className="analytics-chart">
+              <button className="chart-toggle" aria-expanded={showActivity} onClick={() => setShowActivity((v) => !v)}>{showActivity ? "Hide" : "Show"} flags vs. genuine activity</button>
+              {showActivity && <ActivityChart reports={reports} />}
+            </section>
+            <Ranking reports={reports} population={population} />
+            <OpenData datasets={openDatasets} entitiesCount={entitiesCount} />
+          </div>
+        </div>}
       </main>
       <footer className="foot">
         <span><b>Background activity simulated</b><span className="dotsep">·</span><b>live forwards real</b><span className="dotsep">·</span><b>government signing key mocked</b></span>

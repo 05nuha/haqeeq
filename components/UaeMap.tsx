@@ -1,8 +1,8 @@
 "use client";
 import "leaflet/dist/leaflet.css";
 import L from "leaflet";
-import { useEffect, useMemo, useState } from "react";
-import { CircleMarker, MapContainer, Marker, TileLayer, Tooltip, useMap } from "react-leaflet";
+import { Fragment, useEffect, useMemo, useState } from "react";
+import { CircleMarker, MapContainer, Marker, Polyline, TileLayer, Tooltip, useMap } from "react-leaflet";
 import { COLORS, EMIRATE_COORDS, EMIRATES_AR, LABELS, LABEL_POS, foldEmirate, isFake } from "@/lib/constants";
 import { rankEmirates, spotStats } from "@/lib/stats";
 import type { Correction, Population, Report } from "@/lib/types";
@@ -62,6 +62,14 @@ function hotspotIcon(name: string, size: number, color: string, label: string, d
   });
 }
 const rippleIcon = L.divIcon({ className: "", iconSize: [20, 20], iconAnchor: [10, 10], html: '<div class="ripple"></div>' });
+const flowIcon = (angle: number) => L.divIcon({ className: "flow-arrow-icon", iconSize: [16, 16], iconAnchor: [8, 8], html: `<span style="transform:rotate(${angle}deg)"></span>` });
+const ROUTE_CITIES = Object.entries(EMIRATE_COORDS);
+const SIMULATED_ROUTES = Array.from({ length: 14 }, (_, i) => {
+  const from = i % ROUTE_CITIES.length;
+  let to = (i * 5 + 3) % ROUTE_CITIES.length;
+  if (to === from) to = (to + 1) % ROUTE_CITIES.length;
+  return { id: i, from: ROUTE_CITIES[from][1] as [number, number], to: ROUTE_CITIES[to][1] as [number, number], phase: i / 14 };
+});
 
 export default function UaeMap({
   reports, corrections, population, latest, focus, onSelect,
@@ -72,10 +80,16 @@ export default function UaeMap({
   const [ripples, setRipples] = useState<{ key: number; pos: [number, number] }[]>([]);
   const [resetNonce, setResetNonce] = useState(0);
   const [tiles, setTiles] = useState<TileSet | null>(null);
+  const [flowTime, setFlowTime] = useState(0);
   useEffect(() => {
     let alive = true;
     pickTiles().then((t) => alive && setTiles(t));
     return () => { alive = false; };
+  }, []);
+
+  useEffect(() => {
+    const timer = setInterval(() => setFlowTime((time) => time + 0.12), 120);
+    return () => clearInterval(timer);
   }, []);
 
   useEffect(() => {
@@ -121,6 +135,18 @@ export default function UaeMap({
           </>
         )}
         <Controller focus={focus} resetNonce={resetNonce} />
+        {SIMULATED_ROUTES.map((route) => {
+          const progress = (flowTime / 7 + route.phase) % 1;
+          const position: [number, number] = [
+            route.from[0] + (route.to[0] - route.from[0]) * progress,
+            route.from[1] + (route.to[1] - route.from[1]) * progress,
+          ];
+          const angle = Math.atan2(-(route.to[0] - route.from[0]), route.to[1] - route.from[1]) * 180 / Math.PI;
+          return <Fragment key={`flow-${route.id}`}>
+            <Polyline positions={[route.from, route.to]} pathOptions={{ color: "#d5b15e", weight: 1.5, opacity: 0.5, dashArray: "3 8", className: "sim-route" }} />
+            <Marker position={position} icon={flowIcon(angle)} interactive={false} zIndexOffset={1800} />
+          </Fragment>;
+        })}
         {dots.map(({ r, pos, st }) => (
           <CircleMarker key={r.id} center={pos} radius={r.id === latest?.id ? 6 : 3.6} pathOptions={{ weight: 0, fillOpacity: 0.85, fillColor: COLORS[st] }}
             eventHandlers={{ click: () => onSelect(r.id) }}>
@@ -150,15 +176,14 @@ export default function UaeMap({
         {ripples.map((rp) => <Marker key={`rp${rp.key}`} position={rp.pos} icon={rippleIcon} interactive={false} zIndexOffset={2000} />)}
       </MapContainer>
       <div className="map-title">
-        <b>Report activity by emirate <span className="ar" dir="rtl">· رصد البلاغات حسب الإمارة</span></b>
-        <div>{flaggedCount} flagged reports · {openCount} still open</div>
+        <b>UAE message activity <span className="ar" dir="rtl">· حركة الرسائل في الإمارات</span></b>
+        <div>{reports.length} reports plotted · {flaggedCount} flagged · {openCount} open</div>
       </div>
-      <div className="map-caption">Official reference data: UAE population statements and Bayanat’s entity list. Report totals are Haqeeq submissions, including seeded demo rows; live emirate locations are illustrative. This map does not show WhatsApp spread.</div>
+      <div className="map-caption">Animated routes are simulated illustrations, not observed WhatsApp forwarding paths. Report locations are approximate emirate-level origins.</div>
       <div className="legend">
-        <span><i style={{ background: COLORS.altered }} />Altered / scam</span>
-        <span><i style={{ background: COLORS.unverified }} />Unverified</span>
-        <span><i style={{ background: COLORS.genuine }} />Genuine</span>
-        <span><i style={{ background: COLORS.corrected }} />Corrected ✓</span>
+        <span><i className="legend-route" />Simulated message route</span>
+        <span><i style={{ background: COLORS.altered }} />Flagged report</span>
+        <span><i style={{ background: COLORS.genuine }} />Genuine report</span>
       </div>
       <button className="chip reset-btn" onClick={() => setResetNonce((n) => n + 1)}>⤢ Reset view</button>
     </div>
