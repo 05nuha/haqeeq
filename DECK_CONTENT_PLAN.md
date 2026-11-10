@@ -1,150 +1,128 @@
-# HAQEEQ — Deck content plan v2 (7 slides, 180 seconds)
+# HAQEEQ — Deck content plan v3 (7 slides, 180 seconds)
 
-Revised after a mock judge review (TDRA + Cyber Security Council view). Changes vs v1: the demo gets 55 seconds including the
-screenshot beat; claims now match what is actually built; the "not a deepfake detector" line is reframed; proof points restored;
-every 90-day phase has an owner and a target; dense slides simplified; "proposed/simulated" caveats stated once (slide 4) instead of on every line.
+Revised after two mock judge reviews. What changed vs v2:
+- **Demo:** one *live* case + a 55-second recorded backup; the screenshot beat is kept but **only after a real-phone test**.
+- **Disclaimers:** the honesty points are stated **once, on slide 4**. Other slides carry a single small tag at most.
+- **Data:** one visible data output (the per-100,000 campaign ranking) is shown in the demo.
+- **Dense slides trimmed:** slides 3–5 now have 3–4 short items each.
+- **Two facts flagged for verification** (Guinea precedent, Singapore figures) — see "Verify before presenting".
+- The internal score estimate is removed (never show it on a slide).
+Items marked **[TEAM]** are yours to fill in; nothing here invents names, agreements, prices or results.
 
-Script length ≈ 400 spoken words at ~150 wpm. **Rehearse against a timer** — the live demo is the part most likely to run long.
-Items marked **[TEAM]** are for you to fill in; nothing below invents names, agreements, prices or results.
-
-Timing: S1 0:00–0:20 · S2 0:20–0:40 · S3 0:40–1:35 · S4 1:35–2:00 · S5 2:00–2:25 · S6 2:25–2:50 · S7 2:50–3:00
+Timing: S1 0:00–0:20 · S2 0:20–0:40 · S3 0:40–1:35 · S4 1:35–2:00 · S5 2:00–2:25 · S6 2:25–2:50 · S7 2:50–3:00. Rehearse to **2:50**.
 
 ---------------------------------------------------------------------------------------------------
 
 ## Slide 1 — Hook (0:00–0:20)
 
-**On the slide:** "When Seeing Is No Longer Believing". Logo + **HAQEEQ حقيق** + tagline "Make Trust Part of Every Forward".
-Visual: a fictional government notice inside a family WhatsApp chat, labelled *Illustrative*.
-One stat: **7 in 10 surveyed UAE residents have encountered a scam — on average once every three days** (GASA + Trend Micro, 1,000 UAE residents, 27 Jan 2026).
+**On the slide:** "When Seeing Is No Longer Believing" · logo + **HAQEEQ حقيق** · "Make Trust Part of Every Forward".
+Visual: a fictional government-style notice in a family chat, tag *Illustrative*.
+One stat: **7 in 10 surveyed UAE residents have encountered a scam — on average once every three days.**
+Source line: GASA + Trend Micro, 1,000 UAE residents, 27 Jan 2026.
 
-**Say (≈50 words):** "A voice note from your son asking for money. A government notice with a payment link. In the UAE, seven in ten
-surveyed residents have met a scam — on average once every three days. And in the seconds before you forward it, there is no trusted place to
-check. HAQEEQ is that place."
+**Say (~45 words):** "A government-looking notice arrives in a family chat. Real, altered, or a scam? In a survey of 1,000 UAE residents, seven in ten had encountered a scam. HAQEEQ gives people a way to check official content before they forward it."
+*Say "encountered", never "were scammed".*
 
-**Caution:** this is *exposure* ("encountered a scam"), not "7 in 10 were scammed".
+## Slide 2 — The gap (0:20–0:40)
 
----------------------------------------------------------------------------------------------------
+**On the slide:** title "People already verify. The loop isn't closed." Three numbers: **96%** take at least one verification step · **1 in 3** lost money · **About half** of those who reported saw no action or didn't know the outcome.
+One line: "The missing step: a trusted check at the moment of forwarding — and a way for the official source to answer back."
+Strip: Forward → Check → Response. Tag: *Challenge 40 — Building Trust in Digital Content*.
 
-## Slide 2 — Problem and gap (0:20–0:40)
+**Say (~45 words):** "People already try to verify. The gap is a trusted check at the moment of forwarding, and a clear response path from the official source. HAQEEQ connects a familiar forward to an explanation — and proposes that response path."
 
-**On the slide:** title "People already verify. The loop isn't closed." Three numbers (GASA + Trend Micro, Jan 2026):
-**96%** take at least one verification step · **1 in 3** lost money · **Half** of those who reported saw no action or didn't know the outcome.
-Two gap lines: "Residents have no trusted check at the moment of forwarding." / "Public teams find out late."
-Small tag: *Challenge 40 — Building Trust in Digital Content*.
+## Slide 3 — Demo (0:40–1:35, 55 s)
 
-**Say (≈50 words):** "Residents aren't careless — 96% take at least one step to verify. Yet one in three lost money, and half of those who
-reported saw no action or didn't know the outcome. The gap isn't awareness. It's a trusted check at the moment of forwarding — and a way for the
-official source to answer back."
+**On the slide (keep it light — the demo is the content):** 3-step strip **Forward → Arabic explanation → Verdict**; four verdicts with one-line meanings:
+✅ Genuine — matches an available official reference · 🔴 Altered — differs from the reference · ⚪ Unverified — not the same as false · 🔴 Scam risk — scam wording detected.
+Small tag: *Prototype · test account · sample content*.
 
----------------------------------------------------------------------------------------------------
+**Demo order (live, teammate drives the phone, dashboard on the big screen):**
+1. **Live:** forward the official notice → ✅ in Arabic; point at the new dot on the map. *(~12 s)*
+2. **Real phone screenshot** of the same notice → ✅. *Slow down — this is the memorable beat.* **Only if tested on the real phone and current deployment; otherwise skip.** *(~10 s)*
+3. **Doctored** notice → 🔴 Altered; show the heat-map in the forensic view. *(~10 s)*
+4. **Scam text** → 🔴 Scam risk; show the Arabic Gemini explanation. *(~8 s)*
+5. Point at the **campaign ranking** (reports per 100,000 residents): "Open data tells us where to focus the next 'Verify before you share' campaign." *(~7 s)*
+6. **Push official correction** → map turns teal. **Only if correction delivery to a test phone has been confirmed;** otherwise say: "The operator workflow is built; delivery is being validated for the pilot." *(~8 s)*
+**Backup:** a 55-second screen recording of the same steps. If anything lags, switch to the recording — don't improvise outcomes.
 
-## Slide 3 — Solution and live demo (0:40–1:35, 55 s)
+**Say over the demo (~60 words):** "A resident forwards the image in the app they already use. A match supports a genuine result; a mismatch exposes edits; scam wording is flagged with an explanation in Arabic. If there is no reliable match, the result stays unverified — never 'fake'. The dashboard shows public teams what is being reported and where."
 
-**On the slide:** a 3-step strip — **Forward → Arabic explanation → Verdict** — and the four verdicts with honest one-line meanings:
-- ✅ **Genuine** — matches an available official reference
-- 🔴 **Altered** — differs from the reference
-- ⚪ **Unverified** — not the same as false
-- 🔴 **Scam risk** — scam wording detected
+## Slide 4 — Technology, data and honesty (1:35–2:00, 25 s)
 
-Right side: dashboard screenshot labelled *Illustrative — sample data*. Footer line: "Proven model: the US Embassy in Guinea signs official media and gives
-citizens a public verifier (since ~2025). HAQEEQ brings that idea to Arabic and WhatsApp." (Guinea is the closest precedent; it is not an Arab-government deployment.)
+**On the slide:** one flow line: *Forward → fingerprint match + pixel check / scam-text analysis (Gemini + rules) → verdict + explanation → dashboard → proposed official response*.
+Three columns:
+- **Working in the prototype:** image fingerprinting, pixel-level edit check, scam-text analysis, dashboard, correction workflow
+- **Context data (government sources):** Bayanat entity directory (57 entities) · UAE population statements by emirate (reference years differ) · Dubai area names (2017 snapshot via Bayanat)
+- **Simulated / planned:** background activity (simulated), government signing key (mocked), C2PA, voice & video
+**Honesty strip (the one place all caveats live):** "We prove what is genuine instead of guessing what is fake · Unverified never means false · The map shows where reports come from, not how messages spread · No agency approval or agreement exists yet."
+Small privacy line: "Minimal data; phone numbers masked on the dashboard."
 
-**Say + do (≈90 words, speak while the phone is driven by teammate):**
-1. "A resident forwards the image to HAQEEQ, in the app they already use." → send **official notice** → ✅ *Genuine* appears in Arabic; point at the map dot.
-2. "Even a plain screenshot — where WhatsApp has stripped every signature — still matches." → send the **real phone screenshot** → ✅. *Slow down here.*
-3. "Change one date and it flags the edit." → send **doctored notice** → 🔴 *Altered* (show heat-map in the forensic view).
-4. "Scam wording is analysed too." → send the scam text → 🔴 *Scam risk* with the Gemini explanation.
-5. "Public teams see it instantly and can answer back." → click **Push official correction** → map turns teal, toast shows citizens reached.
-Close the slide with: "Unverified never means false."
+**Say (~55 words):** "Images are checked against official references and compared for pixel edits; scam text is analysed by Gemini plus rules. Government open data gives us source and geographic context — it doesn't train the model. Background data is simulated, the signing key is mocked, and voice and video are next."
 
-**Before pitching (must do):** fresh Meta token + test `hello`; registry has 8 posts (add 10–20 vetted ones if you can); run `demo_clear.py` then `demo_seed.py`;
-rehearse with a **real screenshot** (not a camera photo of a screen); record a backup video.
-**Wording note:** the bot's Arabic Genuine reply now reads "✅ صحيح — يتطابق مع مرجع رسمي متاح." (matches an available official reference) — done in code.
+*Speaker notes only (don't put on the slide):* Dubai Pulse datasets were not reachable during the hackathon — don't imply a Dubai Pulse integration. Per-100,000 figures are indicative (population years differ). Don't claim PDPL compliance without legal review.
 
----------------------------------------------------------------------------------------------------
+## Slide 5 — Operating model (2:00–2:25, 25 s)
 
-## Slide 4 — Technology and data (1:35–2:00, 25 s)
+**On the slide:** the Business Model Canvas as one clean page (required), with three highlighted callouts:
+- **Buyer:** the public entity responsible for trust (proposed) · **Users:** residents, free
+- **Funding options to validate in the pilot:** entity licence · programme funding · co-funding with oversight
+- **Biggest risk:** an issuing entity must maintain references and answer fast
+Footer metric: **Pilot measure — confirmed reports answered with an official decision within 24 hours. Target: [TEAM] (suggested 80%).**
+Costs (on the canvas): messaging **[TEAM: check Meta's current price list before quoting any number]**, hosting, AI, human review.
+Partners (all labelled *proposed*): TDRA, UAE Cyber Security Council, DESC, Dubai Police, a government media partner.
 
-**On the slide:** 5-step flow: *Forward → Fingerprint match → Pixel check → Scam-text analysis (Gemini + rules) → Dashboard & correction*.
-Three status badges: **Working in prototype:** image fingerprinting, pixel-level edit detection, scam-text analysis, dashboard, real WhatsApp corrections (to test) ·
-**Simulated:** background reports, government signing key, small reference registry (8 posts) · **Planned:** C2PA signing, more registries, voice/video.
-**Limits box:** "We prove what is genuine instead of guessing what is fake. Images and text today; voice and video next."
-**Open data box (government sources only):**
-- Bayanat — government entities directory (57 entities) → trusted-source list
-- u.ae "The Seven Emirates" population statements (7 emirates, different reference years) → per-100,000 risk ranking
-- Land-registration area names (264 Dubai areas, 2017 snapshot, via Bayanat; Dubai Land Department data) → area labels
-- Dubai Pulse datasets were not reachable during the hackathon → planned
-- One line: "Open data gives context for where to act, not scam data."
-Privacy line: "Minimal data; phone numbers are masked on the dashboard; full numbers are stored server-side only."
+**Say (~55 words):** "Residents use it free; the buyer is the public entity that owns the official source. Funding options are an entity licence, programme funding or co-funding — pricing is for the pilot to validate. Our riskiest assumption is that an issuer maintains references and answers fast, so that's what we'll measure."
 
-**Say (≈60 words):** "Images are fingerprinted against official references; pixel analysis flags edits; scam wording is analysed by Gemini plus rules. These work in
-our prototype. Registry and background data are simulated, and C2PA signing is planned. We prove what's genuine rather than guess what's fake. Open
-government data tells us where to act. We collect minimal data and mask phone numbers."
+## Slide 6 — Team and 90-day pilot (2:25–2:50, 25 s)
 
-**Check before showing:** licence wording for Bayanat data ("CC BY 4.0" was **not verified** — look it up on the dataset page or leave it out); the Dubai Land Department dataset date.
+**On the slide:** team names + roles **[TEAM]**. Table (label *Proposed — depends on a sponsoring entity, written channel terms and privacy/security review*):
 
----------------------------------------------------------------------------------------------------
-
-## Slide 5 — Business model (2:00–2:25, 25 s)
-
-**On the slide:** the Business Model Canvas as one clean page (required), but you only *speak* to three things — buyer, funding, biggest risk.
-- **Users:** residents (free); **buyer:** the public entity responsible for trust
-- **Channel:** official WhatsApp number (WhatsApp Business Platform — confirmation of terms needed)
-- **Partners (all proposed):** TDRA, UAE Cyber Security Council, DESC, Dubai Police, a government media partner
-- **Costs:** WhatsApp messaging (**[TEAM] check Meta's current price list — do not quote a number you haven't verified**), hosting, AI, human review
-- **Funding (pricing to be validated in the pilot):** entity licence · central programme funding · co-funding with oversight
-- **Value:** residents get a trusted check at the moment of forwarding; entities get early warning and one-click correction
-- **Precedent:** Singapore pairs public scam alerts with reporting and reported scam cases down 24.8% in 2025 (SPF) — shown as context for the approach, **not as a Haqeeq result**
-- **Biggest risk:** an issuing entity must maintain reference posts and answer quickly
-- **Impact measure:** share of confirmed reports answered with an official decision within 24 hours — **target: [TEAM] (suggested: 80%)**
-
-**Say (≈60 words):** "Residents use it free; the buyer is the public entity responsible for trust. Funding options: an entity licence, central programme
-funding, or co-funding with oversight — pricing to be validated in the pilot. Costs are messaging, hosting, AI and human review. Our riskiest
-assumption: an issuing entity maintains reference posts and answers fast. Our measure: confirmed reports answered within 24 hours."
-
----------------------------------------------------------------------------------------------------
-
-## Slide 6 — Team and 90-day pathway (2:25–2:50, 25 s)
-
-**On the slide:** team names + roles **[TEAM]** (cybersecurity student; computing & IT student — fill in). Optional: "Early test: 5 users" **only if you actually run it**.
-Roadmap (all *proposed*; each phase has an owner and a target):
-
-| Days | Milestone | Owner | Target |
+| Days | Work | Owner | Proposed measure |
 |---|---|---|---|
-| 0–30 | One sponsoring entity; ~20 real official posts loaded; limited-access number live; WhatsApp terms confirmed in writing | Entity comms lead + HAQEEQ tech lead | 20 posts live; 50 invited users **[TEAM adjust]** |
-| 31–60 | One or two more entities; referral path to Dubai Police e-crime reporting; legal/privacy review | HAQEEQ lead + legal contact | 2 entities; ≥500 checks **[TEAM adjust]** |
-| 61–90 | Evaluation report; decision on scale-up | Cyber Security Council advisor (proposed) | Report incl. the 24-hour response metric |
+| 0–30 | One sponsor; agree reference-update + response process; privacy/security review; confirm WhatsApp terms; ~20 vetted posts | HAQEEQ tech lead + entity comms lead | 1 scoped agreement · 20 approved references · 50 invited users **[TEAM adjust]** |
+| 31–60 | Limited-access pilot; log unmatched cases; refine escalation to the issuer | HAQEEQ lead + entity contact | 1–2 entities · up to 500 checks · report the unverified rate |
+| 61–90 | Review safety, accuracy, response time, cost; decide continue/stop | Team + proposed advisor | Evaluation report incl. the 24-hour metric |
 
-**Say (≈60 words):** "[Team intro.] Our proposed 90-day plan. Days 0 to 30: one sponsoring entity, about twenty real official posts, a
-limited-access number, and written WhatsApp confirmation. Days 31 to 60: one or two more entities, a referral path to Dubai Police e-crime reporting,
-and legal review. Days 61 to 90: an evaluation report with our 24-hour response metric. Every partner shown is proposed."
+**Say (~55 words):** "[Team intro.] Our proposal is a limited 90-day pilot, not a national rollout. First: one sponsoring entity and about twenty vetted references. Then a controlled test with invited users, measuring unmatched cases. By day 90 we present response-time, safety and cost results and recommend whether to continue."
+*Don't say "approved", "partnered" or "ready for deployment".*
 
-Changed from the original handoff: "3–5 ministries by day 60" and "national rollout + GCC" became "one or two more entities" and "evaluation report" — nothing supports the faster pace.
+## Slide 7 — Ask (2:50–3:00)
 
----------------------------------------------------------------------------------------------------
+**On the slide:** HAQEEQ · "Make Trust Part of Every Forward" · **The ask:** a scoped 90-day pilot with TDRA and one government media partner · footer: *Working prototype and pilot proposal — no approvals or agreements yet.* (Optional: intent to continue in LaunchPad.)
 
-## Slide 7 — Close (2:50–3:00)
-
-**On the slide:** HAQEEQ · "Make Trust Part of Every Forward" · The ask: "A 90-day pilot with TDRA and a government media partner." · Footer: "Prototype and proposal — no approvals or agreements exist yet."
-Optional: mention continuing in LaunchPad.
-
-**Say (≈25 words):** "HAQEEQ: Make Trust Part of Every Forward. We ask TDRA and a government media partner to consider a 90-day pilot. This is a prototype
-and a proposal. Thank you."
+**Say (~25 words):** "HAQEEQ: Make Trust Part of Every Forward. We ask TDRA and one government media partner to consider a scoped 90-day pilot. This is a working prototype and a proposal. Thank you."
 
 ---------------------------------------------------------------------------------------------------
 
-## Q&A prep (2 minutes) — likely judge questions
+## Q&A prep (2 minutes)
 
-- **"What about fakes that aren't in your registry?"** → They return ⚪ *Unverified*, never "fake". We don't claim to detect every deepfake; the value is proving what *is* genuine and routing the rest to the entity for a decision.
-- **"False positives / accuracy?"** → Be honest: tested on about 16 demo images (genuine, screenshots, doctored, fakes, unrelated) with expected results; real accuracy would be measured in the pilot. Thresholds are tunable.
-- **"Data protection / PDPL — where is data stored?"** → Minimal data; masked numbers on the dashboard; full numbers server-side only. **[TEAM] check which Supabase region you chose before stating it.**
-- **"Who maintains the registry and why would an entity do it?"** → That is our riskiest assumption and the point of the pilot: one sponsoring entity, 20 posts, measured 24-hour response.
-- **"How is this different from Saraab?"** → Saraab detects fake *video* for experts; HAQEEQ gives citizens an Arabic way to check *official* content and gives entities a way to answer back.
-- **"Would older people use it?"** → No new app: they forward to one trusted number (a habit they already have); family members can set it up; every forward also feeds the dashboard.
-- **"Can you see how fakes spread on WhatsApp?"** → No — it is end-to-end encrypted. The map shows where reports come from.
-- **"Why WhatsApp / what if Meta changes terms?"** → It is where the problem happens; written confirmation of terms is a day 0–30 milestone.
+- **Not in your registry?** → Returns unverified, never "fake". The pilot measures that rate and routes it to the issuer.
+- **Accuracy?** → Tested on a small set of demo cases with expected outcomes — not a representative study. The pilot would report precision, recall and false-positive rates before any accuracy claim.
+- **Government data training the AI?** → No. It adds source/geographic context; image matching uses the reference posts; text uses rules + Gemini.
+- **Is the signing key real?** → No, mocked. C2PA signing needs an issuing entity and a key-management agreement.
+- **See how fakes spread?** → No — end-to-end encrypted; the map shows report origin.
+- **Government partner committed?** → No. All partners are proposed; the pilot is the ask.
+- **Personal data / PDPL?** → Masked numbers on the dashboard; full numbers server-side only; a documented data-flow, retention, access and hosting-region review comes before any pilot. **[TEAM] confirm your Supabase region before naming it.**
+- **Corrections to real people today?** → Answer from the test result. If untested: "The operator workflow is built; end-to-end delivery is being validated."
+- **How is it different from Saraab?** → Saraab detects fake video for experts; HAQEEQ gives citizens an Arabic way to check official content and gives issuers a way to answer back.
+- **Would older people use it?** → No new app: they forward to one trusted number, a habit they already have.
 
-## Open items for the team
+## Verify before presenting (I could not confirm these)
 
-1. Team names and roles (slide 6). 2. Targets you can defend (slides 5–6). 3. Meta's current pricing (slide 5) and the Bayanat licence wording (slide 4).
-4. Whether to run the 5-person test. 5. Supabase region (for the privacy answer). 6. Fresh Meta token on pitch morning.
+1. **Guinea precedent:** earlier notes say "C2PA + Digimarc since ~Apr 2025"; the latest plan says "Digimarc watermarking, May 2025". Use whichever wording you can show a source for, and keep it in speaker notes.
+2. **Singapore:** latest plan says combined scam-and-cybercrime cases fell 24.8% in 2025 and scam cases alone 27.6%; earlier notes said "scam cases −24.8%". Check the Singapore Police Force 2025 brief and quote one measure, labelled as context, not a HAQEEQ result.
+3. **Entity count:** the real database holds **57** entities; the mock dashboard text says 230. Don't record the demo in `?mock=1` mode, or the screen and slide 4 will disagree.
+4. Meta's current messaging price and channel terms; the Bayanat licence wording (not verified — leave it out if unsure).
+5. Your Supabase region (for the privacy answer).
+
+## Pre-pitch checklist
+
+- [ ] Meta token refreshed; `hello` test returns ⚪.
+- [ ] Official image → ✅ with the new wording ("matches an available official reference"); doctored → 🔴; scam text → 🔴 + Arabic explanation.
+- [ ] **Real phone screenshot** of the official notice → ✅ (crop tight, power + volume-up; not a photo of a screen).
+- [ ] Correction delivered to a test phone (only then show it as a result).
+- [ ] Dashboard updates live when a message is sent (otherwise label the clip *Illustrative test view*).
+- [ ] `demo_clear.py` then `demo_seed.py` ~10 min before; dashboard open at 1920×1080, Operator unlocked.
+- [ ] 55-second backup recording ready; phone hotspot; team names and targets filled; no `[TEAM]` text left on slides.
+- [ ] Deck submitted on admin.hackathon.ae by ~10:00am.
