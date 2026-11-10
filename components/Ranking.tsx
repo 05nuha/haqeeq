@@ -12,7 +12,7 @@ export default function Ranking({ reports, population }: { reports: Report[]; po
   return (
     <div className="panel">
       <div className="ph"><span>Verify Before You Share · campaign targeting</span><span className="ar" dir="rtl">أين نستهدف الحملة</span></div>
-      <div className="rank-head">Emirates ranked by fake reports per 100,000 residents <span style={{ color: "#64748b" }}>· raw count shown</span></div>
+      <div className="rank-head">Reports needing verification per 100,000 residents <span style={{ color: "#9aadb4" }}>· indicative; includes demo rows and unverified reports</span></div>
       <div className="pb" style={{ paddingTop: 0 }}>
         {!rows.length && <div className="empty">No population data.</div>}
         {rows.map((r, i) => (
