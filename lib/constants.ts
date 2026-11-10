@@ -41,7 +41,7 @@ export const COLORS: Record<Status, string> = {
   genuine: "#19805e",
   altered: "#b84d48",
   scam_risk: "#9a6b16",
-  unverified: "#718288",
+  unverified: "#5f7075",
   corrected: "#167d70",
 };
 

@@ -15,7 +15,7 @@ export default function OpenData({ datasets, entitiesCount }: { datasets: OpenDa
             <span className={`badge ${badgeClass(d.portal)}`}>{d.portal}</span>
             <span className="nm" title={`${d.name} — ${d.publisher}`}>{d.name}</span>
             <span className="rw">{d.rows != null ? `${fmtInt(d.rows)} rows` : ""}</span>
-            <span className="pw">{d.publisher} → <b style={{ color: "#a5b4cf", fontWeight: 600 }}>{d.powers}</b></span>
+            <span className="pw">{d.publisher} → <b style={{ color: "#536d70", fontWeight: 600 }}>{d.powers}</b></span>
           </a>
         ))}
         {entitiesCount > 0 && <div className="od-foot">Source check runs against <b style={{ color: "#e6edf8" }}>{fmtInt(entitiesCount)}</b> registered government entities.</div>}

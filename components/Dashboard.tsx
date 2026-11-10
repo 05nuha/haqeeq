@@ -1,4 +1,5 @@
 "use client";
+import Image from "next/image";
 import { useCallback, useEffect, useMemo, useRef, useState } from "react";
 import { useDashboardData } from "@/lib/useDashboardData";
 import ActivityChart from "./ActivityChart";
@@ -59,7 +60,7 @@ export default function Dashboard() {
   const doPush = useCallback(async (detail: string, tok: string) => {
     const res = await pushCorrection(detail, tok);
     if (res.ok) {
-      showToast(<><b>Correction sent</b> to {res.recipients ?? 0} citizens · {res.delivered ?? 0} delivered on WhatsApp<br /><span className="ar" dir="rtl" style={{ color: "#8193b2" }}>تم إرسال التصحيح الرسمي</span></>);
+      showToast(<><b>Correction sent</b> to {res.recipients ?? 0} citizens · {res.delivered ?? 0} delivered on WhatsApp<br /><span className="ar" dir="rtl" style={{ color: "#12645b" }}>تم إرسال التصحيح الرسمي</span></>);
     } else {
       if (res.status === 401) { safeSet(TOKEN_KEY, ""); setToken(""); }
       showToast(<><b>Could not send correction</b><br />{res.error}</>, true);
@@ -86,7 +87,7 @@ export default function Dashboard() {
     return (
       <div className="center-card">
         <div className="card">
-          <div className="logo" style={{ marginBottom: ".4rem" }}>ح</div>
+          <Image className="brand-logo" src="/logo.svg" alt="Haqeeq shield and check mark" width={44} height={44} priority />
           <h2>{mode === "error" ? "Could not load dashboard data" : "Dashboard not configured"}</h2>
           {mode === "error" ? (
             <p>Supabase returned an error: <code>{errorMsg}</code>. Check the project URL, anon key, and that migration <code>0001_init.sql</code> has been applied.</p>

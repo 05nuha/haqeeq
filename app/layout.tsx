@@ -9,7 +9,7 @@ export const metadata: Metadata = {
   title: "Haqeeq — National Trust Control Center",
   description: "Live verification of official content forwarded by UAE residents on WhatsApp.",
 };
-export const viewport: Viewport = { width: "device-width", initialScale: 1, themeColor: "#050912" };
+export const viewport: Viewport = { width: "device-width", initialScale: 1, themeColor: "#edf3f2" };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (

@@ -1,4 +1,5 @@
 "use client";
+import Image from "next/image";
 import { useEffect, useState } from "react";
 import type { Mode } from "@/lib/useDashboardData";
 
@@ -15,7 +16,7 @@ export default function Header({
   return (
     <header className="hdr">
       <div className="brand">
-        <div className="logo">ح</div>
+        <Image className="brand-logo" src="/logo.svg" alt="Haqeeq shield and check mark" width={44} height={44} priority />
         <div>
           <h1>National Trust Control Center <span className="ar" dir="rtl">مركز الثقة الوطني</span></h1>
           <p>HAQEEQ · UAE digital trust operations · official content verification</p>

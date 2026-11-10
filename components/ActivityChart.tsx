@@ -32,15 +32,15 @@ export default function ActivityChart({ reports }: { reports: Report[] }) {
       <div className="chart-body">
         <Bar
           data={{ labels, datasets: [
-            { label: "Flagged", data: fakes, backgroundColor: "rgba(184,77,72,.76)", borderRadius: 3, stack: "s" },
-            { label: "Genuine", data: genuine, backgroundColor: "rgba(25,128,94,.7)", borderRadius: 3, stack: "s" },
+            { label: "Flagged", data: fakes, backgroundColor: "#b84d48", borderRadius: 2, stack: "s" },
+            { label: "Genuine", data: genuine, backgroundColor: "#19805e", borderRadius: 2, stack: "s" },
           ] }}
           options={{
             responsive: true, maintainAspectRatio: false, animation: { duration: 400 },
-            plugins: { legend: { position: "top", align: "end", labels: { color: "#627a7e", boxWidth: 8, boxHeight: 8, font: { size: 10 } } } },
+            plugins: { legend: { position: "top", align: "end", labels: { color: "#435d61", boxWidth: 8, boxHeight: 8, padding: 12, font: { size: 13 } } } },
             scales: {
-              x: { stacked: true, ticks: { color: "#627a7e", font: { size: 9 } }, grid: { display: false } },
-              y: { stacked: true, ticks: { color: "#627a7e", precision: 0, font: { size: 9 } }, grid: { color: "rgba(22,53,59,.08)" } },
+              x: { stacked: true, border: { color: "#bdcdca", width: 1 }, ticks: { color: "#435d61", maxTicksLimit: 6, font: { size: 13 } }, grid: { display: false } },
+              y: { stacked: true, border: { color: "#bdcdca", width: 1 }, ticks: { color: "#435d61", precision: 0, font: { size: 13 } }, grid: { display: false } },
             },
           }}
         />
