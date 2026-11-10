@@ -357,8 +357,17 @@ def _meta_diag(do_subscribe):
         out["scopes"] = [g.get("scope") for g in scopes]
         wabas = sorted({t for g in scopes if g.get("scope", "").startswith("whatsapp")
                         for t in (g.get("target_ids") or [])})
-        out["waba_ids"] = wabas
         h = {"Authorization": "Bearer " + tok}
+        biz = request.args.get("business", "").strip()
+        if not wabas and biz.isdigit():
+            for edge in ("owned_whatsapp_business_accounts", "client_whatsapp_business_accounts"):
+                j = requests.get(f"{_graph()}/{biz}/{edge}", headers=h, timeout=6).json()
+                out.setdefault("business_lookup", {})[edge] = j.get("error", {}).get("message") or len(j.get("data", []))
+                wabas += [w["id"] for w in j.get("data", [])]
+        waba = request.args.get("waba", "").strip()
+        if waba.isdigit():
+            wabas.append(waba)
+        out["waba_ids"] = wabas
         out["subscriptions"] = {}
         for w in wabas:
             if do_subscribe:
