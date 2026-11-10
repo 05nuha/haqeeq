@@ -163,3 +163,33 @@ Style header for all: "Friendly 2D cartoon animation, flat colours, soft shading
 - Insert shots 2 and 6 are not generated: the post is a clearly fictional graphic, the bot reply is a real recording.
 - Add on screen at the start or end: "Scenes AI-generated · fictional characters · tool: Google Flow · analysis: Gemini."
 - Dialogue is voiceover (your own voices) with subtitles; don't rely on the tool's own audio.
+
+---------------------------------------------------------------------------------------------------
+
+## 10. FINAL storyline — two girls, three AI clips (replaces section 9's cast and clip list)
+
+**Characters:** **Curly** (curly hair) believes the post. **Red** (red hair) warns her and shows the bot.
+**Film length: about 30 s.** Three AI clips of 8 s max, two real insert shots, one title card.
+
+| # | Beat | Dialogue (your voiceover + subtitles) | How to make it | ~Sec |
+|---|---|---|---|---|
+| 1 | Both sit on the sofa; Curly opens her phone and cheers | Curly: "Yay! A holiday next week!" | **Flow clip A** | 7 |
+| 2 | Zoom into her phone: the post | — | **Insert (not AI):** `assets/video/fake_post.png` in a phone frame | 3 |
+| 3 | Red leans over, doubtful; Curly shrugs | Red: "Wait… are you sure that's real?" Curly: "It's from the government page." | **Flow clip B** | 7 |
+| 4 | Red holds up her phone and points; Curly leans in | Red: "Check before you share. There's a WhatsApp bot — just forward it the message." | **Flow clip C** | 7 |
+| 5 | Zoom into WhatsApp: forward the post, reply appears | (subtitle) 🔴 معدّل — نسخة معدّلة من إعلان رسمي. لا تقم بإعادة إرساله. | **Insert (REAL screen recording)** | 5 |
+| 6 | Reaction + title card | Curly: "Good thing we checked." → **HAQEEQ — Make Trust Part of Every Forward** | Last 1–2 s of clip C or a still; title card in the editor | 3 |
+
+**Images for Flow:** `curly.png` + `red.png` (cartoon portraits), and optionally `both.png` (the two together). Same images for all three clips.
+
+**Style header (start every prompt with this):**
+> "Friendly 2D cartoon animation, flat colours, soft shading, consistent characters, warm evening light, 16:9, no on-screen text, no logos."
+
+- **Clip A:** "[Curly: curly hair, describe clothes] and [Red: red hair, describe clothes] sit down together on a sofa in a cosy living room. Curly takes out her smartphone, looks at it, and cheers happily with a big smile. Red watches beside her. Medium shot, slow gentle push-in."
+- **Clip B:** "Red leans over Curly's shoulder to look at the phone, then raises one doubtful eyebrow. Curly shrugs confidently and keeps smiling. Over-the-shoulder medium shot, steady camera."
+- **Clip C:** "Red smiles reassuringly, holds up her own smartphone and points at it. Curly leans in with interest, then looks relieved. Medium shot, gentle push-in on the phones."
+
+**Cartoon portrait prompt (Gemini image tool, one per girl, from her photo):**
+> "Turn this photo into a friendly flat 2D cartoon character, clean vector style, soft colours, shoulders-up portrait on a plain light background. Keep the hairstyle, hair colour, glasses and clothing of the person. No text."
+
+**Order in the editor:** clip A → post image → clip B → clip C → real WhatsApp recording → title card. Add voiceover, subtitles, and "Scenes AI-generated · fictional characters · Google Flow".
