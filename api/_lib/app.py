@@ -407,13 +407,18 @@ def meta_verify():
 def meta_webhook():
     import datetime
     raw = request.get_data()
+    payload = request.get_json(silent=True) or {}
+    has_msgs = any((c.get("value") or {}).get("messages")
+                   for e in payload.get("entry", []) for c in e.get("changes", []))
+    if not has_msgs:     # delivery/read status callbacks: don't overwrite the last message result
+        META_LAST["last_status_callback_at"] = datetime.datetime.utcnow().isoformat(timespec="seconds") + "Z"
+        return jsonify({"ok": True})
     META_LAST.update(at=datetime.datetime.utcnow().isoformat(timespec="seconds") + "Z",
                      sig_ok=None, handled=0, send_status=None, send_error=None)
     if not _meta_sig_ok(raw):
         META_LAST["sig_ok"] = False
         return Response("invalid signature", status=403)
     META_LAST["sig_ok"] = True
-    payload = request.get_json(silent=True) or {}
     for entry in payload.get("entry", []):
         for change in entry.get("changes", []):
             for msg in (change.get("value") or {}).get("messages", []) or []:
