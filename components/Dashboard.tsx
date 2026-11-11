@@ -129,7 +129,9 @@ export default function Dashboard() {
     );
   }
 
-  const { reports, corrections, officialPosts, population, openDatasets, entitiesCount } = data;
+  const { corrections, officialPosts, population, openDatasets, entitiesCount } = data;
+  // "Live only" scopes every panel (feed, map, chart, ranking, trending), not just the KPI cards.
+  const reports = demoMode ? data.reports.filter((r) => !r.seeded) : data.reports;
   const showLeft = sectionVisibility.reports || sectionVisibility.sources;
   const showActivity = sectionVisibility.flags || sectionVisibility.genuine;
   const columns = [showLeft ? "minmax(18rem, 21.5rem)" : null, "minmax(0, 1fr)", "minmax(20rem, 26rem)"].filter(Boolean).join(" ");
